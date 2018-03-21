@@ -78,28 +78,30 @@ class Rips:
                 rip = 'location', (str(msg.location.longitude) + ',' + str(msg.location.latitude))
             elif msg.video is not None:
                 rip = 'video', msg.video.file_id
+            elif msg.audio is not None:
+                rip = 'audio', msg.audio.file_id
             else:
-                return
-            if msg.from_user.id in self.waiting_rip:
+                rip = None
+
+            if msg.from_user.id in self.waiting_rip and rip is not None:
                 if self.waiting_rip[msg.from_user.id] == 'newrip':
                     self.addRip(bot, update, rip)
                 elif self.waiting_rip[msg.from_user.id] == 'delrip':
                     self.delRip(bot, update, rip)
-                self.waiting_rip.pop(msg.from_user.id)
+
+            self.waiting_rip.pop(msg.from_user.id)
 
             if msg.caption is not None:
                 if 'newrip' in msg.caption:
                     self.addRip(bot, update, rip)
                 elif 'delrip' in msg.caption:
                     self.delRip(bot, update, rip)
-        else:
-            if msg.text is not None:
-                if 'rip' in msg.text.lower():
-                    riptype, rip = random.sample(self.rips, 1)[0]
-                    self.sendMsg(bot, update, rip, riptype)
-                    return
-            elif msg.from_user.id in self.waiting_rip:
-                self.waiting_rip.pop(msg.from_user.id)
+
+        if msg.text is not None:
+            if 'rip' in msg.text.lower():
+                riptype, rip = random.sample(self.rips, 1)[0]
+                self.sendMsg(bot, update, rip, riptype)
+                return
 
     def isNewRip(self, msg):
         if msg.from_user.id in self.waiting_rip:
@@ -124,5 +126,7 @@ class Rips:
             bot.sendVideo(chat_id=update.message.chat_id, video=msg, caption='rip in')
         elif msg_type == 'text':
             bot.sendMessage(chat_id=update.message.chat_id, text=('rip in ' + msg))
+        elif msg_type == 'audio':
+            bot.sendAudio(chat_id=update.message.chat_id, audio=msg, caption='rip in')
         else:
             bot.sendMessage(chat_id=update.message.chat_id, text=msg)
