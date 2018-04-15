@@ -4,14 +4,16 @@ import importlib
 
 import rips
 import vituttaa
+import valitsin
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
 
 rir = rips.Rips()
 vit = vituttaa.Vituttaa()
+vai = valitsin.Valitsin()
 
-objects = [rir, vit]
+objects = [rir, vit, vai]
 
 def allMessages(bot, update):
     for obj in objects:
