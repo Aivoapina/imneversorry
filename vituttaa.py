@@ -2,24 +2,19 @@ import requests
 import urllib
 import random
 
+import db
+
 class Vituttaa:
     def __init__(self):
         self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
-        self.viisaudet = self.readViisaudet()
+        self.viisaudet = db.readViisaudet()
 
     def getCommands(self):
         return self.commands
 
-    def readViisaudet(self):
-        fs = open('viisaudet.txt', 'r')
-        x = set()
-        for line in fs.read().splitlines():
-            x.add(line)
-        return x
-
     def getViisaus(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0])
+        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
 
     def getVitutus(self, bot, update, args=''):
         r = requests.get(self.vituttaaUrl)

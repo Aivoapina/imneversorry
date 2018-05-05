@@ -2,12 +2,15 @@ from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from configparser import ConfigParser
 import importlib
 
+import initdb
 import rips
 import vituttaa
 import valitsin
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
+
+initdb.initdb()
 
 rir = rips.Rips()
 vit = vituttaa.Vituttaa()

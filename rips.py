@@ -1,4 +1,6 @@
 import random
+import sqlite3 as sq
+import db
 
 class Rips:
     def __init__(self, ripfile='rips.txt'):
@@ -6,25 +8,16 @@ class Rips:
                         'newrip': self.newripHandler,
                         'rips': self.ripsCountHandler,
                         'delrip': self.delripHandler }
-        self.rips = set()
+        self.rips = db.readRips()
         self.ripfile = ripfile
         self.waiting_rip = {}
-        self.readRips()
 
     def getCommands(self):
         return self.commands
 
-    def readRips(self):
-        fs = open(self.ripfile, 'a+')
-        fs.seek(0)
-        for line in fs.read().splitlines():
-            sline = line.split(';')
-            self.rips.add((sline[0], ';'.join(sline[1:])))
-        fs.close()
-
-
     def ripHandler(self, bot, update, args=''):
         riptype, rip = random.sample(self.rips, 1)[0]
+        print(rip, riptype)
         self.sendMsg(bot, update, rip, riptype)
 
     def newripHandler(self, bot, update, args):
@@ -48,19 +41,15 @@ class Rips:
             self.sendMsg(bot, update, 'Already in rips')
         else:
             self.rips.add(newrip)
-            fs = open(self.ripfile, 'a+')
-            fs.write('{};{}\n'.format(*newrip))
-            fs.close()
+            type, rip = newrip
+            db.addRip(type, rip, update.message.chat.id, update.message.from_user.username)
 
     def delRip(self, bot, update, delrip):
         if delrip not in self.rips:
             self.sendMsg(bot, update, "Couldn't find rip")
         else:
             self.rips.remove(delrip)
-            fs = open(self.ripfile, 'w')
-            for line in self.rips:
-                fs.write('{};{}\n'.format(*line))
-            fs.close()
+            db.delRip(delrip)
 
     def ripsCountHandler(self, bot, update, args=''):
         self.sendMsg(bot, update, str(len(self.rips)) + ' rips')
