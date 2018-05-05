@@ -10,7 +10,7 @@ def initdb(db='bot.db'):
         'rip text primary key not null,'
         'type text,'
         'created date,'
-        'channel text,'
+        'channel integer,'
         'creator text)')
 
     c.execute('CREATE TABLE IF NOT EXISTS Ripinfo('

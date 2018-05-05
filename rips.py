@@ -16,13 +16,16 @@ class Rips:
         return self.commands
 
     def ripHandler(self, bot, update, args=''):
-        riptype, rip = random.sample(self.rips, 1)[0]
-        print(rip, riptype)
+        chat_id = update.message.chat.id
+        if chat_id not in self.rips:
+            self.rips[chat_id] = set()
+        riptype, rip = random.sample(self.rips[update.message.chat.id], 1)[0]
         self.sendMsg(bot, update, rip, riptype)
 
     def newripHandler(self, bot, update, args):
         if len(args) == 0:
-            self.waiting_rip[update.message.from_user.id] = 'newrip'
+            key = str(update.message.from_user.id) + str(update.message.chat.id)
+            self.waiting_rip[key] = 'newrip'
             self.sendMsg(bot, update, 'Usage: /newrip <ripmessage> or send mediafile for newrip')
             return
         newrip = 'text', ' '.join(args)
@@ -30,29 +33,40 @@ class Rips:
 
     def delripHandler(self, bot, update, args):
         if len(args) == 0:
-            self.waiting_rip[update.message.from_user.id] = 'delrip'
+            key = str(update.message.from_user.id) + str(update.message.chat.id)
+            self.waiting_rip[key] = 'delrip'
             self.sendMsg(bot, update, 'Usage: /delrip <ripname> or forward mediafile for delete')
             return
         delrip = 'text', ' '.join(args)
         self.delRip(bot, update, delrip)
 
     def addRip(self, bot, update, newrip):
-        if newrip in self.rips:
+        chat_id = update.message.chat.id
+        if chat_id not in self.rips:
+            self.rips[chat_id] = set()
+        elif newrip in self.rips[chat_id]:
             self.sendMsg(bot, update, 'Already in rips')
         else:
-            self.rips.add(newrip)
+            self.rips[chat_id].add(newrip)
             type, rip = newrip
-            db.addRip(type, rip, update.message.chat.id, update.message.from_user.username)
+            db.addRip(type, rip, chat_id, update.message.from_user.username)
 
     def delRip(self, bot, update, delrip):
-        if delrip not in self.rips:
+        chat_id = update.message.chat.id
+        if chat_id not in self.rips:
+            self.rips[chat_id] = set()
+            self.sendMsg(bot, update, "Couldn't find rip")
+        elif delrip not in self.rips[chat_id]:
             self.sendMsg(bot, update, "Couldn't find rip")
         else:
-            self.rips.remove(delrip)
+            self.rips[chat_id].remove(delrip)
             db.delRip(delrip)
 
     def ripsCountHandler(self, bot, update, args=''):
-        self.sendMsg(bot, update, str(len(self.rips)) + ' rips')
+        chat_id = update.message.chat.id
+        if chat_id not in self.rips:
+            self.rips[chat_id] = set()
+        self.sendMsg(bot, update, str(len(self.rips[chat_id])) + ' rips')
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -72,13 +86,14 @@ class Rips:
             else:
                 rip = None
 
-            if msg.from_user.id in self.waiting_rip and rip is not None:
-                if self.waiting_rip[msg.from_user.id] == 'newrip':
+            key = str(msg.from_user.id) + str(msg.chat.id)
+            if key in self.waiting_rip and rip is not None:
+                if self.waiting_rip[key] == 'newrip':
                     self.addRip(bot, update, rip)
-                elif self.waiting_rip[msg.from_user.id] == 'delrip':
+                elif self.waiting_rip[key] == 'delrip':
                     self.delRip(bot, update, rip)
 
-            self.waiting_rip.pop(msg.from_user.id)
+            self.waiting_rip.pop(key)
 
             if msg.caption is not None:
                 if 'newrip' in msg.caption:
@@ -88,12 +103,11 @@ class Rips:
 
         if msg.text is not None:
             if 'rip' in msg.text.lower():
-                riptype, rip = random.sample(self.rips, 1)[0]
-                self.sendMsg(bot, update, rip, riptype)
-                return
+                self.ripHandler(bot, update)
 
     def isNewRip(self, msg):
-        if msg.from_user.id in self.waiting_rip:
+        key = str(msg.from_user.id) + str(msg.chat.id)
+        if key in self.waiting_rip:
             return True
         else:
             if msg.caption is not None:

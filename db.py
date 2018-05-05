@@ -27,9 +27,15 @@ def delRip(delrip):
 
 def readRips():
     with cursor() as cur:
-        cur.execute('SELECT type, rip from Rip')
+        cur.execute('SELECT type, rip, channel from Rip')
         rows = cur.fetchall()
-        return set(rows);
+        data = {}
+        for row in rows:
+            type, rip, channel = row
+            if channel not in data:
+                data[channel] = set()
+            data[channel].add((type, rip))
+        return data
 
 def readViisaudet():
     with cursor() as cur:
