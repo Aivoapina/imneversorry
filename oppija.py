@@ -31,6 +31,6 @@ class Oppija:
         msg = update.message
         if msg.text is not None:
             # Matches messages in format "?? something"
-            question = re.match(r"^(\?\?)\s(\S+)$", msg.text.lower()) 
+            question = re.match(r"^(\?\?)\s(\S+)$", msg.text) 
             if question:
                 self.defineTerm(bot, update, question)
