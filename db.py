@@ -42,3 +42,15 @@ def readViisaudet():
         cur.execute('SELECT viisaus from Viisaus')
         rows = cur.fetchall()
         return set(rows)
+
+def upsertOppi(keyword, definition, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT OR REPLACE INTO Oppi values(?, ?, ?, ?, ?)',
+        (keyword, definition, date, channel, creator))
+
+def findOppi(keyword):
+    with cursor() as cur:
+        cur.execute('SELECT definition from Oppi WHERE keyword=?', (keyword,))
+
+        return cur.fetchone()
