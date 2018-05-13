@@ -22,5 +22,12 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Viisaus('
         'viisaus text primary key)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Oppi('
+        'keyword text primary key not null,'
+        'definition text not null,'
+        'created date,'
+        'channel integer,'
+        'creator text)')
+
     conn.commit()
     conn.close()

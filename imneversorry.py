@@ -6,6 +6,7 @@ import initdb
 import rips
 import vituttaa
 import valitsin
+import oppija
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -15,8 +16,9 @@ initdb.initdb()
 rir = rips.Rips()
 vit = vituttaa.Vituttaa()
 vai = valitsin.Valitsin()
+opi = oppija.Oppija()
 
-objects = [rir, vit, vai]
+objects = [rir, vit, vai, opi]
 
 def allMessages(bot, update):
     for obj in objects:
