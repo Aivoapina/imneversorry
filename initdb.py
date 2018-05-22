@@ -22,6 +22,9 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Viisaus('
         'viisaus text primary key)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Sana('
+        'sana text)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Oppi('
         'keyword text primary key not null,'
         'definition text not null,'

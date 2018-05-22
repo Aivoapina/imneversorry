@@ -4,7 +4,7 @@ import importlib
 
 import initdb
 import rips
-import vituttaa
+import teekkari
 import valitsin
 import oppija
 
@@ -14,7 +14,7 @@ cfg.read('env.cfg')
 initdb.initdb()
 
 rir = rips.Rips()
-vit = vituttaa.Vituttaa()
+vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 

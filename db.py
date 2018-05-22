@@ -43,6 +43,12 @@ def readViisaudet():
         rows = cur.fetchall()
         return set(rows)
 
+def readSanat():
+    with cursor() as cur:
+        cur.execute('SELECT sana from Sana')
+        rows = cur.fetchall()
+        return set(rows)
+
 def upsertOppi(keyword, definition, channel, creator):
     with cursor() as cur:
         date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

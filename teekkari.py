@@ -4,14 +4,22 @@ import random
 
 import db
 
-class Vituttaa:
+class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus }
+        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.viisaudet = db.readViisaudet()
+        self.sanat = db.readSanat()
 
     def getCommands(self):
         return self.commands
+
+    def getVittuilu(self, bot, update, args=''):
+        print('lel')
+        if random.randint(0, 4) == 0:
+            bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
+        else:
+            bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
     def handleHakemus(self, bot, update, args=''):
         if random.randint(0, 9) == 0:
@@ -35,5 +43,7 @@ class Vituttaa:
                 self.getVitutus(bot, update)
             elif 'viisaus' in msg.text.lower():
                 self.getViisaus(bot, update)
+            elif 'pekkauotila' in msg.text.lower():
+                self.getVittuilu(bot, update)
             elif 'hakemus' in msg.text.lower():
                 self.handleHakemus(bot, update)
