@@ -9,7 +9,7 @@ class Oppija:
         return self.commands
 
     def defineTerm(self, bot, update, question):
-        definition = db.findOppi(question.group(2))
+        definition = db.findOppi(question.group(2), update.message.chat.id)
 
         if definition is not None:
             bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
@@ -31,6 +31,6 @@ class Oppija:
         msg = update.message
         if msg.text is not None:
             # Matches messages in format "?? something"
-            question = re.match(r"^(\?\?)\s(\S+)$", msg.text) 
+            question = re.match(r"^(\?\?)\s(\S+)$", msg.text)
             if question:
                 self.defineTerm(bot, update, question)

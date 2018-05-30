@@ -55,8 +55,8 @@ def upsertOppi(keyword, definition, channel, creator):
         cur.execute('INSERT OR REPLACE INTO Oppi values(?, ?, ?, ?, ?)',
         (keyword, definition, date, channel, creator))
 
-def findOppi(keyword):
+def findOppi(keyword, channel):
     with cursor() as cur:
-        cur.execute('SELECT definition from Oppi WHERE keyword=?', (keyword,))
+        cur.execute('SELECT definition from Oppi WHERE keyword=? and channel=?', (keyword, channel))
 
         return cur.fetchone()

@@ -15,7 +15,6 @@ class Teekkari:
         return self.commands
 
     def getVittuilu(self, bot, update, args=''):
-        print('lel')
         if random.randint(0, 4) == 0:
             bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
         else:

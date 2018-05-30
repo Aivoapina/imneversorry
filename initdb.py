@@ -7,11 +7,12 @@ def initdb(db='bot.db'):
     c = conn.cursor()
 
     c.execute('CREATE TABLE IF NOT EXISTS Rip('
-        'rip text primary key not null,'
+        'rip text not null,'
         'type text,'
         'created date,'
-        'channel integer,'
-        'creator text)')
+        'channel integer not null,'
+        'creator text,'
+        'primary key (rip, channel) )')
 
     c.execute('CREATE TABLE IF NOT EXISTS Ripinfo('
         'id integer primary key autoincrement,'
@@ -26,11 +27,12 @@ def initdb(db='bot.db'):
         'sana text)')
 
     c.execute('CREATE TABLE IF NOT EXISTS Oppi('
-        'keyword text primary key not null,'
+        'keyword text not null,'
         'definition text not null,'
         'created date,'
-        'channel integer,'
-        'creator text)')
+        'channel integer not null,'
+        'creator text,'
+        'primary key (keyword, channel))')
 
     conn.commit()
     conn.close()
