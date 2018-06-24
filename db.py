@@ -60,3 +60,30 @@ def findOppi(keyword, channel):
         cur.execute('SELECT definition from Oppi WHERE keyword=? and channel=?', (keyword, channel))
 
         return cur.fetchone()
+
+def readQuotes():
+    with cursor() as cur:
+        cur.execute('SELECT quote, quotee, channel FROM Quote')
+        rows = cur.fetchall()
+        data = {}
+        for row in rows:
+            quote, quotee, channel = row
+            if quote not in data:
+                data[channel] = set()
+            data[channel].add('"' + quote + '" - ' + quotee)
+        return data
+
+def insertQuote(quote, quotee, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT INTO Quote values(?, ?, ?, ?, ?)',
+        (quote, quotee, date, channel, creator))
+
+def findQuotes(channel, quotee=None):
+    with cursor() as cur:
+        if quotee is not None:
+            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=? AND quotee=?', (channel, quotee))
+            return cur.fetchall()
+        else:
+            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=?', (channel,))
+            return cur.fetchall()

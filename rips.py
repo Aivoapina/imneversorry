@@ -3,13 +3,12 @@ import sqlite3 as sq
 import db
 
 class Rips:
-    def __init__(self, ripfile='rips.txt'):
+    def __init__(self):
         self.commands = { 'rip': self.ripHandler,
                         'newrip': self.newripHandler,
                         'rips': self.ripsCountHandler,
                         'delrip': self.delripHandler }
         self.rips = db.readRips()
-        self.ripfile = ripfile
         self.waiting_rip = {}
 
     def getCommands(self):
