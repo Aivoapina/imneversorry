@@ -57,6 +57,16 @@ def upsertOppi(keyword, definition, channel, creator):
 
 def findOppi(keyword, channel):
     with cursor() as cur:
-        cur.execute('SELECT definition from Oppi WHERE keyword=? and channel=?', (keyword, channel))
+        cur.execute('SELECT definition FROM Oppi WHERE keyword=? and channel=?', (keyword, channel))
+        return cur.fetchone()
 
+def countOpis(channel):
+    with cursor() as cur:
+        cur.execute('SELECT COUNT(*) AS count FROM Oppi WHERE channel=?', (channel,))
+        count = cur.fetchone()
+        return count
+
+def randomOppi(channel):
+    with cursor() as cur:
+        cur.execute('SELECT keyword, definition FROM Oppi WHERE channel=? ORDER BY RANDOM() LIMIT 1', (channel,))
         return cur.fetchone()
