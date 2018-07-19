@@ -6,7 +6,8 @@ import operator
 class Oppija:
     def __init__(self):
         self.commands = { 'opi': self.learnHandler,
-                          'opis': self.opisCountHandler }
+                          'opis': self.opisCountHandler,
+                          'jokotai': self.jokotaiHandler }
 
     def getCommands(self):
         return self.commands
@@ -83,6 +84,14 @@ class Oppija:
             inverted_list.append(inverted_string[::-1])
 
         return inverted_list
+
+    def jokotaiHandler(self, bot, update, args=''):
+        sides = ['kruuna', 'klaava']
+        maximalRigging = random.choice(sides)
+        riggedQuestion = re.match(r"^(\?\?)\s(\S+)$", "?? " + maximalRigging)
+
+        bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
+        self.defineTerm(bot, update, riggedQuestion)
 
     def messageHandler(self, bot, update):
         msg = update.message
