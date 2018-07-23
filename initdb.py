@@ -34,5 +34,13 @@ def initdb(db='bot.db'):
         'creator text,'
         'primary key (keyword, channel))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Quote('
+        'quote text not null,'
+        'quotee text not null,'
+        'created date,'
+        'channel integer,'
+        'creator text,'
+        'primary key(quote, channel))')
+
     conn.commit()
     conn.close()

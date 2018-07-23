@@ -7,6 +7,7 @@ import rips
 import teekkari
 import valitsin
 import oppija
+import quote
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -17,8 +18,9 @@ rir = rips.Rips()
 vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
+quo = quote.Quote()
 
-objects = [rir, vit, vai, opi]
+objects = [rir, vit, vai, opi, quo]
 
 def allMessages(bot, update):
     for obj in objects:
