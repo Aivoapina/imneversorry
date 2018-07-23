@@ -61,18 +61,6 @@ def findOppi(keyword, channel):
 
         return cur.fetchone()
 
-def readQuotes():
-    with cursor() as cur:
-        cur.execute('SELECT quote, quotee, channel FROM Quote')
-        rows = cur.fetchall()
-        data = {}
-        for row in rows:
-            quote, quotee, channel = row
-            if quote not in data:
-                data[channel] = set()
-            data[channel].add('"' + quote + '" - ' + quotee)
-        return data
-
 def insertQuote(quote, quotee, channel, creator):
     with cursor() as cur:
         date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -87,3 +75,8 @@ def findQuotes(channel, quotee=None):
         else:
             cur.execute('SELECT quote, quotee FROM Quote WHERE channel=?', (channel,))
             return cur.fetchall()
+
+def countQuotes(channel):
+    with cursor() as cur:
+        cur.execute('SELECT count(quote) FROM Quote WHERE channel=?', (channel,))
+        return cur.fetchone()[0]
