@@ -42,5 +42,8 @@ def initdb(db='bot.db'):
         'creator text,'
         'primary key(quote, channel))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Diagnoosi('
+        'diagnoosi text)')
+
     conn.commit()
     conn.close()
