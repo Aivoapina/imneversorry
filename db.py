@@ -90,3 +90,9 @@ def countQuotes(channel):
     with cursor() as cur:
         cur.execute('SELECT count(quote) FROM Quote WHERE channel=?', (channel,))
         return cur.fetchone()[0]
+
+def readDiagnoosit():
+    with cursor() as cur:
+        cur.execute('SELECT diagnoosi from Diagnoosi')
+        rows = cur.fetchall()
+        return set(rows)
