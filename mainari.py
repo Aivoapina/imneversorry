@@ -5,7 +5,7 @@ import threading
 import logging as log
 
 class Mainari:
-    def __init__(self, server, game_ops=[], server_admins=[]):
+    def __init__(self, server, game_ops='', server_admins=''):
         self.api_url = 'https://api.mcsrvstat.us/1/'
         self.commands = { 'minecraft': self.getServerInfo }
         self.is_in_cooldown = False
