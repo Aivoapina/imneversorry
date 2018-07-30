@@ -70,3 +70,29 @@ def randomOppi(channel):
     with cursor() as cur:
         cur.execute('SELECT keyword, definition FROM Oppi WHERE channel=? ORDER BY RANDOM() LIMIT 1', (channel,))
         return cur.fetchone()
+
+def insertQuote(quote, quotee, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT INTO Quote values(?, ?, ?, ?, ?)',
+        (quote, quotee, date, channel, creator))
+
+def findQuotes(channel, quotee=None):
+    with cursor() as cur:
+        if quotee is not None:
+            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=? AND quotee=?', (channel, quotee))
+            return cur.fetchall()
+        else:
+            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=?', (channel,))
+            return cur.fetchall()
+
+def countQuotes(channel):
+    with cursor() as cur:
+        cur.execute('SELECT count(quote) FROM Quote WHERE channel=?', (channel,))
+        return cur.fetchone()[0]
+
+def readDiagnoosit():
+    with cursor() as cur:
+        cur.execute('SELECT diagnoosi from Diagnoosi')
+        rows = cur.fetchall()
+        return set(rows)

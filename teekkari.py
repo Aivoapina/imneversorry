@@ -6,10 +6,11 @@ import db
 
 class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu }
+        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
+        self.diagnoosit = db.readDiagnoosit()
 
     def getCommands(self):
         return self.commands
@@ -35,6 +36,9 @@ class Teekkari:
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
         bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
+    def getDiagnoosi(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:
@@ -46,3 +50,5 @@ class Teekkari:
                 self.getVittuilu(bot, update)
             elif 'hakemus' in msg.text.lower():
                 self.handleHakemus(bot, update)
+            elif 'diagnoosi' in msg.text.lower():
+                self.getDiagnoosi(bot, update)
