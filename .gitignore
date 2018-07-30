@@ -6,3 +6,4 @@ viisaudet.txt
 bot.db
 
 __pycache__/
+.vscode/
