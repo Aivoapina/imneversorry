@@ -86,13 +86,13 @@ class Rips:
                 rip = None
 
             key = str(msg.from_user.id) + str(msg.chat.id)
-            if key in self.waiting_rip and rip is not None:
-                if self.waiting_rip[key] == 'newrip':
-                    self.addRip(bot, update, rip)
-                elif self.waiting_rip[key] == 'delrip':
-                    self.delRip(bot, update, rip)
-
-            self.waiting_rip.pop(key)
+            if key in self.waiting_rip:
+                if rip is not None:
+                    if self.waiting_rip[key] == 'newrip':
+                        self.addRip(bot, update, rip)
+                    elif self.waiting_rip[key] == 'delrip':
+                        self.delRip(bot, update, rip)
+                self.waiting_rip.pop(key)
 
             if msg.caption is not None:
                 if 'newrip' in msg.caption:
