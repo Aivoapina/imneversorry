@@ -38,6 +38,12 @@ class Teekkari:
 
     def getDiagnoosi(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+        
+    def getHalo(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
+        
+    def getNoppa(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -52,3 +58,7 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagnoosi' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
+            elif 'halo' in msg.text.lower():
+                self.getHalo(bot, update)
+            elif 'noppa' in msg.text.lower():
+                self.getNoppa(bot, update)
