@@ -58,9 +58,7 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagnoosi' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
-            elif 'halo' in msg.text.lower():
-                if re.match(r'^halo$', msg.text.lower()):
-                    self.getHalo(bot, update)
-            elif 'noppa' in msg.text.lower():
-                if re.match(r'^noppa$', msg.text.lower()):
-                    self.getNoppa(bot, update)
+            elif re.match(r'^halo$', msg.text.lower()):
+                self.getHalo(bot, update)
+            elif  re.match(r'^noppa$', msg.text.lower()):
+                self.getNoppa(bot, update)
