@@ -44,6 +44,9 @@ class Teekkari:
         
     def getNoppa(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
+        
+    def getVaihda(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Kupin alta paljastui ', 'Vaihdoit ']) + str(random.randint(1, 6)) + '.')
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -58,7 +61,9 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagnoosi' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
-            elif re.match(r'^halo$', msg.text.lower()):
+            elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(bot, update)
-            elif  re.match(r'^noppa$', msg.text.lower()):
+            elif  re.match(r'^noppa', msg.text.lower()):
                 self.getNoppa(bot, update)
+            elif re.match(r'^vaihda', msg.text.lower()):
+                self.getVaihda(bot, update)
