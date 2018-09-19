@@ -46,9 +46,6 @@ class Teekkari:
     def getNoppa(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
 
-    def getVaihda(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Kupin alta paljastui ', 'Vaihdoit ']) + str(random.randint(1, 6)) + '.')
-
     def getUrbaani(self):
         r = requests.get(self.urbaaniUrl)
         url = urllib.parse.unquote_plus(r.url).split('/')
