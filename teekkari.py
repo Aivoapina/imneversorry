@@ -8,6 +8,7 @@ class Teekkari:
     def __init__(self):
         self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
+        self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -38,12 +39,21 @@ class Teekkari:
 
     def getDiagnoosi(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
-        
+
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
-        
+
     def getNoppa(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
+
+    def getUrbaani(self):
+        r = requests.get(self.urbaaniUrl)
+        url = urllib.parse.unquote_plus(r.url).split('/')
+        return str(url[len(url) - 2]).replace('-', ' ')
+
+    def getVitun(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -58,7 +68,9 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagnoosi' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
-            elif re.match(r'^halo$', msg.text.lower()):
+            elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(bot, update)
-            elif  re.match(r'^noppa$', msg.text.lower()):
+            elif re.match(r'^noppa', msg.text.lower()):
                 self.getNoppa(bot, update)
+            elif re.match(r'^vitun', msg.text.lower()):
+                self.getVitun(bot, update)
