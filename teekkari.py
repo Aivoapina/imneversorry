@@ -72,5 +72,5 @@ class Teekkari:
                 self.getHalo(bot, update)
             elif re.match(r'^noppa', msg.text.lower()):
                 self.getNoppa(bot, update)
-            elif 'vitun' in msg.text.lower():
+            elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
