@@ -96,3 +96,16 @@ def readDiagnoosit():
         cur.execute('SELECT diagnoosi from Diagnoosi')
         rows = cur.fetchall()
         return set(rows)
+
+def readMaidot():
+    with cursor() as cur:
+        cur.execute('SELECT maito from Maito')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readNimet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Nimi')
+        rows = cur.fetchall()
+        return set(rows)
+        

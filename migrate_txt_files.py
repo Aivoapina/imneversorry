@@ -28,6 +28,16 @@ fs = open('icd.txt', 'r')
 for line in fs.read().splitlines():
     c.execute("INSERT INTO Diagnoosi(diagnoosi) values(?)", (line,))
 
+fs = open('maidot.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Maito(maito) values(?)", (line,))
+
+fs = open('nimet.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Nimi(nimi) values(?)", (line,))
+
 fs.close()
 
 conn.commit()
