@@ -6,12 +6,14 @@ import db
 
 class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi }
+        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
+        self.maidot = db.readMaidot()
+        self.nimet = db.readNimet()
 
     def getCommands(self):
         return self.commands
@@ -39,6 +41,10 @@ class Teekkari:
 
     def getDiagnoosi(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+
+    def getMaitonimi(self, bot, update, args=''):
+        maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
+        bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
 
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
@@ -74,3 +80,5 @@ class Teekkari:
                 self.getNoppa(bot, update)
             elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
+            elif re.match(r'^/maitonimi', msg.text.lower()):
+                self.getMaitonimi(bot, update)
