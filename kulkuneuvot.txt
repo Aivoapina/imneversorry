@@ -159,3 +159,13 @@ törmäilyauto
 kanootti
 kajakki
 kirkkovene
+jopo
+ruohonleikkuri
+gondoli
+tuk-tuk
+ilmatyynyalus
+elefantti
+koiravaljakko
+olutpyörä
+spora
+jutikka
