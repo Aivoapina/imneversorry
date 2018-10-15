@@ -21,7 +21,6 @@ for line in fs.read().splitlines():
     c.execute("INSERT INTO Rip(type, rip) values(?, ?)", (sline[0], ';'.join(sline[1:])))
 
 fs.close()
-"""
 
 fs = open('icd.txt', 'r')
 
@@ -37,6 +36,22 @@ fs = open('nimet.txt', 'r')
 
 for line in fs.read().splitlines():
     c.execute("INSERT INTO Nimi(nimi) values(?)", (line,))
+"""
+
+fs = open('vihanneet.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Vihannes(nimi) values(?)", (line,))
+
+fs = open('kulkuneuvot.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Kulkuneuvo(nimi) values(?)", (line,))
+
+fs = open('planetoidit.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Planetoidi(nimi) values(?)", (line,))
 
 fs.close()
 
