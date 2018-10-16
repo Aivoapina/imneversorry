@@ -108,4 +108,22 @@ def readNimet():
         cur.execute('SELECT nimi from Nimi')
         rows = cur.fetchall()
         return set(rows)
-        
+
+def readVihanneet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Vihannes')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readPlanetoidit():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Planetoidi')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readKulkuneuvot():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Kulkuneuvo')
+        rows = cur.fetchall()
+        return set(rows)
+
