@@ -39,7 +39,7 @@ class Sikugotchi:
     def delSikuHandler(self, bot, update, args):
         r = requests.post(
             'https://sikus.sivu.website/api/v1/siku/del',
-            json = { 'killer': update.message.from_user.username },
+            json={'killer': update.message.from_user.username},
             headers=headers
         )
         if r.status_code == 200:
