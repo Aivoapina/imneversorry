@@ -108,4 +108,9 @@ def readNimet():
         cur.execute('SELECT nimi from Nimi')
         rows = cur.fetchall()
         return set(rows)
-        
+
+def readKalat():
+    with cursor() as cur:
+        cur.execute('SELECT kala from Kalat')
+        rows = cur.fetchall()
+        return set(rows)

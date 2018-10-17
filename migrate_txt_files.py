@@ -21,13 +21,13 @@ for line in fs.read().splitlines():
     c.execute("INSERT INTO Rip(type, rip) values(?, ?)", (sline[0], ';'.join(sline[1:])))
 
 fs.close()
-"""
 
-fs = open('icd.txt', 'r')
+fs = open('kaloja.txt', 'r')
 
 for line in fs.read().splitlines():
-    c.execute("INSERT INTO Diagnoosi(diagnoosi) values(?)", (line,))
-
+    #strline = str(line)
+    c.execute("INSERT INTO Kalat(kala) values(?)", (line,))
+"""
 fs = open('maidot.txt', 'r')
 
 for line in fs.read().splitlines():

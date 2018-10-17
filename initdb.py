@@ -47,9 +47,12 @@ def initdb(db='bot.db'):
 
     c.execute('CREATE TABLE IF NOT EXISTS Maito('
         'maito text)')
-    
+
     c.execute('CREATE TABLE IF NOT EXISTS Nimi('
         'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Kalat('
+        'kala text)')
 
     conn.commit()
     conn.close()
