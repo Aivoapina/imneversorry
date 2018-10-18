@@ -39,7 +39,7 @@ class Sikugotchi:
             json={'killer': update.message.from_user.username},
             headers=headers
         )
-        elif r.status_code == 404:
+        if r.status_code == 404:
             bot.sendMessage(chat_id=update.message.chat_id, text='Sikut loppu :(')
 
     def feedSikuHandler(self, bot, update, args):
@@ -47,5 +47,5 @@ class Sikugotchi:
             'https://sikus.sivu.website/api/v1/siku/feed',
             headers=headers
         )
-        elif r.status_code == 404:
+        if r.status_code == 404:
             bot.sendMessage(chat_id=update.message.chat_id, text='Ei sikuja mitä ruokkia :(')
