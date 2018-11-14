@@ -6,9 +6,10 @@ import db
 
 class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi }
+        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi, 'helveten' : self.getHelveten }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
+        self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -67,9 +68,17 @@ class Teekkari:
         url = urllib.parse.unquote_plus(r.url).split('/')
         return str(url[len(url) - 2]).replace('-', ' ')
 
+    def getSlango(self):
+        r = requests.get(self.slangopediaUrl)
+        url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
+        return str(url[-1].split('=')[-1].lower())
+
     def getVitun(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
+    def getHelveten(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id,
+            text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -90,6 +99,8 @@ class Teekkari:
                 self.getNoppa(bot, update)
             elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
+            elif re.match(r'^helveten', msg.text.lower()):
+                self.getHelveten(bot, update)
             elif re.match(r'^/maitonimi', msg.text.lower()):
                 self.getMaitonimi(bot, update)
             elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
