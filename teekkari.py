@@ -63,13 +63,13 @@ class Teekkari:
         bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
 
     def getUrbaani(self):
-        r = requests.get(self.urbaaniUrl)
-        url = urllib.parse.unquote_plus(r.url).split('/')
-        return str(url[len(url) - 2]).replace('-', ' ')
+        webpage = urllib.request.urlopen(self.urbaaniUrl).read().decode("utf-8")
+        title = str(webpage).split('<title>')[1].split('</title>')[0]
+        sana = title.split(" |")[0]
+        return sana
 
     def getVitun(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-
 
     def messageHandler(self, bot, update):
         msg = update.message
