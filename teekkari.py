@@ -71,6 +71,7 @@ class Teekkari:
     def getVitun(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
+
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:
