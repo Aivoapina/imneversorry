@@ -8,7 +8,6 @@ import teekkari
 import valitsin
 import oppija
 import quote
-import sikugotchi
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -20,9 +19,8 @@ vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 quo = quote.Quote()
-sik = sikugotchi.Sikugotchi()
 
-objects = [rir, vit, vai, opi, quo, sik]
+objects = [rir, vit, vai, opi, quo]
 
 def allMessages(bot, update):
     for obj in objects:
