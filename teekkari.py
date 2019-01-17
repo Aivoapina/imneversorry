@@ -3,6 +3,7 @@ import urllib
 import random
 import re
 import db
+import time
 
 class Teekkari:
     def __init__(self):
@@ -19,6 +20,7 @@ class Teekkari:
         self.vihanneet = db.readVihanneet()
         self.planetoidit = db.readPlanetoidit()
         self.kulkuneuvot = db.readKulkuneuvot()
+        self.lastVitun = 0
 
     def getCommands(self):
         return self.commands
@@ -82,7 +84,10 @@ class Teekkari:
         return str(url[-1].split('=')[-1].lower())
 
     def getVitun(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+        now = time.time()
+        if self.lastVitun + 60 < now:
+            self.lastVitun = now
+            bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
     def getVaalikone(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
@@ -93,6 +98,7 @@ class Teekkari:
 
     def messageHandler(self, bot, update):
         msg = update.message
+        #print(msg)
         if msg.text is not None:
             if 'vituttaa' in msg.text.lower():
                 self.getVitutus(bot, update)
