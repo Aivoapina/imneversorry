@@ -22,7 +22,7 @@ class Oppija:
                 bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_definition + ' :' + inverted_question))
             else:
                 bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
-        
+
         else:
             no_idea = 'En tiedä'
             if (inverted):
@@ -111,7 +111,7 @@ class Oppija:
             # Matches message "¡¿"
             elif re.match(r"^(\¡\¿)$", msg.text):
                 self.randomOppiHandler(bot, update, True)
-                
+
             elif re.match(r"^.+\?$", msg.text) and random.randint(1, 50) == 1:
                 getattr(bot, (lambda _, __: _(_, __))(
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
@@ -120,4 +120,4 @@ class Oppija:
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
                     521366901555324942823356189990151533))(update), text=((lambda _, __: _(_, __))(
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
-                    random.sample([3041605, 779117898, 27422285487696208, 272452313416], 1)[0])))
+                    random.sample([3041605, 779117898, 17466, 272452313416, 7022364615740061032, 2360793474633670572049331836447094], 1)[0])))
