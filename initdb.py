@@ -51,6 +51,9 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Nimi('
         'nimi text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Kalat('
+        'kala text)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Vihannes('
         'nimi text)')
 

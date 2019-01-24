@@ -3,20 +3,24 @@ import urllib
 import random
 import re
 import db
+import time
 
 class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi }
+        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi, 'helveten' : self.getHelveten, 'pizza': self.getPizza, 'kalanimi': self.getKalanimi }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
+        self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
         self.maidot = db.readMaidot()
         self.nimet = db.readNimet()
+        self.kalat = db.readKalat()
         self.vihanneet = db.readVihanneet()
         self.planetoidit = db.readPlanetoidit()
         self.kulkuneuvot = db.readKulkuneuvot()
+        self.lastVitun = 0
 
     def getCommands(self):
         return self.commands
@@ -49,6 +53,9 @@ class Teekkari:
         maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
         bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
 
+    def getKalanimi(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
+
     def getMoponimi(self, bot, update, args=''):
         kurkku = random.sample(self.vihanneet, 1)[0][0]
         mopo = random.sample(self.kulkuneuvot, 1)[0][0]
@@ -59,6 +66,9 @@ class Teekkari:
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
 
+    def getPizza(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
+
     def getNoppa(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
 
@@ -68,12 +78,27 @@ class Teekkari:
         sana = title.split(" |")[0]
         return sana
 
-    def getVitun(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+    def getSlango(self):
+        r = requests.get(self.slangopediaUrl)
+        url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
+        return str(url[-1].split('=')[-1].lower())
 
+    def getVitun(self, bot, update, args=''):
+        now = time.time()
+        if self.lastVitun + 60 < now:
+            self.lastVitun = now
+            bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+
+    def getVaalikone(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
+
+    def getHelveten(self, bot, update, args=''):
+        bot.sendMessage(chat_id=update.message.chat_id,
+            text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     def messageHandler(self, bot, update):
         msg = update.message
+        #print(msg)
         if msg.text is not None:
             if 'vituttaa' in msg.text.lower():
                 self.getVitutus(bot, update)
@@ -91,6 +116,8 @@ class Teekkari:
                 self.getNoppa(bot, update)
             elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
+            elif re.match(r'^helveten', msg.text.lower()):
+                self.getHelveten(bot, update)
             elif re.match(r'^/maitonimi', msg.text.lower()):
                 self.getMaitonimi(bot, update)
             elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
