@@ -10,6 +10,7 @@ class Teekkari:
         self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi, 'helveten' : self.getHelveten, 'pizza': self.getPizza, 'kalanimi': self.getKalanimi }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
+        self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
@@ -78,6 +79,12 @@ class Teekkari:
         sana = title.split(" |")[0]
         return sana
 
+    def getUrbaaniSelitys(self, word):
+        webpage = urllib.request.urlopen(self.urbaaniWordUrl + word + '/').read().decode("utf-8")
+        meaning = str(webpage).split('<meta name="description" content="')[1].split('">')[0]
+        meaning = meaning[meaning.find('.')+2:]
+        return meaning
+
     def getSlango(self):
         r = requests.get(self.slangopediaUrl)
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
@@ -88,6 +95,10 @@ class Teekkari:
         if self.lastVitun + 60 < now:
             self.lastVitun = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+
+    def getVitunSelitys(self, bot, update, args=''):
+        word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
+        bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
 
     def getVaalikone(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
@@ -116,6 +127,8 @@ class Teekkari:
                 self.getNoppa(bot, update)
             elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
+            elif re.match(r'^mikä vitun ', msg.text.lower()):
+                self.getVitunSelitys(bot, update)
             elif re.match(r'^helveten', msg.text.lower()):
                 self.getHelveten(bot, update)
             elif re.match(r'^/maitonimi', msg.text.lower()):
