@@ -98,6 +98,7 @@ class Teekkari:
 
     def getVitunSelitys(self, bot, update, args=''):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
+        word = re.sub(r"[^a-z\-]", '', word)
         bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
 
     def getVaalikone(self, bot, update, args=''):
