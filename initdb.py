@@ -63,5 +63,8 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Planetoidi('
         'nimi text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Linnut('
+        'nimi text)')
+
     conn.commit()
     conn.close()

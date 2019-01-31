@@ -27,7 +27,7 @@ fs = open('kaloja.txt', 'r')
 for line in fs.read().splitlines():
     #strline = str(line)
     c.execute("INSERT INTO Kalat(kala) values(?)", (line,))
-"""
+
 fs = open('maidot.txt', 'r')
 
 for line in fs.read().splitlines():
@@ -37,7 +37,6 @@ fs = open('nimet.txt', 'r')
 
 for line in fs.read().splitlines():
     c.execute("INSERT INTO Nimi(nimi) values(?)", (line,))
-"""
 
 fs = open('vihanneet.txt', 'r')
 
@@ -53,6 +52,11 @@ fs = open('planetoidit.txt', 'r')
 
 for line in fs.read().splitlines():
     c.execute("INSERT INTO Planetoidi(nimi) values(?)", (line,))
+"""
+fs = open('lintuslangi.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT INTO Linnut(nimi) values(?)", (line,))
 
 fs.close()
 

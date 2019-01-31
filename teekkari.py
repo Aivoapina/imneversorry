@@ -21,6 +21,7 @@ class Teekkari:
         self.vihanneet = db.readVihanneet()
         self.planetoidit = db.readPlanetoidit()
         self.kulkuneuvot = db.readKulkuneuvot()
+        self.linnut = db.readLinnut()
         self.lastVitun = 0
 
     def getCommands(self):
@@ -53,6 +54,12 @@ class Teekkari:
     def getMaitonimi(self, bot, update, args=''):
         maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
         bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
+
+    def getLintunimi(self, bot, update, args=''):
+        lintu = random.sample(self.linnut, 1)[0][0]
+        lintu = re.sub(r'nen$', 's', lintu)
+        lintuNimi = lintu + "-" + random.sample(self.nimet, 1)[0][0]
+        bot.sendMessage(chat_id=update.message.chat_id, text=lintuNimi)
 
     def getKalanimi(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
@@ -98,7 +105,7 @@ class Teekkari:
 
     def getVitunSelitys(self, bot, update, args=''):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
-        word = re.sub(r"[^a-z\-]", '', word)
+        word = re.sub(r"[^a-z0-9\-]", '', word)
         bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
 
     def getVaalikone(self, bot, update, args=''):
@@ -107,6 +114,13 @@ class Teekkari:
     def getHelveten(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id,
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
+
+    def getTEK(self, bot, update, args=''):
+        if random.randint(0, 12) == 0:
+            for word in update.message.text.lower().split(' '):
+                if re.match(r'.*tek.*', word) and word != 'tek':
+                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
+                    return
 
     def messageHandler(self, bot, update):
         msg = update.message
@@ -134,5 +148,9 @@ class Teekkari:
                 self.getHelveten(bot, update)
             elif re.match(r'^/maitonimi', msg.text.lower()):
                 self.getMaitonimi(bot, update)
+            elif re.match(r'^/lintuslanginimi', msg.text.lower()):
+                self.getLintunimi(bot, update)
             elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
                 self.getMoponimi(bot, update)
+            elif re.match(r'.*[tT]ek.*', msg.text):
+                self.getTEK(bot, update)
