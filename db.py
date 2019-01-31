@@ -133,3 +133,9 @@ def readKulkuneuvot():
         rows = cur.fetchall()
         return set(rows)
 
+def readLinnut():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Linnut')
+        rows = cur.fetchall()
+        return set(rows)
+
