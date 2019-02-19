@@ -23,8 +23,11 @@ class Valitsin:
         ]
         seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest() 
         rigged = random.Random(seed)
-
-        bot.sendMessage(chat_id=update.message.chat_id, text=rigged.sample([options.group(1), options.group(2)], 1)[0])
+        if random.randint(0, 19) == 0:
+            answers = ['Molemmat :D', 'Ei kumpaakaan >:(']
+            bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(answers, 1)[0])
+        else:
+            bot.sendMessage(chat_id=update.message.chat_id, text=rigged.sample([options.group(1), options.group(2)], 1)[0])
 
     def messageHandler(self, bot, update):
         msg = update.message
