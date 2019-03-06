@@ -4,10 +4,22 @@ import random
 import re
 import db
 import time
+import datetime
 
 class Teekkari:
     def __init__(self):
-        self.commands = { 'vituttaa': self.getVitutus, 'viisaus': self.getViisaus, 'hakemus': self.handleHakemus, 'pekkauotila': self.getVittuilu, 'diagnoosi': self.getDiagnoosi, 'maitonimi': self.getMaitonimi, 'helveten' : self.getHelveten, 'pizza': self.getPizza, 'kalanimi': self.getKalanimi }
+        self.commands = {
+            'vituttaa': self.getVitutus,
+            'viisaus': self.getViisaus,
+            'hakemus': self.handleHakemus,
+            'pekkauotila': self.getVittuilu,
+            'diagnoosi': self.getDiagnoosi,
+            'maitonimi': self.getMaitonimi,
+            'helveten' : self.getHelveten,
+            'pizza': self.getPizza,
+            'kalanimi': self.getKalanimi,
+            'addsikulla': self.banHammer,
+        }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
@@ -121,6 +133,11 @@ class Teekkari:
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
+
+    def banHammer(self, bot, update, args=''):
+        duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
+        print(duration)
+        bot.kickChatMember(update.message.chat.id, update.message.from_user.id, until_date=duration)
 
     def messageHandler(self, bot, update):
         msg = update.message
