@@ -69,4 +69,18 @@ for line in fs.read().splitlines():
 
 fs.close()
 
+fs = open('resources/sotilasarvot.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Arvonimet(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/sotilasnimet.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Sotilasnimet(nimi) values(?)", (line,))
+
+fs.close()
+
 conn.commit()

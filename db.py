@@ -139,3 +139,14 @@ def readLinnut():
         rows = cur.fetchall()
         return set(rows)
 
+def readSotilasarvot():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Arvonimet')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readSotilasnimet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Sotilasnimet')
+        rows = cur.fetchall()
+        return set(rows)
