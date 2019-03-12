@@ -19,6 +19,7 @@ class Teekkari:
             'pizza': self.getPizza,
             'kalanimi': self.getKalanimi,
             'addsikulla': self.banHammer,
+            'sotanimi': self.getSotanimi,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -34,6 +35,8 @@ class Teekkari:
         self.planetoidit = db.readPlanetoidit()
         self.kulkuneuvot = db.readKulkuneuvot()
         self.linnut = db.readLinnut()
+        self.sotilasarvot = db.readSotilasarvot()
+        self.sotilasnimet = db.readSotilasnimet()
         self.lastVitun = 0
 
     def getCommands(self):
@@ -82,6 +85,18 @@ class Teekkari:
         kuu = random.sample(self.planetoidit, 1)[0][0]
         mopoNimi = kurkku + ("", "-")[kurkku[-1:] == mopo[0] and mopo[0] in ('a', 'e', 'i', 'o', 'u', 'y', 'ä', 'ö')] + mopo + " eli " + kuu + ("", "-")[kuu[-1:] == 'e'] + 'eläin ' + kurkku + 'maasta'
         bot.sendMessage(chat_id=update.message.chat_id, text=mopoNimi)
+
+    def getSotanimi(self, bot, update, args=''):
+        arvo = random.sample(self.sotilasarvot, 1)[0][0]
+        nimi = random.sample(self.sotilasnimet, 1)[0][0]
+        if random.randint(0, 7) == 0:
+            if update.message.from_user:
+                if update.message.from_user.last_name:
+                    nimi = update.message.from_user.last_name
+                elif update.message.from_user.first_name:
+                    nimi = update.message.from_user.first_name
+        sotaNimi = arvo + ' ' + nimi
+        bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
 
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
@@ -169,5 +184,7 @@ class Teekkari:
                 self.getLintunimi(bot, update)
             elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
                 self.getMoponimi(bot, update)
+            elif re.match(r'^/sotanimi', msg.text.lower()):
+                self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
