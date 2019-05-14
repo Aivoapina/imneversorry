@@ -4,72 +4,77 @@ import threading
 
 import logging as log
 
+
 class Mainari:
-    def __init__(self, server, game_ops='', server_admins=''):
-        self.api_url = 'https://api.mcsrvstat.us/1/'
-        self.commands = { 'minecraft': self.getServerInfo }
+    def __init__(self, server, game_ops='', server_admins='', use_ip='False'):
+        self.api_url = 'https://api.mcsrvstat.us/2/'
+        self.commands = {'minecraft': self.getServerInfo}
         self.is_in_cooldown = False
         self.game_ops = self.parseNicks(game_ops)
         self.server = server
         self.server_admins = self.parseNicks(server_admins)
-
+        self.use_ip = self.parseUseIP(use_ip)
 
     def getCommands(self):
         return self.commands
 
-
     def getServerInfo(self, bot, update, args=''):
         if self.is_in_cooldown:
-            bot.sendMessage(chat_id=update.message.chat_id, text="Cool. Cool cool cool.")
+            bot.sendMessage(chat_id=update.message.chat_id,
+                            text="Cool. Cool cool cool.")
             return
-        
+
         # Set the cooldown to prevent API abuse and blocking of the bot
-        threading.Timer(45.0, self.resetInfoCooldown).start()
+        threading.Timer(60.0, self.resetInfoCooldown).start()
         self.is_in_cooldown = True
 
-        r = requests.get(self.api_url+ self.server)
+        r = requests.get(self.api_url + self.server)
         data = r.json()
 
         message_text = self.parseServerData(data)
-        bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text=message_text)
+        bot.sendMessage(chat_id=update.message.chat_id,
+                        parse_mode='Markdown', text=message_text)
 
-    
     def parseNicks(self, nicks):
         nick_list = nicks.split(',')
         nick_list = [nick.strip() for nick in nick_list]
         return nick_list
 
-
     def parseServerData(self, data):
+        server_is_offline = not 'online' in data
+
         # Data gathered if the server is offline
-        try:
-            server_is_offline = data['offline']
+        if server_is_offline:
             server_status_msg = 'OFFLINE'
 
         # Data gathered if the server is online
-        except:
-            server_is_offline = False
+        else:
             server_status_msg = 'Online'
             motd = data['motd']['raw'][0]
             players = data['players']['online']
             players_max = data['players']['max']
             version = data['version']
 
-            try:
-                player_list = data['players']['list']
-            except:
+            if 'players' in data:
+                if 'list' in data['players']:
+                    player_list = data['players']['list']
+            else:
                 player_list = []
-    
-            try:
-                plugins = data['plugins']['raw']
-            except:
+
+            if 'plugins' in data:
+                if 'raw' in data['plugins']:
+                    plugins = data['plugins']['raw']
+            else:
                 plugins = []
-        
-        # A precaution against errors if the server is using an IP instead
-        try:
+
+        # Show the IP or hostname based on what's available and what's wanted
+        if 'hostname' in data and not self.use_ip:
             hostname = data['hostname']
-        except:
-            hostname = data['ip']
+        else:
+            if self.use_ip:
+                hostname = data['ip']
+            else:
+                hostname = self.server
 
         # The resulting message is Markdown-formatted
         message_base = '*' + hostname + '*'
@@ -94,7 +99,8 @@ class Mainari:
                         message_extension += ', ' + plugin
 
             # Players
-            message_extension += '\nPelaajia: ' + str(players) + '/' + str(players_max)
+            message_extension += '\nPelaajia: ' + \
+                str(players) + '/' + str(players_max)
             first_player = True
             for player in player_list:
                 if first_player:
@@ -107,7 +113,7 @@ class Mainari:
                     message_extension += '@'
 
                 message_extension += '_' + player + '_'
-        
+
         # Berate the admins for bad maintenance
         else:
             message_extension += '\n\nMiksei kukaan admineista '
@@ -116,8 +122,12 @@ class Mainari:
             message_extension += 'tee mitään?!'
 
         return message_base + message_extension
-        
+
+    def parseUseIP(self, use_ip):
+        if use_ip == 'True':
+            return True
+        else:
+            return False
 
     def resetInfoCooldown(self):
         self.is_in_cooldown = False
-        
