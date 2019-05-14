@@ -96,3 +96,57 @@ def readDiagnoosit():
         cur.execute('SELECT diagnoosi from Diagnoosi')
         rows = cur.fetchall()
         return set(rows)
+
+def readMaidot():
+    with cursor() as cur:
+        cur.execute('SELECT maito from Maito')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readNimet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Nimi')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readKalat():
+    with cursor() as cur:
+        cur.execute('SELECT kala from Kalat')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readVihanneet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Vihannes')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readPlanetoidit():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Planetoidi')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readKulkuneuvot():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Kulkuneuvo')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readLinnut():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Linnut')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readSotilasarvot():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Arvonimet')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readSotilasnimet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Sotilasnimet')
+        rows = cur.fetchall()
+        return set(rows)
