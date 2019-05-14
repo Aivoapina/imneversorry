@@ -10,6 +10,7 @@ import teekkari
 import valitsin
 import oppija
 import quote
+import admintools
 import mainari
 
 # Add valid command line arguments
@@ -31,9 +32,10 @@ vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 quo = quote.Quote()
+adm = admintools.AdminTools()
 mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']['server_admins'], cfg['MINECRAFT']['use_ip'])
 
-objects = [rir, vit, vai, opi, quo, mc]
+objects = [adm, rir, vit, vai, opi, quo, mc]
 
 def allMessages(bot, update):
     for obj in objects:

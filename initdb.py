@@ -45,5 +45,32 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Diagnoosi('
         'diagnoosi text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Maito('
+        'maito text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Nimi('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Kalat('
+        'kala text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Vihannes('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Kulkuneuvo('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Planetoidi('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Linnut('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Arvonimet('
+        'nimi text)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Sotilasnimet('
+        'nimi text)')
+
     conn.commit()
     conn.close()
