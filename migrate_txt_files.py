@@ -6,57 +6,80 @@ initdb.initdb()
 conn = sq.connect('bot.db')
 c = conn.cursor()
 
-"""
-fs = open('viisaudet.txt', 'r')
+fs = open('resources/icd.txt', 'r')
 
 for line in fs.read().splitlines():
-    c.execute("INSERT INTO Viisaus(viisaus) values(?)", (line,))
+    c.execute("INSERT OR IGNORE INTO Diagnoosi(diagnoosi) values(?)", (line,))
 
 fs.close()
 
-fs = open('rips.txt', 'r')
+fs = open('resources/viisaudet.txt', 'r')
 
 for line in fs.read().splitlines():
-    sline = line.split(';')
-    c.execute("INSERT INTO Rip(type, rip) values(?, ?)", (sline[0], ';'.join(sline[1:])))
+    c.execute("INSERT OR IGNORE INTO Viisaus(viisaus) values(?)", (line,))
 
 fs.close()
 
-fs = open('kaloja.txt', 'r')
+fs = open('resources/kaloja.txt', 'r')
 
 for line in fs.read().splitlines():
-    #strline = str(line)
-    c.execute("INSERT INTO Kalat(kala) values(?)", (line,))
+    c.execute("INSERT OR IGNORE INTO Kalat(kala) values(?)", (line,))
 
-fs = open('maidot.txt', 'r')
+fs.close()
 
-for line in fs.read().splitlines():
-    c.execute("INSERT INTO Maito(maito) values(?)", (line,))
-
-fs = open('nimet.txt', 'r')
+fs = open('resources/maidot.txt', 'r')
 
 for line in fs.read().splitlines():
-    c.execute("INSERT INTO Nimi(nimi) values(?)", (line,))
+    c.execute("INSERT OR IGNORE INTO Maito(maito) values(?)", (line,))
 
-fs = open('vihanneet.txt', 'r')
+fs.close()
 
-for line in fs.read().splitlines():
-    c.execute("INSERT INTO Vihannes(nimi) values(?)", (line,))
-
-fs = open('kulkuneuvot.txt', 'r')
+fs = open('resources/nimet.txt', 'r')
 
 for line in fs.read().splitlines():
-    c.execute("INSERT INTO Kulkuneuvo(nimi) values(?)", (line,))
+    c.execute("INSERT OR IGNORE INTO Nimi(nimi) values(?)", (line,))
 
-fs = open('planetoidit.txt', 'r')
+fs.close()
 
-for line in fs.read().splitlines():
-    c.execute("INSERT INTO Planetoidi(nimi) values(?)", (line,))
-"""
-fs = open('lintuslangi.txt', 'r')
+fs = open('resources/vihanneet.txt', 'r')
 
 for line in fs.read().splitlines():
-    c.execute("INSERT INTO Linnut(nimi) values(?)", (line,))
+    c.execute("INSERT OR IGNORE INTO Vihannes(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/kulkuneuvot.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Kulkuneuvo(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/planetoidit.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Planetoidi(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/lintuslangi.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Linnut(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/sotilasarvot.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Arvonimet(nimi) values(?)", (line,))
+
+fs.close()
+
+fs = open('resources/sotilasnimet.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Sotilasnimet(nimi) values(?)", (line,))
 
 fs.close()
 
