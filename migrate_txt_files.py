@@ -83,4 +83,11 @@ for line in fs.read().splitlines():
 
 fs.close()
 
+fs = open('resources/ennustus.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Ennustus(rivi) values(?)", (line,))
+
+fs.close()
+
 conn.commit()

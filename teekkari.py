@@ -37,6 +37,7 @@ class Teekkari:
         self.linnut = db.readLinnut()
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
+        self.ennustukset = db.readEnnustukset()
         self.lastVitun = {}
 
     def getCommands(self):
@@ -153,6 +154,12 @@ class Teekkari:
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
 
+    def getEnnustus(self, bot, update, args=''):
+        n = random.randint(1, 4)
+        ennustus = '. '.join(random.sample(self.ennustukset, n))+'.'
+        ennustus = ennustus.replace('?.', '.')
+        bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
+
     def banHammer(self, bot, update, args=''):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -192,3 +199,5 @@ class Teekkari:
                 self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
+            elif re.match(r'^ennustus ', msg.text.lower()):
+                self.getEnnustus(bot, update)
