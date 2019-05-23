@@ -130,12 +130,12 @@ class Teekkari:
         return str(url[-1].split('=')[-1].lower())
 
     def getVitun(self, bot, update, args=''):
-        now = time.time()
+        now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         if userId not in self.lastVitun:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-        elif self.lastVitun[userId] + 86400 < now:
+        elif self.lastVitun[userId] != now:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
