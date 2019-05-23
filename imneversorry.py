@@ -1,6 +1,8 @@
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from configparser import ConfigParser
+from argparse import ArgumentParser
 import importlib
+import logging
 
 import initdb
 import rips
@@ -8,6 +10,17 @@ import teekkari
 import valitsin
 import oppija
 import quote
+import admintools
+import mainari
+
+# Add valid command line arguments
+arg_parser = ArgumentParser()
+arg_parser.add_argument('--verbose', help='Enable verbose logging for debugging.', action='store_true')
+args = arg_parser.parse_args()
+
+if args.verbose:
+    logging.basicConfig(format="%(levelname)s: %(message)s", level=logging.DEBUG)
+    logging.info('Verbose ĺogging enabled')
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -19,8 +32,10 @@ vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 quo = quote.Quote()
+adm = admintools.AdminTools()
+mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']['server_admins'], cfg['MINECRAFT']['use_ip'])
 
-objects = [rir, vit, vai, opi, quo]
+objects = [adm, rir, vit, vai, opi, quo, mc]
 
 def allMessages(bot, update):
     for obj in objects:
