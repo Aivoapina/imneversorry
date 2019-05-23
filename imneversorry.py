@@ -8,7 +8,6 @@ import teekkari
 import valitsin
 import oppija
 import quote
-#import admintools
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -20,7 +19,6 @@ vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 quo = quote.Quote()
-#adm = admintools.AdminTools()
 
 objects = [rir, vit, vai, opi, quo]
 
