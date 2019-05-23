@@ -150,3 +150,9 @@ def readSotilasnimet():
         cur.execute('SELECT nimi from Sotilasnimet')
         rows = cur.fetchall()
         return set(rows)
+
+def readEnnustukset():
+    with cursor() as cur:
+        cur.execute('SELECT rivi from Ennustus')
+        rows = cur.fetchall()
+        return set(rows)
