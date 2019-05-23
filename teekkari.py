@@ -5,6 +5,10 @@ import re
 import db
 import time
 import datetime
+import json
+import hashlib
+import emoji
+from emoji import unicode_codes
 
 class Teekkari:
     def __init__(self):
@@ -155,9 +159,32 @@ class Teekkari:
                     return
 
     def getEnnustus(self, bot, update, args=''):
-        n = random.randint(1, 4)
-        ennustus = '. '.join(random.sample(self.ennustukset, n))+'.'
+        now = datetime.datetime.now()
+        data = [
+            update.message.from_user.id,
+            now.day,
+            now.month,
+            now.year
+        ]
+        seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest()
+        rigged = random.Random(seed)
+        ennustus = ""
+        n = rigged.randint(0, 2)
+        for x in range(n):
+            r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+            ennustus += emoji.emojize(r)
+        n = rigged.randint(1, 4)
+        for x in range(n):
+            ennustus += rigged.sample(self.ennustukset, 1)[0][0]+". "
+            m = rigged.randint(0, 2)
+            for x in range(m):
+                r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+                ennustus += emoji.emojize(r)
         ennustus = ennustus.replace('?.', '.')
+        n = rigged.randint(1, 3)
+        for x in range(n):
+            r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+            ennustus += emoji.emojize(r)
         bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
 
     def banHammer(self, bot, update, args=''):
@@ -179,6 +206,8 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
+            elif 'horoskoop' in msg.text.lower():
+                self.getEnnustus(bot, update)
             elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(bot, update)
             elif re.match(r'^noppa', msg.text.lower()):
@@ -199,5 +228,3 @@ class Teekkari:
                 self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
-            elif re.match(r'^ennustus ', msg.text.lower()):
-                self.getEnnustus(bot, update)

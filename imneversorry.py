@@ -8,7 +8,7 @@ import teekkari
 import valitsin
 import oppija
 import quote
-import admintools
+#import admintools
 
 cfg = ConfigParser()
 cfg.read('env.cfg')
@@ -20,9 +20,9 @@ vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 quo = quote.Quote()
-adm = admintools.AdminTools()
+#adm = admintools.AdminTools()
 
-objects = [adm, rir, vit, vai, opi, quo]
+objects = [rir, vit, vai, opi, quo]
 
 def allMessages(bot, update):
     for obj in objects:
