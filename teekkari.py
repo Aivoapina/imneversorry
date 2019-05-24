@@ -169,22 +169,16 @@ class Teekkari:
         seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest()
         rigged = random.Random(seed)
         ennustus = ""
-        n = rigged.randint(0, 2)
-        for x in range(n):
+
+        for x in range(2)
+            ennustus += rigged.sample(self.ennustukset, 1)[0][0] + ". "
+
+        ennustus.replace('?.', '?')
+
+        for x in range(3):
             r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
             ennustus += emoji.emojize(r)
-        n = rigged.randint(1, 4)
-        for x in range(n):
-            ennustus += rigged.sample(self.ennustukset, 1)[0][0]+". "
-            m = rigged.randint(0, 2)
-            for x in range(m):
-                r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
-                ennustus += emoji.emojize(r)
-        ennustus = ennustus.replace('?.', '.')
-        n = rigged.randint(1, 3)
-        for x in range(n):
-            r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
-            ennustus += emoji.emojize(r)
+
         bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
 
     def banHammer(self, bot, update, args=''):
