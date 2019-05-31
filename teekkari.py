@@ -158,6 +158,10 @@ class Teekkari:
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
 
+    def getABB(self, bot, update, args=''):
+        stiksut = ["CAADBAADTAADiR7LDefZ-ip0q9ZtAg","CAADBAADNgADiR7LDWx2U5l4lHtZAg", "CAADBAADSwADiR7LDctHDtCmX288Ag","CAADBAADKgADiR7LDSt7kRS0nxjVAg"]
+        bot.sendSticker(chat_id=update.message.chat_id, sticker=random.choice(stiksut))
+
     def getEnnustus(self, bot, update, args=''):
         now = datetime.datetime.now()
         data = [
@@ -228,3 +232,5 @@ class Teekkari:
                 self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
+            elif 'abb' in msg.text.lower():
+                self.getABB(bot, update)
