@@ -80,7 +80,7 @@ def insertQuote(quote, quotee, channel, creator):
 def findQuotes(channel, quotee=None):
     with cursor() as cur:
         if quotee is not None:
-            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=? AND quotee=?', (channel, quotee))
+            cur.execute('SELECT quote, quotee FROM Quote WHERE channel=? AND upper(quotee) = upper(?)', (channel, quotee))
             return cur.fetchall()
         else:
             cur.execute('SELECT quote, quotee FROM Quote WHERE channel=?', (channel,))
@@ -148,5 +148,11 @@ def readSotilasarvot():
 def readSotilasnimet():
     with cursor() as cur:
         cur.execute('SELECT nimi from Sotilasnimet')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readEnnustukset():
+    with cursor() as cur:
+        cur.execute('SELECT rivi from Ennustus')
         rows = cur.fetchall()
         return set(rows)

@@ -5,6 +5,10 @@ import re
 import db
 import time
 import datetime
+import json
+import hashlib
+import emoji
+from emoji import unicode_codes
 
 class Teekkari:
     def __init__(self):
@@ -37,6 +41,7 @@ class Teekkari:
         self.linnut = db.readLinnut()
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
+        self.ennustukset = db.readEnnustukset()
         self.lastVitun = {}
 
     def getCommands(self):
@@ -125,12 +130,12 @@ class Teekkari:
         return str(url[-1].split('=')[-1].lower())
 
     def getVitun(self, bot, update, args=''):
-        now = time.time()
+        now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         if userId not in self.lastVitun:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-        elif self.lastVitun[userId] + 86400 < now:
+        elif self.lastVitun[userId] != now:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
@@ -153,6 +158,35 @@ class Teekkari:
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
 
+    def getEnnustus(self, bot, update, args=''):
+        now = datetime.datetime.now()
+        data = [
+            update.message.from_user.id,
+            now.day,
+            now.month,
+            now.year
+        ]
+        seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest()
+        rigged = random.Random(seed)
+        ennustus = ""
+        n = rigged.randint(0, 2)
+        for x in range(n):
+            r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+            ennustus += emoji.emojize(r)
+        n = rigged.randint(1, 4)
+        for x in range(n):
+            ennustus += rigged.sample(self.ennustukset, 1)[0][0]+". "
+            m = rigged.randint(0, 2)
+            for x in range(m):
+                r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+                ennustus += emoji.emojize(r)
+        ennustus = ennustus.replace('?.', '.')
+        n = rigged.randint(1, 3)
+        for x in range(n):
+            r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
+            ennustus += emoji.emojize(r)
+        bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
+
     def banHammer(self, bot, update, args=''):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -172,6 +206,8 @@ class Teekkari:
                 self.handleHakemus(bot, update)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(bot, update)
+            elif 'horoskoop' in msg.text.lower():
+                self.getEnnustus(bot, update)
             elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(bot, update)
             elif re.match(r'^noppa', msg.text.lower()):
