@@ -56,8 +56,11 @@ class Mainari:
             version = data['version']
 
             if 'players' in data:
+                player_list = []
+
                 if 'list' in data['players']:
                     player_list = data['players']['list']
+                    
             else:
                 player_list = []
 
@@ -102,6 +105,7 @@ class Mainari:
             message_extension += '\nPelaajia: ' + \
                 str(players) + '/' + str(players_max)
             first_player = True
+
             for player in player_list:
                 if first_player:
                     first_player = False
