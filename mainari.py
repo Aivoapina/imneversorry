@@ -43,6 +43,12 @@ class Mainari:
     def parseServerData(self, data):
         server_is_offline = not 'online' in data
 
+        # Due to API changes the server can also be offline if it has
+        # the 'online' key with a value of False
+        if 'online' in data:
+            if data['online'] == False:
+                server_is_offline = True
+
         # Data gathered if the server is offline
         if server_is_offline:
             server_status_msg = 'OFFLINE'
@@ -50,7 +56,7 @@ class Mainari:
         # Data gathered if the server is online
         else:
             server_status_msg = 'Online'
-            motd = data['motd']['raw'][0]
+            motd = data['motd']['clean'][0]
             players = data['players']['online']
             players_max = data['players']['max']
             version = data['version']
