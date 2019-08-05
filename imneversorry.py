@@ -42,8 +42,8 @@ def allMessages(bot, update, job_queue):
         obj.messageHandler(bot, update)
 
 def pongTime(bot, job):
-    if random.randint(0, 80000) == 0:
-        job.context.message.reply_text("Beerpong time!")
+    if random.randint(0, 86400) == 0:
+        job.context.message.reply_text("BEERPONG TIME!")
 
 def main():
     updater = Updater(cfg['TELEGRAM']['token'])
