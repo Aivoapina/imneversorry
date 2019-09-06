@@ -6,7 +6,7 @@ import hashlib
 
 class Valitsin:
     def __init__(self):
-        self.commands = { 'x vai y': self.makeDecision }
+        self.commands = {}
 
     def getCommands(self):
         return self.commands
@@ -21,7 +21,7 @@ class Valitsin:
             options.group(1),
             options.group(2)
         ]
-        seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest() 
+        seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest()
         rigged = random.Random(seed)
         if random.randint(0, 49) == 0:
             answers = ['Molemmat :D', 'Ei kumpaakaan >:(']
@@ -32,6 +32,6 @@ class Valitsin:
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:
-            options = re.match(r"(^\S+) vai (\S+)$", msg.text.lower()) 
+            options = re.match(r"(^\S+) vai (\S+)$", msg.text.lower())
             if options:
                 self.makeDecision(bot, update, options)
