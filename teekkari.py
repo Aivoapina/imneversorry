@@ -59,9 +59,9 @@ class Teekkari:
 
     def handleHakemus(self, bot, update, args=''):
         if random.randint(0, 9) == 0:
-            bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
+            bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
+            bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
 
     def getViisaus(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
