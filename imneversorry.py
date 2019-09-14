@@ -3,7 +3,6 @@ from configparser import ConfigParser
 from argparse import ArgumentParser
 import importlib
 import logging
-import random
 
 import initdb
 import rips
@@ -36,14 +35,9 @@ mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], c
 
 objects = [rir, vit, vai, opi, quo, mc]
 
-def allMessages(bot, update, job_queue):
-    job = job_queue.run_repeating(pongTime, 1, context=update)
+def allMessages(bot, update):
     for obj in objects:
         obj.messageHandler(bot, update)
-
-def pongTime(bot, job):
-    if random.randint(0, 86400) == 0:
-        job.context.message.reply_text("BEERPONG TIME!")
 
 def main():
     updater = Updater(cfg['TELEGRAM']['token'])
@@ -51,7 +45,7 @@ def main():
         for key in list(obj.getCommands().keys()):
             updater.dispatcher.add_handler(CommandHandler(key, obj.getCommands()[key], pass_args=True))
 
-    updater.dispatcher.add_handler(MessageHandler(Filters.all, allMessages, pass_job_queue=True))
+    updater.dispatcher.add_handler(MessageHandler(Filters.all, allMessages))
 
     updater.start_polling()
     updater.idle()
