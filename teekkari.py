@@ -161,6 +161,13 @@ class Teekkari:
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
+                
+    def getTUNI(self, bot, update, args=''):
+        if random.randint(0, 5) == 0:
+            for word in update.message.text.lower().split(' '):
+                if re.match(r'.*tuni.*', word) and word != 'tuni':
+                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
+                    return
 
     def getEnnustus(self, bot, update, args=''):
         now = datetime.datetime.now()
@@ -254,3 +261,5 @@ class Teekkari:
                 self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
+            elif re.match(r'.*[tT]uni.*', msg.text):
+                self.getTUNI(bot, update)
