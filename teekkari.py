@@ -29,7 +29,7 @@ class Teekkari:
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
-        self.uutineUrl = 'https://www.is.fi/tuoreimmat/'
+        self.uutineUrl = 'https://www.is.fi/api/laneitems/392841/multilist'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -161,7 +161,7 @@ class Teekkari:
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
-                
+
     def getTUNI(self, bot, update, args=''):
         if random.randint(0, 5) == 0:
             for word in update.message.text.lower().split(' '):
@@ -202,13 +202,12 @@ class Teekkari:
         now = time.time()
         if self.lastUutineUpdate + 3600 < now:
             self.lastUutineUpdate = now
-            webpage = urllib.request.urlopen(self.uutineUrl).read().decode("utf-8")
-            uutine = str(webpage)
+            req = requests.get(self.uutineUrl)
+            uutineet = req.json()[0]
             self.uutineet = [ [], [] ]
-            for otsikko in uutine.split('<li class="list-item">'):
-                otsikko = otsikko.replace('\n', '').replace('\r', '')
-                if '<div class="content">' in otsikko:
-                    otsikko = otsikko.split('<div class="content">')[1].split('</div>')[0]
+            for uutine in uutineet:
+                if 'title' in uutine:
+                    otsikko = uutine['title']
                     if ' – ' in otsikko:
                         otsikko = otsikko.split(' – ')
                         self.uutineet[0].append(otsikko[0])

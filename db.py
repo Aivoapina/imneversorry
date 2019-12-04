@@ -156,3 +156,9 @@ def readEnnustukset():
         cur.execute('SELECT rivi from Ennustus')
         rows = cur.fetchall()
         return set(rows)
+
+def readDefinitions():
+    with cursor() as cur:
+        cur.execute('SELECT definition, keyword from Oppi')
+        rows = cur.fetchall()
+        return rows
