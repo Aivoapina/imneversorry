@@ -102,7 +102,7 @@ class Oppija:
             self.correctOppi[chat_id] = None
 
         if self.correctOppi[chat_id] is None:
-            definitions = db.readDefinitions()
+            definitions = db.readDefinitions(chat_id)
             self.correctOppi[chat_id] = random.choice(definitions)
             message = 'Arvaa mikä oppi: \"{}\"?'.format(self.correctOppi[chat_id][0])
             bot.sendMessage(chat_id=chat_id, text=message)

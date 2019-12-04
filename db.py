@@ -157,8 +157,8 @@ def readEnnustukset():
         rows = cur.fetchall()
         return set(rows)
 
-def readDefinitions():
+def readDefinitions(channel):
     with cursor() as cur:
-        cur.execute('SELECT definition, keyword from Oppi')
+        cur.execute('SELECT definition, keyword from Oppi where channel=?', (channel, ))
         rows = cur.fetchall()
         return rows
