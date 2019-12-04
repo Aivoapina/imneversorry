@@ -59,9 +59,15 @@ class Teekkari:
 
     def handleHakemus(self, bot, update, args=''):
         if random.randint(0, 9) == 0:
-            bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+            if random.randint(0, 200) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
         else:
-            bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+            if random.randint(0, 1000) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
     def getViisaus(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
@@ -156,7 +162,7 @@ class Teekkari:
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     def getTEK(self, bot, update, args=''):
-        if random.randint(0, 12) == 0:
+        if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
