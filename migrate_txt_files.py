@@ -90,4 +90,11 @@ for line in fs.read().splitlines():
 
 fs.close()
 
+fs = open('resources/nakutukset.txt', 'r')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Nakutukset(nakutus) values(?)", (line,))
+
+fs.close()
+
 conn.commit()
