@@ -43,6 +43,7 @@ class Teekkari:
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
         self.ennustukset = db.readEnnustukset()
+        self.nakutukset = db.readNakutukset()
         self.lastVitun = {}
         self.nextUutine = 0
         self.lastUutineUpdate = 0
@@ -112,6 +113,12 @@ class Teekkari:
                     nimi = update.message.from_user.first_name
         sotaNimi = arvo + ' ' + nimi
         bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
+
+    def getNakuttaa(self, bot, update, args=''):
+        if random.randint(0, 100) == 0:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
+        else:
+            bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
 
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
@@ -268,3 +275,5 @@ class Teekkari:
                 self.getTEK(bot, update)
             elif re.match(r'.*[tT]uni.*', msg.text):
                 self.getTUNI(bot, update)
+            elif 'nakuttaa' in msg.text.lower():
+                self.getNakuttaa(bot, update)
