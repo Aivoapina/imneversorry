@@ -24,12 +24,14 @@ class Teekkari:
             'kalanimi': self.getKalanimi,
             'addsikulla': self.banHammer,
             'sotanimi': self.getSotanimi,
+            'sukunimi': self.getSukunimi,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
         self.uutineUrl = 'https://www.is.fi/api/laneitems/392841/multilist'
+        self.sukunimiUrl = 'https://fi.wiktionary.org/wiki/Toiminnot:Satunnainen_kohde_luokasta/Luokka:Suomen_kielen_sukunimet'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -77,6 +79,12 @@ class Teekkari:
         r = requests.get(self.vituttaaUrl)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
+        bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+
+    def getSukunimi(self, bot, update, args=''):
+        r = requests.get(self.sukunimiUrl)
+        url = urllib.parse.unquote_plus(r.url).split('/')
+        vitutus = url[len(url)-1].replace('_', ' ')
         bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
     def getDiagnoosi(self, bot, update, args=''):
@@ -271,6 +279,8 @@ class Teekkari:
                 self.getMoponimi(bot, update)
             elif re.match(r'^/sotanimi', msg.text.lower()):
                 self.getSotanimi(bot, update)
+            elif re.match(r'^/sukunimi', msg.text.lower()):
+                self.getSukunimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
             elif re.match(r'.*[tT]uni.*', msg.text):
