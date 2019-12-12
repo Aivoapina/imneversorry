@@ -156,3 +156,15 @@ def readEnnustukset():
         cur.execute('SELECT rivi from Ennustus')
         rows = cur.fetchall()
         return set(rows)
+
+def readNakutukset():
+    with cursor() as cur:
+        cur.execute('SELECT nakutus from Nakutukset')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readDefinitions(channel):
+    with cursor() as cur:
+        cur.execute('SELECT definition, keyword from Oppi where channel=?', (channel, ))
+        rows = cur.fetchall()
+        return rows

@@ -29,7 +29,7 @@ class Teekkari:
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
-        self.uutineUrl = 'https://www.is.fi/tuoreimmat/'
+        self.uutineUrl = 'https://www.is.fi/api/laneitems/392841/multilist'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -43,6 +43,7 @@ class Teekkari:
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
         self.ennustukset = db.readEnnustukset()
+        self.nakutukset = db.readNakutukset()
         self.lastVitun = {}
         self.nextUutine = 0
         self.lastUutineUpdate = 0
@@ -59,9 +60,15 @@ class Teekkari:
 
     def handleHakemus(self, bot, update, args=''):
         if random.randint(0, 9) == 0:
-            bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
+            if random.randint(0, 200) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
+            if random.randint(0, 1000) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
     def getViisaus(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
@@ -107,6 +114,12 @@ class Teekkari:
         sotaNimi = arvo + ' ' + nimi
         bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
 
+    def getNakuttaa(self, bot, update, args=''):
+        if random.randint(0, 100) == 0:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
+        else:
+            bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
+
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
 
@@ -134,12 +147,12 @@ class Teekkari:
         return str(url[-1].split('=')[-1].lower())
 
     def getVitun(self, bot, update, args=''):
-        now = time.time()
+        now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         if userId not in self.lastVitun:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-        elif self.lastVitun[userId] + 86400 < now:
+        elif self.lastVitun[userId] != now:
             self.lastVitun[userId] = now
             bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
@@ -156,10 +169,17 @@ class Teekkari:
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     def getTEK(self, bot, update, args=''):
-        if random.randint(0, 12) == 0:
+        if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
+                    return
+
+    def getTUNI(self, bot, update, args=''):
+        if random.randint(0, 5) == 0:
+            for word in update.message.text.lower().split(' '):
+                if re.match(r'.*tuni.*', word) and word != 'tuni':
+                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
                     return
 
     def getEnnustus(self, bot, update, args=''):
@@ -195,13 +215,12 @@ class Teekkari:
         now = time.time()
         if self.lastUutineUpdate + 3600 < now:
             self.lastUutineUpdate = now
-            webpage = urllib.request.urlopen(self.uutineUrl).read().decode("utf-8")
-            uutine = str(webpage)
+            req = requests.get(self.uutineUrl)
+            uutineet = req.json()[0]
             self.uutineet = [ [], [] ]
-            for otsikko in uutine.split('<li class="list-item">'):
-                otsikko = otsikko.replace('\n', '').replace('\r', '')
-                if '<div class="content">' in otsikko:
-                    otsikko = otsikko.split('<div class="content">')[1].split('</div>')[0]
+            for uutine in uutineet:
+                if 'title' in uutine:
+                    otsikko = uutine['title']
                     if ' – ' in otsikko:
                         otsikko = otsikko.split(' – ')
                         self.uutineet[0].append(otsikko[0])
@@ -254,3 +273,7 @@ class Teekkari:
                 self.getSotanimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
+            elif re.match(r'.*[tT]uni.*', msg.text):
+                self.getTUNI(bot, update)
+            elif 'nakuttaa' in msg.text.lower():
+                self.getNakuttaa(bot, update)

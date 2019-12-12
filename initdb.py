@@ -75,5 +75,8 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Ennustus('
         'rivi text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Nakutukset('
+        'nakutus text)')
+
     conn.commit()
     conn.close()
