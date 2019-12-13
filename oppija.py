@@ -2,7 +2,7 @@ import re
 import db
 import random
 import operator
-from utils import calculateCorrectChars, oppisWithSameText
+from utils import oppisWithSameText
 
 class Oppija:
     def __init__(self):
