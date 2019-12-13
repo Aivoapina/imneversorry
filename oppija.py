@@ -2,6 +2,7 @@ import re
 import db
 import random
 import operator
+from utils import oppisWithSameText
 
 class Oppija:
     def __init__(self):
@@ -103,7 +104,10 @@ class Oppija:
 
         if self.correctOppi[chat_id] is None:
             definitions = db.readDefinitions(chat_id)
-            self.correctOppi[chat_id] = random.choice(definitions)
+            
+            correctOppi = random.choice(definitions)
+            self.correctOppi[chat_id] = oppisWithSameText(definitions, correctOppi[0])
+
             message = 'Arvaa mikä oppi: \"{}\"?'.format(self.correctOppi[chat_id][0])
             bot.sendMessage(chat_id=chat_id, text=message)
         else:
@@ -117,7 +121,7 @@ class Oppija:
         if len(args) < 1:
             return
         elif self.correctOppi[chat_id] is not None:
-            if args[0] == self.correctOppi[chat_id][1]:
+            if args[0].lower() in self.correctOppi[chat_id][1]:
                 self.correctOppi[chat_id] = None
                 bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
 
@@ -149,3 +153,4 @@ class Oppija:
                     521366901555324942823356189990151533))(update), text=((lambda _, __: _(_, __))(
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
                     random.sample([3041605, 779117898, 17466, 272452313416, 7022364615740061032, 2360793474633670572049331836447094], 1)[0])))
+
