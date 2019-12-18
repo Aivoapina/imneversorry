@@ -285,5 +285,5 @@ class Teekkari:
                 self.getTEK(bot, update)
             elif re.match(r'.*[tT]uni.*', msg.text):
                 self.getTUNI(bot, update)
-            elif 'nakuttaa' in msg.text.lower():
+            elif 'nakuttaa' in msg.text.lower() or 'CAADBAADMQADsxUiC1dIx__vVyK5FgQ' == msg.sticker.file_id:
                 self.getNakuttaa(bot, update)
