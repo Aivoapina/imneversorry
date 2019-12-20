@@ -69,6 +69,8 @@ class Teekkari:
         else:
             if random.randint(0, 1000) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+            elif random.randint(0, 600) == 0:
+                bot.sendMessage(chat_id=update.message.chat_id, text='TAPAN KAIKKI')
             else:
                 bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
