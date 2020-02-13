@@ -6,14 +6,15 @@ import logging as log
 
 
 class Mainari:
-    def __init__(self, server, game_ops='', server_admins='', use_ip='False'):
+    def __init__(self, server, game_ops='', server_admins='', use_ip=False, use_hostname=True):
         self.api_url = 'https://api.mcsrvstat.us/2/'
         self.commands = {'minecraft': self.getServerInfo}
         self.is_in_cooldown = False
         self.game_ops = self.parseNicks(game_ops)
         self.server = server
         self.server_admins = self.parseNicks(server_admins)
-        self.use_ip = self.parseUseIP(use_ip)
+        self.use_ip = use_ip
+        self.use_hostname = use_hostname
 
     def getCommands(self):
         return self.commands
@@ -77,7 +78,7 @@ class Mainari:
                 plugins = []
 
         # Show the IP or hostname based on what's available and what's wanted
-        if 'hostname' in data and not self.use_ip:
+        if 'hostname' in data and not self.use_ip and self.use_hostname:
             hostname = data['hostname']
         else:
             if self.use_ip:
@@ -132,12 +133,6 @@ class Mainari:
             message_extension += 'tee mitään?!'
 
         return message_base + message_extension
-
-    def parseUseIP(self, use_ip):
-        if use_ip == 'True':
-            return True
-        else:
-            return False
 
     def resetInfoCooldown(self):
         self.is_in_cooldown = False
