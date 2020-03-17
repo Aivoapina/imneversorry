@@ -61,7 +61,11 @@ class Teekkari:
             bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
     def handleHakemus(self, bot, update, args=''):
-        if random.randint(0, 9) == 0:
+        # Shancial, [16.03.20 14:27]
+        # hakemus nerffiä zyrkin hakemuksiin
+        # Imneversorry, [16.03.20 14:27]
+        # hyy-vä
+        if random.randint(0, 9) == 0 and (update.message.from_user.id != 153013548 or random.randint(0, 3) == 0):
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
             else:
