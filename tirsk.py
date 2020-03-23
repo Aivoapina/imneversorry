@@ -15,6 +15,5 @@ class Tirsk:
         bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
 
     def messageHandler(self, bot, update):
-        msg = update.message
         if self.isTirsk():
             self.sendTirsk(bot, update)
