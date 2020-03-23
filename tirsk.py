@@ -9,8 +9,6 @@ class Tirsk:
 
     def getCommands(self):
         return dict()
-    def tirskTime(self):
-        return random.randint(0, self.tirsk_prob) == 0
 
     def sendTirsk(self, bot, update):
         chat_id = update.message.chat.id
