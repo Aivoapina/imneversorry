@@ -168,3 +168,21 @@ def readDefinitions(channel):
         cur.execute('SELECT definition, keyword from Oppi where channel=?', (channel, ))
         rows = cur.fetchall()
         return rows
+
+def upsertTag(tag, target, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT OR REPLACE INTO Tagit values(?, ?, ?, ?, ?)',
+        (tag, target, channel, creator, date))
+
+def findTagged(tag, channel):
+    with cursor() as cur:
+        cur.execute('SELECT target FROM Tagit WHERE tag=? and channel=?', (tag, channel))
+        rows = cur.fetchall()
+        return rows
+
+def findTargetTags(target, channel):
+    with cursor() as cur:
+        cur.execute('SELECT tag FROM Tagit WHERE target=? and channel=?', (target, channel))
+        rows = cur.fetchall()
+        return rows

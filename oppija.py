@@ -104,7 +104,7 @@ class Oppija:
 
         if self.correctOppi[chat_id] is None:
             definitions = db.readDefinitions(chat_id)
-            
+
             correctOppi = random.choice(definitions)
             self.correctOppi[chat_id] = oppisWithSameText(definitions, correctOppi[0])
 
