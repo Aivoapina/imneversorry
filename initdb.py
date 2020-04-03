@@ -78,5 +78,13 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Nakutukset('
         'nakutus text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Tagit('
+        'tag text not null,'
+        'target text not null,'
+        'channel integer not null,'
+        'creator text,'
+        'created date,'
+        'primary key(tag, channel, target))')
+
     conn.commit()
     conn.close()
