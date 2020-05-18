@@ -210,16 +210,19 @@ def __getSport(cur, table, nick, earliest_date):
                 'INNER JOIN KilometriNikit nick '
                 'ON event.uid = nick.id AND nick.name = ? AND event.date >= ?' %
                 table)
-    params = [nick, earliest_date]
+    params = (nick, earliest_date)
 
     cur.execute(query, params)
     return cur.fetchall()
 
 def __getSportTopN(cur, table, earliest_date, limit):
-
-    if (limit is not None):
-        query += " LIMIT ?"
-        params.append(limit)
+    query = ('SELECT name, km from ('
+                'SELECT nick.name AS name, SUM(event.km) AS km FROM %s AS event '
+                'INNER JOIN KilometriNikit AS nick ON nick.id = event.uid AND event.date >= ? '
+                'GROUP BY nick.id) '
+             'ORDER BY km DESC LIMIT ?' %
+             table)
+    params = (earliest_date, limit)
 
     cur.execute(query, params)
     return cur.fetchall()
@@ -227,3 +230,7 @@ def __getSportTopN(cur, table, earliest_date, limit):
 def getKavelyt(nick, earliest_date):
     with cursor() as cur:
         return __getSport(cur, "Kavelyt", nick, earliest_date)
+
+def getTopKavelyt(earliest_date, limit):
+    with cursor() as cur:
+        return __getSportTopN(cur, "Kavelyt", earliest_date, limit)

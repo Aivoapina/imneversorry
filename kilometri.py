@@ -6,13 +6,13 @@ import db
 extract_nick = lambda update: update.message.from_user["username"]
 
 class Kilometri:
-    Laji = collections.namedtuple("Laji", ("nimi", "partisiippi", "getter", "kerroin"))
+    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "getter", "getTop", "kerroin"))
 
-    lajit = (
-        Laji("kävely", "kävellyt", db.getKavelyt, 1),
-        # Laji("juoksu", "juossut", db.getJuoksut, 3),
-        # Laji("pyöräily", "pyöräillyt", db.getPyorailyt, 0.5),
-    )
+    lajit = {
+        "kavely": Laji("kävelijät", "kävellyt", db.getKavelyt, db.getTopKavelyt, 1),
+        # "juoksu": Laji("juoksijat", "juossut", db.getJuoksut, db.getTopJuoksut, 3),
+        # "pyoräily": Laji("pyöräilijät", "pyöräillyt", db.getPyorailyt, db.getTopPyorailyt, 0.5),
+    }
 
     def __init__(self):
         self.commands = {
@@ -46,7 +46,6 @@ class Kilometri:
             return
 
         now = int(time.time())
-        print("adding kävely: %s" % repr((nick, km, now)))
         db.addKavely(nick, km, now)
 
     def juoksuHandler(self, bot, update, args=""):
@@ -98,16 +97,21 @@ class Kilometri:
 
         return (aika, aikanimi, lkm, nick)
 
+    def __oneSportHandler(self, bot, update, args, laji):
+        aika, aikanimi, lkm, _ = self.__parsiAikaLkmNick(args)
+        top_suoritukset = laji.getTop(time.time() - aika, lkm)
+        lista = "\n".join("%s: %.1f km" % stat for stat in top_suoritukset)
+
+        bot.sendMessage(chat_id=update.message.chat_id,
+            text="Top %i %s viimeisen %s aikana:\n\n%s" % (lkm, laji.monikko, aikanimi, lista))
+
     def kavelijatHandler(self, bot, update, args=""):
         def usage():
             bot.sendMessage(chat_id=update.message.chat_id, text="Usage: /kavelijat <lkm> [ajalta]")
 
-        aika, aikanimi, lkm, _ = self.__parsiAikaLkmNick(args)
-        try:
-            # TODO TODO: tää ei muute mee tällä :D tee erillinen highscorekäsky
-            print(db.getKavelyt(nick, time.time() - aika), lkm)
-        except Exception as e:
-            print(e)
+        laji = self.lajit["kavely"]
+        self.__oneSportHandler(bot, update, args, laji)
+        return
 
     def juoksijatHandler(self, bot, update, args=""):
         pass
@@ -130,10 +134,14 @@ class Kilometri:
             nick = extract_nick(update)
 
         stats = tuple((laji, summaa_tulos(laji.getter(nick, alkaen)))
-                    for laji in self.lajit)
-        stat_strs = (
-            "%s %.1f km viimeisen %s aikana" % (laji.partisiippi, km, aikanimi)
+                    for _, laji in self.lajit.items())
+
+        score = sum(laji.kerroin * km for laji, km in stats)
+        stat_str = "Viimeisen %s aikana %.1f pistettä\n\n" % (aikanimi, score)
+
+        stat_str += ", ".join(
+            "%s %.1f km" % (laji.partisiippi, km)
             for laji, km in stats)
 
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="%s: %s" % (nick, ", ".join(stat_strs)))
+                        text="%s: %s" % (nick, stat_str))
