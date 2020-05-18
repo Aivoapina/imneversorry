@@ -187,29 +187,6 @@ def findTargetTags(target, channel):
         rows = cur.fetchall()
         return rows
 
-def __addEvent(cur, table, uid, km, date):
-    cur.execute('INSERT INTO %s VALUES(?, ?, ?)' % table, (uid, km, date))
-
-def __getSport(cur, table, uid, earliest_date):
-    query = ('SELECT SUM(km) FROM %s AS event '
-                'WHERE event.uid = ? AND event.date >= ?' %
-                table)
-    params = (uid, earliest_date)
-
-    cur.execute(query, params)
-    return cur.fetchall()[0][0]
-
-def __getSportTopN(cur, table, earliest_date, limit):
-    query = ('SELECT uid, km from ('
-                'SELECT event.uid AS uid, SUM(event.km) AS km FROM %s AS event '
-                'WHERE event.date >= ? GROUP BY event.uid) '
-             'ORDER BY km DESC LIMIT ?' %
-             table)
-    params = (earliest_date, limit)
-
-    cur.execute(query, params)
-    return cur.fetchall()
-
 def getPisteet(mults_tables, earliest_date, limit):
     with cursor() as cur:
         subs = ("SELECT uid, km * %.1f AS score, date FROM %s" % m_t for m_t in mults_tables)
@@ -223,12 +200,26 @@ def getPisteet(mults_tables, earliest_date, limit):
 
 def addUrheilu(uid, km, date, table):
     with cursor() as cur:
-        __addEvent(cur, table, uid, km, date)
+        cur.execute('INSERT INTO %s VALUES(?, ?, ?)' % table, (uid, km, date))
 
 def getUrheilut(uid, earliest_date, table):
     with cursor() as cur:
-        return __getSport(cur, table, uid, earliest_date)
+        query = ('SELECT SUM(km) FROM %s AS event '
+                    'WHERE event.uid = ? AND event.date >= ?' %
+                    table)
+        params = (uid, earliest_date)
+
+        cur.execute(query, params)
+        return cur.fetchall()[0][0]
 
 def getTopUrheilut(earliest_date, limit, table):
     with cursor() as cur:
-        return __getSportTopN(cur, table, earliest_date, limit)
+        query = ('SELECT uid, km from ('
+                    'SELECT event.uid AS uid, SUM(event.km) AS km FROM %s AS event '
+                    'WHERE event.date >= ? GROUP BY event.uid) '
+                'ORDER BY km DESC LIMIT ?' %
+                table)
+        params = (earliest_date, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()

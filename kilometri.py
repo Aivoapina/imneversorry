@@ -35,7 +35,7 @@ class Kilometri:
         for lajinnimi, laji in self.lajit.items():
             listauskasky = laji.listauskasky()
 
-            lisaa, listaa = self.__genLajiHandlerit(lajinnimi)
+            lisaa, listaa = self.genLajiHandlerit(lajinnimi)
             self.commands[lajinnimi] = lisaa
             self.commands[listauskasky] = listaa
 
@@ -45,27 +45,27 @@ class Kilometri:
     def getCommands(self):
         return self.commands
 
-    def __genLajiHandlerit(self, lajinnimi):
+    def genLajiHandlerit(self, lajinnimi):
         def urh(*args, **kwargs):
-            self.__urheilinHandler(lajinnimi, *args, **kwargs)
+            self.urheilinHandler(lajinnimi, *args, **kwargs)
 
         def get(*args, **kwargs):
-            self.__getStatHandler(lajinnimi, *args, **kwargs)
+            self.getStatHandler(lajinnimi, *args, **kwargs)
 
         return (urh, get)
 
-    def __userFromUid(self, bot, update, uid):
+    def userFromUid(self, bot, update, uid):
         chat_id = update.message.chat_id
         return bot.get_chat_member(chat_id, uid).user
 
-    def __nameFromUid(self, bot, update, uid):
-        user = self.__userFromUid(bot, update, uid)
+    def nameFromUid(self, bot, update, uid):
+        user = self.userFromUid(bot, update, uid)
         if (user.username is None):
             return "%s %s" % (str(user.first_name), str(user.last_name))
         else:
             return user.username
 
-    def __parsiAikaLkm(self, args):
+    def parsiAikaLkm(self, args):
         aikasuureet = {
             "s":   1,
             "sek": 1,
@@ -104,7 +104,7 @@ class Kilometri:
 
         return (aika, aikanimi, lkm)
 
-    def __urheilinHandler(self, lajinnimi, bot, update, args):
+    def urheilinHandler(self, lajinnimi, bot, update, args):
         def printUsage():
             usage = "Usage: /%s <km>" % lajinnimi
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
@@ -126,14 +126,14 @@ class Kilometri:
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Lisätään %s %.1f km" % (lajinnimi, km))
 
-    def __getStatHandler(self, lajinnimi, bot, update, args):
+    def getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
             usage = "Usage: /%s [lkm] [ajalta]" % komento
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
 
         laji = self.lajit[lajinnimi]
         try:
-            aika, aikanimi, lkm = self.__parsiAikaLkm(args)
+            aika, aikanimi, lkm = self.parsiAikaLkm(args)
             alkaen = time.time() - aika
         except ValueError:
             printUsage(laji.listauskasky())
@@ -142,21 +142,19 @@ class Kilometri:
         top_suoritukset = db.getTopUrheilut(alkaen, lkm, laji.taulukko)
 
         lista = "\n".join("%s: %.1f km" %
-                (self.__nameFromUid(bot, update, uid), km)
+                (self.nameFromUid(bot, update, uid), km)
             for uid, km in top_suoritukset)
 
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Top %i %s viimeisen %s aikana:\n\n%s" %
                 (lkm, laji.monikko, aikanimi, lista))
 
-
-
     def pisteetHandler(self, bot, update, args=tuple()):
         def usage():
             bot.sendMessage(chat_id=update.message.chat_id,
                 text="Usage: /pisteet [ajalta]")
         try:
-            aika, aikanimi, lkm = self.__parsiAikaLkm(args)
+            aika, aikanimi, lkm = self.parsiAikaLkm(args)
         except ValueError:
             usage()
             return
@@ -167,7 +165,7 @@ class Kilometri:
         pisteet = db.getPisteet(mults_tables, alkaen, lkm)
 
         for uid, score in pisteet:
-            name = self.__nameFromUid(bot, update, uid)
+            name = self.nameFromUid(bot, update, uid)
             score_strs.append("%s: %.1f pistettä" % (name, score))
 
         msg = "Top %i pisteet viimeisen %s aikana:\n\n%s" % (
@@ -181,14 +179,14 @@ class Kilometri:
                 text="Usage: /kmstats [ajalta]")
 
         try:
-            aika, aikanimi, _ = self.__parsiAikaLkm(args)
+            aika, aikanimi, _ = self.parsiAikaLkm(args)
         except ValueError:
             usage()
             return
 
         alkaen = time.time() - aika
         uid = extract_uid(update)
-        name = self.__nameFromUid(bot, update, uid)
+        name = self.nameFromUid(bot, update, uid)
 
         stats = []
         for lajinnimi, laji in self.lajit.items():
