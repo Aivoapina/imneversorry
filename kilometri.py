@@ -1,5 +1,4 @@
 import collections
-import telegram
 import time
 
 import db
@@ -181,7 +180,7 @@ class Kilometri:
         name = self.nameFromUid(bot, update, uid)
 
         stats = []
-        for lajinnimi, laji in self.lajit.items():
+        for laji in self.lajit.values():
             km = db.getUrheilut(uid, alkaen, laji.taulukko)
             if (km is None):
                 km = 0
