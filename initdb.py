@@ -101,9 +101,5 @@ def initdb(db='bot.db'):
                   'km float,'
                   'date integer)')
 
-    c.execute('CREATE TABLE IF NOT EXISTS KilometriNikit('
-                  'id integer primary key autoincrement,'
-                  'name text not null)')
-
     conn.commit()
     conn.close()

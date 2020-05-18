@@ -187,38 +187,22 @@ def findTargetTags(target, channel):
         rows = cur.fetchall()
         return rows
 
-def __maybeAddKmNick(nick, cur):
-    cur.execute('SELECT EXISTS (SELECT * FROM KilometriNikit WHERE name = ?) as found', (nick,))
-    rows = cur.fetchall()
-    exists = rows[0][0]
-    if (not exists):
-        cur.execute('INSERT INTO Kilometrinikit VALUES(?, ?)', (None, nick))
-        uid = cur.lastrowid
-    else:
-        cur.execute('SELECT id FROM KilometriNikit WHERE name = ?', (nick,))
-        uid = cur.fetchall()[0][0]
-
-    return uid
-
-def __addEvent(cur, table, nick, km, date):
-    uid = __maybeAddKmNick(nick, cur)
+def __addEvent(cur, table, uid, km, date):
     cur.execute('INSERT INTO %s VALUES(?, ?, ?)' % table, (uid, km, date))
 
-def __getSport(cur, table, nick, earliest_date):
-    query = ('SELECT km FROM %s event '
-                'INNER JOIN KilometriNikit nick '
-                'ON event.uid = nick.id AND nick.name = ? AND event.date >= ?' %
+def __getSport(cur, table, uid, earliest_date):
+    query = ('SELECT SUM(km) FROM %s AS event '
+                'WHERE event.uid = ? AND event.date >= ?' %
                 table)
-    params = (nick, earliest_date)
+    params = (uid, earliest_date)
 
     cur.execute(query, params)
-    return cur.fetchall()
+    return cur.fetchall()[0][0]
 
 def __getSportTopN(cur, table, earliest_date, limit):
-    query = ('SELECT name, km from ('
-                'SELECT nick.name AS name, SUM(event.km) AS km FROM %s AS event '
-                'INNER JOIN KilometriNikit AS nick ON nick.id = event.uid AND event.date >= ? '
-                'GROUP BY nick.id) '
+    query = ('SELECT uid, km from ('
+                'SELECT event.uid AS uid, SUM(event.km) AS km FROM %s AS event '
+                'WHERE event.date >= ? GROUP BY event.uid) '
              'ORDER BY km DESC LIMIT ?' %
              table)
     params = (earliest_date, limit)
@@ -226,29 +210,29 @@ def __getSportTopN(cur, table, earliest_date, limit):
     cur.execute(query, params)
     return cur.fetchall()
 
-def addKavely(nick, km, date):
+def addKavely(uid, km, date):
     with cursor() as cur:
-        __addEvent(cur, "Kavelyt", nick, km, date)
+        __addEvent(cur, "Kavelyt", uid, km, date)
 
-def addJuoksu(nick, km, date):
+def addJuoksu(uid, km, date):
     with cursor() as cur:
-        __addEvent(cur, "Juoksut", nick, km, date)
+        __addEvent(cur, "Juoksut", uid, km, date)
 
-def addPyoraily(nick, km, date):
+def addPyoraily(uid, km, date):
     with cursor() as cur:
-        __addEvent(cur, "Pyorailyt", nick, km, date)
+        __addEvent(cur, "Pyorailyt", uid, km, date)
 
-def getKavelyt(nick, earliest_date):
+def getKavelyt(uid, earliest_date):
     with cursor() as cur:
-        return __getSport(cur, "Kavelyt", nick, earliest_date)
+        return __getSport(cur, "Kavelyt", uid, earliest_date)
 
-def getJuoksut(nick, earliest_date):
+def getJuoksut(uid, earliest_date):
     with cursor() as cur:
-        return __getSport(cur, "Juoksut", nick, earliest_date)
+        return __getSport(cur, "Juoksut", uid, earliest_date)
 
-def getPyorailyt(nick, earliest_date):
+def getPyorailyt(uid, earliest_date):
     with cursor() as cur:
-        return __getSport(cur, "Pyorailyt", nick, earliest_date)
+        return __getSport(cur, "Pyorailyt", uid, earliest_date)
 
 def getTopKavelyt(earliest_date, limit):
     with cursor() as cur:

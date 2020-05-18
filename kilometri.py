@@ -1,9 +1,11 @@
 import collections
+import telegram
 import time
 
 import db
 
 extract_nick = lambda update: update.message.from_user["username"]
+extract_uid = lambda update: update.message.from_user["id"]
 poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
 
 def dbgShowException(func):
@@ -26,7 +28,6 @@ class Kilometri:
     def __init__(self):
         self.commands = {
             'matkaajat': self.matkaajatHandler,
-            'yhdistanikit': self.yhdistaNikitHandler,
             'kmstats': self.statsHandler,
             'kmhelp': self.helpHandler,
         }
@@ -53,7 +54,18 @@ class Kilometri:
 
         return (urh, get)
 
-    def __parsiAikaLkmNick(self, args):
+    def __userFromUid(self, bot, update, uid):
+        chat_id = update.message.chat_id
+        return bot.get_chat_member(chat_id, uid).user
+
+    def __nameFromUid(self, bot, update, uid):
+        user = self.__userFromUid(bot, update, uid)
+        if (user.username is None):
+            return "%s %s" % (str(user.first_name), str(user.last_name))
+        else:
+            return user.username
+
+    def __parsiAikaLkm(self, args):
         aikasuureet = {
             "s":   1,
             "sek": 1,
@@ -71,7 +83,6 @@ class Kilometri:
         aika = 3 * aikasuureet["kk"]
         aikanimi = "3kk"
         lkm = 10
-        nick = None
 
         for arg in args:
             try:
@@ -89,9 +100,9 @@ class Kilometri:
                     except ValueError:
                         pass
             else:
-                nick = arg.lstrip("@")
+                raise ValueError("Unrecognized '%s' in args" % arg)
 
-        return (aika, aikanimi, lkm, nick)
+        return (aika, aikanimi, lkm)
 
     def __urheilinHandler(self, lajinnimi, bot, update, args):
         def printUsage():
@@ -103,32 +114,36 @@ class Kilometri:
             return
 
         laji = self.lajit[lajinnimi]
-        nick = extract_nick(update)
+        uid = extract_uid(update)
         try:
-            km = float(args[0])
+            km = float(args[0].rstrip("km"))
         except ValueError:
             printUsage()
             return
 
         now = int(time.time())
-        laji.add(nick, km, now)
+        laji.add(uid, km, now)
         bot.sendMessage(chat_id=update.message.chat_id,
-            text="%s: lisätään %s %.1f km" % (nick, lajinnimi, km))
+            text="Lisätään %s %.1f km" % (lajinnimi, km))
 
+    @dbgShowException
     def __getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
-            usage = "Usage: /%s <lkm> [ajalta]" % komento
+            usage = "Usage: /%s [lkm] [ajalta]" % komento
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
 
-        # nick-kenttä kerää ylimääräisen paskan jos sitä komennossa on
         laji = self.lajit[lajinnimi]
-        aika, aikanimi, lkm, nick = self.__parsiAikaLkmNick(args)
-        if (not nick is None):
+        try:
+            aika, aikanimi, lkm = self.__parsiAikaLkm(args)
+        except ValueError:
             printUsage(poista_skandit(laji.monikko))
             return
 
         top_suoritukset = laji.getTop(time.time() - aika, lkm)
-        lista = "\n".join("%s: %.1f km" % stat for stat in top_suoritukset)
+
+        lista = "\n".join("%s: %.1f km" %
+                (self.__nameFromUid(bot, update, uid), km)
+            for uid, km in top_suoritukset)
 
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Top %i %s viimeisen %s aikana:\n\n%s" %
@@ -139,22 +154,23 @@ class Kilometri:
     def matkaajatHandler(self, bot, update, args=tuple()):
         print("/matkaajat: %s" % repr((self, bot, update, args)))
 
-    def yhdistaNikitHandler(self, bot, update, args=""):
-        pass
-
     def statsHandler(self, bot, update, args=tuple()):
         def usage():
             bot.sendMessage(chat_id=update.message.chat_id,
-                text="Usage: /kmstats [nick] [ajalta]")
+                text="Usage: /kmstats [ajalta]")
 
-        summaa_tulos = lambda tulos: sum(map(lambda r: r[0], tulos))
-        aika, aikanimi, _, nick = self.__parsiAikaLkmNick(args)
+        aika, aikanimi, _ = self.__parsiAikaLkm(args)
         alkaen = time.time() - aika
-        if (nick is None):
-            nick = extract_nick(update)
+        uid = extract_uid(update)
+        name = self.__nameFromUid(bot, update, uid)
 
-        stats = tuple((laji, summaa_tulos(laji.getter(nick, alkaen)))
-                    for _, laji in self.lajit.items())
+        stats = []
+        for lajinnimi, laji in self.lajit.items():
+            km = laji.getter(uid, alkaen)
+            if (km is None):
+                km = 0
+            print("%s: %.1f" % (lajinnimi, km))
+            stats.append((laji, km))
 
         score = sum(laji.kerroin * km for laji, km in stats)
         stat_str = "Viimeisen %s aikana %.1f pistettä\n\n" % (aikanimi, score)
@@ -164,7 +180,7 @@ class Kilometri:
             for laji, km in stats)
 
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="%s: %s" % (nick, stat_str))
+                        text="%s: %s" % (name, stat_str))
 
     def helpHandler(self, bot, update, args=tuple()):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
