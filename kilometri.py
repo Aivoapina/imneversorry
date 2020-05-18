@@ -4,14 +4,23 @@ import time
 import db
 
 extract_nick = lambda update: update.message.from_user["username"]
+poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
+
+def dbgShowException(func):
+    def wrapper(*args, **kwargs):
+        try:
+            func(*args, **kwargs)
+        except Exception as e:
+            print("Exception: %s" % repr(e))
+    return wrapper
 
 class Kilometri:
-    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "getter", "getTop", "kerroin"))
+    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "getter", "getTop", "add", "kerroin"))
 
     lajit = {
-        "kavely": Laji("kävelijät", "kävellyt", db.getKavelyt, db.getTopKavelyt, 1),
-        # "juoksu": Laji("juoksijat", "juossut", db.getJuoksut, db.getTopJuoksut, 3),
-        # "pyoräily": Laji("pyöräilijät", "pyöräillyt", db.getPyorailyt, db.getTopPyorailyt, 0.5),
+        "kavely": Laji("kävelijät", "kävellyt", db.getKavelyt, db.getTopKavelyt, db.addKavely, 1),
+        "juoksu": Laji("juoksijat", "juossut", db.getJuoksut, db.getTopJuoksut, db.addJuoksu, 3),
+        "pyoraily": Laji("pyöräilijät", "pyöräillyt", db.getPyorailyt, db.getTopPyorailyt, db.addPyoraily, 0.5),
     }
 
     def __init__(self):
@@ -29,33 +38,6 @@ class Kilometri:
 
     def getCommands(self):
         return self.commands
-
-    def kavelyHandler(self, bot, update, args=""):
-        def usage():
-            bot.sendMessage(chat_id=update.message.chat_id, text="Usage: /kavely <km>")
-            
-        if (len(args) != 1):
-            usage()
-            return
-
-        nick = extract_nick(update)
-        try:
-            km = float(args[0])
-        except ValueError:
-            usage()
-            return
-
-        now = int(time.time())
-        db.addKavely(nick, km, now)
-
-    def juoksuHandler(self, bot, update, args=""):
-        pass
-
-    def pyorailyHandler(self, bot, update, args=""):
-        pass
-
-    def matkaajatHandler(self, bot, update, args=""):
-        print("/matkaajat: %s" % repr((self, bot, update, args)))
 
     def __parsiAikaLkmNick(self, args):
         aikasuureet = {
@@ -97,27 +79,73 @@ class Kilometri:
 
         return (aika, aikanimi, lkm, nick)
 
-    def __oneSportHandler(self, bot, update, args, laji):
-        aika, aikanimi, lkm, _ = self.__parsiAikaLkmNick(args)
+    def __newEventHandler(self, lajinnimi, bot, update, args):
+        def printUsage():
+            usage = "Usage: /%s <km>" % lajinnimi
+            bot.sendMessage(chat_id=update.message.chat_id, text=usage)
+
+        if (len(args) != 1):
+            printUsage()
+            return
+
+        laji = self.lajit[lajinnimi]
+        nick = extract_nick(update)
+        try:
+            km = float(args[0])
+        except ValueError:
+            printUsage()
+            return
+
+        now = int(time.time())
+        laji.add(nick, km, now)
+        bot.sendMessage(chat_id=update.message.chat_id,
+            text="%s: lisätään %s %.1f km" % (nick, lajinnimi, km))
+
+    def __oneSportHandler(self, lajinnimi, bot, update, args):
+        def printUsage(komento):
+            usage = "Usage: /%s <lkm> [ajalta]" % komento
+            bot.sendMessage(chat_id=update.message.chat_id, text=usage)
+
+        # nick-kenttä kerää ylimääräisen paskan jos sitä komennossa on
+        laji = self.lajit[lajinnimi]
+        aika, aikanimi, lkm, nick = self.__parsiAikaLkmNick(args)
+        if (not nick is None):
+            printUsage(poista_skandit(laji.monikko))
+            return
+
         top_suoritukset = laji.getTop(time.time() - aika, lkm)
         lista = "\n".join("%s: %.1f km" % stat for stat in top_suoritukset)
 
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Top %i %s viimeisen %s aikana:\n\n%s" % (lkm, laji.monikko, aikanimi, lista))
 
-    def kavelijatHandler(self, bot, update, args=""):
-        def usage():
-            bot.sendMessage(chat_id=update.message.chat_id, text="Usage: /kavelijat <lkm> [ajalta]")
+    @dbgShowException
+    def kavelyHandler(self, *args, **kwargs):
+        self.__newEventHandler("kavely", *args, **kwargs)
 
-        laji = self.lajit["kavely"]
-        self.__oneSportHandler(bot, update, args, laji)
-        return
+    @dbgShowException
+    def juoksuHandler(self, *args, **kwargs):
+        self.__newEventHandler("juoksu", *args, **kwargs)
 
-    def juoksijatHandler(self, bot, update, args=""):
-        pass
+    @dbgShowException
+    def pyorailyHandler(self, bot, *args, **kwargs):
+        self.__newEventHandler("pyoraily", *args, **kwargs)
 
-    def pyorailijatHandler(self, bot, update, args=""):
-        pass
+    @dbgShowException
+    def matkaajatHandler(self, bot, update, args=""):
+        print("/matkaajat: %s" % repr((self, bot, update, args)))
+
+    @dbgShowException
+    def kavelijatHandler(self, *args, **kwargs):
+        self.__oneSportHandler("kavely", *args, **kwargs)
+
+    @dbgShowException
+    def juoksijatHandler(self, *args, **kwargs):
+        self.__oneSportHandler("juoksu", *args, **kwargs)
+
+    @dbgShowException
+    def pyorailijatHandler(self, *args, **kwargs):
+        self.__oneSportHandler("pyoraily", *args, **kwargs)
 
     def yhdistaNikitHandler(self, bot, update, args=""):
         pass

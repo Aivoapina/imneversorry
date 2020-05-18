@@ -200,10 +200,9 @@ def __maybeAddKmNick(nick, cur):
 
     return uid
 
-def addKavely(nick, km, date):
-    with cursor() as cur:
-        uid = __maybeAddKmNick(nick, cur)
-        cur.execute('INSERT INTO Kavelyt VALUES(?, ?, ?)', (uid, km, date))
+def __addEvent(cur, table, nick, km, date):
+    uid = __maybeAddKmNick(nick, cur)
+    cur.execute('INSERT INTO %s VALUES(?, ?, ?)' % table, (uid, km, date))
 
 def __getSport(cur, table, nick, earliest_date):
     query = ('SELECT km FROM %s event '
@@ -227,10 +226,38 @@ def __getSportTopN(cur, table, earliest_date, limit):
     cur.execute(query, params)
     return cur.fetchall()
 
+def addKavely(nick, km, date):
+    with cursor() as cur:
+        __addEvent(cur, "Kavelyt", nick, km, date)
+
+def addJuoksu(nick, km, date):
+    with cursor() as cur:
+        __addEvent(cur, "Juoksut", nick, km, date)
+
+def addPyoraily(nick, km, date):
+    with cursor() as cur:
+        __addEvent(cur, "Pyorailyt", nick, km, date)
+
 def getKavelyt(nick, earliest_date):
     with cursor() as cur:
         return __getSport(cur, "Kavelyt", nick, earliest_date)
 
+def getJuoksut(nick, earliest_date):
+    with cursor() as cur:
+        return __getSport(cur, "Juoksut", nick, earliest_date)
+
+def getPyorailyt(nick, earliest_date):
+    with cursor() as cur:
+        return __getSport(cur, "Pyorailyt", nick, earliest_date)
+
 def getTopKavelyt(earliest_date, limit):
     with cursor() as cur:
         return __getSportTopN(cur, "Kavelyt", earliest_date, limit)
+
+def getTopJuoksut(earliest_date, limit):
+    with cursor() as cur:
+        return __getSportTopN(cur, "Juoksut", earliest_date, limit)
+
+def getTopPyorailyt(earliest_date, limit):
+    with cursor() as cur:
+        return __getSportTopN(cur, "Pyorailyt", earliest_date, limit)
