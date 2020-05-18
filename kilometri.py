@@ -4,7 +4,6 @@ import time
 
 import db
 
-extract_nick = lambda update: update.message.from_user["username"]
 extract_uid = lambda update: update.message.from_user["id"]
 poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
 
@@ -18,11 +17,12 @@ def dbgShowException(func):
 
 class Kilometri:
     Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "taulukko", "kerroin"))
+    Laji.listauskasky = lambda self: poista_skandit(self.monikko)
 
     lajit = {
-        "kavely": Laji("kävelijät", "kävellyt", "Kavelyt", 1),
-        "juoksu": Laji("juoksijat", "juossut", "Juoksut", 3),
-        "pyoraily": Laji("pyöräilijät", "pyöräillyt", "Pyorailyt", 0.5),
+        "kavely": Laji("kävelyt", "kävellyt", "Kavelyt", 1),
+        "juoksu": Laji("juoksut", "juossut", "Juoksut", 3),
+        "pyoraily": Laji("pyöräilyt", "pyöräillyt", "Pyorailyt", 0.5),
     }
 
     def __init__(self):
@@ -33,11 +33,11 @@ class Kilometri:
         }
 
         for lajinnimi, laji in self.lajit.items():
-            listauskomento = poista_skandit(laji.monikko)
+            listauskasky = laji.listauskasky()
 
             lisaa, listaa = self.__genLajiHandlerit(lajinnimi)
             self.commands[lajinnimi] = lisaa
-            self.commands[listauskomento] = listaa
+            self.commands[listauskasky] = listaa
 
         self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n\n" + "\n".join(
             map(lambda s: "/%s" % s, self.commands.keys()))
@@ -126,7 +126,6 @@ class Kilometri:
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Lisätään %s %.1f km" % (lajinnimi, km))
 
-    @dbgShowException
     def __getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
             usage = "Usage: /%s [lkm] [ajalta]" % komento
@@ -137,7 +136,7 @@ class Kilometri:
             aika, aikanimi, lkm = self.__parsiAikaLkm(args)
             alkaen = time.time() - aika
         except ValueError:
-            printUsage(poista_skandit(laji.monikko))
+            printUsage(laji.listauskasky())
             return
 
         top_suoritukset = db.getTopUrheilut(alkaen, lkm, laji.taulukko)
@@ -196,7 +195,6 @@ class Kilometri:
             km = db.getUrheilut(uid, alkaen, laji.taulukko)
             if (km is None):
                 km = 0
-            print("%s: %.1f" % (lajinnimi, km))
             stats.append((laji, km))
 
         score = sum(laji.kerroin * km for laji, km in stats)
