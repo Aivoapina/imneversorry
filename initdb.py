@@ -86,5 +86,24 @@ def initdb(db='bot.db'):
         'created date,'
         'primary key(tag, channel, target))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Kavelyt('
+                  'uid integer,'
+                  'km float,'
+                  'date integer)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Juoksut('
+                  'uid integer,'
+                  'km float,'
+                  'date integer)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Pyorailyt('
+                  'uid integer,'
+                  'km float,'
+                  'date integer)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS KilometriNikit('
+                  'id integer primary key autoincrement,'
+                  'name text not null)')
+
     conn.commit()
     conn.close()

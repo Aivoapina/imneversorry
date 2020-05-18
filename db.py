@@ -186,3 +186,44 @@ def findTargetTags(target, channel):
         cur.execute('SELECT tag FROM Tagit WHERE target=? and channel=?', (target, channel))
         rows = cur.fetchall()
         return rows
+
+def __maybeAddKmNick(nick, cur):
+    cur.execute('SELECT EXISTS (SELECT * FROM KilometriNikit WHERE name = ?) as found', (nick,))
+    rows = cur.fetchall()
+    exists = rows[0][0]
+    if (not exists):
+        cur.execute('INSERT INTO Kilometrinikit VALUES(?, ?)', (None, nick))
+        uid = cur.lastrowid
+    else:
+        cur.execute('SELECT id FROM KilometriNikit WHERE name = ?', (nick,))
+        uid = cur.fetchall()[0][0]
+
+    return uid
+
+def addKavely(nick, km, date):
+    with cursor() as cur:
+        uid = __maybeAddKmNick(nick, cur)
+        cur.execute('INSERT INTO Kavelyt VALUES(?, ?, ?)', (uid, km, date))
+
+def __getSport(cur, table, nick, earliest_date):
+    query = ('SELECT km FROM %s event '
+                'INNER JOIN KilometriNikit nick '
+                'ON event.uid = nick.id AND nick.name = ? AND event.date >= ?' %
+                table)
+    params = [nick, earliest_date]
+
+    cur.execute(query, params)
+    return cur.fetchall()
+
+def __getSportTopN(cur, table, earliest_date, limit):
+
+    if (limit is not None):
+        query += " LIMIT ?"
+        params.append(limit)
+
+    cur.execute(query, params)
+    return cur.fetchall()
+
+def getKavelyt(nick, earliest_date):
+    with cursor() as cur:
+        return __getSport(cur, "Kavelyt", nick, earliest_date)
