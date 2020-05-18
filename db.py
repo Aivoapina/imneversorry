@@ -225,26 +225,10 @@ def addUrheilu(uid, km, date, table):
     with cursor() as cur:
         __addEvent(cur, table, uid, km, date)
 
-def getKavelyt(uid, earliest_date):
+def getUrheilut(uid, earliest_date, table):
     with cursor() as cur:
-        return __getSport(cur, "Kavelyt", uid, earliest_date)
+        return __getSport(cur, table, uid, earliest_date)
 
-def getJuoksut(uid, earliest_date):
+def getTopUrheilut(earliest_date, limit, table):
     with cursor() as cur:
-        return __getSport(cur, "Juoksut", uid, earliest_date)
-
-def getPyorailyt(uid, earliest_date):
-    with cursor() as cur:
-        return __getSport(cur, "Pyorailyt", uid, earliest_date)
-
-def getTopKavelyt(earliest_date, limit):
-    with cursor() as cur:
-        return __getSportTopN(cur, "Kavelyt", earliest_date, limit)
-
-def getTopJuoksut(earliest_date, limit):
-    with cursor() as cur:
-        return __getSportTopN(cur, "Juoksut", earliest_date, limit)
-
-def getTopPyorailyt(earliest_date, limit):
-    with cursor() as cur:
-        return __getSportTopN(cur, "Pyorailyt", earliest_date, limit)
+        return __getSportTopN(cur, table, earliest_date, limit)

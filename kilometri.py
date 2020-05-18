@@ -17,12 +17,12 @@ def dbgShowException(func):
     return wrapper
 
 class Kilometri:
-    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "getter", "getTop", "taulukko", "kerroin"))
+    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "taulukko", "kerroin"))
 
     lajit = {
-        "kavely": Laji("kävelijät", "kävellyt", db.getKavelyt, db.getTopKavelyt, "Kavelyt", 1),
-        "juoksu": Laji("juoksijat", "juossut", db.getJuoksut, db.getTopJuoksut, "Juoksut", 3),
-        "pyoraily": Laji("pyöräilijät", "pyöräillyt", db.getPyorailyt, db.getTopPyorailyt, "Pyorailyt", 0.5),
+        "kavely": Laji("kävelijät", "kävellyt", "Kavelyt", 1),
+        "juoksu": Laji("juoksijat", "juossut", "Juoksut", 3),
+        "pyoraily": Laji("pyöräilijät", "pyöräillyt", "Pyorailyt", 0.5),
     }
 
     def __init__(self):
@@ -135,11 +135,12 @@ class Kilometri:
         laji = self.lajit[lajinnimi]
         try:
             aika, aikanimi, lkm = self.__parsiAikaLkm(args)
+            alkaen = time.time() - aika
         except ValueError:
             printUsage(poista_skandit(laji.monikko))
             return
 
-        top_suoritukset = laji.getTop(time.time() - aika, lkm)
+        top_suoritukset = db.getTopUrheilut(alkaen, lkm, laji.taulukko)
 
         lista = "\n".join("%s: %.1f km" %
                 (self.__nameFromUid(bot, update, uid), km)
@@ -192,7 +193,7 @@ class Kilometri:
 
         stats = []
         for lajinnimi, laji in self.lajit.items():
-            km = laji.getter(uid, alkaen)
+            km = db.getUrheilut(uid, alkaen, laji.taulukko)
             if (km is None):
                 km = 0
             print("%s: %.1f" % (lajinnimi, km))
