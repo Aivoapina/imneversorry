@@ -25,19 +25,29 @@ class Kilometri:
 
     def __init__(self):
         self.commands = {
-            'kavely': self.kavelyHandler,
-            'juoksu': self.juoksuHandler,
-            'pyoraily': self.pyorailyHandler,
             'matkaajat': self.matkaajatHandler,
-            'kavelijat': self.kavelijatHandler,
-            'juoksijat': self.juoksijatHandler,
-            'pyorailijat': self.pyorailijatHandler,
             'yhdistanikit': self.yhdistaNikitHandler,
             'kmstats': self.statsHandler,
         }
 
+        for lajinnimi, laji in self.lajit.items():
+            listauskomento = poista_skandit(laji.monikko)
+
+            self.commands[lajinnimi] = self.__genUrheilinHandler(lajinnimi)
+            self.commands[listauskomento] = self.__genGetStatHandler(lajinnimi)
+
     def getCommands(self):
         return self.commands
+
+    def __genUrheilinHandler(self, lajinnimi):
+        def func(*args, **kwargs):
+            self.__urheilinHandler(lajinnimi, *args, **kwargs)
+        return func
+
+    def __genGetStatHandler(self, lajinnimi):
+        def func(*args, **kwargs):
+            self.__getStatHandler(lajinnimi, *args, **kwargs)
+        return func
 
     def __parsiAikaLkmNick(self, args):
         aikasuureet = {
@@ -79,7 +89,7 @@ class Kilometri:
 
         return (aika, aikanimi, lkm, nick)
 
-    def __newEventHandler(self, lajinnimi, bot, update, args):
+    def __urheilinHandler(self, lajinnimi, bot, update, args):
         def printUsage():
             usage = "Usage: /%s <km>" % lajinnimi
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
@@ -101,7 +111,7 @@ class Kilometri:
         bot.sendMessage(chat_id=update.message.chat_id,
             text="%s: lisätään %s %.1f km" % (nick, lajinnimi, km))
 
-    def __oneSportHandler(self, lajinnimi, bot, update, args):
+    def __getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
             usage = "Usage: /%s <lkm> [ajalta]" % komento
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
@@ -119,33 +129,8 @@ class Kilometri:
         bot.sendMessage(chat_id=update.message.chat_id,
             text="Top %i %s viimeisen %s aikana:\n\n%s" % (lkm, laji.monikko, aikanimi, lista))
 
-    @dbgShowException
-    def kavelyHandler(self, *args, **kwargs):
-        self.__newEventHandler("kavely", *args, **kwargs)
-
-    @dbgShowException
-    def juoksuHandler(self, *args, **kwargs):
-        self.__newEventHandler("juoksu", *args, **kwargs)
-
-    @dbgShowException
-    def pyorailyHandler(self, bot, *args, **kwargs):
-        self.__newEventHandler("pyoraily", *args, **kwargs)
-
-    @dbgShowException
     def matkaajatHandler(self, bot, update, args=""):
         print("/matkaajat: %s" % repr((self, bot, update, args)))
-
-    @dbgShowException
-    def kavelijatHandler(self, *args, **kwargs):
-        self.__oneSportHandler("kavely", *args, **kwargs)
-
-    @dbgShowException
-    def juoksijatHandler(self, *args, **kwargs):
-        self.__oneSportHandler("juoksu", *args, **kwargs)
-
-    @dbgShowException
-    def pyorailijatHandler(self, *args, **kwargs):
-        self.__oneSportHandler("pyoraily", *args, **kwargs)
 
     def yhdistaNikitHandler(self, bot, update, args=""):
         pass
