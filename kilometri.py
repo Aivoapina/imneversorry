@@ -7,14 +7,6 @@ import db
 extract_uid = lambda update: update.message.from_user["id"]
 poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
 
-def dbgShowException(func):
-    def wrapper(*args, **kwargs):
-        try:
-            func(*args, **kwargs)
-        except Exception as e:
-            print("Exception: %s" % repr(e))
-    return wrapper
-
 class Kilometri:
     Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "taulukko", "kerroin"))
     Laji.listauskasky = lambda self: poista_skandit(self.monikko)
