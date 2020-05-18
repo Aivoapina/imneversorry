@@ -210,17 +210,20 @@ def __getSportTopN(cur, table, earliest_date, limit):
     cur.execute(query, params)
     return cur.fetchall()
 
-def addKavely(uid, km, date):
+def getPisteet(mults_tables, earliest_date, limit):
     with cursor() as cur:
-        __addEvent(cur, "Kavelyt", uid, km, date)
+        subs = ("SELECT uid, km * %.1f AS score, date FROM %s" % m_t for m_t in mults_tables)
+        table_unions = " UNION ALL ".join(subs)
+        user_scores  = "SELECT uid, SUM(score) AS score FROM (%s) WHERE date > ? GROUP BY uid" % table_unions
+        query        = "SELECT uid, score FROM (%s) ORDER BY score DESC LIMIT ?" % user_scores
 
-def addJuoksu(uid, km, date):
-    with cursor() as cur:
-        __addEvent(cur, "Juoksut", uid, km, date)
+        params = (earliest_date, limit)
+        cur.execute(query, params)
+        return cur.fetchall()
 
-def addPyoraily(uid, km, date):
+def addUrheilu(uid, km, date, table):
     with cursor() as cur:
-        __addEvent(cur, "Pyorailyt", uid, km, date)
+        __addEvent(cur, table, uid, km, date)
 
 def getKavelyt(uid, earliest_date):
     with cursor() as cur:
