@@ -28,26 +28,30 @@ class Kilometri:
             'matkaajat': self.matkaajatHandler,
             'yhdistanikit': self.yhdistaNikitHandler,
             'kmstats': self.statsHandler,
+            'kmhelp': self.helpHandler,
         }
 
         for lajinnimi, laji in self.lajit.items():
             listauskomento = poista_skandit(laji.monikko)
 
-            self.commands[lajinnimi] = self.__genUrheilinHandler(lajinnimi)
-            self.commands[listauskomento] = self.__genGetStatHandler(lajinnimi)
+            lisaa, listaa = self.__genLajiHandlerit(lajinnimi)
+            self.commands[lajinnimi] = lisaa
+            self.commands[listauskomento] = listaa
+
+        self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n\n" + "\n".join(
+            map(lambda s: "/%s" % s, self.commands.keys()))
 
     def getCommands(self):
         return self.commands
 
-    def __genUrheilinHandler(self, lajinnimi):
-        def func(*args, **kwargs):
+    def __genLajiHandlerit(self, lajinnimi):
+        def urh(*args, **kwargs):
             self.__urheilinHandler(lajinnimi, *args, **kwargs)
-        return func
 
-    def __genGetStatHandler(self, lajinnimi):
-        def func(*args, **kwargs):
+        def get(*args, **kwargs):
             self.__getStatHandler(lajinnimi, *args, **kwargs)
-        return func
+
+        return (urh, get)
 
     def __parsiAikaLkmNick(self, args):
         aikasuureet = {
@@ -127,22 +131,25 @@ class Kilometri:
         lista = "\n".join("%s: %.1f km" % stat for stat in top_suoritukset)
 
         bot.sendMessage(chat_id=update.message.chat_id,
-            text="Top %i %s viimeisen %s aikana:\n\n%s" % (lkm, laji.monikko, aikanimi, lista))
+            text="Top %i %s viimeisen %s aikana:\n\n%s" %
+                (lkm, laji.monikko, aikanimi, lista))
 
-    def matkaajatHandler(self, bot, update, args=""):
+
+
+    def matkaajatHandler(self, bot, update, args=tuple()):
         print("/matkaajat: %s" % repr((self, bot, update, args)))
 
     def yhdistaNikitHandler(self, bot, update, args=""):
         pass
 
-    def statsHandler(self, bot, update, args=""):
+    def statsHandler(self, bot, update, args=tuple()):
         def usage():
-            bot.sendMessage(chat_id=update.message.chat_id, text="Usage: /kmstats [nick] [ajalta]")
+            bot.sendMessage(chat_id=update.message.chat_id,
+                text="Usage: /kmstats [nick] [ajalta]")
 
         summaa_tulos = lambda tulos: sum(map(lambda r: r[0], tulos))
-        aika, aikanimi, lkm, nick = self.__parsiAikaLkmNick(args)
+        aika, aikanimi, _, nick = self.__parsiAikaLkmNick(args)
         alkaen = time.time() - aika
-
         if (nick is None):
             nick = extract_nick(update)
 
@@ -158,3 +165,6 @@ class Kilometri:
 
         bot.sendMessage(chat_id=update.message.chat_id,
                         text="%s: %s" % (nick, stat_str))
+
+    def helpHandler(self, bot, update, args=tuple()):
+        bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
