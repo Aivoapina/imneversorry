@@ -187,39 +187,50 @@ def findTargetTags(target, channel):
         rows = cur.fetchall()
         return rows
 
-def getPisteet(mults_tables, earliest_date, limit):
+def addUrheilu(uid, chatid, km, lajinnimi, date):
     with cursor() as cur:
-        subs = ("SELECT uid, km * %.1f AS score, date FROM %s" % m_t for m_t in mults_tables)
-        table_unions = " UNION ALL ".join(subs)
-        user_scores  = "SELECT uid, SUM(score) AS score FROM (%s) WHERE date > ? GROUP BY uid" % table_unions
-        query        = "SELECT uid, score FROM (%s) ORDER BY score DESC LIMIT ?" % user_scores
+        query = ("INSERT INTO Urheilut (uid, chatid, km, type, date) VALUES (?, ?, ?, "
+                    "(SELECT l.id FROM Urheilulajit AS l WHERE l.nimi = ?), ?)")
+        params = (uid, chatid, km, lajinnimi, date)
 
-        params = (earliest_date, limit)
+        cur.execute(query, params)
+
+def getKayttajanUrheilut(uid, chatid, earliest_date):
+    with cursor() as cur:
+        query = ("SELECT up.lajinnimi AS lajinnimi, SUM(up.km) AS km, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.uid = ? AND up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.lajinnimi, up.uid")
+        params = (uid, chatid, earliest_date)
+
         cur.execute(query, params)
         return cur.fetchall()
 
-def addUrheilu(uid, km, date, table):
+def getTopUrheilut(chatid, lajinnimi, earliest_date, limit):
     with cursor() as cur:
-        cur.execute('INSERT INTO %s VALUES(?, ?, ?)' % table, (uid, km, date))
-
-def getUrheilut(uid, earliest_date, table):
-    with cursor() as cur:
-        query = ('SELECT SUM(km) FROM %s AS event '
-                    'WHERE event.uid = ? AND event.date >= ?' %
-                    table)
-        params = (uid, earliest_date)
-
-        cur.execute(query, params)
-        return cur.fetchall()[0][0]
-
-def getTopUrheilut(earliest_date, limit, table):
-    with cursor() as cur:
-        query = ('SELECT uid, km from ('
-                    'SELECT event.uid AS uid, SUM(event.km) AS km FROM %s AS event '
-                    'WHERE event.date >= ? GROUP BY event.uid) '
-                'ORDER BY km DESC LIMIT ?' %
-                table)
-        params = (earliest_date, limit)
+        query = ("SELECT uid, km from (SELECT up.uid AS uid, SUM(up.km) AS km "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? AND up.lajinnimi = ? "
+                     "GROUP BY up.lajinnimi, up.uid) "
+                     "ORDER BY km DESC LIMIT ?")
+        params = (chatid, earliest_date, lajinnimi, limit)
 
         cur.execute(query, params)
         return cur.fetchall()
+
+def getPisteet(chatid, earliest_date, limit):
+    with cursor() as cur:
+        query = ("SELECT uid, pisteet from (SELECT up.uid AS uid, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.uid) "
+                     "ORDER BY pisteet DESC LIMIT ?")
+        params = (chatid, earliest_date, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def lisaaUrheilulaji(nimi, kerroin):
+    with cursor() as cur:
+        cur.execute("INSERT OR IGNORE INTO Urheilulajit (nimi, kerroin) VALUES (?, ?)",
+            (nimi, kerroin))

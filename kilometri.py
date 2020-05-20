@@ -1,19 +1,22 @@
 import collections
 import time
 
+import telegram
+
 import db
 
 extract_uid = lambda update: update.message.from_user["id"]
+extract_chatid = lambda update: update.message.chat_id
 poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
 
 class Kilometri:
-    Laji = collections.namedtuple("Laji", ("monikko", "partisiippi", "taulukko", "kerroin"))
+    Laji = collections.namedtuple("Laji", ("monikko", "kerroin"))
     Laji.listauskasky = lambda self: poista_skandit(self.monikko)
 
     lajit = {
-        "kavely": Laji("kävelyt", "kävellyt", "Kavelyt", 1),
-        "juoksu": Laji("juoksut", "juossut", "Juoksut", 3),
-        "pyoraily": Laji("pyöräilyt", "pyöräillyt", "Pyorailyt", 0.5),
+        "kavely": Laji("kävelyt", 1),
+        "juoksu": Laji("juoksut", 3),
+        "pyoraily": Laji("pyöräilyt", 0.3),
     }
 
     def __init__(self):
@@ -24,6 +27,7 @@ class Kilometri:
         }
 
         for lajinnimi, laji in self.lajit.items():
+            db.lisaaUrheilulaji(lajinnimi, laji.kerroin)
             listauskasky = laji.listauskasky()
 
             lisaa, listaa = self.genLajiHandlerit(lajinnimi)
@@ -46,15 +50,18 @@ class Kilometri:
         return (urh, get)
 
     def userFromUid(self, bot, update, uid):
-        chat_id = update.message.chat_id
+        chat_id = extract_chatid(update)
         return bot.get_chat_member(chat_id, uid).user
 
     def nameFromUid(self, bot, update, uid):
-        user = self.userFromUid(bot, update, uid)
-        if (user.username is None):
-            return "%s %s" % (str(user.first_name), str(user.last_name))
-        else:
+        try:
+            user = self.userFromUid(bot, update, uid)
+            if (user.username is None):
+                return "%s %s" % (str(user.first_name), str(user.last_name))
             return user.username
+
+        except telegram.TelegramError:
+            return "(None)"
 
     def parsiAikaLkm(self, args):
         aikasuureet = {
@@ -104,8 +111,8 @@ class Kilometri:
             printUsage()
             return
 
-        laji = self.lajit[lajinnimi]
         uid = extract_uid(update)
+        chatid = extract_chatid(update)
         try:
             km = float(args[0].rstrip("km"))
         except ValueError:
@@ -113,9 +120,7 @@ class Kilometri:
             return
 
         now = int(time.time())
-        db.addUrheilu(uid, km, now, laji.taulukko)
-        bot.sendMessage(chat_id=update.message.chat_id,
-            text="Lisätään %s %.1f km" % (lajinnimi, km))
+        db.addUrheilu(uid, chatid, km, lajinnimi, now)
 
     def getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
@@ -125,13 +130,14 @@ class Kilometri:
         laji = self.lajit[lajinnimi]
         try:
             aika, aikanimi, lkm = self.parsiAikaLkm(args)
-            alkaen = time.time() - aika
         except ValueError:
             printUsage(laji.listauskasky())
             return
 
-        top_suoritukset = db.getTopUrheilut(alkaen, lkm, laji.taulukko)
+        alkaen = time.time() - aika
+        chatid = extract_chatid(update)
 
+        top_suoritukset = db.getTopUrheilut(chatid, lajinnimi, alkaen, lkm)
         lista = "\n".join("%s: %.1f km" %
                 (self.nameFromUid(bot, update, uid), km)
             for uid, km in top_suoritukset)
@@ -151,17 +157,13 @@ class Kilometri:
             return
 
         alkaen = time.time() - aika
-        score_strs = []
-        mults_tables = ((laji.kerroin, laji.taulukko) for laji in self.lajit.values())
-        pisteet = db.getPisteet(mults_tables, alkaen, lkm)
-
-        for uid, score in pisteet:
-            name = self.nameFromUid(bot, update, uid)
-            score_strs.append("%s: %.1f pistettä" % (name, score))
+        chatid = extract_chatid(update)
+        pisteet = db.getPisteet(chatid, alkaen, lkm)
+        piste_str = "\n".join("%s: %.1f pistettä" %
+            (self.nameFromUid(bot, update, uid), p) for uid, p in pisteet)
 
         msg = "Top %i pisteet viimeisen %s aikana:\n\n%s" % (
-            lkm, aikanimi, "\n".join(score_strs))
-
+            lkm, aikanimi, piste_str)
         bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
     def statsHandler(self, bot, update, args=tuple()):
@@ -177,24 +179,19 @@ class Kilometri:
 
         alkaen = time.time() - aika
         uid = extract_uid(update)
+        chatid = extract_chatid(update)
         name = self.nameFromUid(bot, update, uid)
 
-        stats = []
-        for laji in self.lajit.values():
-            km = db.getUrheilut(uid, alkaen, laji.taulukko)
-            if (km is None):
-                km = 0
-            stats.append((laji, km))
+        stats = db.getKayttajanUrheilut(uid, chatid, alkaen)
+        lajikohtaiset = ((lajinnimi, km) for lajinnimi, km, _ in stats)
+        pisteet = sum(pisteet for _, _, pisteet in stats)
 
-        score = sum(laji.kerroin * km for laji, km in stats)
-        stat_str = "Viimeisen %s aikana %.1f pistettä\n\n" % (aikanimi, score)
-
-        stat_str += ", ".join(
-            "%s %.1f km" % (laji.partisiippi, km)
-            for laji, km in stats)
+        lajit_str = ", ".join("%s %.1f km" % ln_km for ln_km in lajikohtaiset)
+        stat_str = ("%s: Viimeisen %s aikana %.1f pistettä\n\n%s" %
+            (name, aikanimi, pisteet, lajit_str))
 
         bot.sendMessage(chat_id=update.message.chat_id,
-                        text="%s: %s" % (name, stat_str))
+                        text=stat_str)
 
     def helpHandler(self, bot, update, args=tuple()):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
