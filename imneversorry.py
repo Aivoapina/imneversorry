@@ -13,6 +13,7 @@ import tagaaja
 import quote
 import tirsk
 import mainari
+import kilometri
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -36,8 +37,9 @@ tag = tagaaja.Tagaaja()
 quo = quote.Quote()
 tir = tirsk.Tirsk()
 mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']['server_admins'], cfg['MINECRAFT'].getboolean('use_ip'), cfg['MINECRAFT'].getboolean('use_hostname'))
+km  = kilometri.Kilometri()
 
-objects = [rir, vit, vai, tir, opi, quo, mc, tag]
+objects = [rir, vit, vai, tir, km, opi, quo, mc, tag]
 
 def allMessages(bot, update):
     for obj in objects:

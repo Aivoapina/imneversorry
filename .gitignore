@@ -6,3 +6,6 @@ bot.db
 
 __pycache__/
 .vscode/
+
+.*.swp
+.*.swo

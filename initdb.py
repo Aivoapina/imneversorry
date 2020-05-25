@@ -86,5 +86,22 @@ def initdb(db='bot.db'):
         'created date,'
         'primary key(tag, channel, target))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Urheilulajit('
+                  'id INTEGER PRIMARY KEY AUTOINCREMENT,'
+                  'nimi TEXT UNIQUE,'
+                  'kerroin FLOAT)')
+
+    c.execute('CREATE TABLE IF NOT EXISTS Urheilut('
+                  'uid INTEGER,'
+                  'chatid INTEGER,'
+                  'km FLOAT,'
+                  'type INTEGER,'
+                  'date INTEGER)')
+
+    c.execute('CREATE VIEW IF NOT EXISTS UrheilutPisteilla('
+                  'uid, chatid, km, date, pisteet, lajinnimi) '
+                  'AS SELECT u.uid, u.chatid, u.km, u.date, u.km * l.kerroin, l.nimi '
+                      'FROM Urheilut as u JOIN Urheilulajit AS l ON u.type = l.id')
+
     conn.commit()
     conn.close()

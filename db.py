@@ -186,3 +186,51 @@ def findTargetTags(target, channel):
         cur.execute('SELECT tag FROM Tagit WHERE target=? and channel=?', (target, channel))
         rows = cur.fetchall()
         return rows
+
+def addUrheilu(uid, chatid, km, lajinnimi, date):
+    with cursor() as cur:
+        query = ("INSERT INTO Urheilut (uid, chatid, km, type, date) VALUES (?, ?, ?, "
+                    "(SELECT l.id FROM Urheilulajit AS l WHERE l.nimi = ?), ?)")
+        params = (uid, chatid, km, lajinnimi, date)
+
+        cur.execute(query, params)
+
+def getKayttajanUrheilut(uid, chatid, earliest_date):
+    with cursor() as cur:
+        query = ("SELECT up.lajinnimi AS lajinnimi, SUM(up.km) AS km, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.uid = ? AND up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.lajinnimi, up.uid")
+        params = (uid, chatid, earliest_date)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def getTopUrheilut(chatid, lajinnimi, earliest_date, limit):
+    with cursor() as cur:
+        query = ("SELECT uid, km from (SELECT up.uid AS uid, SUM(up.km) AS km "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? AND up.lajinnimi = ? "
+                     "GROUP BY up.lajinnimi, up.uid) "
+                     "ORDER BY km DESC LIMIT ?")
+        params = (chatid, earliest_date, lajinnimi, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def getPisteet(chatid, earliest_date, limit):
+    with cursor() as cur:
+        query = ("SELECT uid, pisteet from (SELECT up.uid AS uid, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.uid) "
+                     "ORDER BY pisteet DESC LIMIT ?")
+        params = (chatid, earliest_date, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def lisaaUrheilulaji(nimi, kerroin):
+    with cursor() as cur:
+        cur.execute("INSERT OR IGNORE INTO Urheilulajit (nimi, kerroin) VALUES (?, ?)",
+            (nimi, kerroin))
