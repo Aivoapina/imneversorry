@@ -1,4 +1,5 @@
 import collections
+import math
 import time
 
 import telegram
@@ -107,6 +108,8 @@ class Kilometri:
             usage = "Usage: /%s <km>" % lajinnimi
             bot.sendMessage(chat_id=update.message.chat_id, text=usage)
 
+        invalidDistance = lambda km: math.isnan(km) or math.isinf(km)
+
         if (len(args) != 1):
             printUsage()
             return
@@ -115,6 +118,8 @@ class Kilometri:
         chatid = extract_chatid(update)
         try:
             km = float(args[0].rstrip("km"))
+            if (invalidDistance(km)):
+                raise ValueError("invalid distance %f" % km)
         except ValueError:
             printUsage()
             return
