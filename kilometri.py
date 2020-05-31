@@ -81,7 +81,7 @@ class Kilometri:
 
         aika = 3 * aikasuureet["kk"]
         aikanimi = "3kk"
-        lkm = 10
+        lkm = 30
 
         for arg in args:
             try:
