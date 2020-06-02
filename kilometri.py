@@ -35,8 +35,10 @@ class Kilometri:
             self.commands[lajinnimi] = lisaa
             self.commands[listauskasky] = listaa
 
-        self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n\n" + "\n".join(
-            map(lambda s: "/%s" % s, self.commands.keys()))
+        self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n%s\n\nLajikohtaiset kertoimet:\n%s" % (
+            "\n".join("/%s" % s for s in self.commands.keys()),
+            "\n".join("%s: %.1f pistettä/km" % (nimi, laji.kerroin) for nimi, laji in self.lajit.items())
+        )
 
     def getCommands(self):
         return self.commands
