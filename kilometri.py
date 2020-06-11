@@ -17,7 +17,7 @@ class Kilometri:
     lajit = {
         "kavely": Laji("kävelyt", 1),
         "juoksu": Laji("juoksut", 3),
-        "pyoraily": Laji("pyöräilyt", 0.3),
+        "pyoraily": Laji("pyöräilyt", 0.4),
     }
 
     def __init__(self):
@@ -35,8 +35,10 @@ class Kilometri:
             self.commands[lajinnimi] = lisaa
             self.commands[listauskasky] = listaa
 
-        self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n\n" + "\n".join(
-            map(lambda s: "/%s" % s, self.commands.keys()))
+        self.helptext = "Komennot, kokeile ilman parametria jos et ole varma:\n%s\n\nLajikohtaiset kertoimet:\n%s" % (
+            "\n".join("/%s" % s for s in self.commands.keys()),
+            "\n".join("%s: %.1f pistettä/km" % (nimi, laji.kerroin) for nimi, laji in self.lajit.items())
+        )
 
     def getCommands(self):
         return self.commands
@@ -81,7 +83,7 @@ class Kilometri:
 
         aika = 3 * aikasuureet["kk"]
         aikanimi = "3kk"
-        lkm = 10
+        lkm = 30
 
         for arg in args:
             try:

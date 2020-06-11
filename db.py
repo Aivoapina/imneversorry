@@ -232,5 +232,5 @@ def getPisteet(chatid, earliest_date, limit):
 
 def lisaaUrheilulaji(nimi, kerroin):
     with cursor() as cur:
-        cur.execute("INSERT OR IGNORE INTO Urheilulajit (nimi, kerroin) VALUES (?, ?)",
-            (nimi, kerroin))
+        cur.execute("INSERT INTO Urheilulajit (nimi, kerroin) VALUES (?, ?) ON CONFLICT (nimi) DO UPDATE SET kerroin = ?",
+            (nimi, kerroin, kerroin))
