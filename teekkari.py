@@ -76,7 +76,7 @@ class Teekkari:
             elif random.randint(0, 600) == 0:
                 bot.sendMessage(chat_id=update.message.chat_id, text='TAPAN KAIKKI')
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text='eii-kä')
+                bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
     def getViisaus(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
