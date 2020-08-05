@@ -24,11 +24,14 @@ class Teekkari:
             'kalanimi': self.getKalanimi,
             'addsikulla': self.banHammer,
             'sotanimi': self.getSotanimi,
+            'sukunimi': self.getSukunimi,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
+        self.uutineUrl = 'https://www.is.fi/api/laneitems/392841/multilist'
+        self.sukunimiUrl = 'https://fi.wiktionary.org/wiki/Toiminnot:Satunnainen_kohde_luokasta/Luokka:Suomen_kielen_sukunimet'
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
@@ -42,7 +45,11 @@ class Teekkari:
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
         self.ennustukset = db.readEnnustukset()
+        self.nakutukset = db.readNakutukset()
         self.lastVitun = {}
+        self.nextUutine = 0
+        self.lastUutineUpdate = 0
+        self.uutineet = [ [], [] ]
 
     def getCommands(self):
         return self.commands
@@ -54,10 +61,22 @@ class Teekkari:
             bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
     def handleHakemus(self, bot, update, args=''):
-        if random.randint(0, 9) == 0:
-            bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
+        # Shancial, [16.03.20 14:27]
+        # hakemus nerffiä zyrkin hakemuksiin
+        # Imneversorry, [16.03.20 14:27]
+        # hyy-vä
+        if random.randint(0, 9) == 0 and (update.message.from_user.id != 153013548 or random.randint(0, 3) == 0):
+            if random.randint(0, 200) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
+            if random.randint(0, 1000) == 0:
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+            elif random.randint(0, 600) == 0:
+                bot.sendMessage(chat_id=update.message.chat_id, text='TAPAN KAIKKI')
+            else:
+                bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
     def getViisaus(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
@@ -66,6 +85,12 @@ class Teekkari:
         r = requests.get(self.vituttaaUrl)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
+        bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+
+    def getSukunimi(self, bot, update, args=''):
+        r = requests.get(self.sukunimiUrl)
+        url = urllib.parse.unquote_plus(r.url).split('/')
+        vitutus = url[len(url)-1].replace('_', ' ')
         bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
     def getDiagnoosi(self, bot, update, args=''):
@@ -102,6 +127,12 @@ class Teekkari:
                     nimi = update.message.from_user.first_name
         sotaNimi = arvo + ' ' + nimi
         bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
+
+    def getNakuttaa(self, bot, update, args=''):
+        if random.randint(0, 100) == 0:
+            bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
+        else:
+            bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
 
     def getHalo(self, bot, update, args=''):
         bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
@@ -152,10 +183,17 @@ class Teekkari:
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     def getTEK(self, bot, update, args=''):
-        if random.randint(0, 12) == 0:
+        if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tek.*', word) and word != 'tek':
                     bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
+                    return
+
+    def getTUNI(self, bot, update, args=''):
+        if random.randint(0, 5) == 0:
+            for word in update.message.text.lower().split(' '):
+                if re.match(r'.*tuni.*', word) and word != 'tuni':
+                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
                     return
 
     def getEnnustus(self, bot, update, args=''):
@@ -187,6 +225,25 @@ class Teekkari:
             ennustus += emoji.emojize(r)
         bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
 
+    def getUutine(self, bot, update, args=''):
+        now = time.time()
+        if self.lastUutineUpdate + 3600 < now:
+            self.lastUutineUpdate = now
+            req = requests.get(self.uutineUrl)
+            uutineet = req.json()[0]
+            self.uutineet = [ [], [] ]
+            for uutine in uutineet:
+                if 'title' in uutine:
+                    otsikko = uutine['title']
+                    if ' – ' in otsikko:
+                        otsikko = otsikko.split(' – ')
+                        self.uutineet[0].append(otsikko[0])
+                        self.uutineet[1].append(otsikko[1])
+        if self.nextUutine < now:
+            self.nextUutine = now + random.randint(10, 120)
+            uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
+            bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
+
     def banHammer(self, bot, update, args=''):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -208,6 +265,8 @@ class Teekkari:
                 self.getDiagnoosi(bot, update)
             elif 'horoskoop' in msg.text.lower():
                 self.getEnnustus(bot, update)
+            elif 'uutine' in msg.text.lower():
+                self.getUutine(bot, update)
             elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(bot, update)
             elif re.match(r'^noppa', msg.text.lower()):
@@ -226,5 +285,11 @@ class Teekkari:
                 self.getMoponimi(bot, update)
             elif re.match(r'^/sotanimi', msg.text.lower()):
                 self.getSotanimi(bot, update)
+            elif re.match(r'^/sukunimi', msg.text.lower()):
+                self.getSukunimi(bot, update)
             elif re.match(r'.*[tT]ek.*', msg.text):
                 self.getTEK(bot, update)
+            elif re.match(r'.*[tT]uni.*', msg.text):
+                self.getTUNI(bot, update)
+            elif 'nakuttaa' in msg.text.lower():
+                self.getNakuttaa(bot, update)

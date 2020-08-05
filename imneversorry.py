@@ -9,8 +9,11 @@ import rips
 import teekkari
 import valitsin
 import oppija
+import tagaaja
 import quote
+import tirsk
 import mainari
+import kilometri
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -30,10 +33,13 @@ rir = rips.Rips()
 vit = teekkari.Teekkari()
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
+tag = tagaaja.Tagaaja()
 quo = quote.Quote()
-mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']['server_admins'], cfg['MINECRAFT']['use_ip'])
+tir = tirsk.Tirsk()
+mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']['server_admins'], cfg['MINECRAFT'].getboolean('use_ip'), cfg['MINECRAFT'].getboolean('use_hostname'))
+km  = kilometri.Kilometri()
 
-objects = [rir, vit, vai, opi, quo, mc]
+objects = [rir, vit, vai, tir, opi, km, quo, mc, tag]
 
 def allMessages(bot, update):
     for obj in objects:

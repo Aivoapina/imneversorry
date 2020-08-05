@@ -2,12 +2,16 @@ import re
 import db
 import random
 import operator
+from utils import oppisWithSameText
 
 class Oppija:
     def __init__(self):
         self.commands = { 'opi': self.learnHandler,
                           'opis': self.opisCountHandler,
-                          'jokotai': self.jokotaiHandler }
+                          'jokotai': self.jokotaiHandler,
+                          'alias': self.aliasHandler,
+                          'arvaa': self.guessHandler }
+        self.correctOppi = {}
 
     def getCommands(self):
         return self.commands
@@ -93,6 +97,34 @@ class Oppija:
         bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
         self.defineTerm(bot, update, riggedQuestion)
 
+    def aliasHandler(self, bot, update, args=''):
+        chat_id = update.message.chat_id
+        if chat_id not in self.correctOppi:
+            self.correctOppi[chat_id] = None
+
+        if self.correctOppi[chat_id] is None:
+            definitions = db.readDefinitions(chat_id)
+
+            correctOppi = random.choice(definitions)
+            self.correctOppi[chat_id] = oppisWithSameText(definitions, correctOppi[0])
+
+            message = 'Arvaa mikä oppi: \"{}\"?'.format(self.correctOppi[chat_id][0])
+            bot.sendMessage(chat_id=chat_id, text=message)
+        else:
+            bot.sendMessage(chat_id=chat_id,
+                            text='Edellinen alias on vielä käynnissä! Selitys oli: \"{}\"?'.format(self.correctOppi[chat_id][0]))
+
+    def guessHandler(self, bot, update, args):
+        chat_id = update.message.chat_id
+        if chat_id not in self.correctOppi:
+            self.correctOppi[chat_id] = None
+        if len(args) < 1:
+            return
+        elif self.correctOppi[chat_id] is not None:
+            if args[0].lower() in self.correctOppi[chat_id][1]:
+                self.correctOppi[chat_id] = None
+                bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
+
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:
@@ -121,3 +153,4 @@ class Oppija:
                     521366901555324942823356189990151533))(update), text=((lambda _, __: _(_, __))(
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
                     random.sample([3041605, 779117898, 17466, 272452313416, 7022364615740061032, 2360793474633670572049331836447094], 1)[0])))
+

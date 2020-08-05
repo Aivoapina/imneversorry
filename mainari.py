@@ -6,14 +6,15 @@ import logging as log
 
 
 class Mainari:
-    def __init__(self, server, game_ops='', server_admins='', use_ip='False'):
+    def __init__(self, server, game_ops='', server_admins='', use_ip=False, use_hostname=True):
         self.api_url = 'https://api.mcsrvstat.us/2/'
         self.commands = {'minecraft': self.getServerInfo}
         self.is_in_cooldown = False
         self.game_ops = self.parseNicks(game_ops)
         self.server = server
         self.server_admins = self.parseNicks(server_admins)
-        self.use_ip = self.parseUseIP(use_ip)
+        self.use_ip = use_ip
+        self.use_hostname = use_hostname
 
     def getCommands(self):
         return self.commands
@@ -43,6 +44,12 @@ class Mainari:
     def parseServerData(self, data):
         server_is_offline = not 'online' in data
 
+        # Due to API changes the server can also be offline if it has
+        # the 'online' key with a value of False
+        if 'online' in data:
+            if data['online'] == False:
+                server_is_offline = True
+
         # Data gathered if the server is offline
         if server_is_offline:
             server_status_msg = 'OFFLINE'
@@ -50,14 +57,17 @@ class Mainari:
         # Data gathered if the server is online
         else:
             server_status_msg = 'Online'
-            motd = data['motd']['raw'][0]
+            motd = data['motd']['clean'][0]
             players = data['players']['online']
             players_max = data['players']['max']
             version = data['version']
 
             if 'players' in data:
+                player_list = []
+
                 if 'list' in data['players']:
                     player_list = data['players']['list']
+                    
             else:
                 player_list = []
 
@@ -68,7 +78,7 @@ class Mainari:
                 plugins = []
 
         # Show the IP or hostname based on what's available and what's wanted
-        if 'hostname' in data and not self.use_ip:
+        if 'hostname' in data and not self.use_ip and self.use_hostname:
             hostname = data['hostname']
         else:
             if self.use_ip:
@@ -102,6 +112,7 @@ class Mainari:
             message_extension += '\nPelaajia: ' + \
                 str(players) + '/' + str(players_max)
             first_player = True
+
             for player in player_list:
                 if first_player:
                     first_player = False
@@ -122,12 +133,6 @@ class Mainari:
             message_extension += 'tee mitään?!'
 
         return message_base + message_extension
-
-    def parseUseIP(self, use_ip):
-        if use_ip == 'True':
-            return True
-        else:
-            return False
 
     def resetInfoCooldown(self):
         self.is_in_cooldown = False

@@ -156,3 +156,81 @@ def readEnnustukset():
         cur.execute('SELECT rivi from Ennustus')
         rows = cur.fetchall()
         return set(rows)
+
+def readNakutukset():
+    with cursor() as cur:
+        cur.execute('SELECT nakutus from Nakutukset')
+        rows = cur.fetchall()
+        return set(rows)
+
+def readDefinitions(channel):
+    with cursor() as cur:
+        cur.execute('SELECT definition, keyword from Oppi where channel=?', (channel, ))
+        rows = cur.fetchall()
+        return rows
+
+def upsertTag(tag, target, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT OR REPLACE INTO Tagit values(?, ?, ?, ?, ?)',
+        (tag, target, channel, creator, date))
+
+def findTagged(tag, channel):
+    with cursor() as cur:
+        cur.execute('SELECT target FROM Tagit WHERE tag=? and channel=?', (tag, channel))
+        rows = cur.fetchall()
+        return rows
+
+def findTargetTags(target, channel):
+    with cursor() as cur:
+        cur.execute('SELECT tag FROM Tagit WHERE target=? and channel=?', (target, channel))
+        rows = cur.fetchall()
+        return rows
+
+def addUrheilu(uid, chatid, km, lajinnimi, date):
+    with cursor() as cur:
+        query = ("INSERT INTO Urheilut (uid, chatid, km, type, date) VALUES (?, ?, ?, "
+                    "(SELECT l.id FROM Urheilulajit AS l WHERE l.nimi = ?), ?)")
+        params = (uid, chatid, km, lajinnimi, date)
+
+        cur.execute(query, params)
+
+def getKayttajanUrheilut(uid, chatid, earliest_date):
+    with cursor() as cur:
+        query = ("SELECT up.lajinnimi AS lajinnimi, SUM(up.km) AS km, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.uid = ? AND up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.lajinnimi, up.uid")
+        params = (uid, chatid, earliest_date)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def getTopUrheilut(chatid, lajinnimi, earliest_date, limit):
+    with cursor() as cur:
+        query = ("SELECT uid, km from (SELECT up.uid AS uid, SUM(up.km) AS km "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? AND up.lajinnimi = ? "
+                     "GROUP BY up.lajinnimi, up.uid) "
+                     "ORDER BY km DESC LIMIT ?")
+        params = (chatid, earliest_date, lajinnimi, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def getPisteet(chatid, earliest_date, limit):
+    with cursor() as cur:
+        query = ("SELECT uid, pisteet from (SELECT up.uid AS uid, SUM(up.pisteet) AS pisteet "
+                     "FROM UrheilutPisteilla AS up "
+                     "WHERE up.chatid = ? AND up.date >= ? "
+                     "GROUP BY up.uid) "
+                     "ORDER BY pisteet DESC LIMIT ?")
+        params = (chatid, earliest_date, limit)
+
+        cur.execute(query, params)
+        return cur.fetchall()
+
+def lisaaUrheilulaji(nimi, kerroin):
+    with cursor() as cur:
+        cur.execute("INSERT INTO Urheilulajit (nimi, kerroin) VALUES (?, ?) ON CONFLICT (nimi) DO UPDATE SET kerroin = ?",
+            (nimi, kerroin, kerroin))

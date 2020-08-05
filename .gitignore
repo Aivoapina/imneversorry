@@ -2,10 +2,10 @@
 
 env.cfg
 
-rips.txt
-viisaudet.txt
-
 bot.db
 
 __pycache__/
 .vscode/
+
+.*.swp
+.*.swo
