@@ -35,3 +35,6 @@ class Quote:
 
         formated_quote = '"{}" - {}'.format(*quote)
         bot.sendMessage(chat_id=update.message.chat.id, text=formated_quote)
+
+    def messageHandler(self, bot, update):
+        return

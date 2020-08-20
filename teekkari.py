@@ -50,6 +50,7 @@ class Teekkari:
         self.nextUutine = 0
         self.lastUutineUpdate = 0
         self.uutineet = [ [], [] ]
+        self.nextVaihdan = 0
 
     def getCommands(self):
         return self.commands
@@ -141,7 +142,14 @@ class Teekkari:
         bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
 
     def getNoppa(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text='Heitit ' + str(random.randint(1, 6)) + ' ja ' + str(random.randint(1, 6)) + '.')
+        bot.sendDice(chat_id=update.message.chat_id)
+        bot.sendDice(chat_id=update.message.chat_id)
+
+    def getVaihdan(self, bot, update, args=''):
+        now = time.time()
+        if self.nextVaihdan < now:
+            self.nextVaihdan = now + random.randint(60, 180)
+            bot.sendDice(chat_id=update.message.chat_id)
 
     def getUrbaani(self):
         webpage = urllib.request.urlopen(self.urbaaniUrl).read().decode("utf-8")
@@ -271,6 +279,8 @@ class Teekkari:
                 self.getHalo(bot, update)
             elif re.match(r'^noppa', msg.text.lower()):
                 self.getNoppa(bot, update)
+            elif re.match(r'^vaihdan', msg.text.lower()):
+                self.getVaihdan(bot, update)
             elif re.match(r'^vitun', msg.text.lower()):
                 self.getVitun(bot, update)
             elif re.match(r'^mikä vitun ', msg.text.lower()):

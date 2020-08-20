@@ -136,3 +136,6 @@ class Mainari:
 
     def resetInfoCooldown(self):
         self.is_in_cooldown = False
+
+    def messageHandler(self, bot, update):
+        return

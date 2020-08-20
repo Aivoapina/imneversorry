@@ -48,3 +48,6 @@ class Tagaaja:
         bot.sendMessage(chat_id=update.message.chat_id,
                         parse_mode='Markdown',
                         text='\"*{}*\": \"{}\"'.format(target, '\", \"'.join(tags)))
+
+    def messageHandler(self, bot, update):
+        return

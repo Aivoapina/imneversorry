@@ -202,3 +202,6 @@ class Kilometri:
 
     def helpHandler(self, bot, update, args=tuple()):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
+
+    def messageHandler(self, bot, update):
+        return
