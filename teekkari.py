@@ -25,6 +25,7 @@ class Teekkari:
             'addsikulla': self.banHammer,
             'sotanimi': self.getSotanimi,
             'sukunimi': self.getSukunimi,
+            'pottiin': self.getPottiin,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
