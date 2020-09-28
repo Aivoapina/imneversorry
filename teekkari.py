@@ -25,6 +25,7 @@ class Teekkari:
             'addsikulla': self.banHammer,
             'sotanimi': self.getSotanimi,
             'sukunimi': self.getSukunimi,
+            'pottiin': self.getPottiin,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -51,6 +52,7 @@ class Teekkari:
         self.lastUutineUpdate = 0
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
+        self.lastPottiin = {}
 
     def getCommands(self):
         return self.commands
@@ -252,6 +254,18 @@ class Teekkari:
             uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
             bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
 
+    def getPottiin(self, bot, update, args=''):
+        now = datetime.datetime.now().date()
+        userId = update.message.from_user.id
+        msg = "Pottiin!" if (random.randint(0, 1) == 0) else "kottiin..."
+        if userId not in self.lastPottiin:
+            self.lastPottiin[userId] = now
+            bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+        elif self.lastPottiin[userId] != now:
+            self.lastPottiin[userId] = now
+            bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+
+
     def banHammer(self, bot, update, args=''):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -303,3 +317,5 @@ class Teekkari:
                 self.getTUNI(bot, update)
             elif 'nakuttaa' in msg.text.lower():
                 self.getNakuttaa(bot, update)
+            elif re.match(r'^/pottiin', msg.text.lower()):
+                self.getPottiin(bot, update)
