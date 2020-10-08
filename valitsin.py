@@ -3,6 +3,7 @@ import re
 import datetime
 import json
 import hashlib
+from utils import banCheck
 
 class Valitsin:
     def __init__(self):
@@ -44,6 +45,7 @@ class Valitsin:
         else:
             bot.sendMessage(chat_id=update.message.chat_id, text='on pakko {}'.format(groups.group(1)))
 
+    @banCheck
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:

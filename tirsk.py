@@ -1,4 +1,5 @@
 import random
+from utils import banCheck
 
 class Tirsk:
     isTirsk  = lambda self: random.random() < self.tirsk_prob
@@ -14,6 +15,7 @@ class Tirsk:
         chat_id = update.message.chat.id
         bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
 
+    @banCheck
     def messageHandler(self, bot, update):
         if self.isTirsk():
             self.sendTirsk(bot, update)

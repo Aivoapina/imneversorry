@@ -2,7 +2,7 @@ import re
 import db
 import random
 import operator
-from utils import oppisWithSameText
+from utils import oppisWithSameText, banCheck
 
 class Oppija:
     def __init__(self):
@@ -34,6 +34,7 @@ class Oppija:
 
             bot.sendMessage(chat_id=update.message.chat_id, text=no_idea)
 
+    @banCheck
     def learnHandler(self, bot, update, args):
         if len(args) < 2:
             bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /opi <asia> <määritelmä>')
@@ -45,6 +46,7 @@ class Oppija:
         chat_id = update.message.chat.id
         db.upsertOppi(keyword, definition, chat_id, update.message.from_user.username)
 
+    @banCheck
     def opisCountHandler(self, bot, update, args=''):
         result = db.countOpis(update.message.chat.id)
         bot.sendMessage(chat_id=update.message.chat_id, text=(str(result[0]) + ' opis'))
@@ -89,6 +91,7 @@ class Oppija:
 
         return inverted_list
 
+    @banCheck
     def jokotaiHandler(self, bot, update, args=''):
         sides = ['kruuna', 'klaava']
         maximalRigging = random.choice(sides)
@@ -97,6 +100,7 @@ class Oppija:
         bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
         self.defineTerm(bot, update, riggedQuestion)
 
+    @banCheck
     def aliasHandler(self, bot, update, args=''):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
@@ -114,6 +118,7 @@ class Oppija:
             bot.sendMessage(chat_id=chat_id,
                             text='Edellinen alias on vielä käynnissä! Selitys oli: \"{}\"?'.format(self.correctOppi[chat_id][0]))
 
+    @banCheck
     def guessHandler(self, bot, update, args):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
@@ -125,6 +130,7 @@ class Oppija:
                 self.correctOppi[chat_id] = None
                 bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
 
+    @banCheck
     def messageHandler(self, bot, update):
         msg = update.message
         if msg.text is not None:

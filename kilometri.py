@@ -5,6 +5,7 @@ import time
 import telegram
 
 import db
+from utils import banCheck
 
 extract_uid = lambda update: update.message.from_user["id"]
 extract_chatid = lambda update: update.message.chat_id
@@ -56,6 +57,7 @@ class Kilometri:
         chat_id = extract_chatid(update)
         return bot.get_chat_member(chat_id, uid).user
 
+    @banCheck
     def nameFromUid(self, bot, update, uid):
         try:
             user = self.userFromUid(bot, update, uid)
@@ -105,6 +107,7 @@ class Kilometri:
 
         return (aika, aikanimi, lkm)
 
+    @banCheck
     def urheilinHandler(self, lajinnimi, bot, update, args):
         def printUsage():
             usage = "Usage: /%s <km>" % lajinnimi
@@ -129,6 +132,7 @@ class Kilometri:
         now = int(time.time())
         db.addUrheilu(uid, chatid, km, lajinnimi, now)
 
+    @banCheck
     def getStatHandler(self, lajinnimi, bot, update, args):
         def printUsage(komento):
             usage = "Usage: /%s [lkm] [ajalta]" % komento
@@ -153,6 +157,7 @@ class Kilometri:
             text="Top %i %s viimeisen %s aikana:\n\n%s" %
                 (lkm, laji.monikko, aikanimi, lista))
 
+    @banCheck
     def pisteetHandler(self, bot, update, args=tuple()):
         def usage():
             bot.sendMessage(chat_id=update.message.chat_id,
@@ -173,6 +178,7 @@ class Kilometri:
             lkm, aikanimi, piste_str)
         bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
+    @banCheck
     def statsHandler(self, bot, update, args=tuple()):
         def usage():
             bot.sendMessage(chat_id=update.message.chat_id,
@@ -200,8 +206,10 @@ class Kilometri:
         bot.sendMessage(chat_id=update.message.chat_id,
                         text=stat_str)
 
+    @banCheck
     def helpHandler(self, bot, update, args=tuple()):
         bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
 
+    @banCheck
     def messageHandler(self, bot, update):
         return

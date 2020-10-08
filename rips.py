@@ -1,6 +1,7 @@
 import random
 import sqlite3 as sq
 import db
+from utils import banCheck
 
 class Rips:
     def __init__(self):
@@ -14,6 +15,7 @@ class Rips:
     def getCommands(self):
         return self.commands
 
+    @banCheck
     def ripHandler(self, bot, update, args=''):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
@@ -21,6 +23,7 @@ class Rips:
         riptype, rip = random.sample(self.rips[update.message.chat.id], 1)[0]
         self.sendMsg(bot, update, rip, riptype)
 
+    @banCheck
     def newripHandler(self, bot, update, args):
         if len(args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
@@ -30,6 +33,7 @@ class Rips:
         newrip = 'text', ' '.join(args)
         self.addRip(bot, update, newrip)
 
+    @banCheck
     def delripHandler(self, bot, update, args):
         if len(args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
@@ -61,12 +65,14 @@ class Rips:
             self.rips[chat_id].remove(delrip)
             db.delRip(delrip)
 
+    @banCheck
     def ripsCountHandler(self, bot, update, args=''):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
         self.sendMsg(bot, update, str(len(self.rips[chat_id])) + ' rips')
 
+    @banCheck
     def messageHandler(self, bot, update):
         msg = update.message
         if self.isNewRip(msg):

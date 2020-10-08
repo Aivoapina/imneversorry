@@ -2,7 +2,7 @@ import re
 import db
 import random
 import operator
-from utils import oppisWithSameText
+from utils import oppisWithSameText, banCheck
 
 class Tagaaja:
     def __init__(self):
@@ -13,6 +13,7 @@ class Tagaaja:
     def getCommands(self):
         return self.commands
 
+    @banCheck
     def addTagHandler(self, bot, update, args):
         if len(args) < 2:
             bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tag <asia> <tagi>')
@@ -23,6 +24,7 @@ class Tagaaja:
         chat_id = update.message.chat.id
         db.upsertTag(tag, target, chat_id, update.message.from_user.username)
 
+    @banCheck
     def taggedSearchHandler(self, bot, update, args):
         if len(args) < 1:
             bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tagged <tagi>')
@@ -36,6 +38,7 @@ class Tagaaja:
                         parse_mode='Markdown',
                         text='Tagged as \"*{}*\": \"{}\"'.format(tag, '\", \"'.join(tagged)))
 
+    @banCheck
     def tagTargetSearchHandler(self, bot, update, args):
         if len(args) < 1:
             bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tags <asia>')
