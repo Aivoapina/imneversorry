@@ -25,7 +25,13 @@ class Quote:
 
     @banCheck
     def quotesCountHandler(self, bot, update, args):
-        count = db.countQuotes(update.message.chat.id)
+        if len(args) == 0:
+            count = db.countQuotes(update.message.chat.id)
+        else:
+            quotee = args[0].strip('@')
+            quotes = db.findQuotes(update.message.chat.id, quotee)
+            count = len(quotes)
+
         bot.sendMessage(chat_id=update.message.chat.id, text=str(count) + ' quotes')
 
     @banCheck
