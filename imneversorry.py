@@ -1,4 +1,5 @@
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+from telegram import Update
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 from configparser import ConfigParser
 from argparse import ArgumentParser
 import importlib
@@ -41,15 +42,15 @@ km  = kilometri.Kilometri()
 
 objects = [rir, vit, vai, tir, opi, km, quo, mc, tag]
 
-def allMessages(bot, update):
+def allMessages(update: Update, context: CallbackContext):
     for obj in objects:
-        obj.messageHandler(bot, update)
+        obj.messageHandler(update, context)
 
 def main():
-    updater = Updater(cfg['TELEGRAM']['token'])
+    updater = Updater(cfg['TELEGRAM']['token'], use_context=True)
     for obj in objects:
         for key in list(obj.getCommands().keys()):
-            updater.dispatcher.add_handler(CommandHandler(key, obj.getCommands()[key], pass_args=True))
+            updater.dispatcher.add_handler(CommandHandler(key, obj.getCommands()[key]))
 
     updater.dispatcher.add_handler(MessageHandler(Filters.all, allMessages))
 

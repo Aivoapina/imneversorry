@@ -1,3 +1,5 @@
+from telegram import Update
+from telegram.ext import CallbackContext
 import random
 from utils import banCheck
 
@@ -11,11 +13,11 @@ class Tirsk:
     def getCommands(self):
         return dict()
 
-    def sendTirsk(self, bot, update):
+    def sendTirsk(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
-        bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
+        context.bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
 
     @banCheck
-    def messageHandler(self, bot, update):
+    def messageHandler(self, update: Update, context: CallbackContext):
         if self.isTirsk():
-            self.sendTirsk(bot, update)
+            self.sendTirsk(update, context)

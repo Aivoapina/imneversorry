@@ -1,3 +1,9 @@
+# Our random.sample usage is unsafe and pylint is unhappy with that.
+# Disable pylint for this file (please use pylint, it spots errors/unsafe code pretty well)
+# pylint: disable=unsubscriptable-object
+
+from telegram import Update
+from telegram.ext import CallbackContext
 import requests
 import urllib
 import random
@@ -59,18 +65,19 @@ class Teekkari:
         return self.commands
 
     @banCheck
-    def getVittuilu(self, bot, update, args=''):
+    def getVittuilu(self, update: Update, context: CallbackContext):
         if random.randint(0, 4) == 0:
-            bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
     @banCheck
-    def handleHakemus(self, bot, update, args=''):
+    def handleHakemus(self, update: Update, context: CallbackContext):
         # Shancial, [16.03.20 14:27]
         # hakemus nerffiä zyrkin hakemuksiin
         # Imneversorry, [16.03.20 14:27]
         # hyy-vä
+        bot = context.bot
         if random.randint(0, 9) == 0 and (update.message.from_user.id != 153013548 or random.randint(0, 3) == 0):
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
@@ -85,53 +92,53 @@ class Teekkari:
                 bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
 
     @banCheck
-    def getViisaus(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
+    def getViisaus(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
 
     @banCheck
-    def getVitutus(self, bot, update, args=''):
+    def getVitutus(self, update: Update, context: CallbackContext):
         r = requests.get(self.vituttaaUrl)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
-        bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
     @banCheck
-    def getSukunimi(self, bot, update, args=''):
+    def getSukunimi(self, update: Update, context: CallbackContext):
         r = requests.get(self.sukunimiUrl)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ')
-        bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
     @banCheck
-    def getDiagnoosi(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+    def getDiagnoosi(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
 
     @banCheck
-    def getMaitonimi(self, bot, update, args=''):
+    def getMaitonimi(self, update: Update, context: CallbackContext):
         maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
-        bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
 
     @banCheck
-    def getLintunimi(self, bot, update, args=''):
+    def getLintunimi(self, update: Update, context: CallbackContext):
         lintu = random.sample(self.linnut, 1)[0][0]
         lintu = re.sub(r'nen$', 's', lintu)
         lintuNimi = lintu + "-" + random.sample(self.nimet, 1)[0][0]
-        bot.sendMessage(chat_id=update.message.chat_id, text=lintuNimi)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=lintuNimi)
 
     @banCheck
-    def getKalanimi(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
+    def getKalanimi(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
 
     @banCheck
-    def getMoponimi(self, bot, update, args=''):
+    def getMoponimi(self, update: Update, context: CallbackContext):
         kurkku = random.sample(self.vihanneet, 1)[0][0]
         mopo = random.sample(self.kulkuneuvot, 1)[0][0]
         kuu = random.sample(self.planetoidit, 1)[0][0]
         mopoNimi = kurkku + ("", "-")[kurkku[-1:] == mopo[0] and mopo[0] in ('a', 'e', 'i', 'o', 'u', 'y', 'ä', 'ö')] + mopo + " eli " + kuu + ("", "-")[kuu[-1:] == 'e'] + 'eläin ' + kurkku + 'maasta'
-        bot.sendMessage(chat_id=update.message.chat_id, text=mopoNimi)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=mopoNimi)
 
     @banCheck
-    def getSotanimi(self, bot, update, args=''):
+    def getSotanimi(self, update: Update, context: CallbackContext):
         arvo = random.sample(self.sotilasarvot, 1)[0][0]
         nimi = random.sample(self.sotilasnimet, 1)[0][0]
         if random.randint(0, 7) == 0:
@@ -141,34 +148,34 @@ class Teekkari:
                 elif update.message.from_user.first_name:
                     nimi = update.message.from_user.first_name
         sotaNimi = arvo + ' ' + nimi
-        bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
 
     @banCheck
-    def getNakuttaa(self, bot, update, args=''):
+    def getNakuttaa(self, update: Update, context: CallbackContext):
         if random.randint(0, 100) == 0:
-            bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
+            context.bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
 
     @banCheck
-    def getHalo(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
+    def getHalo(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
 
     @banCheck
-    def getPizza(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
+    def getPizza(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
 
     @banCheck
-    def getNoppa(self, bot, update, args=''):
-        bot.sendDice(chat_id=update.message.chat_id)
-        bot.sendDice(chat_id=update.message.chat_id)
+    def getNoppa(self, update: Update, context: CallbackContext):
+        context.bot.sendDice(chat_id=update.message.chat_id)
+        context.bot.sendDice(chat_id=update.message.chat_id)
 
     @banCheck
-    def getVaihdan(self, bot, update, args=''):
+    def getVaihdan(self, update: Update, context: CallbackContext):
         now = time.time()
         if self.nextVaihdan < now:
             self.nextVaihdan = now + random.randint(60, 180)
-            bot.sendDice(chat_id=update.message.chat_id)
+            context.bot.sendDice(chat_id=update.message.chat_id)
 
     @banCheck
     def getUrbaani(self):
@@ -191,49 +198,49 @@ class Teekkari:
         return str(url[-1].split('=')[-1].lower())
 
     @banCheck
-    def getVitun(self, bot, update, args=''):
+    def getVitun(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         if userId not in self.lastVitun:
             self.lastVitun[userId] = now
-            bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
         elif self.lastVitun[userId] != now:
             self.lastVitun[userId] = now
-            bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
     @banCheck
-    def getVitunSelitys(self, bot, update, args=''):
+    def getVitunSelitys(self, update: Update, context: CallbackContext):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
         word = re.sub(r"[^a-z0-9\-]", '', word)
-        bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
 
     @banCheck
-    def getVaalikone(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
+    def getVaalikone(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
 
     @banCheck
-    def getHelveten(self, bot, update, args=''):
-        bot.sendMessage(chat_id=update.message.chat_id,
+    def getHelveten(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id,
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
     @banCheck
-    def getTEK(self, bot, update, args=''):
+    def getTEK(self, update: Update, context: CallbackContext):
         if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tek.*', word) and word != 'tek':
-                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
+                    context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
 
     @banCheck
-    def getTUNI(self, bot, update, args=''):
+    def getTUNI(self, update: Update, context: CallbackContext):
         if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tuni.*', word) and word != 'tuni':
-                    bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
+                    context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
                     return
 
     @banCheck
-    def getEnnustus(self, bot, update, args=''):
+    def getEnnustus(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now()
         data = [
             update.message.from_user.id,
@@ -260,10 +267,10 @@ class Teekkari:
         for x in range(n):
             r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
             ennustus += emoji.emojize(r)
-        bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
 
     @banCheck
-    def getUutine(self, bot, update, args=''):
+    def getUutine(self, update: Update, context: CallbackContext):
         now = time.time()
         if self.lastUutineUpdate + 3600 < now:
             self.lastUutineUpdate = now
@@ -280,72 +287,72 @@ class Teekkari:
         if self.nextUutine < now:
             self.nextUutine = now + random.randint(10, 120)
             uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
-            bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
 
     @banCheck
-    def getPottiin(self, bot, update, args=''):
+    def getPottiin(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         msg = "Pottiin!" if (random.randint(0, 1) == 0) else "kottiin..."
         if userId not in self.lastPottiin:
             self.lastPottiin[userId] = now
-            bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
         elif self.lastPottiin[userId] != now:
             self.lastPottiin[userId] = now
-            bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
     @banCheck
-    def banHammer(self, bot, update, args=''):
+    def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
-        bot.kickChatMember(update.message.chat.id, update.message.from_user.id, until_date=duration)
+        context.bot.kickChatMember(update.message.chat.id, update.message.from_user.id, until_date=duration)
 
     @banCheck
-    def messageHandler(self, bot, update):
+    def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
-        #print(msg)
+
         if msg.text is not None:
             if 'vituttaa' in msg.text.lower():
-                self.getVitutus(bot, update)
+                self.getVitutus(update, context)
             elif 'viisaus' in msg.text.lower():
-                self.getViisaus(bot, update)
+                self.getViisaus(update, context)
             elif 'pekkauotila' in msg.text.lower():
-                self.getVittuilu(bot, update)
+                self.getVittuilu(update, context)
             elif 'hakemus' in msg.text.lower():
-                self.handleHakemus(bot, update)
+                self.handleHakemus(update, context)
             elif 'diagno' in msg.text.lower():
-                self.getDiagnoosi(bot, update)
+                self.getDiagnoosi(update, context)
             elif 'horoskoop' in msg.text.lower():
-                self.getEnnustus(bot, update)
+                self.getEnnustus(update, context)
             elif 'uutine' in msg.text.lower():
-                self.getUutine(bot, update)
+                self.getUutine(update, context)
             elif re.match(r'^halo', msg.text.lower()):
-                self.getHalo(bot, update)
+                self.getHalo(update, context)
             elif re.match(r'^noppa', msg.text.lower()):
-                self.getNoppa(bot, update)
+                self.getNoppa(update, context)
             elif re.match(r'^vaihdan', msg.text.lower()):
-                self.getVaihdan(bot, update)
+                self.getVaihdan(update, context)
             elif re.match(r'^vitun', msg.text.lower()):
-                self.getVitun(bot, update)
+                self.getVitun(update, context)
             elif re.match(r'^mikä vitun ', msg.text.lower()):
-                self.getVitunSelitys(bot, update)
+                self.getVitunSelitys(update, context)
             elif re.match(r'^helveten', msg.text.lower()):
-                self.getHelveten(bot, update)
+                self.getHelveten(update, context)
             elif re.match(r'^/maitonimi', msg.text.lower()):
-                self.getMaitonimi(bot, update)
+                self.getMaitonimi(update, context)
             elif re.match(r'^/lintuslanginimi', msg.text.lower()):
-                self.getLintunimi(bot, update)
+                self.getLintunimi(update, context)
             elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
-                self.getMoponimi(bot, update)
+                self.getMoponimi(update, context)
             elif re.match(r'^/sotanimi', msg.text.lower()):
-                self.getSotanimi(bot, update)
+                self.getSotanimi(update, context)
             elif re.match(r'^/sukunimi', msg.text.lower()):
-                self.getSukunimi(bot, update)
+                self.getSukunimi(update, context)
             elif re.match(r'.*[tT]ek.*', msg.text):
-                self.getTEK(bot, update)
+                self.getTEK(update, context)
             elif re.match(r'.*[tT]uni.*', msg.text):
-                self.getTUNI(bot, update)
+                self.getTUNI(update, context)
             elif 'nakuttaa' in msg.text.lower():
-                self.getNakuttaa(bot, update)
+                self.getNakuttaa(update, context)
             elif re.match(r'^/pottiin', msg.text.lower()):
-                self.getPottiin(bot, update)
+                self.getPottiin(update, context)

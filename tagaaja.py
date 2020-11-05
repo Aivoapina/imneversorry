@@ -1,3 +1,5 @@
+from telegram import Update
+from telegram.ext import CallbackContext
 import re
 import db
 import random
@@ -14,9 +16,10 @@ class Tagaaja:
         return self.commands
 
     @banCheck
-    def addTagHandler(self, bot, update, args):
+    def addTagHandler(self, update: Update, context: CallbackContext):
+        args = context.args
         if len(args) < 2:
-            bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tag <asia> <tagi>')
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tag <asia> <tagi>')
             return
 
         target = args[0]
@@ -25,32 +28,34 @@ class Tagaaja:
         db.upsertTag(tag, target, chat_id, update.message.from_user.username)
 
     @banCheck
-    def taggedSearchHandler(self, bot, update, args):
+    def taggedSearchHandler(self, update: Update, context: CallbackContext):
+        args = context.args
         if len(args) < 1:
-            bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tagged <tagi>')
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tagged <tagi>')
             return
 
         tag = args[0]
         chat_id = update.message.chat.id
         tagged_rows = db.findTagged(tag, chat_id)
         tagged = [row[0] for row in tagged_rows]
-        bot.sendMessage(chat_id=update.message.chat_id,
+        context.bot.sendMessage(chat_id=update.message.chat_id,
                         parse_mode='Markdown',
                         text='Tagged as \"*{}*\": \"{}\"'.format(tag, '\", \"'.join(tagged)))
 
     @banCheck
-    def tagTargetSearchHandler(self, bot, update, args):
+    def tagTargetSearchHandler(self, update: Update, context: CallbackContext):
+        args = context.args
         if len(args) < 1:
-            bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tags <asia>')
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /tags <asia>')
             return
 
         target = args[0]
         chat_id = update.message.chat.id
         tags_rows = db.findTargetTags(target, chat_id)
         tags = [row[0] for row in tags_rows]
-        bot.sendMessage(chat_id=update.message.chat_id,
+        context.bot.sendMessage(chat_id=update.message.chat_id,
                         parse_mode='Markdown',
                         text='\"*{}*\": \"{}\"'.format(target, '\", \"'.join(tags)))
 
-    def messageHandler(self, bot, update):
+    def messageHandler(self, update: Update, context: CallbackContext):
         return
