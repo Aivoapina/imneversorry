@@ -7,7 +7,6 @@ from telegram.ext import CallbackContext
 import random
 import sqlite3 as sq
 import db
-from utils import banCheck
 
 class Rips:
     def __init__(self):
@@ -21,7 +20,6 @@ class Rips:
     def getCommands(self):
         return self.commands
 
-    @banCheck
     def ripHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
@@ -30,7 +28,6 @@ class Rips:
         riptype, rip = random.sample(self.rips[update.message.chat.id], 1)[0]
         self.sendMsg(update, context, rip, riptype)
 
-    @banCheck
     def newripHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
@@ -40,7 +37,6 @@ class Rips:
         newrip = 'text', ' '.join(context.args)
         self.addRip(update, context, newrip)
 
-    @banCheck
     def delripHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
@@ -72,14 +68,12 @@ class Rips:
             self.rips[chat_id].remove(delrip)
             db.delRip(delrip)
 
-    @banCheck
     def ripsCountHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
         self.sendMsg(update, context, str(len(self.rips[chat_id])) + ' rips')
 
-    @banCheck
     def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if self.isNewRip(msg):

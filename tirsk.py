@@ -1,7 +1,6 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 import random
-from utils import banCheck
 
 class Tirsk:
     isTirsk  = lambda self: random.random() < self.tirsk_prob
@@ -17,7 +16,6 @@ class Tirsk:
         chat_id = update.message.chat.id
         context.bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
 
-    @banCheck
     def messageHandler(self, update: Update, context: CallbackContext):
         if self.isTirsk():
             self.sendTirsk(update, context)

@@ -4,7 +4,6 @@ import re
 import db
 import random
 import operator
-from utils import oppisWithSameText, banCheck
 
 class Tagaaja:
     def __init__(self):
@@ -15,7 +14,6 @@ class Tagaaja:
     def getCommands(self):
         return self.commands
 
-    @banCheck
     def addTagHandler(self, update: Update, context: CallbackContext):
         args = context.args
         if len(args) < 2:
@@ -27,7 +25,6 @@ class Tagaaja:
         chat_id = update.message.chat.id
         db.upsertTag(tag, target, chat_id, update.message.from_user.username)
 
-    @banCheck
     def taggedSearchHandler(self, update: Update, context: CallbackContext):
         args = context.args
         if len(args) < 1:
@@ -42,7 +39,6 @@ class Tagaaja:
                         parse_mode='Markdown',
                         text='Tagged as \"*{}*\": \"{}\"'.format(tag, '\", \"'.join(tagged)))
 
-    @banCheck
     def tagTargetSearchHandler(self, update: Update, context: CallbackContext):
         args = context.args
         if len(args) < 1:

@@ -4,7 +4,7 @@ import re
 import db
 import random
 import operator
-from utils import oppisWithSameText, banCheck
+from utils import oppisWithSameText
 
 class Oppija:
     def __init__(self):
@@ -36,7 +36,6 @@ class Oppija:
 
             context.bot.sendMessage(chat_id=update.message.chat_id, text=no_idea)
 
-    @banCheck
     def learnHandler(self, update: Update, context: CallbackContext):
         if len(context.args) < 2:
             context.bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /opi <asia> <määritelmä>')
@@ -48,7 +47,6 @@ class Oppija:
         chat_id = update.message.chat.id
         db.upsertOppi(keyword, definition, chat_id, update.message.from_user.username)
 
-    @banCheck
     def opisCountHandler(self, update: Update, context: CallbackContext):
         result = db.countOpis(update.message.chat.id)
         context.bot.sendMessage(chat_id=update.message.chat_id, text=(str(result[0]) + ' opis'))
@@ -93,7 +91,6 @@ class Oppija:
 
         return inverted_list
 
-    @banCheck
     def jokotaiHandler(self, update: Update, context: CallbackContext):
         sides = ['kruuna', 'klaava']
         maximalRigging = random.choice(sides)
@@ -102,7 +99,6 @@ class Oppija:
         context.bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
         self.defineTerm(update, context, riggedQuestion)
 
-    @banCheck
     def aliasHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
@@ -120,7 +116,6 @@ class Oppija:
             context.bot.sendMessage(chat_id=chat_id,
                             text='Edellinen alias on vielä käynnissä! Selitys oli: \"{}\"?'.format(self.correctOppi[chat_id][0]))
 
-    @banCheck
     def guessHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
@@ -132,7 +127,6 @@ class Oppija:
                 self.correctOppi[chat_id] = None
                 context.bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
 
-    @banCheck
     def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if msg.text is not None:
