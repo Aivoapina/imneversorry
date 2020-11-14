@@ -1,8 +1,10 @@
+from telegram import Update
+from telegram.ext import CallbackContext
 import re
 import db
 import random
 import operator
-from utils import oppisWithSameText, banCheck
+from utils import oppisWithSameText
 
 class Oppija:
     def __init__(self):
@@ -16,49 +18,47 @@ class Oppija:
     def getCommands(self):
         return self.commands
 
-    def defineTerm(self, bot, update, question, inverted=False):
+    def defineTerm(self, update: Update, context: CallbackContext, question, inverted=False):
         definition = db.findOppi(question.group(2), update.message.chat.id)
 
         if definition is not None:
             if (inverted):
                 inverted_definition = self.invertStringList(definition)[0]
                 inverted_question = self.invertStringList([question.group(2)])[0]
-                bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_definition + ' :' + inverted_question))
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_definition + ' :' + inverted_question))
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
 
         else:
             no_idea = 'En tiedä'
             if (inverted):
                 no_idea = self.invertStringList([no_idea])[0]
 
-            bot.sendMessage(chat_id=update.message.chat_id, text=no_idea)
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=no_idea)
 
-    @banCheck
-    def learnHandler(self, bot, update, args):
-        if len(args) < 2:
-            bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /opi <asia> <määritelmä>')
+    def learnHandler(self, update: Update, context: CallbackContext):
+        if len(context.args) < 2:
+            context.bot.sendMessage(chat_id=update.message.chat_id, text='Usage: /opi <asia> <määritelmä>')
             return
-        keyword, definition = args[0], ' '.join(args[1:])
-        self.learn(bot, update, keyword, definition)
+        keyword, definition = context.args[0], ' '.join(context.args[1:])
+        self.learn(update, context, keyword, definition)
 
-    def learn(self, bot, update, keyword, definition):
+    def learn(self, update: Update, context: CallbackContext, keyword, definition):
         chat_id = update.message.chat.id
         db.upsertOppi(keyword, definition, chat_id, update.message.from_user.username)
 
-    @banCheck
-    def opisCountHandler(self, bot, update, args=''):
+    def opisCountHandler(self, update: Update, context: CallbackContext):
         result = db.countOpis(update.message.chat.id)
-        bot.sendMessage(chat_id=update.message.chat_id, text=(str(result[0]) + ' opis'))
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=(str(result[0]) + ' opis'))
 
-    def randomOppiHandler(self, bot, update, inverted=False):
+    def randomOppiHandler(self, update: Update, context: CallbackContext, inverted=False):
         if (inverted):
             result = db.randomOppi(update.message.chat.id)
             inverted_result = self.invertStringList(result)
-            bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_result[1] + ' :' + inverted_result[0]))
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_result[1] + ' :' + inverted_result[0]))
         else:
             result = db.randomOppi(update.message.chat.id)
-            bot.sendMessage(chat_id=update.message.chat_id, text=(result[0] + ': ' + result[1]))
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=(result[0] + ': ' + result[1]))
 
     def invertStringList(self, list):
         # Reference table for the Unicode chars: http://www.upsidedowntext.com/unicode
@@ -91,17 +91,15 @@ class Oppija:
 
         return inverted_list
 
-    @banCheck
-    def jokotaiHandler(self, bot, update, args=''):
+    def jokotaiHandler(self, update: Update, context: CallbackContext):
         sides = ['kruuna', 'klaava']
         maximalRigging = random.choice(sides)
         riggedQuestion = re.match(r"^(\?\?)\s(\S+)$", "?? " + maximalRigging)
 
-        bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
-        self.defineTerm(bot, update, riggedQuestion)
+        context.bot.sendMessage(chat_id=update.message.chat_id, parse_mode='Markdown', text='*♪ Se on kuulkaas joko tai, joko tai! ♪*')
+        self.defineTerm(update, context, riggedQuestion)
 
-    @banCheck
-    def aliasHandler(self, bot, update, args=''):
+    def aliasHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
             self.correctOppi[chat_id] = None
@@ -113,45 +111,43 @@ class Oppija:
             self.correctOppi[chat_id] = oppisWithSameText(definitions, correctOppi[0])
 
             message = 'Arvaa mikä oppi: \"{}\"?'.format(self.correctOppi[chat_id][0])
-            bot.sendMessage(chat_id=chat_id, text=message)
+            context.bot.sendMessage(chat_id=chat_id, text=message)
         else:
-            bot.sendMessage(chat_id=chat_id,
+            context.bot.sendMessage(chat_id=chat_id,
                             text='Edellinen alias on vielä käynnissä! Selitys oli: \"{}\"?'.format(self.correctOppi[chat_id][0]))
 
-    @banCheck
-    def guessHandler(self, bot, update, args):
+    def guessHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if chat_id not in self.correctOppi:
             self.correctOppi[chat_id] = None
-        if len(args) < 1:
+        if len(context.args) < 1:
             return
         elif self.correctOppi[chat_id] is not None:
-            if args[0].lower() in self.correctOppi[chat_id][1]:
+            if context.args[0].lower() in self.correctOppi[chat_id][1]:
                 self.correctOppi[chat_id] = None
-                bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
+                context.bot.sendSticker(chat_id=chat_id, sticker='CAADBAADuAADQAGFCMDNfgtXUw0QFgQ')
 
-    @banCheck
-    def messageHandler(self, bot, update):
+    def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if msg.text is not None:
             # Matches messages in formats "?? something" and "¿¿ something"
             question = re.match(r"^(\?\?)\s(\S+)$", msg.text)
             inverted_question = re.match(r"^(\¿\¿)\s(\S+)$", msg.text)
             if question:
-                self.defineTerm(bot, update, question)
+                self.defineTerm(update, context, question)
             elif inverted_question:
-                self.defineTerm(bot, update, inverted_question, True)
+                self.defineTerm(update, context, inverted_question, True)
 
             # Matches message "?!"
             elif re.match(r"^(\?\!)$", msg.text):
-                self.randomOppiHandler(bot, update)
+                self.randomOppiHandler(update, context)
 
             # Matches message "¡¿"
             elif re.match(r"^(\¡\¿)$", msg.text):
-                self.randomOppiHandler(bot, update, True)
+                self.randomOppiHandler(update, context, True)
 
             elif re.match(r"^.+\?$", msg.text) and random.randint(1, 50) == 1:
-                getattr(bot, (lambda _, __: _(_, __))(
+                getattr(context.bot, (lambda _, __: _(_, __))(
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
                     122589709182092589684122995)
                 )(chat_id=operator.attrgetter((lambda _, __: _(_, __))(

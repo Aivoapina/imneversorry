@@ -1,7 +1,12 @@
+# Our random.sample usage is unsafe and pylint is unhappy with that.
+# Disable pylint for this file (please use pylint, it spots errors/unsafe code pretty well)
+# pylint: disable=unsubscriptable-object
+
+from telegram import Update
+from telegram.ext import CallbackContext
 import random
 import sqlite3 as sq
 import db
-from utils import banCheck
 
 class Rips:
     def __init__(self):
@@ -15,65 +20,61 @@ class Rips:
     def getCommands(self):
         return self.commands
 
-    @banCheck
-    def ripHandler(self, bot, update, args=''):
+    def ripHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
+        # pylint: disable=unpacking-non-sequence
         riptype, rip = random.sample(self.rips[update.message.chat.id], 1)[0]
-        self.sendMsg(bot, update, rip, riptype)
+        self.sendMsg(update, context, rip, riptype)
 
-    @banCheck
-    def newripHandler(self, bot, update, args):
-        if len(args) == 0:
+    def newripHandler(self, update: Update, context: CallbackContext):
+        if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
             self.waiting_rip[key] = 'newrip'
-            self.sendMsg(bot, update, 'Usage: /newrip <ripmessage> or send mediafile for newrip')
+            self.sendMsg(update, context, 'Usage: /newrip <ripmessage> or send mediafile for newrip')
             return
-        newrip = 'text', ' '.join(args)
-        self.addRip(bot, update, newrip)
+        newrip = 'text', ' '.join(context.args)
+        self.addRip(update, context, newrip)
 
-    @banCheck
-    def delripHandler(self, bot, update, args):
-        if len(args) == 0:
+    def delripHandler(self, update: Update, context: CallbackContext):
+        if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
             self.waiting_rip[key] = 'delrip'
-            self.sendMsg(bot, update, 'Usage: /delrip <ripname> or forward mediafile for delete')
+            self.sendMsg(update, context, 'Usage: /delrip <ripname> or forward mediafile for delete')
             return
-        delrip = 'text', ' '.join(args)
-        self.delRip(bot, update, delrip)
+        delrip = 'text', ' '.join(context.args)
+        self.delRip(update, context, delrip)
 
-    def addRip(self, bot, update, newrip):
+    def addRip(self, update: Update, context: CallbackContext, newrip):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
         elif newrip in self.rips[chat_id]:
-            self.sendMsg(bot, update, 'Already in rips')
+            self.sendMsg(update, context, 'Already in rips')
         else:
             self.rips[chat_id].add(newrip)
             type, rip = newrip
             db.addRip(type, rip, chat_id, update.message.from_user.username)
 
-    def delRip(self, bot, update, delrip):
+    def delRip(self, update: Update, context: CallbackContext, delrip):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
-            self.sendMsg(bot, update, "Couldn't find rip")
+            self.sendMsg(update, context, "Couldn't find rip")
         elif delrip not in self.rips[chat_id]:
-            self.sendMsg(bot, update, "Couldn't find rip")
+            self.sendMsg(update, context, "Couldn't find rip")
         else:
             self.rips[chat_id].remove(delrip)
             db.delRip(delrip)
 
-    @banCheck
-    def ripsCountHandler(self, bot, update, args=''):
+    def ripsCountHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
-        self.sendMsg(bot, update, str(len(self.rips[chat_id])) + ' rips')
+        self.sendMsg(update, context, str(len(self.rips[chat_id])) + ' rips')
 
-    @banCheck
-    def messageHandler(self, bot, update):
+    def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if self.isNewRip(msg):
             if len(msg.photo) > 0:
@@ -95,20 +96,20 @@ class Rips:
             if key in self.waiting_rip:
                 if rip is not None:
                     if self.waiting_rip[key] == 'newrip':
-                        self.addRip(bot, update, rip)
+                        self.addRip(update, context, rip)
                     elif self.waiting_rip[key] == 'delrip':
-                        self.delRip(bot, update, rip)
+                        self.delRip(update, context, rip)
                 self.waiting_rip.pop(key)
 
             if msg.caption is not None:
                 if 'newrip' in msg.caption:
-                    self.addRip(bot, update, rip)
+                    self.addRip(update, context, rip)
                 elif 'delrip' in msg.caption:
-                    self.delRip(bot, update, rip)
+                    self.delRip(update, context, rip)
 
         if msg.text is not None:
             if 'rip' in msg.text.lower():
-                self.ripHandler(bot, update)
+                self.ripHandler(update, context)
 
     def isNewRip(self, msg):
         key = str(msg.from_user.id) + str(msg.chat.id)
@@ -120,7 +121,8 @@ class Rips:
                     return True
             return False
 
-    def sendMsg(self, bot, update, msg, msg_type=''):
+    def sendMsg(self, update: Update, context: CallbackContext, msg, msg_type=''):
+        bot = context.bot
         if msg_type == 'photo':
             bot.sendPhoto(chat_id=update.message.chat_id, photo=msg, caption='rip in')
         elif msg_type == 'document':
