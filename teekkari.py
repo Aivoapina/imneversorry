@@ -78,11 +78,11 @@ class Teekkari:
 
         # https://t.me/c/1363070040/153134
         if 'hacemus' in update.message.text.lower():
-            txtHyyvä = 'hy-wae'
+            txtHyyva = 'hy-wae'
             txtTapanSut = 'i cill u'
             txtTapanKaikki = 'HEADSHOT'
         else:
-            txtHyyvä = 'hyy-vä'
+            txtHyyva = 'hyy-vä'
             txtTapanSut = 'tapan sut'
             txtTapanKaikki = 'TAPAN KAIKKI'
 
@@ -90,7 +90,7 @@ class Teekkari:
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyvä)
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva)
         else:
             if random.randint(0, 1000) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
