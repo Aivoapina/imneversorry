@@ -177,6 +177,5 @@ class Oppija:
         question = re.match(r"^(\?\?)\s(\S+)$", query)
         if question:
             results = self.searchTerm(update, context, question)
-            if results:
-                inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0]+': '+item[1][:32], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
-                context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=inlinequeryresults, cache_time=60, is_personal=True)
+            inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0]+': '+item[1][:32], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
+            context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=inlinequeryresults, cache_time=60, is_personal=True)
