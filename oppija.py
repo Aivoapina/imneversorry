@@ -49,8 +49,7 @@ class Oppija:
                 print("User not in channel")
 
         results = db.searchOppi(question.group(2), update.inline_query.from_user.id, userschannels)
-        inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0]+': '+item[1][:32], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
-        context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=inlinequeryresults, cache_time=60, is_personal=True)
+        return results
 
     def learnHandler(self, update: Update, context: CallbackContext):
         if len(context.args) < 2:
@@ -178,3 +177,6 @@ class Oppija:
         question = re.match(r"^(\?\?)\s(\S+)$", query)
         if question:
             results = self.searchTerm(update, context, question)
+            if results:
+                inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0]+': '+item[1][:32], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
+                context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=inlinequeryresults, cache_time=60, is_personal=True)
