@@ -1,10 +1,11 @@
-from telegram import Update
+from telegram import Update, InlineQueryResultArticle, InputTextMessageContent
 from telegram.ext import CallbackContext
 import re
 import db
 import random
 import operator
 from utils import oppisWithSameText
+from uuid import uuid4
 
 class Oppija:
     def __init__(self):
@@ -35,6 +36,21 @@ class Oppija:
                 no_idea = self.invertStringList([no_idea])[0]
 
             context.bot.sendMessage(chat_id=update.message.chat_id, text=no_idea)
+
+    def searchTerm(self, update: Update, context: CallbackContext, question, inverted=False):
+        channels = db.getChannels()
+        userschannels = []
+        for channel in channels:
+            try:
+                member = context.bot.get_chat_member(channel, update.inline_query.from_user.id)
+                if member.status in ['creator', 'administrator', 'member']:
+                    userschannels.append(channel)
+            except:
+                print("User not in channel")
+
+        results = db.searchOppi(question.group(2), update.inline_query.from_user.id, userschannels)
+        inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0]+': '+item[1][:32], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
+        return inlinequeryresults
 
     def learnHandler(self, update: Update, context: CallbackContext):
         if len(context.args) < 2:
@@ -156,3 +172,10 @@ class Oppija:
                     lambda _, __: chr(__ % 256) + _(_, __ // 256) if __ else "",
                     random.sample([3041605, 779117898, 17466, 272452313416, 7022364615740061032, 2360793474633670572049331836447094], 1)[0])))
 
+    def inlineQueryHandler(self, update: Update, context: CallbackContext):
+        query = update.inline_query.query
+        results = []
+        question = re.match(r"^(\?\?)\s(\S+)$", query)
+        if question:
+            results = self.searchTerm(update, context, question)
+            update.inline_query.answer(results)

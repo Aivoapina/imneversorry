@@ -60,6 +60,20 @@ def findOppi(keyword, channel):
         cur.execute('SELECT definition FROM Oppi WHERE keyword=? and channel=?', (keyword, channel))
         return cur.fetchone()
 
+def searchOppi(keyword, user, channels):
+    keyword = '%' + keyword + '%'
+    results = []
+    for channel in channels:
+        with cursor() as cur:
+            cur.execute('SELECT keyword, definition FROM Oppi WHERE (keyword LIKE ? OR definition LIKE ?) AND channel=? LIMIT 10', (keyword, keyword, channel))
+            results = results + [(item[0], item[1]) for item in cur.fetchall()]
+    return results
+
+def getChannels():
+    with cursor() as cur:
+        cur.execute('SELECT DISTINCT channel FROM Oppi')
+        return [item[0] for item in cur.fetchall()]
+
 def countOpis(channel):
     with cursor() as cur:
         cur.execute('SELECT COUNT(*) AS count FROM Oppi WHERE channel=?', (channel,))
