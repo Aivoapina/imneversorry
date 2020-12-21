@@ -74,6 +74,7 @@ def searchOppi(keyword, user, channels):
     for item in results:
         opis[item[0]] = item[1]
         keys.append(item[0])
+    keys = list(set(keys))
     fuzzed = process.extract(keyword, keys, limit=50)
     output = []
     for item in fuzzed:
