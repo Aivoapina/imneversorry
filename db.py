@@ -79,7 +79,6 @@ def searchOppi(keyword, user, channels):
     output = []
     for item in fuzzed:
         output.append((item[0], opis[item[0]]))
-    output.reverse()
     return output
 
 def getChannels():
