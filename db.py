@@ -2,6 +2,8 @@ import sqlite3 as sq
 import datetime as dt
 
 from contextlib import contextmanager
+from rapidfuzz import fuzz
+from rapidfuzz import process
 
 @contextmanager
 def cursor():
@@ -59,6 +61,30 @@ def findOppi(keyword, channel):
     with cursor() as cur:
         cur.execute('SELECT definition FROM Oppi WHERE keyword=? and channel=?', (keyword, channel))
         return cur.fetchone()
+
+def searchOppi(keyword, user, channels):
+    search = '%' + keyword + '%'
+    results = []
+    for channel in channels:
+        with cursor() as cur:
+            cur.execute('SELECT keyword, definition FROM Oppi WHERE (keyword LIKE ? OR definition LIKE ?) AND channel=?', (search, search, channel))
+            results = results + [(item[0], item[1]) for item in cur.fetchall()]
+    opis = {}
+    keys = []
+    for item in results:
+        opis[item[0]] = item[1]
+        keys.append(item[0])
+    keys = list(set(keys))
+    fuzzed = process.extract(keyword, keys, limit=50)
+    output = []
+    for item in fuzzed:
+        output.append((item[0], opis[item[0]]))
+    return output
+
+def getChannels():
+    with cursor() as cur:
+        cur.execute('SELECT DISTINCT channel FROM Oppi')
+        return [item[0] for item in cur.fetchall()]
 
 def countOpis(channel):
     with cursor() as cur:

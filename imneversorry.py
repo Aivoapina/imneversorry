@@ -1,5 +1,5 @@
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, InlineQueryHandler
 from configparser import ConfigParser
 from argparse import ArgumentParser
 import importlib
@@ -62,6 +62,8 @@ def main():
 
     updater.dispatcher.add_handler(MessageHandler(
         ~Filters.chat(BANNED_CHANNELS), allMessages))
+
+    updater.dispatcher.add_handler(InlineQueryHandler(opi.inlineQueryHandler))
 
     updater.start_polling()
     updater.idle()
