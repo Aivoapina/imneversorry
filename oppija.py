@@ -174,8 +174,10 @@ class Oppija:
     def inlineQueryHandler(self, update: Update, context: CallbackContext):
         query = update.inline_query.query
         results = []
-        question = re.match(r"^(\?\?)\s(\S+)$", query)
+        question = re.match(r"^(\?\?)\s(\S\S\S+)$", query)
         if question:
             results = self.searchTerm(update, context, question)
             inlinequeryresults = [InlineQueryResultArticle(id=uuid4(), title=item[0], description=item[1][:255], input_message_content=InputTextMessageContent('?? '+item[0])) for item in results]
             context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=inlinequeryresults, cache_time=60, is_personal=True)
+        else:
+            context.bot.answer_inline_query(inline_query_id=update.inline_query.id, results=[], cache_time=5, is_personal=True)

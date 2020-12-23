@@ -67,7 +67,7 @@ def searchOppi(keyword, user, channels):
     results = []
     for channel in channels:
         with cursor() as cur:
-            cur.execute('SELECT keyword, definition FROM Oppi WHERE (keyword LIKE ? OR definition LIKE ?) AND channel=?', (search, search, channel))
+            cur.execute('SELECT keyword, definition FROM Oppi WHERE (keyword LIKE ? OR definition LIKE ?) AND channel=? LIMIT 50', (search, search, channel))
             results = results + [(item[0], item[1]) for item in cur.fetchall()]
     opis = {}
     keys = []
