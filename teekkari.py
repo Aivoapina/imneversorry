@@ -75,18 +75,29 @@ class Teekkari:
         # Imneversorry, [16.03.20 14:27]
         # hyy-vä
         bot = context.bot
+
+        # https://t.me/c/1363070040/153134
+        if 'hacemus' in update.message.text.lower():
+            txtHyyva = 'hy-wae'
+            txtTapanSut = 'i cill u'
+            txtTapanKaikki = 'HEADSHOT'
+        else:
+            txtHyyva = 'hyy-vä'
+            txtTapanSut = 'tapan sut'
+            txtTapanKaikki = 'TAPAN KAIKKI'
+
         if random.randint(0, 9) == 0 and (update.message.from_user.id != 153013548 or random.randint(0, 3) == 0):
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text='hyy-vä')
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva)
         else:
             if random.randint(0, 1000) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
             elif random.randint(0, 600) == 0:
-                bot.sendMessage(chat_id=update.message.chat_id, text='TAPAN KAIKKI')
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki)
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text='tapan sut')
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut)
 
     def getViisaus(self, update: Update, context: CallbackContext):
         context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
@@ -287,7 +298,7 @@ class Teekkari:
                 self.getViisaus(update, context)
             elif 'pekkauotila' in msg.text.lower():
                 self.getVittuilu(update, context)
-            elif 'hakemus' in msg.text.lower():
+            elif 'hakemus' in msg.text.lower() or 'hacemus' in msg.text.lower():
                 self.handleHakemus(update, context)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(update, context)
