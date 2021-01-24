@@ -26,9 +26,9 @@ class Valitsin:
         rigged = random.Random(seed)
         if rigged.randint(0, 49) == 0:
             answers = ['Molemmat :D', 'Ei kumpaakaan >:(']
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.sample(answers, 1)[0])
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(answers))
         else:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.sample(alternatives, 1)[0])
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(alternatives))
 
     def onkoPakko(self, update: Update, context: CallbackContext, groups):
         now = datetime.datetime.now()
