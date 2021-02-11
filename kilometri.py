@@ -25,6 +25,7 @@ class Kilometri:
         "kavely": Laji("kävelyt", 1),
         "juoksu": Laji("juoksut", 3),
         "pyoraily": Laji("pyöräilyt", 0.4),
+        "hiihto": Laji("hiihdot", 2),
     }
 
     def __init__(self):
