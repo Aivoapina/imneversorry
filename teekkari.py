@@ -81,6 +81,10 @@ class Teekkari:
             txtHyyva = 'hy-wae'
             txtTapanSut = 'i cill u'
             txtTapanKaikki = 'HEADSHOT'
+        elif 'hakemsu' in update.message.text.lower():
+            txtHyyva = 'hvy-ää'
+            txtTapanSut = 'tapna stu'
+            txtTapanKaikki = 'TAPNA KIKKI'
         else:
             txtHyyva = 'hyy-vä'
             txtTapanSut = 'tapan sut'
@@ -298,7 +302,7 @@ class Teekkari:
                 self.getViisaus(update, context)
             elif 'pekkauotila' in msg.text.lower():
                 self.getVittuilu(update, context)
-            elif 'hakemus' in msg.text.lower() or 'hacemus' in msg.text.lower():
+            elif 'hakemus' in msg.text.lower() or 'hacemus' in msg.text.lower() or 'hakemsu' in msg.text.lower():
                 self.handleHakemus(update, context)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(update, context)
