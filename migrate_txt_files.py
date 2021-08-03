@@ -83,6 +83,13 @@ for line in fs.read().splitlines():
 
 fs.close()
 
+fs = open('resources/kasvinimet.txt', 'r', encoding='utf-8')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Kasvinimet(nimi) values(?)", (line,))
+
+fs.close()
+
 fs = open('resources/ennustus.txt', 'r', encoding='utf-8')
 
 for line in fs.read().splitlines():
