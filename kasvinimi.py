@@ -74,15 +74,25 @@ def levenshteinDistance(kasvi: str, name: str):
     return v0[n]
 
 
-def findKasvinimi(kasvinimet, first_name = "", last_name=""):
+def findKasvinimi(kasvinimet: list, first_name: str = "", last_name: str = None, n: int = 13):
+    """Find kasvinimi based on user name, using a word-similarity metric.
+
+    Parameters
+    ----------
+
+    kasvinimet: list - list kasvinimis to search from
+    first_name: str - First name of user
+    last_name: str - Last name of user
+    n: int - Number of matches to randomize output from. Larger value
+    gives more unique names for one person, but possibly less matching for their name.
+    """
     if last_name:
         name = first_name + " " + last_name
     else:
         name = first_name
     sortedNimet = sorted(kasvinimet, key=(lambda a: levenshteinDistance(a[0], name)))
-    arvo = sortedNimet[random.randint(0,13)]
-    kasviNimi = arvo[0]
-    return kasviNimi
+    kasviNimi = sortedNimet[random.randint(0,13)]
+    return kasviNimi[0]
 
 
 if __name__ == '__main__':

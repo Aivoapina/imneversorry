@@ -153,11 +153,20 @@ class Teekkari:
         context.bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
 
     def getKasvinimi(self, update: Update, context: CallbackContext):
-        if update.message.from_user:
+        if len(context.args) > 0:
+            name = " ".join(context.args)
+            if len(name) > 32:
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=":D")
+                return
+            kasviNimi = findKasvinimi(self.kasvinimet,
+                                      first_name=name, last_name=None)
+        elif update.message.from_user:
             kasviNimi = findKasvinimi(self.kasvinimet,
                                       first_name=update.message.from_user.first_name,
                                       last_name=update.message.from_user.last_name)
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
+        else:
+            return
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
 
     def getNakuttaa(self, update: Update, context: CallbackContext):
         if random.randint(0, 100) == 0:
