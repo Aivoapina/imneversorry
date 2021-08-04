@@ -161,9 +161,17 @@ class Teekkari:
             kasviNimi = findKasvinimi(self.kasvinimet,
                                       first_name=name, last_name=None)
         elif update.message.from_user:
+            if update.message.from_user.first_name:
+                first_name = update.message.from_user.first_name
+            else:
+                first_name = update.message.from_user.username
+            if update.message.from_user.last_name:
+                last_name = update.message.from_user.last_name
+            else:
+                last_name = None
             kasviNimi = findKasvinimi(self.kasvinimet,
-                                      first_name=update.message.from_user.first_name,
-                                      last_name=update.message.from_user.last_name)
+                                      first_name=first_name,
+                                      last_name=last_name)
         else:
             return
         context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
