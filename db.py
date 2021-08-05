@@ -177,6 +177,12 @@ def readSotilasnimet():
         rows = cur.fetchall()
         return set(rows)
 
+def readKasvinimet():
+    with cursor() as cur:
+        cur.execute('SELECT nimi from Kasvinimet')
+        rows = cur.fetchall()
+        return set(rows)
+
 def readEnnustukset():
     with cursor() as cur:
         cur.execute('SELECT rivi from Ennustus')

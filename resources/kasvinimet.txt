@@ -1,0 +1,4275 @@
+Rhododendron adenogynum – tiibetinalppiruusu
+Rhododendron albiflorum – kaskadienatsalea eli kaskadienalppiruusu
+Rhododendron albrechtii – keisariatsalea
+Rhododendron arborescens – siloatsalea
+Rhododendron arboreum – puualppiruusu
+Rhododendron atlanticum – rannikkoatsalea
+Rhododendron aureum – ohotanalppiruusu eli kulta-alppiruusu
+R. aureum ssp. aureum – ohotankulta-alppiruusu
+R. aureum ssp. hypopitys – korpikulta-alppiruusu
+Rhododendron brachycarpum – japaninalppiruusu eli kruunualppiruusu
+R. brachycarpum ssp. brachycarpum – japaninalppiruusu
+R. brachycarpum ssp. tigerstedtii – mustilanalppiruusu
+Rhododendron bureavii – samettialppiruusu
+Rhododendron calendulaceum – liekkiatsalea
+Rhododendron calostrotum
+R. calostrotum ssp. keleticum – mattoalppiruusu
+Rhododendron campanulatum – nepalinalppiruusu
+Rhododendron camtschaticum – kamtšatkanalppiruusu eli kamtsatkanalppiruusu
+Rhododendron canadense – kanadanatsalea
+Rhododendron capitatum – kirsialppiruusu
+Rhododendron catawbiense – virginianalppiruusu
+Rhododendron dauricum – dahurianalppiruusu
+Rhododendron degronianum – nikonalppiruusu
+R. degronianum var. yakushimanum – yakushimanalppiruusu
+Rhododendron diversipilosum – japaninpursu
+Rhododendron fastigiatum – kivikkoalppiruusu
+Rhododendron ferrugineum – ruostealppiruusu
+Rhododendron fortunei – tuoksualppiruusu
+Rhododendron groenlandicum, syn. Ledum groenlandicum – lännenpursu eli grönlanninpursu
+Rhododendron haematodes – purppura-alppiruusu
+Rhododendron hirsutum – karva-alppiruusu
+Rhododendron hypoleucum – idänpursu
+Rhododendron impeditum – sinialppiruusu
+Rhododendron indicum – intianatsalea
+Rhododendron insigne – kuparialppiruusu
+Rhododendron javanicum – jaavanalppiruusu
+Rhododendron keiskei – keiskeinalppiruusu
+Rhododendron lapponicum – lapinalppiruusu
+Rhododendron luteum – kelta-atsalea
+Rhododendron maximum – appalakkienalppiruusu
+Rhododendron micranthum – vitialppiruusu
+Rhododendron molle – kiinanatsalea eli heloatsalea
+R. molle ssp. japonicum – japaninatsalea eli japaninheloatsalea
+R. molle ssp. molle – kiinanatsalea
+Rhododendron mucronulatum – koreanalppiruusu
+Rhododendron myrtifolium – myrttialppiruusu
+Rhododendron occidentale – lännenatsalea
+Rhododendron orbiculare – hertta-alppiruusu
+Rhododendron oreodoxa – vuorialppiruusu
+R. oreodoxa var. fargesii – fargesinalppiruusu
+Rhododendron pachytrichum – hapsualppiruusu
+Rhododendron polycladum – hohtoalppiruusu
+Rhododendron ponticum – turkinalppiruusu
+Rhododendron prinophyllum – rusoatsalea
+Rhododendron przewalskii – nikolainalppiruusu
+Rhododendron rex – kuningasalppiruusu
+R. rex ssp. rex – pulskakuningasalppiruusu
+Rhododendron roxieanum – siilialppiruusu
+Rhododendron rufum – villa-alppiruusu
+Rhododendron rupicola – kallioalppiruusu
+Rhododendron russatum – indigoalppiruusu
+Rhododendron schlippenbachii – kuningasatsalea
+Rhododendron smirnowii – nukka-alppiruusu
+Rhododendron sutchuenense – setsuaninalppiruusu
+Rhododendron taliense – dalinalppiruusu
+Rhododendron thymifolium – hankialppiruusu
+Rhododendron tolmachevii – isolehtipursu
+Rhododendron tomentosum, syn. Ledum palustre – suopursu
+Rhododendron ungernii – artvininalppiruusu
+Rhododendron vaseyi – perhosatsalea
+Rhododendron viscosum – tuoksuatsalea
+Rhododendron wardii – kelta-alppiruusu
+Rhododendron williamsianum – kelloalppiruusu
+Rhododendron yedoense – vuoriatsalea
+R. yedoense var. poukhanense – yedonatsalea eli poukhaninatsalea
+Rhododendron benhallii, syn. Menziesia ciliicalyx – ripsitiukupensas
+Rhododendron menziesii, syn. Menziesia ferruginea – ruostetiukupensas
+Rhododendron pentandrum, syn. Menziesia pentandra – sahalinintiukupensas
+Rhododendron × fraseri – kevätatsalea
+Rhododendron × intermedium – pikkualppiruusu
+Rhododendron × praecox – toukoalppiruusu
+Rhododendron Carolinianum-ryhmä – karolinanalppiruusu
+Rhododendron Catawbiense-ryhmä – puistoalppiruusu
+Rhododendron Caucasicum-ryhmä – kaukasianalppiruusu
+Rhododendron Dauricum-ryhmä – dahurianalppiruusu
+Rhododendron Exbury-ryhmä – puistoatsalea
+Rhododendron Ghent-ryhmä – gentinatsalea
+Rhododendron Knap Hill -ryhmä – puistoatsalea
+Rhododendron Lights-ryhmä – revontuliatsalea
+Rhododendron Mollis-ryhmä – kosterinatsalea
+Rhododendron Repens-ryhmä – lamoalppiruusu
+Rhododendron Simsii-ryhmä – ruukkuatsalea
+Rhododendron Smirnowii-ryhmä – nukka-alppiruusu
+Rhododendron Tigerstedtii-ryhmä – marjatanalppiruusu
+Rhododendron Yakushimanum-ryhmä – yakushimanalppiruusu
+Pohjanlumme (Nymphaea alba ssp. candida)
+(Iso)ulpukka (Nuphar lutea)
+Kullero (Trollius europaeus)
+Mustakonnanmarja (Actaea spicata)
+Rentukka (Caltha palustris)
+Valkovuokko (Anemone nemorosa)
+Rönsyleinikki (Ranunculus repens)
+Niittyleinikki (Ranunculus acris)
+Rantaleinikki (Ranunculus reptans)
+Järvisätkin (Ranunculus peltatus)
+Vuorijalava (Ulmus glabra)
+Nokkonen (Urtica dioica)
+Metsätammi (Quercus robur)
+Rauduskoivu (Betula pendula)
+Hieskoivu (Betula pubescens)
+Vaivaiskoivu (Betula nana)
+Tervaleppä (Alnus glutinosa)
+Harmaaleppä (Alnus incana)
+Pähkinäpensas (Corylus avellana)
+ohokkikasvit (Caryophyllaceae)
+Lehtotähtimö (Stellaria nemorum)
+Pihatähtimö (Stellaria media)
+Nurmihärkki (Cerastium fontanum)
+Peltohatikka (Spergula arvensis)
+Mäkitervakko (Lychnis viscaria)
+Puna-ailakki (Silene dioica)
+Jauhosavikka (Chenopodium album)
+Pihatatar (Polygonum aviculare)
+Hevonhierakka (Rumex longifolius)
+Niittysuolaheinä (Rumex acetosa)
+Ahosuolaheinä (Rumex acetosella)
+Särmäkuisma (Hypericum maculatum)
+Pyöreälehtikihokki (Drosera rotundifolia)
+Metsäorvokki (Viola riviniana)
+Suo-orvokki (Viola palustris)
+Pelto-orvokki (Viola arvensis)
+Kiiltopaju (Salix phylicifolia)
+Raita (Salix caprea)
+(Metsä)haapa (Populus tremula)
+Ukonpalko (Bunias orientalis)
+Peltoukonnauris (Erysimum cheiranthoides)
+Peltokanankaali (Barbarea vulgaris)
+Lutukka (Capsella bursa-pastoris)
+Peltotaskuruoho (Thlaspi arvense)
+Kevättaskuruoho (Thlaspi alpestre)
+Peltoretikka (Raphanus raphanistrum)
+Kanerva (Calluna vulgaris)
+Suopursu (Ledum palustre)
+Sianpuolukka (Arctostaphylos uva-ursi)
+Suokukka (Andromeda polifolia)
+Vaivero (Chamaedaphne calyculata)
+Isokarpalo (Vaccinium oxycoccos)
+Puolukka (Vaccinium vitis-idaea)
+Juolukka (Vaccinium uliginosum)
+Mustikka (Vaccinium myrtillus)
+Isotalvikki (Pyrola rotundifolia)
+Nuokkutalvikki (Orthilia secunda)
+Mäntykukka (Monotropa hypopitys)
+Variksenmarja (Empetrum nigrum)
+Ranta-alpi (Lysimachia vulgaris)
+Terttualpi (Lysimachia thyrsiflora)
+Metsätähti (Trientalis europaea)
+Metsälehmus (Tilia cordata)
+Näsiä (Daphne mezereum)
+Taikinamarja (Ribes alpinum)
+Pohjanpunaherukka (Ribes spicatum)
+Mustaherukka (Ribes nigrum)
+Ärviät (Myriophyllum spp.)
+Mesiangervo (Filipendula ulmaria)
+Muurain eli hilla eli lakka (Rubus chamaemorus)
+Mesimarja (Rubus arcticus)
+Lillukka (Rubus saxatilis)
+Vadelma (Rubus idaeus)
+Ojakellukka (Geum rivale)
+Kurjenjalka (Potentilla palustris)
+Rätvänä (Potentilla erecta)
+Ahomansikka (Fragaria vesca)
+Poimulehdet (Alchemilla spp.)
+(Koti)pihlaja (Sorbus aucuparia)
+Tuomi (Prunus padus)
+Korpipaatsama (Frangula alnus)
+Hiirenvirna (Vicia cracca)
+Aitovirna (Vicia sepium)
+Niittynätkelmä (Lathyrus pratensis)
+Lupiini (Lupinus polyphyllus)
+Valkomesikkä (Melilotus alba)
+Valkoapila (Trifolium repens)
+Puna-apila (Trifolium pratense)
+Masmalo (Anthyllis vulneraria)
+Maitohorsma (Epilobium angustifolium)
+Lehtohorsma (Epilobium montanum)
+Metsävaahtera (Acer platanoides)
+Käenkaali eli ketunleipä (Oxalis acetosella)
+Metsäkurjenpolvi (Geranium sylvaticum)
+Koiranputki (Anthriscus sylvestris)
+Vuohenputki (Aegopodium podagraria)
+Myrkkykeiso (Cicuta virosa)
+Kumina (Carum carvi)
+Karhunputki (Angelica sylvestris)
+Paimenmatara (Galium album)
+Terttuselja (Sambucus racemosa)
+Koiranheisi (Viburnum opulus)
+Vanamo (Linnaea borealis)
+Lehtokuusama (Lonicera xylosteum)
+Peltolemmikki (Myosotis arvensis)
+Puistolemmikki (Myosotis sylvatica)
+Kirjopillike (Galeopsis speciosa)
+Valkopeippi (Lamium album)
+Lehtopähkämö (Stachys sylvatica)
+Maahumala (Glechoma hederacea)
+Niittyhumala (Prunella vulgaris)
+Syyläjuuri (Scrophularia nodosa)
+Keltakannusruoho (Linaria vulgaris)
+Orvontädyke (Veronica serpyllifolia)
+Rohtotädyke (Veronica officinalis)
+Nurmitädyke (Veronica chamaedrys)
+Luhtakuusio (Pedicularis palustris)
+Piharatamo (Plantago major)
+Metsämaitikka (Melampyrum sylvaticum)
+Kangasmaitikka (Melampyrum pratense)
+Isovesiherne (Utricularia vulgaris)
+Kultapiisku (Solidago virgaurea)
+Siankärsämö (Achillea millefolium)
+Peltosaunio (Tripleurospermum inodorum)
+Pietaryrtti (Tanacetum vulgare)
+Pujo (Artemisia vulgaris)
+Leskenlehti (Tussilago farfara)
+Seittitakiainen (Arctium tomentosum)
+Kyläkarhiainen (Carduus crispus)
+Huopaohdake (Cirsium helenioides)
+Suo-ohdake (Cirsium palustre)
+Pelto-ohdake (Cirsium arvense)
+Voikukat (Taraxacum spp.)
+Suokeltto (Crepis paludosa)
+Huopakeltano (Pilosella officinarum)
+Ahokeltanot (Hieracium Vulgata-ryhmä)
+Harakankello (Campanula patula)
+Kissankello (Campanula rotundifolia)
+Nuottaruoho (Lobelia dortmanna)
+Raate (Menyanthes trifoliata)
+Sudenmarja (Paris quadrifolia)
+Kielo (Convallaria majalis)
+Oravanmarja (Maianthemum bifolium)
+Keltakurjenmiekka (Iris pseudacorus)
+Yövilkka (Goodyera repens)
+Valkolehdokki (Platanthera bifolia)
+Maariankämmekkä(Dactylorhiza maculata)
+Suovehka (Calla palustris)
+Pikkulimaska (Lemna minor)
+Pystykeiholehti (Sagittaria sagittifolia)
+Ratamosarpio (Alisma plantago-aquatica)
+Vesirutto (Elodea canadensis)
+Leväkkö (Scheuchzeria palustris)
+Uistinvita (Potamogeton natans)
+Ahvenvita (Potamogeton perfoliatus)
+Rantapalpakko (Sparganium emersum)
+Leveäosmankäämi (Typha latifolia)
+Rantavihvilä (Juncus alpinoarticulatus)
+Kevätpiippo (Luzula pilosa)
+Järvikaisla (Schoenoplectus lacustris)
+Luhtavilla (Eriophorum angustifolium)
+Tupasvilla (Eriophorum vaginatum)
+Juurtosara (Carex chordorrhiza)
+Harmaasara (Carex canescens)
+Pullosara (Carex rostrata)
+Sormisara (Carex digitata)
+Pallosara (Carex globularis)
+Mutasara (Carex limosa)
+Jokapaikansara (Carex nigra)
+Rahkasara (Carex pauciflora)
+Nurminata (Festuca pratensis)
+Punanata (Festuca rubra)
+Kylänurmikka (Poa annua)
+Niittynurmikka (Poa pratensis)
+Lehtonurmikka (Poa nemoralis)
+Koiranheinä (Dactylis glomerata)
+Nuokkuhelmikkä (Melica nutans)
+Juolavehnä (Elymus repens)
+Nurmilauha (Deschampsia cespitosa)
+Metsälauha (Deschampsia flexuosa)
+Tuoksusimake (Anthoxanthum odoratum)
+Nurmirölli (Agrostis capillaris)
+Metsäkastikka (Calamagrostis arundinacea)
+Nurmitähkiö / timotei (Phleum pratense)
+Nurmipuntarpää (Alopecurus pratensis)
+Tesma (Milium effusum)
+Järviruoko (Phragmites australis)
+(Metsä)kuusi (Picea abies)
+(Metsä)mänty (Pinus sylvestris)
+Kataja (Juniperus communis)
+Sananjalka (Pteridium aquilinum)
+Korpi-imarre (Thelypteris phegopteris)
+Metsäalvejuuri (Dryopteris carthusiana)
+Isoalvejuuri (Dryopteris expansa)
+Metsäimarre (Gymnocarpium dryopteris)
+Hiirenporras (Athyrium filix-femina)
+Kotkansiipi (Matteuccia struthiopteris)
+Kallioimarre (Polypodium vulgare)
+Kangaskorte (Equisetum hyemale)
+Järvikorte (Equisetum fluviatile)
+Suokorte (Equisetum palustre)
+Metsäkorte (Equisetum sylvaticum)
+Lehtokorte (Equisetum pratense)
+Peltokorte (Equisetum arvense)
+Ketunlieko (Huperzia selago)
+Riidenlieko (Lycopodium annotinum)
+Katinlieko (Lycopodium clavatum)
+Keltalieko (Diphasiastrum complanatum)
+Tummalahnanruoho (Isoëtes lacustris)
+Seinäsammal (Pleurozium schreberi)
+Kerrossammal (Hylocomium splendens)
+Metsäliekosammal (Rhytidiadelphus triquetrus)
+Sulkasammal (Ptilium crista-castrensis)
+Korvenkarhunsammal (Polytrichum commune)
+Jokasuonrahkasammal (Sphagnum angustifolium)
+Ruskorahkasammal (Sphagnum fuscum)
+Korpirahkasammal (Sphagnum girgensohnii)
+Punarahkasammal (Sphagnum magellanicum)
+Heterahkasammal (Sphagnum warnstorfii)
+alaskanlupiini (Lupinus nootkatensis)
+albertanvehnä (Leymus innovatus)
+hamppuvillakko (Jacobaea cannabifolia)
+hentokarvalehti (Ceratophyllum submersum)
+hietakattara (Bromus sterilis)
+idänpensaskanukka (Cornus alba ssp. alba)
+japaninruttojuuri (Petasites japonicus ssp. giganteus)
+jättituija (Thuja plicata)
+kanadankoiransilmä (Erigeron canadensis)
+kanadanvesirutto (Elodea canadensis), Itämeressä
+keltamajavankaali (Lysichiton americanus)
+kiehkuravesirutto (Elodea nuttallii)
+lammikki (Nymphoides peltata)
+lännenkanukka (Cornus sericea)
+marunatuoksukki (Ambrosia artemisiifolia)
+palsamipihta (Abies balsamea)
+peltopunka (Anagallis arvensis)
+pilvikirsikka (Prunus pensylvanica)
+puistonurmikka (Poa chaixii)
+rehuvuohenherne (Galega orientalis)
+rikkakananhirssi (Echinochloa crus-galli)
+rikkapuntarpää (Alopecurus myosuroides)
+rohtoraunioyrtti (Symphytum officinale)
+tummarohtoraunioyrtti (Symphytum officinale var. officinale)
+valkorohtoraunioyrtti (Symphytum officinale var. bohemicum)
+ruotsinraunioyrtti (Symphytum × uplandicum), rohtoraunioyrtin ja tarharaunioyrtin risteymä
+silkkiunikko (Papaver rhoeas)
+sinipantaheinä (Setaria pumila)
+siperianpihta (Abies sibirica)
+tarhaomenapuu (Malus domestica)
+viherpantaheinä (Setaria viridis)
+viherrevonhäntä (Amaranthus retroflexus)
+viitapihlaja-angervo (Sorbaria sorbifolia)
+vuorivaahtera (Acer pseudoplatanus)
+Bataatti (Ipomoea batatas)
+Kaurajuuri (Tragopogon porrifolius)
+Lanttu (Brassica napus ssp. napobrassica)
+Maa-artisokka (Helianthus tuberosus)
+Mustajuuri (Scorzonera hispanica)
+Nauris (Brassica rapa)
+Palsternakka (Pastinaca sativa)
+Persilja (Petroselinum crispum)
+Juuripersilja
+Peruna (Solanum tuberosum)
+Piparjuuri (Armoracia rusticana)
+Porkkana, ruokaporkkana (Daucus carota ssp. sativus)
+Punajuurikas (Beta vulgaris ssp. vulgaris var conditiva)
+Retiisi, ruokaretikka, retikka (Raphanus sativus Radicula)
+Selleri eli ruokaselleri (Apium graveolens )
+Mukulaselleri (Apium graveolens var. rapaceum)
+Vesikastanja (Eleocharis dulcis)
+Endiivi (Cichorium endivia)
+Euroopanmerikaali eli merikaali (Crambe maritima) 
+Fenkoli (Foeniculum vulgare) 
+Kaali (Brassica oleracea) 
+Keräkaali (Capitata-ryhmä)
+Kiinankaali eli salaattikiinankaali (Brassica rapa Pekinensis-ryhmä)
+Kurttukaali eli savoijinkaali (Sabauda-ryhmä)
+Kyssäkaali (Gongylodes-ryhmä)
+Lehtikaali
+Punakaali
+Ruusukaali (Gemmifera-ryhmä)
+Kardoni (Cynara cardunculus)
+Ruokasipuli eli Kepasipuli (Allium cepa Cepa)
+Salottisipuli
+Lamopinaatti (Tetragonia tetragonoides) 
+Lehtimangoldi (Beta vulgaris var. vulgaris) 
+Persilja (Petroselinum crispum)
+Pillisipuli eli talvisipuli (Allium fistulosum)
+Pinaatti (Spinacia oleracea) 
+Pinaattihierakka (Rumex patientia)
+Purjo eli purjosipuli (Allium porrum)
+Raparperi (Rheum rhabarbarum)
+Ruoholaukka eli ruohosipuli (Allium schoenoprasum)
+Ruokaparsa eli parsa (Asparagus officinalis) 
+Salaatti eli ruokasalaatti (Lactuca sativa) 
+Jäävuorisalaatti
+Keräsalaatti (Capitata-ryhmä)
+Sareptansinappi (Brassica juncea)
+Selleri eli ruokaselleri (Apium graveolens )
+Lehtiselleri eli ruotiselleri (Apium graveolens var. dulce)
+Sikuri (Cichorium intybus)
+Sinappikaali (Eruca vesicaria) 
+Tarharaparperi (Rheum x hybridum)
+Tarhamaltsa (Atriplex hortensis) 
+Valkosipuli eli kynsilaukka (Allium sativum)
+Vesikrassi (Nasturtium)
+Vihanneskrassi (Lepidium sativum)
+Vihannesportulakka (Portulaca oleracea ssp. sativa) 
+Vuonankaali eli rantavuonankaali (Valerianella locusta) 
+Herne eli silpoydinherne (Pisum sativum)
+Härkäpapu (Vicia faba) 
+Jättikurpitsa (Cucurbita maxima)
+Kaali (Brassica oleracea) 
+Kukkakaali (Botrytis-ryhmä)
+Parsakaali (Italica-ryhmä)
+Kurkku (Cucumis sativus) 
+Kurpitsa (Cucurbita pepo) 
+Kesäkurpitsa
+Spagettikurpitsa
+Latva-artisokka (Cynara scolymus)
+Maissi (Zea mays)
+Munakoiso (Solanum melongena)
+Okra (Abelmoschus esculentus)
+Paprika eli ruokapaprika (Capsicum annuum Grossum) 
+Parsaherne (Tetragonolobus purpureus)
+Tarhapapu, salkopapu, pensaspapu (Phaseolus vulgaris var. nanus) 
+Tomaatti (Solanum lycopersicum)
+Kirsikkatomaatti
+Senecio alpinus – herttavillakko → Jacobaea alpina suvussa peijavillakot
+Senecio angulatus – kolkkavillakko
+Senecio aquaticus – ojavillakko → Jacobaea aquatica
+Senecio bollei – famaranvillakko
+Senecio cannabifolius – hamppuvillakko → Jacobaea cannabifolia
+Senecio cineraria – hopeavillakko eli tuhkaruoho → Jacobaea maritima
+Senecio crassissimus – viittavillakko
+Senecio doria – dorianvillakko
+Senecio dubitabilis – idänvillakko
+Senecio elegans – purppuravillakko
+Senecio eremophilus – lännenvillakko
+Senecio erucifolius – liuskavillakko → Jacobaea erucifolia
+Senecio flavus – sutivillakko
+Senecio gallicus – ranskanvillakko
+Senecio glaucus – hiekkavillakko
+Senecio glaucus subsp. coronopifolius – kanarianhiekkavillakko
+Senecio glaucus subsp. glaucus – egyptinhiekkavillakko
+Senecio hermosae – gomeranvillakko → Bethencourtia hermosae
+Senecio herreanus (herreianus) – hernevillakko → Curio herreanus
+Senecio inaequidens – buurivillakko
+Senecio incrassatus – madeiranvillakko
+Senecio jacobaea – jaakonvillakko → Jacobaea vulgaris
+Senecio jacobaea subsp. dunensis – dyynijaakonvillakko
+Senecio jacobaea subsp. gotlandicus – alvarijaakonvillakko
+Senecio jacobaea subsp. jacobaea – rohtojaakonvillakko
+Senecio leucanthemifolius – kakkaravillakko
+Senecio leucanthemifolius subsp. vernalis – kevätkakkaravillakko
+Senecio lividus – korvavillakko eli sinivillakko
+Senecio macrophyllus – sepovillakko
+Senecio massaicus – marokonvillakko
+Senecio nemorensis – lehtovillakko
+Senecio ovatus – harsuvillakko
+Senecio palmensis – palmanvillakko → Bethencourtia palmensis
+Senecio paludosus – kultavillakko → Jacobaea paludosa
+Senecio petasitis – lippavillakko → Roldana petasitis
+Senecio polyodon – kesävillakko
+Senecio rowleyanus – helmivillakko → Curio rowleyanus
+Senecio sarracenicus, aiemmin S. fluviatilis – puistovillakko eli jokivillakko
+Senecio squalidus – rikkavillakko
+Senecio sylvaticus – kalliovillakko
+Senecio syringifolius – liaanivillakko
+Senecio tamoides – kapinvillakko
+Senecio teneriffae – teneriffanvillakko
+Senecio vernalis – kevätvillakko → nykyisin kevätkakkaravillakko (S. leucanthemifolius subsp. vernalis)
+Senecio viscosus – tahmavillakko
+Senecio vulgaris – peltovillakko
+Senecio vulgaris var. hibernicus – sädepeltovillakko
+Senecio vulgaris var. vulgaris – kehräpeltovillakko
+Caputia
+Caputia medley-woodii, syn. Senecio medley-woodii – lusikkahuopavillakko
+Caputia scaposa, syn. Senecio scaposus – puikkovillakko
+Caputia tomentosa, syn. Senecio – karvavillakko
+Curio
+Curio articulatus, syn. Senecio articulatus – pullovillakko
+Curio citriformis, syn. Senecio citriformis – sukkulavillakko
+Curio radicans, syn. Senecio radicans – palkovillakko
+Curio rowleyanus, syn. Senecio rowleyanus – helmivillakko
+Delairea – murattivillakot
+Delairea odorata, syn. Senecio mikanioides – murattivillakko
+Dendrosenecio – jättivillakot
+Dendrosenecio adnivalis, syn. Senecio adnivalis – ruwenzorinjättivillakko
+Dendrosenecio johnstonii, syn. Senecio johnstonii – johnstoninjättivillakko
+Dendrosenecio keniensis, syn. Senecio keniensis – keräjättivillakko
+Dendrosenecio keniodendron, syn. Senecio keniodendron – kenianjättivillakko
+Dendrosenecio meruensis, syn. Senecio meruensis – hoikkajättivillakko
+Packera
+Packera aurea, syn. Senecio aureus – rohtovillakko
+Solanecio – afrikanvillakot
+Solanecio buchwaldii, syn. Senecio buchwaldii – usambaranvillakko
+Solanecio mannii, syn. Senecio mannii – puuvillakko
+Solanecio mirabilis, syn. Senecio mirabilis – konuvillakko
+Tephroseris – karvakot
+Tephroseris integrifolia, syn. Senecio integrifolius – pikkukarvakko eli ehytlehtivillakko
+Tephroseris palustris, syn. Senecio palustris – luhtakarvakko eli suovillakko
+Aaprottimaruna eli aaprotti
+Anisruoho tai anis
+Anisiiso - ks. yrtti-iiso
+Basilika - ks. maustebasilika
+Fenkoli eli maustevenkoli, saksankumina
+Iisoppi
+Kirveli - ks. maustekirveli
+Koiruoho eli mali
+Korianteri
+Kumina
+Kurkkuyrtti - ks. rohtopurasruoho
+Kynteli, kesä- ja talvikynteli
+Kähäräminttu - ks. myös piparminttu ja viherminttu
+Laventeli
+Lehtiselleri - ks. myös mukulaselleri
+Liperi eli lipstikka tai rohtoliperi
+Maustebasilika
+Maustekirveli
+Maustemeirami
+Maustesalvia - ks. ryytisalvia
+Maustevenkoli - ks. fenkoli
+Meirami - ks. maustemeirami
+Mukulaselleri - ks. myös lehtiselleri ja ruotiselleri
+Mäkimeirami eli oregano
+Nokkonen - Urtica dioica
+Nukkahorsma
+Oregano - ks. mäkimeirami
+Peltokorte
+Persilja
+Piparjuuri
+Piparminttu - ks. myös kähäräminttu ja viherminttu
+Portulakka - ks. vihannesportulakka
+Purasruoho - ks. kurkkuyrtti
+Rakuuna eli maustemaruna
+Rohtoliperi, katso liperi (kasvi)
+Rohtopurasruoho eli kurkkuyrtti
+Rosmariini
+Ruohosipuli
+Ryytisalvia eli salvia, maustesalvia
+Salvia - ks. ryytisalvia
+Saksankirveli
+Salaattivenkoli
+Sitruunamelissa
+Tarha-ajuruoho - ks. timjami
+Tarhasuolaheinä
+Tilli
+Timjami eli tarha-ajuruoho
+Tuoksuampiaisyrtti
+Tuoksuruuta
+Valkosipuli
+Vihanneskrassi
+Vihannesportulakka
+Viherminttu - ks. myös kähäräminttu ja piparminttu
+Väinönputki
+Ananas
+Ananaskirsikka, karviaiskoison hedelmä
+Annoona eli kirimoija
+Appelsiini
+Aprikoosi
+Avokado
+Banaani
+Cantaloupemeloni
+Durio
+Feijoa
+Galiameloni
+Granaattiomena
+Granadilla
+Greippi
+Guava
+Hunajameloni
+Jakkihedelmä, intianleipäpuun hedelmä
+Kaki eli persimoni tai sharon
+Kaktusviikuna
+Karambola eli tähtihedelmä
+Kastanja
+Keittobanaani
+Keltainen kiivi
+Keltapassio
+Kiivi
+Kirsikka
+Kirsikkaluumu
+Kiwai, japaninlaikkuköynnöksen hedelmä
+Kiwano eli kivakurkku
+Kookospähkinä
+Kumkvatti
+Kvitteni
+Limetti (engl. lime)
+Limkvatti
+Litsi
+Longaani
+Luumu
+Mandariini
+Mango
+Mangostaani
+Meloni
+Nashi
+Nektariini
+Omena, omenapuun hedelmä
+Oliivi
+Papaija
+Passionhedelmä eli kärsimyshedelmä
+Persikka
+Pepino eli päärynämeloni
+Pikkusitrukset (klementiini, satsuma, mineola, pomeranssi, temple, topaz)
+Pitahaya
+Pomelo
+Pähkinä
+Päärynä
+Rambutaani
+Rumeliini eli tangelo, ugli
+Sapodilla, sapotillapuun hedelmä
+Salaki
+Sitruuna
+Sokerimeloni
+Sweetie
+Taateli, taatelipalmun hedelmä
+Tamarillo eli puutomaatti
+Tomaatti
+Verkkomeloni
+Vesimeloni
+Viikuna
+Viinirypäle, viiniköynnöksen hedelmä
+Aechmea fasciata - kirjohuisku
+Aeschynanthus marmoratus - kirjosoihtuköynnös
+Aglaonema commutatum - malakanlaikkuvehka
+Aglaonema nitidum - kiiltolaikkuvehka
+Ananas bracteatus ’Tricolor’ - puna-ananas
+Ananas comosus - ananas
+Ananas comosus ’Variegatus’ - koristeananas
+Adiantum raddianum - viheradiantumi
+Araucaria heterophylla - norfolkinaraukaria, huokekuusi
+Asparagus densiflorus ’Sprengeri’ - hienohelma
+Asparagus densiflorus - häntäparsa
+Asparagus falcatus - köynnösparsa
+Aspidistra elatior - tuonenkielo, issikka, suutarinkielo
+Asplenium nidus - pesäraunioinen
+Begonia Bowerae-ryhmä - tiikeribegonia
+Begonia corallina ’Luzerna’ - enkelinsiipi
+Begonia masoniana - rautaristi
+Begonia Rex-ryhmä - kuningasbegoniat
+Bougainvillea - ihmeköynnökset
+Bougainvillea ×buttiana - jaloihmeköynnös
+Bougainvillea galamra - kaljuihmeköynnös
+Bougainvillea spectabilis - isoihmeköynnös
+Calathea majestica - viirumaija
+Calathea rufibarba - aaltomaija, karvamaija
+Calathea zebrina - seepramaija
+Callisia repens - liisantyyny, ”kääpiöjuoru”
+Caryota - eväpalmu
+Caryota mitis - burmaneväpalmu
+Cissus antarctica - etelänkissus
+Cissus rhombifolia - kuningaskissus
+Cissus rhombifolia ’Ellen Danica’ - ellinkissus
+Chamaecyparis lawsoniana - lawsoninsypressi, ”huonekataja”
+Chamaedorea - vuoripalmut
+Chlorophytum - rönsyliljat
+Chlorophytum comosum - kirjorönsylilja
+Chrysalidocarpus lutescens - kultapalmu
+Codiaeum variegatum var. pictum - ihmepensas, vanh. krotooni
+Coffea arabica - arabiankahvi
+Cordyline fruticosa - verililjapuu
+Ctenanthe - raitamatit
+Ctenanthe oppenheimiana ’Variegata’ - kirjoraitamatti
+Cycas - käpypalmut
+Cycas revoluta - japaninkäpypalmu
+Cyperus - sädekaislat
+Cyperus involucratus - isosädekaisla
+Cyperus involucratus ’Nanus’ (’Grasilis’) - pikkusädekaisla
+Dieffenbachia - kirjovehkat
+Dionaea muscipula - kärpäsloukku
+Dischidia pectenoides - pussiköynnös
+Doodia media - siipisanikka
+Dracaena deremensis ’Compacta’ - supputraakkipuu
+Dracaena deremensis ’Lemon Line’ ym. lajikkeet - juovatraakkipuu
+Dracaena fragrans - tuoksutraakkipuu
+Dracaena marginata - reunustraakkipuu
+Drosera capensis - kapinkihokki
+Elettaria cardamomum - kardemumma
+Epipremnum pinnatum - kultaköynnös
+Episcia cupreata - hohtokuparilehti
+Episcia lilacina - villakuparilehti
+Episcia reptans - rönsykuparilehti
+Euphorbia pulcherrima - joulutähti, vanh. tähtilatva
+×Fatshedera lizei - murattiaralia
+Fatsia japonica - huonearalia
+Ficus - fiikus
+Ficus benjamina - limoviikuna
+Ficus binnendijkii - pitkälehtiviikuna
+Ficus deltoidea - pilleriviikuna
+Ficus elastica - kumiviikuna, huonekumipuu
+Ficus elastica ’Robusta’, ’Decora’, ’Sylvie’ - isokumiviikuna
+Ficus lyrata - lyyraviikuna
+Ficus microcarpa - varjoviikuna
+Ficus pumila - kääpiököynnösviikuna, vanh. vesifiikus
+Fittonia verschaffeltii ’Argyroneura’ - valkopitsilehti
+Fittonia verschaffeltii ’Nana’ - pikkupitsilehti
+Fittonia verschaffeltii ’Pearcei’ - punapitsilehti
+Hedera - muratit
+Howea - kentiapalmut
+Hypoestes phyllostachya - pilkkulehti
+Justicia brandegeana - käpyjaakonkukka eli onnenkäpy
+Laurus nobilis - laakeripuu
+Livistona - sädepalmut
+Maranta - nukkumatit
+Mimosa pudica - tuntomimosa eli tuntokasvi
+Monstera deliciosa - jättipeikonlehti
+Monstera deliciosa ’Borsigiana’ - pikkupeikonlehti
+Muehlenbeckia complexa - lankaköynnös
+Murraya paniculata - tuoksujasmikki eli tuoksumurraija
+Musa, Ensete - banaani
+Musa acuminata - kääpiöbanaani
+Myrtus communis - myrtti
+Myrtus communis ’Microphylla’ - morsiusmyrtti
+Neoregelia carolinae - kruunukoru
+Nepenthes - kannukasvit
+Nephrolepis - sulkasaniaiset
+Nephrolepis exaltata - kaarisulkasaniainen
+Nertera granadensis - korallimätäs
+Nolina recurvata - pullojukka
+Oxalis regnellii - valkokäenkaali
+Oxalis tetraphylla - onnenkäenkaali
+Oxalis triangularis ’Mijke’ - purppurakäenkaali
+Pachira aquatica - kastanjasutipuu eli sutipuu
+Pellaea rotundifolia - nappipellea
+Peperomia clusiifolia - kiiltomuori
+Peperomia griseoargentea - teräsmuori
+Peperomia obtusifolia - amerikanmuori
+Peperomia scandens - riippamuori
+Persea americana - avokado
+Philodendron bipinnatifidum - peikonkämmen, pariliuskavehka
+Philodendron erubescens - purppuraköynnösvehka
+Philodendron scandens - herttaköynnösvehka
+Philodendron scandens f. micans - samettiköynnösvehka
+Phoenix dactylifera - välimerentaateli eli taatelipalmu
+Phoenix roebelenii - pikkutaateli
+Pilea involucrata - nukkapiilea
+Platycerium bifurcatum - hirvensarvisaniainen
+Plectranthus - liisukat
+Plectranthus oertendahlii - kynttiläliisukka, marraskuunkynttilä
+Pogonatherum paniceum - kirjoheinä, ”huonebambu”
+Polyscias - hopea-araliat
+Portulacaria afra - pensasportulakka
+Radermachera sinica - hellepuu, ”huonesaarni”
+Rhapis - pensaspalmut
+Rhoicissus capensis - kapinkuningaskissus
+Saxifraga stolonifera - aaroninparta
+Schefflera actinophylla - jättiliuska-aralia
+Schefflera arboricola - siroliuska-aralia
+Schefflera elegantissima - isoliuska-aralia, loistoaralia
+Senecio macroglossus ’Variegatus’ - kirjovillakko
+Soleirolia soleirolii - kodinonni
+Solenostemon scutellarioides - isokirjopeippi, ”värinokkonen”
+Spathiphyllum floribundum - pikkuviirivehka
+Spathiphyllum Floribundum-ryhmä ’Mauna Loa’ - isoviirivehka
+Syngonium auritum - aasinkultakorva
+Tillandsia ionantha - käpytillandsia
+Tillandsia usneoides - naavatillandsia, "espanjansammal"
+Tolmiea menziesii - kehtolehti
+Tradescantia cerinthoides - herrasjuoru
+Tradescantia pallida - purppurajuoru
+Tradescantia sillamontana - nukkajuoru
+Tradescantia spathacea - taskujuoru, purppuralehti
+Tradescantia zebrina - kirjojuoru
+Yucca elephantipes - kiiltojukka, jukkapalmu
+Zamia pumila - samiakävykki
+Zantedeschia - huonevehkat, kallat
+Zelkova serrata - idänselkova
+Abutilon ×hybridum - vaahtera-aulio
+Acalypha hispida - isokissanhäntä
+Acalypha reptans - amppelikissanhäntä
+Aeschynanthus speciosus - isosoihtuköynnös, ”borneonkaunotar”
+Amaryllis - amaryllis
+Anthurium - andrenflamingonkukat
+Aphelandra squarrosa - isoleopoldinkukka
+Ardisia crenata - ardisia
+Billbergia nutans - nuokkupapinkaura
+Browallia - piispankukat
+Brunfelsia pauciflora var. calycina - sinitohtorinkukka eli tohtorinkukka
+Calathea crocata - tähkämaija
+Calceolaria - tohvelikukat
+Calceolaria Herbeohybrida-ryhmä - isotohvelikukka
+Camellia japonica - kamelia
+Campanula carpatica - karpaattienkello
+Campanula poscharskyana - tähtikello
+Capsicum - chilipippuri
+Capsicum annuum Conoides-ryhmä - koristepaprika, papruska
+Catharanthus roseus - ruusukatara, punatalvio
+×Citrofortunella microcarpa - kääpiösitrus
+Citrus reticulata Tangerin-ryhmä - tangeriini
+Clerodendrum - kohtalonköynnökset
+Clerodendrum ugandense - sinikohtalonpensas
+Clivia miniata - kliivia
+Cocos nucifera - kookospalmu
+Crocus - sahramit, krookukset
+Crossandra infundibuliformis - taikurinkukka
+Chrysanthemum - krysanteemit
+Cyclamen - syklaamit
+Cytisus ×spachianus - pääsiäisvihma
+Diascia - dianat
+Erica gracilis - syyskellokanerva
+Erica hiemalis - talvikellokanerva
+Eucharis amazonica - amatsoninlilja
+Eustoma grandiflorum - preeriaeustoma
+Exacum affine - sinisilmä
+Fuchsia - verenpisarat
+Gardenia augusta - kiinangardenia, keikarinkukka
+Gerbera ×cantabrigiensis - gerbera, vanh. sädelatva
+Gloriosa superba - keijunlilja
+Guzmania - timanttiananakset
+Helleborus niger - vaaleajouluruusu
+Hibiscus rosa-sinensis - kiinanruusu
+Hippeastrum Hortorum-ryhmä - jaloritarinkukka
+Hippeastrum rutilum - pikkuritarinkukka, ”maatiaisamaryllis”
+Hoya bella - pikkuposliinikukka
+Hoya carnosa - isoposliinikukka
+Hyacinthus orientalis - hyasintti
+Hydrangea Macrophylla-ryhmä - jalohortensia
+Hypocyrta glabra - suukkosuu
+Impatiens hawkeri - sateenkaaripalsamit, uudenguineanliisat
+Impatiens walleriana - ahkeraliisa
+Ixora coccinea - tähtikukka
+Jasminum polyanthum - kiinanjasmiini
+Medinilla magnifica - medinilla, korallimedinilla
+Narcissus - narsissit
+Narcissus tazetta - tasetti
+Neomarica northiana - apostolinmiekka
+Nerium oleander - oleanteri
+Passiflora - passiot eli kärsimyskukat
+Pelargonium ×domesticum - jalopelargonit
+Pelargonium ×fragrans - tuoksupelargoni
+Pelargonium ×graveolens - palsamipelargoni
+Pentas lanceolata - viisikki
+Pericallis ×hybrida - sineraaria
+Primula obconica - huone-esikko
+Primula vulgaris - kääpiöesikko
+Rhododendron - bonsaiatsalea
+Rhododendron Simsii-ryhmä - ruukkuatsaleat
+Rosa chinensis - bengalinruusut-ryhmä
+Rosa Miniatyr-ryhmä - pikkuruusut
+Saintpaulia Ionantha-ryhmä - paavalinkukat, saintpaulia
+Scadoxus multiflorus - loistotupsu
+Scindapsus pictus - hopeaköynnös
+Sinningia - gloksiniat, gloxiniat, suppilokukat
+Sinningia speciosa - isogloksinia
+Skimmia japonica - skimmia
+Solanum diflorum - huonekoiso
+Solanum pseudocapsicum ’Thurino’ - pippurikoisolähde?
+Stephanotis floribunda - tuoksuköynnös
+Strelitzia reginae - helokolibrikukka eli kolibrikukka
+Streptocarpus ×hybridus - kellosoilikki
+Streptocarpus polyanthus - pilvisoilikki
+Streptocarpus saxorum - pikkusoilikki
+Thunbergia alata - mustasilmäsusanna
+Tillandsia cyanea - eliaksentillandsia
+Agave americana - jättiagaave
+Agave americana ’Marginata’ - kulta-agaave
+Agave filifera - lanka-agaave
+Aloë ferox - piikkiaaloe
+Aloë mitriformis - kynsiaaloe
+Aloë vera - lääkeaaloe
+Cephalocereus senilis - vaarinkaktus
+Ceropegia woodii - herttalyhty, ”herttaköynnös”
+Cereus jamacuru ’Monstrosus’ - sinikalliokaktus
+Cereus uruguayanus ’Monstrosus’ - perunkalliokaktus
+Cleistocactus - hopeapylväät
+Crassula muscosa - liekopaunikko
+Crassula ovata - rahapuu
+Echeveria - mehiruusukkeet
+Echinocactus grusonii - kultasiilikaktus, ”anopinjakkara”
+Echinopsis chamaecereus - mätäskaktus
+Echinopsis chamaecereus ’Aureus’ - banaanikaktus
+Epiphyllum oxypetalum - tuoksulehtikaktus
+Euphorbia leuconeura - nukkatyräkki
+Euphorbia ×lomii - jättipiikkikruunu
+Euphorbia lophogona - särmätyräkki
+Euphorbia milii - piikkikruunu
+Euphorbia milii var. splendens - isopiikkikruunu
+Euphorbia trigona - pylvästyräkki
+Gasteria - sarviaaloet
+Gymnocalycium mihanovichii - mansikkapallerokaktus
+Hatiora gaertneri - pääsiäiskaktus
+Hatiora ×graeseri - kevätkaktus
+Hatiora salicornioides - hatiora
+Hatiora rosea - helluntaikaktus
+Haworthia fasciata - viirukirjotähti
+Jatropha podagrica - pullukka
+Kalanchoë - itulehdet
+Kalanchoë Blossfeldiana-ryhmä - tulilatva
+Lithops - kivikukat
+Mammillaria - syyläkaktukset
+Opuntia microdasys - jänönopuntia
+Opuntia subulata - pylväsopuntia
+Pachypodium - paksujalat
+Pereskia aculeata - puukaktus
+Sansevieria trifasciata ’Hahnii’ - anopinhammas
+Sansevieria trifasciata ’Laurentii’ - keltareuna-anopinkieli
+Schlumbergera ×buckleyi - joulukaktus
+Schlumbergera truncata - marraskuunkaktus
+Sedum burrito - aasinmaksaruoho
+Sedum morganianum - häntämaksaruoho
+Selenicereus - yökaktukset
+Selenicereus grandiflorus - yönkuningatar
+Senecio serpens - mehivillakko
+Stapelia variegata - täpläraatokukka
+Zamioculcas zamiifolia - palmuvehka, zamioculcas 
+Coelogyne cristata - lumikuningatar
+Cymbidium - kymbidit
+Dendrobium - puikkokämmekät
+Ludisia discolor - ludisia
+Miltonia - miltoniat
+Odontoglossum Crispum-ryhmä - pantterikämmekkä
+Orchidaceae - kämmekät, orkideat
+Paphiopedilum - venuksenkengät
+Phalaenopsis - perhoskämmekät
+Pleione - tyttökämmekät
+Rossioglossum grande - tiikerikämmekkä
+Aceras – nukkekämmekät
+Aceras anthropophorum – nukkekämmekkä
+Aerangis – enkelikämmekät
+Aerangis ellisii – pastorinenkelikämmekkä
+Aerangis thomsonii – kenianenkelikämmekkä
+Aerangis ugandensis – ugandanenkelikämmekkä
+Anacamptis – kalkkikämmekät
+Anacamptis morio – ruusukekalkkikämmekkä 
+Anacamptis palustris – lettokalkkikämmekkä
+Anacamptis pyramidalis – kartiokalkkikämmekkä, pyramidikämmekkä
+Angraecum – tähtikämmekät
+Angraecum sesquipedale – tähtikämmekkä, tähtiorkidea
+Ansellia – leopardikämmekät
+Ansellia africana – leopardikämmekkä
+Barkeria – barkeriat, pantterikämmekät
+Barkeria lindleyana – neidonbarkeria
+Barkeria spectabilis – loistobarkeria, pantterikämmekkä
+Barlia – jättikämmekät
+Barlia robertiana – jättikämmekkä
+Bletilla – mikadonkämmenet
+Bletilla striata – mikadonkämmen
+Bolusiella – keijukämmekät
+Bolusiella iridifolia – vitikeijukämmekkä
+Brassavola – brassavolat
+Brassia – lukkikämmekät
+Brassia caudata – lukkikämmekkä
+Bulbophyllum – kirrikämmekät
+Bulbophyllum longiflorum – sarjakirrikämmekkä
+Calanthe – heidinkämmekät
+Calanthe sylvatica – rusoheidinkämmekkä
+Calanthe vestita – siroheidinkämmekkä
+Calypso – neidonkengät 
+Calypso bulbosa – neidonkenkä
+Cattleya – katleijat
+Cattleya bowringiana – syyskatleija
+Cattleya labiata – jättikatleija
+Cephalanthera – valkut
+Cephalanthera cucullata – kreetanvalkku
+Cephalanthera damasonium – suurvalkku
+Cephalanthera longifolia – miekkavalkku
+Cephalanthera rubra – punavalkku
+Chamorchis – tunturiorhot
+Chamorchis alpina – tunturiorho
+Coeloglossum – pussikämmekät
+Coeloglossum viride – pussikämmekkä
+Coelogyne – helokämmekät
+Coelogyne cristata – lumikuningatar, lumikämmekkä
+Coelogyne dayana – kesähelokämmekkä
+Coelogyne fimbriata – syyshelokämmekkä
+Coelogyne massangeana – terttuhelokämmekkä
+Corallorhiza – harajuuret
+Corallorhiza trifida – harajuuri
+Coryanthes – lippikämmekät
+Coryanthes speciosa – pronssilippikämmekkä
+Cycnoches – joutsenkämmekät
+Cymbidium – kymbidit
+Cynorkis – neitokämmekät
+Cynorkis anacamptoides – hurmeneitokämmekkä
+Cypripedium – tikankontit
+Cypripedium calceolus – lehtotikankontti, tikankontti
+Cypripedium macranthos – idäntikankontti
+Cypripedium parviflorum var. pubescens – nukkatikankontti
+Cypripedium reginae – kruunutikankontti
+Cyrtorchis – sädekämmekät
+Cyrtorchis arcuata – kaarisädekämmekkä
+Dactylorhiza – liuskakämmekät
+Dactylorhiza baltica – baltiantoukokämmekkä
+Dactylorhiza fuchsii – kalkkimaariankämmekkä
+Dactylorhiza incarnata – punakämmekkä
+Dactylorhiza incarnata ssp. incarnata – suopunakämmekkä, punakämmekkä
+Dactylorhiza incarnata ssp. cruenta – veripunakämmekkä, verikämmekkä
+Dactylorhiza lapponica – lapinkämmekkä
+Dactylorhiza maculata – maariankämmekkä
+Dactylorhiza maculata ssp. fuchsii – kalkkimaariankämmekkä
+Dactylorhiza maculata ssp. islandica – islanninmaariankämmekkä
+Dactylorhiza maculata ssp. maculata – korpimaariankämmekkä
+Dactylorhiza majalis – toukokämmekkä
+Dactylorhiza majalis ssp. baltica – leveälehtikämmekkä, baltiantoukokämmekkä
+Dactylorhiza majalis ssp. majalis – isotoukokämmekkä
+Dactylorhiza praetermissa – englanninkämmekkä
+Dactylorhiza purpurella – hurmekämmekkä
+Dactylorhiza purpurella ssp. majaliformis – täplähurmekämmekkä
+Dactylorhiza purpurella ssp. purpurella – viherhurmekämmekkä
+Dactylorhiza sambucina – seljakämmekkä
+Dactylorhiza sphagnicola – luhtakämmekkä
+Dactylorhiza traunsteineri – kaitakämmekkä
+Dendrobium – puikkokämmekät
+Dendrobium chrysotoxum – kevätpuikkokämmekkä
+Dendrobium cruentum – hurmepuikkokämmekkä
+Dendrobium nobile – jalopuikkokämmekkä
+Dendrobium phalaenopsis – syyspuikkokämmekkä
+Dendrochilum – riippakämmekät
+Dendrochilum glumaceum – riippakämmekkä
+Disa – disat
+Disa stairsii – kardinaalidisa
+Disa uniflora – kuningasdisa
+Drakaea – vasarakämmekät
+Epidendrum – epidendrumit
+Epidendrum ciliare – seittiepidendrum
+Epidendrum nocturnum – yöepidendrum
+Epidendrum radicans – tuliepidendrum
+Epipactis – neidonvaipat
+Epipactis atrorubens – tummaneidonvaippa
+Epipactis gigantea – isoneidonvaippa
+Epipactis helleborine – lehtoneidonvaippa
+Epipactis helleborine ssp. helleborine – metsäneidonvaippa
+Epipactis helleborine ssp. neerlandica var. neerlandica – dyynineidonvaippa
+Epipactis helleborine ssp. neerlandica var. renzii – hiekkaneidonvaippa
+Epipactis leptochila – viherneidonvaippa
+Epipactis palustris – suoneidonvaippa
+Epipactis phyllanthes – kaljuneidonvaippa
+Epipactis purpurata – purppuraneidonvaippa
+Epipogium – metsänemät
+Epipogium aphyllum – metsänemä
+Eulophia – korvakämmekät
+Eulophia speciosa – keltakorvakämmekkä
+Eulophia streptopetala – kirjokorvakämmekkä
+Gennaria – sepokämmekät
+Gennaria diphylla – sepokämmekkä
+Goodyera – yövilkat
+Goodyera macrophylla – madeiranyövilkka
+Goodyera repens – yövilkka
+Gymnadenia – kirkiruohot
+Gymnadenia conopsea – punakirkiruoho, kirkiruoho
+Gymnadenia conopsea var. conopsea – ahokirkiruoho
+Gymnadenia conopsea var. lapponica – lettokirkiruoho
+Gymnadenia nigra – ruskokirkiruoho
+Gymnadenia odoratissima – tuoksukirkiruoho
+Gymnadenia runei – maariankirkiruoho
+Habenaria – ripsukämmekät
+Habenaria tridactylites – kanarianripsukämmekkä
+Hammarbya – suovalkut
+Hammarbya paludosa – suovalkku
+Herminium – mesikämmekät
+Herminium monorchis – mesikämmekkä
+Himantoglossum – liskokämmekät
+Himantoglossum hircinum – nauhaliskokämmekkä
+Himantoglossum metlesicsianum – teneriffanliskokämmekkä
+Laelia – leeliat
+Laelia jongheana – rusoleelia
+Laelia lobata – rusettileelia
+Laelia rubescens – kirjoleelia
+Liparis – kiiltovalkut
+Liparis loeselii – kiiltovalkku
+Listera – kaksikot
+Listera cordata – herttakaksikko
+Listera ovata – soikkokaksikko
+Ludisia – ludisiat
+Ludisia discolor – ludisia
+Lycaste – lykastet
+Lycaste aromatica – tuoksulykaste
+Lycaste skinneri – punalykaste
+Malaxis – sääskenvalkut
+Malaxis monophyllos (Microstylis monophyllos) – sääskenvalkku
+Miltonia – miltoniat
+Miltonia clovesii – kirjomiltonia
+Miltonia flavescens – prinsessamiltonia
+Miltonia spectabilis – rusomiltonia
+Miltoniopsis – orvokämmekät
+Miltoniopsis roezlii – kaino-orvokämmekkä
+Miltoniopsis vexillaria – ruso-orvokämmekkä
+Neotinea – kilinkämmekät
+Neotinea maculata – täpläkilinkämmekkä
+Neotinea ustulata – palokämmekkä, palokilinkämmekkä
+Neottia – pesäjuuret
+Neottia nidus-avis – pesäjuuri (linnunpesäjuuri)
+Oncidium – nystykämmekät
+Oncidium limminghei – nystykämmekkä
+Oncidium ornithorhynchum – tuoksunystykämmekkä
+Ophrys – orhot
+Ophrys apifera – mehiläisorho
+Ophrys argolica – argolianorho
+Ophrys bombyliflora – mettiäisorho
+Ophrys fleischmannii – rusko-orho
+Ophrys fuciflora – kuhnuriorho
+Ophrys insectifera – kimalaisorho
+Ophrys lunulata – sisilianorho
+Ophrys lutea – keltaorho
+Ophrys speculum – peiliorho
+Ophrys sphegodes – hämähäkkiorho
+Ophrys tenthredinifera – ampiaisorho
+Ophrys umbilicata – idänorho
+Orchis – pallerokämmekät, kämmekät
+Orchis mascula – miehenkämmekkä
+Orchis militaris – soikkokämmekkä
+Orchis papilionacea – liihokämmekkä
+Orchis purpurea – hilkkakämmekkä
+Orchis spitzelii – alppikämmekkä
+Orchis tridentata – helmakämmekkä
+Paphiopedilum – venuksenkengät
+Paphiopedilum callosum – raitavenuksenkenkä
+Paphiopedilum insigne – nepalinvenuksenkenkä
+Peristeria – kyyhkyskämmekät
+Peristeria elata – panamankyyhkyskämmekkä
+Phalaenopsis – perhoskämmekät, perhosorkideat
+Phalaenopsis amabilis – valkoperhoskämmekkä
+Phalaenopsis cornu-cervi – raitaperhoskämmekkä
+Phalaenopsis equestris – siroperhoskämmekkä
+Phragmipedium – tohvelikämmekät
+Platanthera – lehdokit
+Platanthera bifolia – valkolehdokki
+Platanthera bifolia ssp. bifolia – etelänvalkolehdokki
+Platanthera bifolia ssp. latiflora – pohjanvalkolehdokki, valkolehdokki
+Platanthera chlorantha – keltalehdokki
+Platanthera hyperborea – lumilehdokki
+Platanthera leucophaea – idänpreerialehdokki
+Platanthera micrantha – kielilehdokki
+Platanthera obtusata / P. oligantha – pikkulehdokki
+Platanthera obtusata ssp. oligantha – pikkulehdokki
+Platanthera pollostantha – keijunlehdokki
+Platanthera praeclara – lännenpreerialehdokki
+Pleione – tyttökämmekät
+Pleione formosana – vaaleatyttökämmekkä
+Pleione limprichtii – tummatyttökämmekkä
+Pleurothallis – tupaskämmekät
+Polyradicion – aavejuuret
+Polyradicion lindenii – floridanaavejuuri
+Polystachya – kupukämmekät
+Polystachya albescens – ternikupukämmekkä
+Polystachya cultriformis – veitsikupukämmekkä
+Polystachya teitensis – taitankupukämmekkä
+Polystachya transvaalensis – hilkkakupukämmekkä
+Pseudorchis – valkokämmekät
+Pseudorchis albida – ahovalkokämmekkä
+Pseudorchis albida ssp. straminea – valkokämmekkä
+Pseudorchis straminea – tunturivalkokämmekkä
+Rangaeris – lankakämmekät
+Rangaeris amaniensis – aprikoosilankakämmekkä
+Renanthera – korukämmekät
+Renanthera imschootiana – punakorukämmekkä
+Rhizanthella – mantukämmekät
+Rhizanthella gardneri – purppuramantukämmekkä
+Rhizanthella omissa – rusomantukämmekkä
+Rhizanthella slateri – kainomantukämmekkä
+Rossioglossum – tiikerikämmekät
+Rossioglossum grande – tiikerikämmekkä, tiikeriorkidea
+Satyrium – satyyrikämmekät
+Satyrium schimperi – vihersatyyrikämmekkä
+Serapias – kirkiöt, serapiakset
+Serapias cordigera – herttakirkiö
+Serapias lingua – kielikirkiö
+Serapias mascaensis – mascankirkiö
+Serapias parviflora – suppukirkiö
+Serapias vomeracea – kehtokirkiö, kehtoserapias
+Sobralia – sobraliat
+Sobralia macrantha – sobralia
+Sophronitis – tulikämmekät
+Sophronitis coccinea – tulikämmekät
+Sphyrarhynchus – nauhakämmekät
+Stanhopea – jaarlinkämmekät
+Stanhopea hernandezii – jaarlinkämmekkä
+Spiranthes – kierrevilkat
+Spiranthes aestivalis – suvikierrevilkka
+Spiranthes spiralis – syyskierrevilkka
+Stolzia – kerikämmekät
+Stolzia repens – peittokerikämmekkä
+Tridactyle – atrainkämmekät
+Tridactyle furcistipes – tikariatrainkämmekkä
+Tridactyle tanneri – hammasatrainkämmekkä
+Vanda – vandat
+Vanda coerulea – sinivanda
+Vanda cristata – kirjovanda
+Vanda teres – valkovanda
+Vanilla – vaniljat
+Vanilla planifolia – vanilja
+aaprottimaruna (Artemisia abrotanum)
+aasiankilpikierto (Menispermum dauricum)
+ahopaju (Salix starkeana)
+aitalikusteri (Ligustrum vulgare)
+aitaorapihlaja (Crataegus grayana)
+aitopihta (Abies procera)
+ajaninkuusi (Picea jezoënsis)
+albertanvalkokuusi (Picea glauca var. albertiana)
+alppikuusama (Lonicera alpigena)
+alppikärhö (Clematis alpina)
+alppimänty (Pinus mugo subsp. uncinata)
+alppisembra (Pinus cembra subsp. cembra)
+altainorapihlaja (Crataegus korolkovii)
+amerikanhaapa (Populus tremuloides)
+amerikanhalava (Salix lucida)
+amerikanjalopähkinä (Juglans cinerea)
+amerikanjuudaksenpuu (Cercis canadensis)
+amerikankelasköynnös (Celastrus scandens)
+amerikanlehmus (Tilia americana)
+amerikanmustapoppeli (Populus deltoides)
+amerikanorapihlaja (Crataegus intricata)
+amerikanpihlaja (Sorbus americana)
+amerikanpunamänty (Pinus resinosa)
+amerikanpyökki (Fagus grandifolia)
+amerikantaikapähkinä (Hamamelis virginiana)
+amurinvaahtera (Acer tegmentosum)
+amurinviini (Vitis amurensis)
+amurinkorkkipuu (Phellodendron amurense)
+amazoninajahuaskaliaani (Banisteriopsis caapi)
+balkaninhevoskastanja (Aesculus hippocastanum)
+balkaninnäsiä (Daphne blagayana)
+banksinmänty (Pinus banksiana)
+bassaminkaijamahonki (Khaya ivorensis)
+berliininlehmus (Tilia × moltkei)
+berliininpoppeli (Populus × berolinensis)
+bosnianmänty (Pinus heldreichii)
+dahurianalppiruusu (Rhododendron dauricum)
+dahurianlehtikuusi (Larix gmelinii)
+engelmanninkuusi (Picea engelmannii)
+etelänkultasade (Laburnum anagyroides)
+etelänpihlaja (Sorbus torminalis)
+euroopanhernepensas (Caragana frutex)
+euroopanhumalapyökki (Ostrya carpinifolia)
+euroopankuusi (Picea abies subsp. abies)
+euroopanlehtikuusi (Larix decidua)
+euroopanmarjakuusi (Taxus baccata)
+euroopanmuratti (Hedera helix)
+euroopanmustamänty (Pinus nigra)
+(euroopan)pyökki (Fagus sylvatica)
+euroopanpähkinäpensas (Corylus avellana)
+euroopansorvarinpensas (Euonymus europaeus)
+euroopantuhkapensas (Cotoneaster integerrimus)
+euroopanvalkopyökki (Carpinus betulus)
+glehninkuusi (Picea glehnii)
+goweninsypressi (Cupressus goveniana)
+grönlanninhanhikki (Potentilla tridentata)
+halava (Salix pentandra)
+hammasheisi (Viburnum dentatum var. lucidum)
+hanhenpaju (Salix repens)
+hapankirsikka (Prunus cerasus)
+harmaadouglaskuusi (Pseudotsuga menziesii var. glauca)
+harmaaleppä (Alnus incana)
+harmaapihta (Abies concolor)
+harmaapoppeli (Populus canescens)
+harmaavirpiangervo (Spiraea cana)
+harotuhkapensas (Cotoneaster divaricatus)
+helmiorapihlaja (Crataegus × mordenensis)
+helmipensas (Exochorda racemosa)
+helmipihlaja (Sorbus koehneana)
+helmipihlaja-angervo (Sorbaria grandiflora)
+henrinlehtikuusi (Larix × marschlinsii)
+hernesypressi (Chamaecyparis pisifera)
+hibatuija (Thujopsis dolabrata)
+hieskoivu (Betula pubescens)
+hietakirsikka (Prunus pumila)
+himalajankataja (Juniperus squamata)
+hokkaidonvaahtera (Acer japonicum)
+honšunpihta (Abies mariesii)
+hopeakuusi (Picea pungens 'Glauca')
+hopealehmus (Tilia tomentosa)
+hopeapoppeli (Populus alba)
+hopeasalava (Salix alba var. sericea 'Sibirica')
+hopeavaahtera (Acer saccharinum)
+hovijasmike (Philadelphus pubescens)
+huntuvaahtera (Acer triflorum)
+huurrepaju (Salix daphnoides subsp. acutifolia)
+hybridihaapa (Populus × wettsteinii)
+härmäpaju (Salix daphnoides)
+höyhenpensas (Fothergilla major)
+idänpensaskanukka (Cornus alba subsp. alba)
+idänkuusi (Picea orientalis)
+idänorapihlaja (Crataegus chlorosarca)
+idänplataani (Platanus orientalis)
+idäntuija (Thuja orientalis)
+idänvaahtera (Acer mono)
+idänvirpiangervo (Spiraea chamaedryfolia)
+iharuusu (Rosa mollis)
+imeläkirsikka (Prunus avium)
+imukärhivilliviini (Parthenocissus quinquefolia)
+isabellansyreeni (Syringa Preston-ryhmä)
+iso-orapihlaja (Crataegus submollis)
+isokarpalo (Vaccinium oxycoccos)
+isolehtikatsura (Cercidiphyllum magnificum)
+isolehtilehmus (Tilia platyphyllos)
+isonietospensas (Deutzia scabra)
+isopuksipuu (Buxus sempervirens)
+isoruusuangervo (Spiraea fritschiana)
+isotuomipihlaja (Amelanchier spicata)
+isovirpiangervo (Spiraea nipponica)
+italianvaahtera (Acer opalus)
+jalokastanja (Castanea sativa)
+jamesia (Jamesia americana)
+japaninalppiruusu (Rhododendron brachycarpum)
+japaninangervo (Spiraea japonica)
+japaninatsalea (Rhododendron molle subsp. japonicum)
+japaninhappomarja (Berberis thunbergii)
+japaninhemlokki (Tsuga diversifolia)
+japaninjalopähkinä (Juglans ailanthifolia)
+japaninkelasköynnös (Celastrus orbiculatus)
+japaninlaikkuköynnös (Actinidia arguta)
+japaninlehmus (Tilia japonica)
+japaninlehtikuusi (Larix kaempferi)
+japaninmagnolia (Magnolia kobus)
+japaninmarjakuusi (Taxus cuspidata)
+japaninpihlaja (Sorbus commixta)
+japaninpihta (Abies veitchii)
+japaninpuksipuu (Buxus microphylla)
+japaninruusukvitteni (Chaenomeles japonica)
+japaninsiipipähkinä (Pterocarya rhoifolia)
+japanintuija (Thuja standishii)
+japaninvaahtera (Acer palmatum)
+jokipaju (Salix triandra)
+juhannusruusu (Rosa pimpinellifolia)
+juolukka (Vaccinium uliginosum)
+juolukkapaju (Salix myrtilloides)
+juudaksenpuu (Cercis siliquastrum)
+jänönvihma (Cytisus scoparius)
+jättipihta (Abies grandis)
+jättipoppeli (Populus trichocarpa)
+jättituija (Thuja plicata)
+kaarisyreeni (Syringa × josiflexa)
+kaarnapaju (Salix arbutifolia)
+kaljukultasade (Laburnum alpinum)
+kalliotuhkapensas (Cotoneaster scandinavicus)
+kalvaspaju (Salix hastata)
+kameliajasmike (Philadelphus × virginalis)
+kanadanatsalea (Rhododendron canadense)
+kanadanhemlokki (Tsuga canadensis)
+kanadankilpikierto (Menispermum canadense)
+kanadanlehtikuusi (Larix laricina)
+kanadanorapihlaja (Crataegus flabellata)
+kanadanpoppeli (Populus × canadensis)
+kanadanselja (Sambucus canadensis)
+kanadantuija (Thuja occidentalis)
+kanerva (Calluna vulgaris)
+kapealehtikalmia (Kalmia angustifolia)
+kapealehtipaju (Salix rosmarinifolia)
+kapealehtisaarni (Fraxinus angustifolia)
+karjalanruusu (Rosa acicularis)
+karoliinankellovaivero (Pieris floribunda)
+kartiomarjakuusi (Taxus × media)
+karvakoiranruusu (Rosa corymbifera)
+karviainen (Ribes uva-crispa)
+katsura (Cercidiphyllum japonicum)
+kaukasiankuusama (Lonicera caucasica)
+kaukasianpihta (Abies nordmanniana)
+kaukasiansiipipähkinä (Pterocarya pterocarpa)
+kaunopihlaja (Sorbus meinichii)
+kehtokuusama (Lonicera involucrata)
+keisarinangervo (Spiraea × sanssouciana)
+keisaripuu (Paulownia tomentosa)
+kelasvarpu (Paxistima myrtifolia)
+kellokanerva (Erica tetralix)
+kellokuusama (Kolkwitzia amabilis)
+kelta-atsalea (Rhododendron luteum)
+keltahevoskastanja (Aesculus octandra)
+keltakoivu (Betula alleghaniensis)
+keltakotakuusama (Weigela middendorffiana)
+keltakuusama (Lonicera chrysantha)
+keltamänty (Pinus ponderosa)
+keltarakkopensas (Colutea arborescens)
+keltavuohenkuusama (Diervilla lonicera)
+kerria (Kerria japonica)
+kesähortensia (Hydrangea heteromalla 'Bretschneideri')
+kesäorjanlaakeri (Ilex verticillata)
+kevätatsalea (Rhododendron × fraseri)
+kevätkotakuusama (Weigela praecox)
+kiiltoheisi (Viburnum lentago)
+kiiltopaju (Salix phylicifolia)
+kiiltotuhkapensas (Cotoneaster lucidus)
+kiiltotuomi (Prunus serotina)
+kiinanangervo (Spiraea rosthornii)
+kiinanatsalea (Rhododendron molle)
+kiinankataja (Juniperus chinensis)
+kiinankuusi (Picea asperata)
+kiinankärhö (Clematis tangutica)
+kiinanlaikkuköynnös (Actinidia kolomikta)
+kiinanpoppeli (Populus simonii)
+kiinanpunapuu (Metasequoia glyptostroboides)
+kiinanrypälekuusi (Cephalotaxus fortunei)
+kiinansyreeni (Syringa × chinensis)
+kiinanvaahtera (Acer ukurunduense)
+kinosangervo (Spiraea × vanhouttei)
+kirjokuusi (Picea abies f. variegata)
+kirjovihma (Cytisus × versicolor)
+kirsikkaluumu (Prunus cerasifera)
+kirsikkasorvarinpensas (Euonymus planipes)
+kivikkotuhkapensas (Cotoneaster nanshan)
+kivikoivu (Betula ermanii)
+koiranheisi (Viburnum opulus)
+koiranruusu (Rosa canina)
+koivuangervo (Spiraea betulifolia)
+kolmioka (Gleditsia triacanthos)
+komeapihlaja (Sorbus decora)
+kontortamänty (Pinus contorta)
+korallikanukka (Cornus alba 'Sibirica')
+koreanhappomarja (Berberis koreana)
+koreankuusama (Lonicera maackii)
+koreankuusi (Picea koraiensis)
+koreanonnenpensas (Forsythia ovata)
+koreanpihta (Abies koreana)
+koreanpoppeli (Populus koreana)
+koreansembra (Pinus koraiensis)
+koreansyreeni (Syringa wolfii)
+koreantuija (Thuja koraiensis)
+koreanvaahtera (Acer pseudosieboldianum)
+koreanvirpiangervo (Spiraea trichocarpa)
+koripaju (Salix viminalis)
+koristearonia (Aronia × prunifolia)
+korkkipihta (Abies lasiocarpa var. arizonica)
+korpipaatsama (Rhamnus frangula)
+kosterinatsalea (Rhododendron kosterianum)
+(koti)kataja (Juniperus communis)
+kotipihlaja (Sorbus aucuparia)
+kreetanangervo (Spiraea 'Margaritae')
+kriikuna (Prunus domestica subsp. insititia)
+kriminlehmus (Tilia euchlora)
+kuisma-angervo (Spiraea hypericifolia)
+kultaherukka (Ribes aureum)
+kultakoivu (Betula pubescens f. aurea)
+kultakuusi (Picea abies f. aurea)
+kultalehtikuusi (Pseudolarix amabilis)
+kultamänty (Pinus sylvestris f. aurea)
+kultavihma (Cytisus glaber)
+kuningasatsalea (Rhododendron schlippenbachii)
+kuolanharmaaleppä (Alnus incana subsp. kolaënsis)
+kurilienlehtikuusi (Larix gmelinii var. japonica)
+kurjenkanerva (Phyllodoce caerulea)
+kurtturuusu (Rosa rugosa)
+kynäjalava (Ulmus laevis)
+kynäkataja (Juniperus virginiana)
+kyynelkoivu (Betula pendula 'Youngii')
+kääpiökuusi (Picea abies f. nana)
+kääpiömanteli (Prunus tenella)
+kääpiösorvarinpensas (Euonymus nanus)
+käärmekuusi (Picea abies f. virgata)
+käärmemänty (Pinus sylvestris f. virgata)
+köynnöshortensia (Hydrangea anomala subsp. petiolaris)
+laakakataja (Juniperus horizontalis)
+laakerikirsikka (Prunus laurocerasus)
+laakeripoppeli (Populus laurifolia)
+laavapihlaja (Sorbus alnifolia)
+lakkipuu (Cladrastis kentukea)
+lamoherukka (Ribes glandulosum)
+lamokirsikka (Prunus prostrata)
+lapinalppiruusu (Rhododendron lapponicum)
+lapinkataja (Juniperus communis subsp. alpina)
+lapinvuokko (Dryas octopetala)
+lawsoninsypressi (Chamaecyparis lawsoniana)
+lehtojalava (Ulmus minor)
+lehtokuusama (Lonicera xylosteum)
+(lehto)saarni (Fraxinus excelsior)
+lehtovatukka (Rubus pruinosus)
+lettopaju (Salix myrsinites)
+leveälehtikalmia (Kalmia latifolia)
+liekovarpio (Cassiope tetragona)
+likusterisyreeni (Syringa reticulata)
+linnantuhkapensas (Cotoneaster 'Skogholm')
+loimaankoivu (Betula pendula f. crispa)
+lumikellokanerva (Erica herbacea)
+lumikellopuu (Halesia carolina)
+lutzinkuusi (Picea × lutzii)
+luumu (Prunus domestica)
+luutakuusi (Picea abies f. condensata)
+luutamänty (Pinus sylvestris f. condensata)
+lyallinlehtikuusi (Larix lyallii)
+lännenambrapuu (Liquidambar styraciflua)
+lännenheisiangervo (Physocarpus opulifolius)
+lännenhemlokki (Tsuga heterophylla)
+(lännen)hopeapensas (Elaeagnus commutata)
+lännendouglaskuusi (Pseudotsuga menziesii)
+lännenkanukka (Cornus alba subsp. stolonifera)
+lännenlehtikuusi (Larix occidentalis)
+lännenmarjakuusi (Taxus brevifolia)
+lännenpihlaja (Sorbus scopulina)
+lännenpihta (Abies lasiocarpa)
+lännenpunaherukka (Ribes rubrum)
+lännentulppaanipuu (Liriodendron tulipifera)
+lännenvalkomänty (Pinus monticola)
+maakkia (Maackia amurensis)
+mahonia (Mahonia aquifolium)
+makedonianmänty (Pinus peuce)
+mammuttipetäjä (Sequoiadendron giganteum)
+manteli (Prunus dulcis)
+mantšurianjalopähkinä (Juglans mandshurica)
+mantšurianleppä (Alnus mandshurica)
+mantšuriansaarni (Fraxinus mandshurica)
+marjaomenapensas (Malus toringo var. sargentii)
+marjaomenapuu (Malus baccata)
+marjatanalppiruusu (Rhododendron tigerstedtii)
+marjatuomipihlaja (Amelanchier alnifolia)
+metsähaapa (Populus tremula)
+(metsä)kuusi (Picea abies)
+metsälehmus (Tilia cordata)
+(metsä)mänty (Pinus sylvestris)
+metsäomenapuu (Malus sylvestris)
+metsäruusu (Rosa majalis)
+(metsä)tammi (Quercus robur)
+(metsä)vaahtera (Acer platanoides)
+mongolianlehmus (Tilia mongolica)
+mongolianvaahtera (Acer tataricum subsp. ginnala)
+morsiusangervo (Spiraea 'Arguta')
+mukuraleppä (Alnus incana f. gibberosa)
+musta-aronia (Aronia melanocarpa)
+mustaherukka (Ribes nigrum)
+mustajalopähkinä (Juglans nigra)
+mustakoivu (Betula nigra)
+mustakuusama (Lonicera nigra)
+mustakuusi (Picea mariana)
+mustamarjakanukka (Cornus sanguinea)
+mustamarjaorapihlaja (Crataegus douglasii)
+mustamarjatuhkapensas (Cotoneaster niger)
+mustamulperi (Morus nigra)
+mustapoppeli (Populus nigra)
+mustasaarni (Fraxinus nigra)
+mustaselja (Sambucus nigra)
+mustikka (Vaccinium myrtillus)
+mustilanalppiruusu (Rhododendron brachycarpum subsp. tigerstedtii)
+mustilanhortensia (Hydrangea paniculata 'Mustila')
+mustuvapaju (Salix myrsinifolia)
+mökinangervoangervo (Spiraea × rosalba)
+napapaju (Salix polaris)
+neidonhiuspuu (Ginkgo biloba)
+neitoangervo (Spiraea × cinerea)
+nikonpihta (Abies homolepis)
+niverävaahtera (Acer campestre)
+norjanangervo (Spiraea 'Grefsheim')
+nukka-alppiruusu (Rhododendron smirnowii)
+nukka-angervo (Holodiscus discolor)
+nukkakirsikka (Prunus tomentosa)
+nukkaorapihlaja (Crataegus nigra)
+nukkapajuangervo (Spiraea tomentosa)
+nukkasyreeni (Syringa tomentella)
+nukkatammi (Quercus pubescens)
+nukkeruusu (Rosa nitida)
+nuokkukuusama (Lonicera albertii)
+nuokkuröyhysyreeni (Syringa × swegiflexa)
+nuokkusyreeni (Syringa reflexa)
+nutkansypressi (Chamaecyparis nootkatensis)
+näsiä (Daphne mezereum)
+ohotanalppiruusu (Rhododendron aureum)
+ohotankärhö (Clematis ochotensis)
+ohotanpihta (Abies nephrolepis)
+okakuusi (Picea pungens)
+okaruusu (Rosa sherardii)
+olganlehtikuusi (Larix gmelinii var. olgensis)
+ontarionpoppeli (Populus × jackii 'Gileadensis')
+oranssihernepensas (Caragana aurantiaca)
+orapaatsama (Rhamnus cathartica)
+oratuomi (Prunus spinosa)
+oregoninleppä (Alnus rubra)
+orjanruusu (Rosa dumalis)
+outapaju (Salix borealis)
+paanutammi (Quercus imbricaria)
+paholaisvaahtera (Acer diabolicum)
+pallesorvarinpensas (Euonymus alatus)
+pallohortensia (Hydrangea arborescens)
+pallokuusi (Picea abies 'Globosa')
+pallomänty (Pinus sylvestris 'Globosa')
+pallosypressi (Chamaecyparis thyoides)
+palmerinkoivu (Betula pendula f. palmeri)
+palsamiköynnös (Schisandra chinensis)
+palsamipihta (Abies balsamea)
+palsamipoppeli (Populus balsamifera)
+paperikoivu (Betula papyrifera)
+pensashanhikki (Dasiphora fruticosa, syn. Potentilla fruticosa)
+pensaskanerva (Myricaria germanica)
+pensaskanukka (Cornus alba)
+pensaskoivu (Betula fruticosa)
+pensasleppä (Alnus viridis)
+pensasmagnolia (Magnolia sieboldii)
+pensasmustikka (Vaccinium corymbosum)
+pensassembra (Pinus pumila)
+pensasväriherne (Genista tinctoria)
+pensylvanianvaahtera (Acer pensylvanicum)
+perhokuusama (Lonicera × notha)
+pesäkuusi (Picea abies f. nidiformis)
+pihajasmike (Philadelphus coronarius)
+pihaorjanlaakeri (Ilex × meservae)
+pihasyreeni (Syringa vulgaris)
+piikkiaralia (Aralia elata)
+piippuköynnös (Aristolochia macrophylla)
+pikimänty (Pinus rigida)
+pikkujasmike (Philadelphus × lemoinei)
+pikkukarpalo (Vaccinium microcarpum)
+pikkunietospensas (Deutzia amurensis)
+pikkutalvio (Vinca minor)
+pilvikirsikka (Prunus pensylvanica)
+pinja (Pinus pinea)
+pirkkalankoivu (Betula pendula f. bircalensis)
+pirunnuija (Oplopanax horridus)
+pohjanpaju (Salix lapponum)
+pohjanpunaherukka (Ribes spicatum)
+poimuetelänpyökki (Nothofagus antarctica)
+poppelikoivu (Betula populifolia)
+poppelimagnolia (Magnolia acuminata)
+prinssinlehtikuusi (Larix gmelinii var. principis-rupprechtii)
+puistoalppiruusu (Rhododendron Catawbiense-ryhmä)
+puistojasmike (Philadelphus lewisii var. gordonianus)
+puistokuusama (Lonicera xylosteoides)
+puistolehmus (Tilia × vulgaris)
+puistosyreeni (Syringa × henryi)
+puna-aronia (Aronia arbutifolia)
+punaherukka (Ribes rubrum Rubrum-ryhmä)
+punahevoskastanja (Aesculus × carnea)
+punakoiso (Solanum dulcamara)
+punakoivu (Betula pubescens f. rubra)
+punakuusi (Picea rubens)
+punamarjakanukka (Cornus mas)
+punapaju (Salix purpurea)
+punapajuangervo (Spiraea douglasii)
+punapuu (Sequoia sempervirens)
+punapyökki (Fagus sylvatica f. purpurea)
+punasaarni (Fraxinus pennsylvanica)
+punatammi (Quercus rubra)
+punavaahtera (Acer rubrum)
+punavihma (Cytisus purpureus)
+puolanlehtikuusi (Larix decidua subsp. polonica)
+puolukka (Vaccinium vitis-idaea)
+purppurakuusi (Picea abies f. cruenta)
+purppurapihta (Abies amabilis)
+purppuratammi (Quercus coccinea)
+pyöröorapihlaja (Crataegus laevigata)
+päärynä (Pyrus communis)
+pöytäkanukka (Cornus controversa)
+raita (Salix caprea)
+rauduskoivu (Betula pendula)
+rautatammi (Quercus ilex)
+riekonmarja (Arctostaphylos alpinus)
+riippakoivu (Betula pendula f. tristis)
+riippakuusi (Picea abies f. viminalis)
+rohtokataja (Juniperus sabina)
+rotkoheisi (Viburnum rafinesquianum)
+rotkohemlokki (Tsuga caroliniana)
+röyhysyreeni (Syringa sweginowii)
+ruhtinaanpoppeli (Populus 'Rasumowskiana')
+ruostealppiruusu (Rhododendron ferrugineum)
+ruostehappomarja (Berberis vulgaris)
+ruotsinköynnöskuusama (Lonicera periclymenum)
+ruotsinpihlaja (Sorbus intermedia)
+rusoheisi (Viburnum sargentii)
+rusokirsikka (Prunus sargentii)
+rusokuusama (Lonicera tatarica)
+rusopajuangervo (Spiraea billiardii)
+rusotuomipihlaja (Amelanchier lamarckii)
+rusovaahtera (Acer platanoides 'Reitenbachii')
+rusovuohenkuusama (Diervilla sessilifolia)
+ruusumanteli (Prunus triloba)
+ruusunäsiä (Daphne cneorum)
+saarnivaahtera (Acer negundo)
+sahalininpihta (Abies sachalinensis)
+saksankärhö (Clematis vitalba)
+saksanpihlaja (Sorbus aria)
+saksanpihta (Abies alba)
+salava (Salix fragilis)
+samettisumakki (Rhus hirta)
+sammalvarpio (Cassiope hypnoides)
+sarjatalvikki (Chimaphila umbellata)
+sarvipähkinäpensas (Corylus cornuta)
+sembramänty (Pinus cembra)
+seppelvarpu (Stephanandra incisa)
+serbiankuusi (Picea omorika)
+sianpuolukka (Arctostaphylos uva-ursi)
+sielikkö (Loiseleuria procumbens)
+siipiköynnös (Tripterygium regelii)
+sinikuusama (Lonicera caerulea)
+sinivatukka (Rubus caesius)
+siperianhernepensas (Caragana arborescens)
+siperianjalava (Ulmus pumila)
+siperiankärhö (Clematis sibirica)
+siperiankuusi (Picea abies subsp. obovata)
+siperianlehtikuusi (Larix sibirica)
+siperianomenapuu (Malus prunifolia)
+siperianorapihlaja (Crataegus sanguinea)
+siperianpihta (Abies sibirica)
+siperiansembra (Pinus cembra subsp. sibirica)
+siperianvirpiangervo (Spiraea trilobata)
+sirokuusama (Lonicera × bella)
+sirosyreeni (Syringa × nanceana)
+sirotuomipihlaja (Amelanchier laevis)
+sirovaahtera (Acer sieboldianum)
+sitkankuusi (Picea sitchensis)
+sokerikoivu (Betula lenta)
+sokerivaahtera (Acer saccharum)
+strobusmänty (Pinus strobus)
+suikerosorvarinpensas (Euonymus fortunei)
+suikerotuhkapensas (Cotoneaster dammeri var. radicans)
+suikerovihma (Cytisus decumbens)
+suippuorapihlaja (Crataegus rhipidophylla)
+sulhasangervo (Spiraea × multiflora)
+sulkaharmaaleppä (Alnus incana f. laciniata)
+sulkatuhkapensas (Cotoneaster horizontalis)
+sulohelmipihlaja (Sorbus prattii)
+suokukka (Andromeda polifolia)
+suomenpihlaja (Sorbus hybrida)
+suomyrtti (Myrica gale)
+suopursu (Rhododendron tomentosum)
+surukuusi (Picea abies f. pendula)
+syyshortensia (Hydrangea paniculata 'Grandiflora')
+syyssyrikkä (Buddleja davidii)
+säiläorapihlaja (Crataegus macracantha)
+säleikkövilliviini (Parthenocissus inserta)
+taalainkoivu (Betula pendula 'Dalecarlica')
+taatanpihlaja (Sorbus × thuringiaca 'Fastigiata')
+taiganvirpiangervo (Spiraea media)
+taikinamarja (Ribes alpinum)
+takiaistammi (Quercus macrocarpa)
+talvikkipaju (Salix pyrolifolia)
+talvitammi (Quercus petraea)
+tamariski (Tamarix pentandra)
+tammenlehtileppä (Alnus glutinosa f. quercifolia)
+tapionpöytä (Picea abies f. tabulaeformis)
+tarhakotakuusama (Weigela florida)
+tarhakultasade (Laburnum × watereri)
+tarhaomenapuu (Malus domestica)
+tataarivaahtera (Acer tataricum)
+teodorinpihlaja (Sorbus teodori)
+terijoensalava (Salix fragilis 'Bullata')
+terttuselja (Sambucus racemosa)
+tervaleppä (Alnus glutinosa)
+tiikki (Tectona grandis)
+tigerstedtinsyreeni (Syringa tigerstedtii)
+tokionsorvarinpensas (Euonymus hamiltonianus)
+trumpettipuu (Catalpa bignonioides)
+tuhkapaju (Salix cinerea)
+tuivio (Microbiota decussata)
+tulikuusama (Lonicera × brownii)
+tummapoppeli (Populus balsamifera 'Tristis')
+tunturikoivu (Betula pubescens subsp. czerepanovii)
+tunturipaju (Salix glauca)
+tuohituomi (Prunus maackii)
+tuoksuheisi (Viburnum carlesii)
+tuoksuköynnöskuusama (Lonicera caprifolium)
+tuoksupoppeli (Populus suaveolens)
+tuoksuvatukka (Rubus odoratus)
+tuomi (Prunus padus)
+turkestaninkuusi (Picea schrenkiana)
+turkestaninvaahtera (Acer tataricum subsp. semenowii)
+turkinpähkinäpensas (Corylus colurna)
+tuulenpesämänty (Pinus sylvestris f. globosa)
+tylppöorapihlaja (Crataegus monogyna)
+tyrni (Hippophaë rhamnoides)
+tähkävaahtera (Acer spicatum)
+törmäviini (Vitis riparia)
+unkarinsyreeni (Syringa josikaea)
+ussurinpäärynä (Pyrus ussuriensis)
+ussurinpihta (Abies holophylla)
+uuvana (Diapensia lapponica)
+vadelma (Rubus idaeus)
+vaivaiskoivu (Betula nana)
+vaivaispaju (Salix herbacea)
+vaivero (Chamaedaphne calyculata)
+valeakaasia (Robinia pseudoacacia)
+valkoalppiruusu (Rhododendron 'Cunningham's White')
+valkoherukka (Ribes rubrum Rubrum-ryhmä)
+valkojalava (Ulmus americana)
+valkokuusi (Picea glauca)
+valkolumimarja (Symphoricarpos albus var. laevigatus)
+valkomarjakanukka (Cornus alba 'Siberian Pearls')
+valkopaju (Salix alba)
+valkopajuangervo (Spiraea alba)
+valkosaarni (Fraxinus americana)
+valkovatukka (Rubus parviflorus)
+vanamo (Linnaea borealis)
+variksenmarja (Empetrum nigrum)
+varjoyrtti (Pachysandra terminalis)
+varpukalmia (Kalmia polifolia)
+venäjänjuuri (Acanthopanax senticosus)
+verhoangervo (Spiraea beauverdiana 'Lumikki')
+veripähkinäpensas (Corylus maxima 'Purpurea')
+verivaahtera (Acer platanoides 'Schwedleri')
+vernissapuu (Rhus verniciflua)
+verkkolehtipaju (Salix reticulata)
+vienokirsikka (Prunus maximowiczii)
+viinikärhö (Clematis viticella)
+viinivaahtera (Acer circinatum)
+viitaheisi (Viburnum cassinoides)
+viitapajuangervo (Spiraea salicifolia)
+viitapihlaja-angervo (Sorbaria sorbifolia)
+viitavaahtera (Acer barbinerve)
+villaheisi (Viburnum lantana)
+villapaju (Salix lanata)
+villasyreeni (Syringa villosa)
+virginianpihta (Abies fraseri)
+virginiantuomi (Prunus virginiana)
+virpapaju (Salix aurita)
+visakoivu (Betula pendula var. carelica)
+vuorihemlokki (Tsuga mertensiana)
+vuorijalava (Ulmus glabra)
+vuorimänty (Pinus mugo)
+vuorivaahtera (Acer pseudoplatanus)
+wilsoninpoppeli (Populus wilsonii)
+euroopanmarjakuusi eli marjakuusi (Taxus baccata)
+lännendouglaskuusi (Pseudotsuga menziesii)
+metsäkuusi eli kuusi (Picea abies)
+euroopankuusi (Picea abies ssp. abies)
+siperiankuusi (Picea abies ssp. obovata)
+euroopanlehtikuusi (Larix decidua)
+siperianlehtikuusi (Larix sibirica)
+henrinlehtikuusi (Larix × marschlinsii)
+kontortamänty (Pinus contorta)
+vuorikontortamänty (Pinus contorta var. latifolia)
+metsämänty eli mänty (Pinus sylvestris)
+salomänty (Pinus sylvestris var. sylvestris)
+lapinmänty (Pinus sylvestris var. lapponica)
+sembramänty eli sembra (Pinus cembra)
+siperiansembra (Pinus cembra ssp. sibirica)
+vuorimänty (Pinus mugo)
+harmaapihta eli harmaajalokuusi (Abies concolor)
+japaninpihta eli japaninjalokuusi eli veitchinjalokuusi (Abies veitchii)
+palsamipihta eli palsamijalokuusi (Abies balsamea)
+saksanpihta eli saksanjalokuusi (Abies alba)
+siperianpihta eli siperianjalokuusi (Abies sibirica)
+jättituija (Thuja plicata)
+kanadantuija (Thuja occidentalis)
+kotikataja eli kataja (Juniperus communis)
+metsäkataja (Juniperus communis ssp. communis)
+lapinkataja (Juniperus communis ssp. nana)
+hentokarvalehti (Ceratophyllum submersum)
+tankeakarvalehti eli karvalehti (Ceratophyllum demersum)
+valkolumme (Nymphaea alba)
+isolumme (Nymphaea alba ssp. alba)
+pohjanlumme (Nymphaea alba ssp. candida, syn. Nymphaea candida)
+suomenlumme (Nymphaea tetragona)
+konnanulpukka (Nuphar pumila)
+pohjanulpukka (Nuphar lutea × pumila)
+isoulpukka (Nuphar lutea)
+lehtotaponlehti eli taponlehti (Asarum europaeum)
+meriajokas (Zostera marina)
+kiertohapsikka (Ruppia cirrhosa, syn. Ruppia spiralis)
+merihapsikka (Ruppia maritima)
+keltapäivänlilja (Hemerocallis lilioasphodelus, syn. Hemerocallis flava)
+rusopäivänlilja (Hemerocallis fulva)
+rohtokalmojuuri eli kalmojuuri (Acorus calamus)
+kilpukka eli sammakonkilpukka (Hydrocharis morsus-ranae)
+hentonäkinruoho (Najas tenuissima)
+merinäkinruoho (Najas marina)
+(Najas marina ssp. marina)
+notkeanäkinruoho (Najas flexilis)
+sahalehti (Stratiotes aloides)
+kanadanvesirutto eli vesirutto (Elodea canadensis)
+vuorisilmiö eli kuovinkukka (Sisyrinchium montanum)
+keltakurjenmiekka eli kurjenmiekka (Iris pseudacorus)
+saksankurjenmiekka (Iris germanica)
+siperiankurjenmiekka (Iris sibirica)
+idänmiekkalilja (Gladiolus imbricatus)
+lehtotikankontti eli tikankontti (Cypripedium calceolus)
+neidonkenkä (Calypso bulbosa)
+taigaharajuuri eli harajuuri (Corallorhiza trifida)
+suovalkku (Hammarbya paludosa)
+sääskenvalkku (Malaxis monophyllos, syn. Achroanthes monophyllos, Microstylis monophyllos)
+miekkavalkku (Cephalanthera longifolia)
+punavalkku (Cephalanthera rubra)
+kiiltovalkku (Liparis loeselii)
+korallimetsänemä eli metsänemä (Epipogium aphyllum)
+linnunpesäjuuri eli pesäjuuri (Neottia nidus-avis)
+herttakaksikko (Listera cordata, syn. Neottia cordata)
+soikkokaksikko (Listera ovata, syn. Neottia ovata)
+tummaneidonvaippa (Epipactis atrorubens)
+lehtoneidonvaippa (Epipactis helleborine)
+suoneidonvaippa (Epipactis palustris)
+tunturiorho (Chamorchis alpina)
+kimalaisorho (Ophrys insectifera)
+pussikämmekkä (Coeloglossum viride, syn. Dactylorhiza viridis)
+punakämmekkä (Dactylorhiza incarnata)
+suopunakämmekkä eli punakämmekkä (Dactylorhiza incarnata ssp. incarnata)
+veripunakämmekkä eli verikämmekkä (Dactylorhiza incarnata ssp. cruenta)
+täpläkämmekkä (Dactylorhiza maculata)
+maariankämmekkä (Dactylorhiza maculata ssp. maculata)
+kielikämmekkä (Dactylorhiza maculata ssp. fuchsii) eli kalkkimaariankämmekkä (Dactylorhiza fuchsii)
+toukokämmekkä (Dactylorhiza majalis)
+baltiankämmekkä eli baltiantoukokämmekkä eli leveälehtikämmekkä (Dactylorhiza majalis ssp. baltica, syn. Dactylorhiza baltica)
+lapinkämmekkä (Dactylorhiza majalis ssp. lapponica, syn. Dactylorhiza lapponica)
+luhtakämmekkä (Dactylorhiza majalis ssp. sphagnicola, syn. Dactylorhiza sphagnicola)
+kaitakämmekkä (Dactylorhiza traunsteineri)
+seljakämmekkä (Dactylorhiza sambucina)
+miehenkämmekkä (Orchis mascula)
+soikkokämmekkä (Orchis militaris)
+punakirkiruoho eli kirkiruoho (Gymnadenia conopsea)
+ahokirkiruoho (Gymnadenia conopsea var. conopsea)
+lettokirkiruoho (Gymnadenia conopsea var. lapponica)
+tunturivalkokämmekkä eli valkokämmekkä (Pseudorchis straminea, syn. Pseudorchis albida ssp. straminea)
+havuyövilkka eli yövilkka (Goodyera repens)
+keltalehdokki (Platanthera chlorantha)
+pikkulehdokki (Platanthera oligantha, syn. Platanthera obtusata ssp. oligantha)
+valkolehdokki (Platanthera bifolia)
+etelänvalkolehdokki (Platanthera bifolia ssp. bifolia)
+pohjanvalkolehdokki (Platanthera bifolia ssp. latiflora)
+hietalaukka (Allium vineale)
+karhunlaukka (Allium ursinum)
+käärmeenlaukka (Allium scorodoprasum)
+nurmilaukka (Allium oleraceum)
+ruoholaukka eli ruohosipuli (Allium schoenoprasum)
+kallioruoholaukka (Allium schoenoprasum ssp. schoenoprasum)
+ruijanruoholaukka (Allium schoenoprasum ssp. alpinum)
+särmälaukka (Allium angulosum)
+leväkkö (Scheuchzeria palustris)
+isokäenrieska (Gagea lutea)
+pikkukäenrieska (Gagea minima)
+puistokäenrieska (Gagea pratensis)
+ruskolilja (Lilium bulbiferum)
+varjolilja (Lilium martagon)
+kirjopikarililja (Fritillaria meleagris)
+valkopärskäjuuri (Veratrum album)
+pohjanpärskäjuuri (Veratrum album ssp. lobelianum)
+sudenmarja (Paris quadrifolia)
+syysmyrkkylilja (Colchicum autumnale)
+kapeaosmankäämi (Typha angustifolia)
+leveäosmankäämi (Typha latifolia)
+haarapalpakko (Sparganium erectum)
+isopalpakko eli etelänhaarapalpakko (Sparganium erectum ssp. erectum)
+jokipalpakko (Sparganium erectum ssp. neglectum)
+lounaanpalpakko (Sparganium erectum ssp. oocarpum)
+ojapalpakko eli isohaarapalpakko (Sparganium erectum ssp. microcarpum)
+kaitapalpakko (Sparganium angustifolium)
+palleropalpakko (Sparganium glomeratum)
+pikkupalpakko (Sparganium natans)
+pohjanpalpakko (Sparganium hyperboreum)
+rantapalpakko (Sparganium emersum)
+siimapalpakko (Sparganium gramineum)
+hentohelmililja (Muscari botryoides)
+idänsinililja (Scilla siberica)
+ruokaparsa eli parsa (Asparagus officinalis)
+sarjatähdikki (Ornithogalum angustifolium)
+kalliokielo (Polygonatum odoratum)
+lehtokielo (Polygonatum multiflorum)
+tarhakalliokielo (Polygonatum × hybridum)
+kielo (Convallaria majalis)
+metsäoravanmarja eli oravanmarja (Maianthemum bifolium)
+sarjarimpi (Butomus umbellatus)
+kelluskeiholehti (Sagittaria natans)
+pystykeiholehti (Sagittaria sagittifolia)
+sirppikeiholehti (Sagittaria × lunata)
+ratamosarpio (Alisma plantago-aquatica)
+upossarpio (Alisma wahlenbergii)
+rikkasoljo (Commelina communis)
+hentosuolake (Triglochin palustris)
+merisuolake (Triglochin maritima)
+pohjankarhunruoho eli karhunruoho (Tofieldia pusilla)
+isolimaska (Spirodela polyrhiza)
+itulimaska (Lemna turionifera)
+kupulimaska (Lemna gibba)
+pikkulimaska (Lemna minor)
+ristilimaska (Lemna trisulca)
+suovehka eli vehka (Calla palustris)
+isohaura (Zannichellia major)
+pikkuhaura (Zannichellia palustris)
+merihaura (Zannichellia palustris var. repens)
+otahaura (Zannichellia palustris var. pedicellata, syn. Zannichellia pedunculata)
+purovita (Potamogeton alpinus)
+jokivita (Potamogeton × exilis eli Potamogeton alpinus × natans)
+pikkuvita (Potamogeton berchtoldii)
+litteävita (Potamogeton compressus)
+poimuvita (Potamogeton crispus)
+otalehtivita eli otavita (Potamogeton friesii)
+heinävita (Potamogeton gramineus)
+vaskivita (Potamogeton × angustifolius, syn. Potamogeton × zizii eli Potamogeton gramineus × lucens)
+nauhavita (Potamogeton × sparganiifolius eli Potamogeton gramineus × natans)
+kiiluvita (Potamogeton × nitens eli Potamogeton gramineus × perfoliatus)
+välkevita (Potamogeton lucens)
+uistinvita (Potamogeton natans)
+tylppälehtivita eli tylppövita (Potamogeton obtusifolius)
+ahvenvita (Potamogeton perfoliatus)
+tatarvita (Potamogeton polygonifolius)
+pitkälehtivita (Potamogeton praelongus)
+hentovita (Potamogeton pusillus)
+jouhivita (Potamogeton rutilus)
+merivita (Stuckenia filiformis, syn. Potamogeton filiformis)
+lankavita (Stuckenia × suecica eli Stuckenia filiformis × pectinata, syn. Potamogeton × suecicus eli Potamogeton filiformis × pectinatus)
+huiskavita (Stuckenia × fennica eli Stuckenia filiformis × vaginata, syn. Potamogeton × fennicus eli Potamogeton filiformis × vaginatus)
+hapsivita (Stuckenia pectinata, syn. Potamogeton pectinatus)
+pohjanlahdenvita (Stuckenia × bottnica eli Stuckenia pectinata × vaginata, syn. Potamogeton × bottnicus eli Potamogeton pectinatus × vaginatus)
+tuppivita (Stuckenia vaginata, syn. Potamogeton vaginatus)
+nurminata (Festuca pratensis, syn. Schedonorus pratensis)
+ruokonata (Festuca arundinacea, syn. Schedonorus arundinaceus)
+meriruokonata (Festuca arundinacea var. arundinacea)
+rehuruokonata (Festuca arundinacea var. aspera)
+lehtonata (Festuca gigantea, syn. Schedonorus giganteus)
+punanata (Festuca rubra)
+mätäspunanata (Festuca rubra ssp. juncea)
+niittypunanata (Festuca rubra ssp. rubra)
+pohjanpunanata (Festuca rubra ssp. arctica) – sisältää tunturinadan (Festuca richardsonii)
+roimanata eli isopunanata (Festuca heteromalla, syn. Festuca diffusa)
+lampaannata (Festuca ovina)
+hapsinata eli hapsilampaannata (Festuca filiformis, syn. Festuca tenuifolia)
+jäykkänata (Festuca brevipila, syn. Festuca stricta ssp. trachyphylla)
+itunata (Festuca vivipara)
+varjonata (Festuca heterophylla)
+hietikkonata (Festuca polesica)
+puistonata (Festuca nigrescens)
+englanninraiheinä (Lolium perenne)
+italianraiheinä (Lolium multiflorum)
+myrkkyraiheinä (Lolium temulentum)
+pellavaraiheinä (Lolium remotum)
+hiirenhäntänata (Vulpia myuros)
+kylänurmikka (Poa annua)
+juurtonurmikka (Poa supina)
+karheanurmikka (Poa trivialis)
+niittynurmikka (Poa pratensis, syn. Poa pratensis ssp. pratensis)
+hoikkanurmikka (Poa angustifolia, syn. Poa pratensis ssp. angustifolia)
+matalanurmikka (Poa humilis, syn. Poa subcaerulea, Poa pratensis ssp. subcaerulea)
+pohjannurmikka (Poa alpigena, syn. Poa pratensis ssp. alpigena)
+luminurmikka eli lapinnurmikka (Poa arctica)
+puistonurmikka (Poa chaixii)
+korpinurmikka (Poa remota)
+litteänurmikka (Poa compressa)
+pikkulitteänurmikka (Poa compressa ssp. compressa)
+isolitteänurmikka (Poa compressa ssp. langeana)
+rantanurmikka (Poa palustris)
+pahtanurmikka (Poa glauca)
+lehtonurmikka (Poa nemoralis)
+sipulinurmikka (Poa bulbosa)
+tunturinurmikka (Poa alpina)
+pohjansorsimo (Arctophila fulva var. pendulina)
+kujasorsimo (Puccinellia distans)
+luotosorsimo (Puccinellia capillaris)
+rönsysorsimo (Puccinellia phryganodes)
+tunturihilpi (Phippsia algida)
+lapinhilpi (Arctagrostis latifolia)
+koiranheinä (Dactylis glomerata)
+amerikantörökki (Beckmannia syzigachne)
+idäntörökki (Beckmannia eruciformis)
+otasukapää (Cynosurus cristatus)
+vesihilpi (Catabrosa aquatica)
+hajuheinä (Cinna latifolia)
+peltoluoho eli luoho (Apera spica-venti)
+niittyräpelö (Briza media)
+sinilupikka (Sesleria caerulea)
+mätäshelmikkä (Melica picta)
+nuokkuhelmikkä (Melica nutans)
+röyhyhelmikkä (Melica uniflora)
+tähkähelmikkä (Melica ciliata)
+kanadansorsimo (Glyceria canadensis)
+pikkusorsimo (Glyceria declinata)
+ojasorsimo (Glyceria fluitans)
+lännenisosorsimo eli lännensorsimo eli myllysorsimo (Glyceria grandis)
+korpisorsimo (Glyceria lithuanica)
+isosorsimo (Glyceria maxima)
+viirusorsimo eli kirjosorsimo (Glyceria striata)
+savisorsimo (Glyceria notata)
+japaninkattara (Bromus japonicus)
+mäkikattara (Bromus hordeaceus)
+pörrökattara eli pyörökattara (Bromus squarrosus)
+pyörtänökattara (Bromus arvensis)
+ruiskattara (Bromus secalinus)
+vaihdokaskattara (Bromus commutatus)
+idänkattara (Bromopsis inermis, syn. Bromus inermis)
+lehtokattara (Bromopsis benekenii, syn. Bromus benekenii)
+pystykattara (Bromopsis erecta, syn. Bromus erectus)
+hietakattara (Anisantha sterilis, syn. Bromus sterilis)
+kattokattara (Anisantha tectorum, syn. Bromus tectorum)
+litteäkattara (Ceratochloa cathartica, syn. Bromus willdenowii)
+mäkiluste eli mäkilehtoluste (Brachypodium pinnatum)
+varjoluste eli varjolehtoluste (Brachypodium sylvaticum)
+rantavehnä (Leymus arenarius)
+albertanvehnä (Leymus innovatus)
+merijuola eli merijuolavehnä (Elytrigia junceiformis, syn. Elymus farctus)
+merihaprajuola eli merivehnä (Elytrigia junceiformis ssp. boreoatlanticus, syn. Elymus farctus ssp. boreoatlanticus)
+niittyjuola eli juolavehnä (Elytrigia repens, syn. Elymus repens)
+rikkajuola eli rikkajuolavehnä (Elytrigia repens ssp. repens, syn. Elymus repens ssp. repens)
+rantajuola eli rantajuolavehnä (Elytrigia repens ssp. arenosa, syn. Elymus repens ssp. arenosus)
+koiranvehnä eli koiranvehniö (Elymus caninus)
+lapinvehnä eli lapinvehniö (Elymus mutabilis)
+tunturivehnä eli tunturivehniö (Elymus alaskanus)
+pikkutunturivehnä eli pikkutunturivehniö (Elymus alaskanus ssp. scandicus)
+siperianvehnä eli siperianvehniö (Elymus fibrosus)
+ketoharjasvehnä eli harjasvehnä (Agropyron cristatum)
+kampaharjasvehnä (Agropyron cristatum ssp. pectinatum)
+myllypukinvehnä (Aegilops cylindrica, syn. Triticum cylindricum)
+leipävehnä eli vehnä (Triticum aestivum)
+ruis (Secale cereale)
+hiirenohra (Hordeum murinum)
+pelto-ohra eli ohra (Hordeum vulgare)
+partaohra (Hordeum jubatum)
+hukkakaura (Avena fatua)
+peltokaura eli kaura (Avena sativa)
+ukonkaura (Avena strigosa)
+ahdekaura eli ahdekaurio (Helictotrichon pratense, syn. Helictochloa pratensis, Avenula pratensis, Arrhenatherum pratense)
+mäkikaura (Helictotrichon pubescens, syn. Avenula pubescens)
+niittyheinäkaura eli heinäkaura (Arrhenatherum elatius)
+keltakaurakko eli keltakaura (Trisetum flavescens)
+lapinkaurakko eli lapinkaura (Trisetum subalpestre)
+tähkäkaurakko eli tähkäkaura (Trisetum spicatum)
+metsälauha (Deschampsia flexuosa, syn. Avenella flexuosa)
+nurmilauha (Deschampsia cespitosa)
+pohjanlahdenlauha (Deschampsia bottnica)
+tunturilauha (Deschampsia alpina)
+lapinlauha (Vahlodea atropurpurea, syn. Deschampsia atropurpurea)
+kääpiölauhio eli kevätkääpiölauha eli kääpiölauha (Aira praecox)
+lännenmaarianheinä (Hierochloë odorata)
+metsämaarianheinä (Hierochloë australis)
+niittymaarianheinä (Hierochloë hirta)
+tunturimaarianheinä (Hierochloë alpina)
+tuoksusimake (Anthoxanthum odoratum)
+eteläntuoksusimake (Anthoxanthum odoratum ssp. odoratum)
+pohjantuoksusimake (Anthoxanthum odoratum ssp. alpinum) eli pohjansimake (Anthoxanthum alpinum)
+luhtarölli eli koiranrölli (Agrostis canina)
+nurmirölli (Agrostis capillaris)
+hoikkarölli (Agrostis clavata)
+isorölli (Agrostis gigantea)
+pohjanrölli (Agrostis mertensii)
+rikkarölli (Agrostis scabra)
+rönsyrölli (Agrostis stolonifera)
+jäykkärölli (Agrostis vinealis)
+merikastikka (Calamagrostis arenaria) eli rantakaura (Ammophila arenaria)
+itämerenkastikka (Calamagrostis arenaria × epigejos) eli itämerenkaurikka (Ammophila arenaria × Calamagrostis epigejos)
+hietakastikka (Calamagrostis epigejos)
+tupaskastikka (Calamagrostis × acutiflora eli Calamagrostis arundinacea × epigejos)
+metsäkastikka (Calamagrostis arundinacea)
+lapinkastikka (Calamagrostis lapponica)
+luhtakastikka (Calamagrostis stricta)
+korpikastikka (Calamagrostis phragmitoides, syn. Calamagrostis purpurea ssp. phragmitoides)
+viitakastikka (Calamagrostis canescens)
+helpitähkiö (Phleum phleoides)
+nurmitähkiö eli timotei (Phleum pratense)
+rehunurmitähkiö (Phleum pratense ssp. pratense)
+ketonurmitähkiö eli ketotähkiö (Phleum pratense ssp. serotinum)
+pohjantähkiö (Phleum alpinum)
+nurmipuntarpää (Alopecurus pratensis)
+polvipuntarpää (Alopecurus geniculatus)
+rantapuntarpää (Alopecurus aequalis)
+rikkapuntarpää (Alopecurus myosuroides)
+ruokopuntarpää (Alopecurus arundinaceus)
+kanarianhelpi (Phalaris canariensis)
+ruokohelpi (Phalaris arundinacea)
+piuru eli natapiuru (Scolochloa festucacea)
+lehtotesma eli tesma (Milium effusum)
+järviruoko (Phragmites australis)
+hina (Danthonia decumbens)
+siniheinä (Molinia caerulea)
+jäkki (Nardus stricta)
+hoikkaröllinurmikka (Eragrostis pilosa)
+matalaröllinurmikka (Eragrostis minor)
+tanakkaröllinurmikka (Eragrostis cilianensis)
+hukkariisi (Leersia oryzoides)
+hapsihirssi (Panicum capillare)
+viljahirssi eli hirssi (Panicum miliaceum)
+lännenkananhirssi (Echinochloa muricata)
+japaninkananhirssi (Echinochloa esculenta)
+rikkakananhirssi (Echinochloa crus-galli)
+rikkaverihirssi (Digitaria sanguinalis)
+italianpantaheinä eli tähkähirssi (Setaria italica)
+kiehkurapantaheinä (Setaria verticillata)
+kiinanpantaheinä (Setaria faberi)
+sinipantaheinä (Setaria pumila)
+viherpantaheinä (Setaria viridis)
+viljamaissi eli maissi (Zea mays)
+järvikaisla (Schoenoplectus lacustris)
+sinikaisla (Schoenoplectus tabernaemontani)
+juurtokaisla (Scirpus radicans)
+korpikaisla (Scirpus sylvaticus)
+merikaisla (Bolboschoenus maritimus, syn. Schoenoplectus maritimus)
+hapsiluikka (Eleocharis acicularis)
+jouhiluikka (Eleocharis quinqueflora)
+meriluikka (Eleocharis uniglumis)
+alvarimeriluikka (Eleocharis uniglumis ssp. sterneri)
+niittymeriluikka (Eleocharis uniglumis ssp. uniglumis)
+isoniittymeriluikka (Eleocharis uniglumis ssp. uniglumis var. vestergrenii)
+pikkuniittymeriluikka (Eleocharis uniglumis ssp. uniglumis var. fennica)
+mutaluikka (Eleocharis mamillata)
+pikkuluikka (Eleocharis parvula)
+rantaluikka (Eleocharis palustris)
+etelänrantaluikka (Eleocharis palustris ssp. vulgaris)
+pohjanrantaluikka (Eleocharis palustris ssp. palustris)
+järvirantaluikka (Eleocharis palustris ssp. palustris var. palustris)
+merirantaluikka (Eleocharis palustris ssp. palustris var. lindbergii)
+ruskopiirtoheinä (Rhynchospora fusca)
+valkopiirtoheinä (Rhynchospora alba)
+ruskoruosteheinä eli ruosteheinä (Schoenus ferrugineus)
+litteäkaisla (Blysmus compressus)
+ruskokaisla (Blysmopsis rufa, syn. Blysmus rufus)
+kuusamonsarake (Kobresia simpliciuscula, syn. Carex simpliciuscula)
+isokuusamonsarake (Kobresia simpliciuscula ssp. simpliciuscula)
+pikkukuusamonsarake (Kobresia simpliciuscula ssp. subholarctica)
+tunturisarake (Kobresia myosuroides, syn. Carex myosuroides)
+aapasara (Carex rotundata)
+hajasara (Carex remota)
+hakarasara (Carex spicata)
+hapsisara (Carex capillaris)
+lettohapsisara (Carex capillaris ssp. capillaris)
+harjusormisara eli harjusara (Carex pallidula)
+harmaasara (Carex canescens)
+harsusara (Carex rariflora)
+hentosara (Carex disperma)
+hernesara (Carex viridula)
+lettohernesara eli pikkunokkasara (Carex viridula var. bergrothii)
+rantahernesara eli hernesara (Carex viridula var. viridula)
+sirohernesara (Carex viridula var. pulchella)
+hetesara (Carex acutiformis)
+hietikkosara (Carex arenaria)
+hirssisara (Carex panicea)
+hostinsara (Carex hostiana)
+idänsara eli aikainen sara (Carex praecox)
+itämerensara (Carex extensa)
+jalkasara (Carex pediformis)
+rinnejalkasara (Carex pediformis ssp. rhizodes)
+jokapaikansara (Carex nigra)
+juolasara (Carex nigra var. nigra)
+kankeasara (Carex nigra var. recta)
+tupassara (Carex nigra var. juncea)
+jouhisara (Carex lasiocarpa)
+juurtosara (Carex chordorrhiza)
+jänönsara (Carex leporina)
+kahtaissara (Carex disticha)
+kaislasara (Carex rhynchophysa)
+kalliosara (Carex rupestris)
+kalvassara (Carex pallescens)
+kanervisara (Carex ericetorum)
+karvasara (Carex hirta)
+keltasara (Carex flava)
+ketunsara (Carex vulpina)
+kevätsara (Carex caryophyllea)
+kiiltosara (Carex saxatilis)
+kirjosara (Carex norvegica)
+tunturikirjosara (Carex norvegica ssp. norvegica) eli kerosara (Carex norvegica)
+siperiankirjosara (Carex norvegica ssp. inferalpina) eli taigasara (Carex media)
+kirppusara (Carex pulicaris)
+korpisara (Carex loliacea)
+kurmitsansara (Carex stenolepis, syn. Carex × grahamii)
+lapinsara (Carex lapponica)
+lehtosara (Carex sylvatica)
+lettonuppisara eli nuppisara (Carex capitata)
+lettosara (Carex heleonastes)
+liereäsara (Carex diandra)
+luhtasara (Carex vesicaria)
+lähdesara (Carex paniculata)
+euroopanlähdesara (Carex paniculata ssp. paniculata)
+merisara (Carex mackenziei)
+mustasara (Carex atrata)
+mutasara (Carex limosa)
+mykerösara (Carex bohemica)
+mätässara (Carex cespitosa)
+nokisara (Carex fuliginosa)
+napanokisara (Carex fuliginosa ssp. misandra)
+nokkasara (Carex lepidocarpa)
+etelännokkasara (Carex lepidocarpa ssp. lepidocarpa)
+kuusamonnokkasara (Carex lepidocarpa ssp. jemtlandica)
+nuijasara (Carex buxbaumii)
+rantanuijasara (Carex buxbaumii ssp. buxbaumii) eli karttusara (Carex buxbaumii)
+lapinnuijasara (Carex buxbaumii ssp. mutica) eli vuomasara (Carex adelostoma)
+pallosara (Carex globularis)
+patukkasara (Carex hartmanii, syn. Carex hartmaniorum)
+pitkäpääsara (Carex elongata)
+piukkasara (Carex elata)
+idänpiukkasara (Carex elata ssp. omskiana)
+lännenpiukkasara (Carex elata ssp. elata)
+polkusara (Carex brunnescens)
+kangaspolkusara (Carex brunnescens var. brunnescens)
+korpipolkusara (Carex brunnescens var. vitilis)
+pullosara (Carex rostrata)
+rahkasara (Carex pauciflora)
+revonsara (Carex otrubae)
+riekonsara (Carex lachenalii)
+riippasara (Carex paupercula)
+ripsisara (Carex pilosa)
+ristasara eli lännenhernesara (Carex demissa)
+lännenristasara (Carex demissa ssp. demissa)
+ruissara (Carex secalina)
+räpyläsara (Carex ornithopoda)
+röyhysara (Carex appropinquata)
+saamenmaansara (Carex × saamica, syn. Carex rostrata × rotundata)
+somersara (Carex glareosa)
+sopulinsara (Carex macloviana)
+sormisara (Carex digitata)
+soukkasara (Carex parallela)
+sukassara (Carex microglochin)
+suolasara (Carex halophila, syn. Carex recta)
+sysisara (Carex atrofusca)
+tundrasara (Carex holostoma)
+tunturinuppisara (Carex arctogena)
+tunturisara (Carex bigelowii)
+euroopantunturisara (Carex bigelowii ssp. rigida)
+tuppisara (Carex vaginata)
+tähtisara (Carex echinata)
+törrösara (Carex muricata)
+unkarinsara (Carex melanostachya)
+vaaleasara (Carex livida)
+vahasara (Carex flacca)
+vankkasara (Carex riparia)
+varstasara (Carex pseudocyperus)
+varvassara (Carex glacialis)
+velttosara (Carex laxa)
+vesisara (Carex aquatilis)
+taigavesisara (Carex aquatilis ssp. aquatilis)
+tundravesisara (Carex aquatilis ssp. stans)
+vienansara (Carex atherodes)
+vihnesara (Carex paleacea)
+viiltosara (Carex acuta)
+viitasara (Carex tenuiflora)
+virnasara (Carex pilulifera)
+euroopanvirnasara (Carex pilulifera ssp. pilulifera)
+välisara (Carex distans)
+äimäsara (Carex dioica)
+himmeävilla (Eriophorum brachyantherum)
+hoikkavilla (Eriophorum gracile)
+lettovilla (Eriophorum latifolium)
+luhtavilla (Eriophorum angustifolium)
+ruostevilla (Eriophorum russeolum)
+tupasvilla (Eriophorum vaginatum)
+töppövilla (Eriophorum scheuchzeri)
+isotaarna eli taarna (Cladium mariscus)
+tupasluikka (Trichophorum cespitosum)
+villapääluikka (Trichophorum alpinum)
+kaaripiippo (Luzula arcuata)
+tankipiippo eli tankeapiippo (Luzula confusa, syn. Luzula arcuata ssp. confusa)
+kalvaspiippo (Luzula pallescens)
+ketopiippo (Luzula campestris)
+kevätpiippo (Luzula pilosa)
+[lumipiippo (Luzula nivalis) – poistettu myöhemmin Suomen lajiluettelosta]
+mäkipiippo (Luzula divulgata) – esiintyminen Suomessa epävarmaa
+nurmipiippo (Luzula multiflora)
+etelännurmipiippo (Luzula multiflora ssp. multiflora)
+pohjannurmipiippo eli pohjanpiippo (Luzula multiflora ssp. frigida)
+röyhypiippo (Luzula parviflora)
+sykeröpiippo (Luzula sudetica)
+tunturipiippo (Luzula wahlenbergii)
+tähkäpiippo (Luzula spicata)
+valkopiippo (Luzula luzuloides)
+jouhivihvilä (Juncus filiformis)
+ruijanvihvilä (Juncus arcticus)
+väylävihvilä (Juncus × montellii eli Juncus arcticus × filiformis)
+merivihvilä (Juncus balticus)
+säilävihvilä (Juncus × inundatus eli Juncus balticus × filiformis)
+sinivihvilä (Juncus inflexus)
+röyhyvihvilä (Juncus effusus)
+keräpäävihvilä (Juncus conglomeratus)
+tunturivihvilä (Juncus trifidus)
+harjasvihvilä (Juncus squarrosus)
+tannervihvilä (Juncus compressus)
+suolavihvilä (Juncus gerardii)
+nurmivihvilä (Juncus tenuis)
+konnanvihvilä (Juncus bufonius)
+nölliäisenvihvilä (Juncus minutulus, syn. Juncus bufonius ssp. minutulus)
+sammakonvihvilä (Juncus ranarius, syn. Juncus bufonius ssp. ranarius)
+rantavihvilä (Juncus alpinoarticulatus)
+tummarantavihvilä (Juncus alpinoarticulatus ssp. alpinoarticulatus)
+lapinrantavihvilä (Juncus alpinoarticulatus ssp. alpestris)
+idänrantavihvilä (Juncus alpinoarticulatus ssp. fischerianus)
+hoikkarantavihvilä (Juncus alpinoarticulatus ssp. nodulosus, syn. Juncus alpinoarticulatus ssp. rariflorus)
+solmuvihvilä (Juncus articulatus)
+ojasolmuvihvilä (Juncus articulatus var. articulatus)
+isosolmuvihvilä (Juncus articulatus var. hylandri)
+lamosolmuvihvilä (Juncus articulatus var. lindhardii)
+miekkavihvilä (Juncus ensifolius)
+rentovihvilä (Juncus bulbosus)
+kaksikkovihvilä (Juncus biglumis)
+kolmikkovihvilä (Juncus triglumis)
+rimpivihvilä (Juncus stygius)
+japaninhappomarja (Berberis thunbergii)
+ruostehappomarja (Berberis vulgaris)
+lännenmahonia eli mahonia (Mahonia aquifolium)
+peltoemäkki (Fumaria officinalis)
+pikkuemäkki (Fumaria vaillantii)
+keltamo (Chelidonium majus)
+hentokiurunkannus (Corydalis intermedia)
+jalokiurunkannus (Corydalis nobilis)
+pystykiurunkannus (Corydalis solida)
+punaneidonunikko (Glaucium corniculatum)
+kesäpikkusydän (Dicentra formosa)
+kaliforniantuliunikko eli tuliunikko (Eschscholzia californica)
+hietaunikko (Papaver argemone)
+idänunikko (Papaver orientale)
+jättiunikko (Papaver pseudo-orientale, syn. Papaver pseudoorientale, Papaver lasiothrix)
+oopiumiunikko (Papaver somniferum)
+ruisunikko (Papaver dubium)
+silkkiunikko (Papaver rhoeas)
+siperianunikko (Papaver croceum)
+lehtoakileija (Aquilegia vulgaris)
+hiirenhäntä (Myosurus minimus)
+lännenkonnanmarja (Actaea rubra)
+mustakonnanmarja (Actaea spicata)
+punakonnanmarja (Actaea erythrocarpa)
+idänkukonkannus (Consolida orientalis)
+rikkakukonkannus (Consolida regalis)
+niittykullero eli kullero (Trollius europaeus)
+hämeenkylmänkukka (Pulsatilla patens)
+kangasvuokko (Pulsatilla vernalis)
+siperiankärhö (Clematis alpina ssp. sibirica)
+aholeinikki (Ranunculus polyanthemos)
+etelänleinikki (Ranunculus sardous)
+hentosätkin (Ranunculus confervoides)
+isosätkin (Ranunculus peltatus)
+järvisätkin (Ranunculus peltatus ssp. peltatus)
+merisätkin (Ranunculus peltatus ssp. baudotii)
+jokileinikki (Ranunculus lingua)
+jääleinikki (Ranunculus glacialis)
+kevätlehtoleinikit (Ranunculus fallax coll.)
+kevätleinikit (Ranunculus auricomus coll.)
+konnanleinikki (Ranunculus sceleratus)
+lapinleinikki (Ranunculus lapponicus)
+lehtoleinikit (Ranunculus cassubicus coll.)
+lumileinikki (Ranunculus nivalis)
+mukulaleinikki (Ranunculus ficaria)
+mäkileinikki (Ranunculus bulbosus)
+niittyleinikki (Ranunculus acris)
+ojaleinikki (Ranunculus flammula)
+peltoleinikki (Ranunculus arvensis)
+pikkuleinikki (Ranunculus pygmaeus)
+pohjanleinikki (Ranunculus hyperboreus)
+pyörösätkin (Ranunculus circinatus)
+rantaleinikki (Ranunculus reptans)
+rikkileinikki (Ranunculus sulphureus)
+rönsyleinikki (Ranunculus repens)
+sammakonleinikki (Ranunculus reptabundus)
+suolaleinikki (Ranunculus cymbalaria)
+taigaleinikit (Ranunculus monophyllus coll.)
+vesisätkin (Ranunculus aquatilis)
+rentukka (Caltha palustris)
+isoritarinkannus (Delphinium elatum)
+sinivuokko (Hepatica nobilis)
+aitoukonhattu (Aconitum napellus ssp. lusitanicum)
+lehtoukonhattu (Aconitum lycoctonum ssp. septentrionale)
+tarhaukonhattu (Aconitum × stoerkianum)
+kanadanvuokko eli kanadanisovuokko (Anemonidium canadense)
+alppivuokko (Anemone trifolia)
+arovuokko (Anemone sylvestris)
+keltavuokko (Anemone ranunculoides)
+valkovuokko (Anemone nemorosa)
+hoikkaängelmä (Thalictrum simplex)
+etelänhoikkaängelmä (Thalictrum simplex ssp. simplex)
+pohjanhoikkaängelmä (Thalictrum simplex ssp. boreale)
+keltaängelmä (Thalictrum flavum)
+kiiltoängelmä eli kaitaängelmä (Thalictrum lucidum)
+lehtoängelmä (Thalictrum aquilegiifolium)
+pikkuängelmä (Thalictrum minus)
+niittypikkuängelmä (Thalictrum minus ssp. minus)
+keminpikkuängelmä eli keminängelmä (Thalictrum minus ssp. kemense)
+tunturiängelmä (Thalictrum alpinum)
+vesipaunikko eli paunikko (Crassula aquatica)
+kattomehitähti (Sempervivum tectorum)
+pohjanruusujuuri eli ruusujuuri (Rhodiola rosea)
+turkestaninmaksaruoho (Sedum ewersii, syn. Hylotelephium ewersii)
+isomaksaruoho (Sedum telephium, syn. Hylotelephium telephium)
+keltamaksaruoho (Sedum acre)
+valkomaksaruoho (Sedum album)
+kesämaksaruoho (Sedum annuum)
+kalliomaksaruoho (Sedum rupestre, syn. Sedum reflexum)
+särmämaksaruoho (Sedum sexangulare)
+karvamaksaruoho (Sedum villosum)
+siperianmaksaruoho (Sedum aizoon)
+kamtšatkanmaksaruoho (Sedum kamtschaticum)
+lyydianmaksaruoho (Sedum lydium)
+kaukasianmaksaruoho (Sedum spurium)
+kiehkuraärviä (Myriophyllum verticillatum)
+tähkä-ärviä (Myriophyllum spicatum)
+kalvasärviä (Myriophyllum sibiricum, syn. Myriophyllum exalbescens)
+ruskoärviä (Myriophyllum alterniflorum)
+taikinamarja (Ribes alpinum)
+kultaherukka (Ribes aureum)
+lamoherukka eli pikkuherukka (Ribes glandulosum)
+lännenpunaherukka (Ribes rubrum)
+kartanonpunaherukka (Ribes × houghtonianum)
+pohjanpunaherukka (Ribes spicatum)
+hollanninpunaherukka (Ribes × pallidum)
+mustaherukka (Ribes nigrum)
+karviainen (Ribes uva-crispa)
+lettorikko (Saxifraga hirculus)
+mäkirikko (Saxifraga tridactylites)
+kalliorikko (Saxifraga adscendens)
+kultarikko (Saxifraga aizoides)
+mätäsrikko (Saxifraga cespitosa)
+sammalrikko (Saxifraga hypnoides)
+papelorikko (Saxifraga granulata)
+purorikko (Saxifraga rivularis)
+nuokkurikko (Saxifraga cernua)
+sinirikko (Saxifraga oppositifolia)
+pahtarikko (Saxifraga nivalis, syn. Micranthes nivalis)
+lumirikko (Saxifraga tenuis, syn. Micranthes tenuis)
+tähtirikko (Saxifraga stellaris, syn. Micranthes stellaris)
+iturikko (Saxifraga foliolosa, syn. Micranthes foliolosa)
+kevätlinnunsilmä (Chrysosplenium alternifolium)
+lapinlinnunsilmä (Chrysosplenium tetrandrum)
+herttavuorenkilpi (Bergenia cordifolia)
+soikkovuorenkilpi (Bergenia crassifolia)
+euroopanmisteli (Viscum album)
+lumihaarikko (Sagina nivalis)
+merihaarikko (Sagina maritima)
+nyylähaarikko (Sagina nodosa)
+rentohaarikko (Sagina procumbens)
+rönsyhaarikko (Sagina × normaniana)
+tunturihaarikko (Sagina saginoides)
+peltohatikka (Spergula arvensis)
+etelänpeltohatikka (Spergula arvensis ssp. arvensis)
+liinahatikka (Spergula arvensis ssp. linicola)
+pellavahatikka (Spergula arvensis ssp. maxima)
+pohjanpeltohatikka (Spergula arvensis ssp. sativa)
+kalliohatikka (Spergula morisonii)
+punasolmukki (Spergularia rubra, syn. Spergula rubra)
+merisolmukki (Spergularia media)
+suolasolmukki (Spergularia salina)
+viherjäsenruoho (Scleranthus annuus)
+höröjäsenruoho (Scleranthus annuus ssp. annuus)
+suppujäsenruoho (Scleranthus annuus ssp. polycarpos)
+vaaleajäsenruoho (Scleranthus perennis)
+ketotyräruoho eli tyräruoho (Herniaria glabra)
+rusonätä (Minuartia rubella, syn. Sabulina rubella)
+tunturinätä (Minuartia stricta)
+lapinnätä (Minuartia biflora)
+norjanarho (Arenaria norvegica)
+tunturiarho (Arenaria pseudofrigida)
+mäkiarho (Arenaria serpyllifolia)
+suola-arho (Honckenya peploides)
+laaksoarho (Moehringia lateriflora)
+lehtoarho (Moehringia trinervia)
+vata (Myosoton aquaticum, syn. Stellaria aquatica)
+heinätähtimö (Stellaria graminea)
+idäntähtimö (Stellaria hebecalyx)
+lehtotähtimö (Stellaria nemorum)
+pohjanlehtotähtimö (Stellaria nemorum ssp. nemorum)
+lettotähtimö (Stellaria crassifolia)
+luhtatähtimö (Stellaria palustris)
+suomentähtimö (Stellaria fennica) eli idänluhtatähtimö (Stellaria palustris var. fennica)
+lähdetähtimö (Stellaria alsine)
+metsätähtimö (Stellaria longifolia)
+viitatähtimö (Stellaria × alpestris)
+pohjantähtimö (Stellaria borealis)
+pihatähtimö (Stellaria media)
+kevättähtimö (Stellaria holostea, syn. Rabelera holostea)
+hopeahärkki (Cerastium tomentosum)
+ketohärkki (Cerastium arvense)
+mäkihärkki (Cerastium semidecandrum)
+kellohärkki (Cerastium nigrescens)
+napakellohärkki eli napahärkki (Cerastium nigrescens var. laxum)
+nurmihärkki (Cerastium fontanum)
+pohjannurmihärkki (Cerastinum fontanum ssp. fontanum)
+piennarnurmihärkki (Cerastinum fontanum ssp. vulgare)
+arkinurmihärkki (Cerastinum fontanum ssp. vulgare var. vulgare)
+kainuunnurmihärkki (Cerastinum fontanum ssp. vulgare var. kajanense)
+sykeröhärkki (Cerastium glomeratum)
+tahmahärkki (Cerastium glutinosum)
+tunturihärkki (Cerastium alpinum)
+lumihärkki (Cerastium cerastoides, syn. Dichodon cerastoides)
+rohtosuopayrtti eli suopayrtti (Saponaria officinalis)
+hankakohokki (Silene dichotoma)
+itämaittenkohokki (Silene csereii)
+tataarikohokki (Silene tatarica)
+kalliokohokki (Silene rupestris)
+kartiokohokki (Silene conoidea)
+tunturikohokki (Silene acaulis)
+merikohokki (Silene uniflora)
+nuokkukohokki (Silene nutans)
+nurmikohokki (Silene vulgaris)
+kaitanurmikohokki (Silene vulgaris ssp. vulgaris)
+ahonurmikohokki (Silene vulgaris ssp. vulgaris var. vulgaris)
+suomenlahdennurmikohokki (Silene vulgaris ssp. vulgaris var. litoralis)
+ranskankohokki (Silene gallica)
+tarhakohokki (Silene armeria)
+pahta-ailakki (Silene wahlbergella)
+tahma-ailakki (Silene viscosa)
+pohjanailakki (Silene involucrata ssp. tenella)
+puna-ailakki (Silene dioica)
+rusoailakki (Silene × hampeana eli Silene dioica × latifolia)
+ilta-ailakki (Silene latifolia)
+valkoailakki (Silene latifolia ssp. alba)
+yöailakki (Silene noctiflora)
+mäkitervakko (Viscaria vulgaris, syn. Lychnis viscaria, Silene viscaria)
+pikkutervakko (Viscaria alpina, syn. Lychnis alpina, Silene suecica)
+palavarakkaus (Lychnis chalcedonica)
+käenkukka (Lychnis flos-cuculi)
+harjaneilikka (Dianthus barbatus)
+hietaneilikka (Dianthus arenarius)
+idänhietaneilikka (Dianthus arenarius ssp. borussicus)
+ketoneilikka (Dianthus deltoides)
+pulskaneilikka (Dianthus superbus)
+kesäharso (Gypsophila elegans)
+morsiusharso (Gypsophila paniculata)
+toukoraunikki (Gypsophila vaccaria)
+kangasraunikki (Gypsophila fastigiata)
+ketoraunikki (Gypsophila muralis, syn. Psammophiliella muralis)
+valkorevonhäntä (Amaranthus albus)
+lusikkarevonhäntä (Amaranthus blitoides)
+pinaattirevonhäntä (Amaranthus blitum)
+punarevonhäntä (Amaranthus caudatus)
+viljarevonhäntä (Amaranthus hybridus)
+hoikkarevonhäntä (Amaranthus hybridus ssp. hybridus)
+purppurarevonhäntä eli vaihtelevarevonhäntä (Amaranthus hybridus ssp. cruentus)
+meksikonrevonhäntä (Amaranthus hybridus ssp. hypochondriacus)
+tummarevonhäntä (Amaranthus hybridus ssp. powellii)
+viherrevonhäntä (Amaranthus retroflexus)
+hentorevonhäntä (Amaranthus viridis)
+pikkukilokki (Suaeda maritima)
+punasuolayrtti eli suolayrtti (Salicornia europaea)
+tähkäotakilokki (Salsola collina, syn. Kali collinum)
+idänotakilokki (Salsola tragus, syn. Kali tragus)
+meriotakilokki (Salsola kali, syn. Kali turgidum)
+kesäsuolukka (Bassia scoparia)
+tarhakesäsuolukka (Bassia scoparia ssp. scoparia)
+rikkakesäsuolukka (Bassia scoparia ssp. densiflora)
+hörtsö (Axyris amaranthoides)
+lännenmaltsa (Atriplex glabriuscula)
+tarhamaltsa (Atriplex hortensis)
+merimaltsa (Atriplex littoralis)
+suolamaltsa (Atriplex longipes)
+isosuolamaltsa (Atriplex longipes ssp. longipes) eli laukkamaltsa (Atriplex longipes)
+pikkusuolamaltsa (Atriplex longipes ssp. praecox) eli pikkumaltsa (Atriplex praecox)
+kylämaltsa (Atriplex patula)
+isomaltsa (Atriplex prostrata)
+liuskamaltsa (Atriplex calotheca, syn. Atriplex hastata)
+kiiltomaltsa (Atriplex sagittata)
+tataarimaltsa (Atriplex tatarica)
+jauhosavikka (Chenopodium album)
+pohjansavikka eli pohjanjauhosavikka (Chenopodium suecicum)
+teksasinsavikka (Chenopodium berlandieri)
+viikunanlehtisavikka (Chenopodium ficifolium)
+missourinsavikka (Chenopodium missouriense)
+rauniosavikka (Chenopodium murale)
+heisisavikka (Chenopodium opulifolium)
+kapealehtisavikka (Chenopodium pratericola)
+soijasavikka (Chenopodium probstii)
+tankisavikka (Chenopodium strictum)
+vaahterasavikka (Chenopodium hybridum, syn. Chenopodiastrum hybridum)
+hyvänheikinsavikka (Chenopodium bonus-henricus, syn. Blitum bonus-henricus)
+mykerösavikka (Chenopodium capitatum, syn. Blitum capitatum)
+idänsavikka (Chenopodium virgatum, syn. Blitum virgatum)
+hentosavikka (Chenopodium polyspermum, syn. Lipandra polysperma)
+tammisavikka (Chenopodium botrys, syn. Dysphania botrys)
+afrikansavikka (Chenopodium schraderianum, syn. Dysphania schraderiana)
+sinisavikka (Chenopodium glaucum, syn. Oxybasis glauca)
+punasavikka (Chenopodium rubrum, syn. Oxybasis rubra)
+kyläsavikka (Chenopodium urbicum, syn. Oxybasis urbica)
+pinaatti (Spinacia oleracea)
+ruokajuurikas (Beta vulgaris)
+peltojuurikas (Beta vulgaris ssp. vulgaris)
+sokerijuurikas (Beta vulgaris ssp. vulgaris Altissima-Ryhmä, syn. Beta vulgaris ssp. vulgaris var. altissima)
+punajuurikas eli valkojuurikas eli punajuuri (Beta vulgaris ssp. vulgaris Conditiva-Ryhmä, syn. Beta vulgaris ssp. vulgaris var. conditiva)
+merijuurikas (Beta vulgaris ssp. maritima)
+lamopinaatti eli uudenseelanninpinaatti (Tetragonia tetragonioides)
+lähdehetekaali eli hetekaali (Montia fontana)
+salaattikleitonia (Claytonia perfoliata)
+alaskankleitonia (Claytonia sibirica)
+(Claytonia sibirica var. sibirica)
+vihannesportulakka (Portulaca sativa)
+kurjentatar (Koenigia islandica)
+pihatatar (Polygonum aviculare)
+isopihatatar (Polygonum aviculare ssp. aviculare)
+pohjanpihatatar (Polygonum aviculare ssp. boreale)
+suippupihatatar (Polygonum aviculare ssp. rurivagum)
+kaitapihatatar (Polygonum aviculare ssp. neglectum)
+tannerpihatatar (Polygonum aviculare ssp. microspermum)
+meritatar (Polygonum oxyspermum)
+hanhentatar (Persicaria maculosa)
+ukontatar (Persicaria lapathifolia)
+rantaukontatar (Persicaria lapathifolia ssp. lapathifolia)
+rikkaukontatar (Persicaria lapathifolia ssp. pallida)
+tulvaukontatar (Persicaria lapathifolia ssp. brittingeri)
+mietotatar (Persicaria minor)
+katkeratatar (Persicaria hydropiper)
+lietetatar (Persicaria foliosa)
+vesitatar (Persicaria amphibia)
+nurmitatar (Bistorta vivipara)
+isokonnantatar (Bistorta officinalis)
+kiertotatar (Fallopia convolvulus)
+pensaikkotatar (Fallopia dumetorum)
+japanintatar (Fallopia japonica, syn. Reynoutria japonica)
+sahalinintatar eli jättitatar (Fallopia sachalinensis, syn. Reynoutria sachalinensis)
+hörtsätatar eli tarhatatar (Fallopia × bohemica, syn. Reynoutria × bohemica)
+hapro (Oxyria digyna)
+niittysuolaheinä (Rumex acetosa)
+nurmisuolaheinä (Rumex acetosa ssp. acetosa)
+lähteikkösuolaheinä (Rumex acetosa ssp. acetosa var. fontanopaludosus)
+lapinsuolaheinä (Rumex acetosa ssp. lapponicus)
+ahosuolaheinä (Rumex acetosella)
+ketosuolaheinä (Rumex acetosella ssp. acetosella)
+somersuolaheinä (Rumex acetosella ssp. arenicola)
+kaitasuolaheinä (Rumex acetosella ssp. tenuifolius)
+tenonsuolaheinä (Rumex graminifolius)
+tulisuolaheinä (Rumex thyrsiflorus)
+alppihierakka (Rumex alpinus)
+vesihierakka (Rumex aquaticus)
+idänhierakka (Rumex confertus)
+poimuhierakka (Rumex crispus)
+rikkapoimuhierakka eli poimuhierakka (Rumex crispus ssp. crispus)
+meripoimuhierakka (Rumex crispus ssp. littoreus)
+hammashierakka (Rumex dentatus)
+tulihierakka (Rumex fueginus)
+isohierakka (Rumex hydrolapathum)
+hevonhierakka (Rumex longifolius)
+keltahierakka (Rumex maritimus)
+tylppälehtihierakka eli tylppöhierakka (Rumex obtusifolius)
+puistohierakka (Rumex obtusifolius ssp. obtusifolius)
+tarhahierakka (Rumex obtusifolius ssp. sylvestris)
+kylähierakka (Rumex obtusifolius ssp. transiens)
+suomenhierakka (Rumex pseudonatronatus)
+verihierakka (Rumex sanguineus)
+kapealehtihierakka (Rumex stenophyllus)
+meksikonhierakka (Rumex triangulivalvis)
+rusolaukkaneilikka eli laukkaneilikka (Armeria maritima)
+atlantinlaukkaneilikka (Armeria maritima ssp. maritima)
+niittylaukkaneilikka (Armeria maritima ssp. elongata)
+itämerenlaukkaneilikka (Armeria maritima ssp. intermedia)
+saksanpensaskanerva eli euroopanpensaskanerva eli pensaskanerva (Myricaria germanica)
+pikkukihokki (Drosera intermedia)
+pitkälehtikihokki (Drosera longifolia, syn. Drosera anglica)
+(Drosera longifolia × rotundifolia, syn. Drosera anglica × rotundifolia)
+pyöreälehtikihokki (Drosera rotundifolia)
+säleikkövilliviini (Parthenocissus inserta)
+imukärhivilliviini (Parthenocissus quinquefolia)
+aitoviiniköynnös eli viiniköynnös (Vitis vinifera)
+suovilukko eli vilukko (Parnassia palustris)
+euroopansorvarinpensas (Euonymus europaeus)
+kääpiösorvarinpensas (Euonymus koopmannii, syn. Euonymus nanus var. turkestanicus)
+kirsikkasorvarinpensas (Euonymus planipes)
+metsäkäenkaali eli käenkaali eli ketunleipä (Oxalis acetosella)
+sarvikäenkaali eli tarhakäenkaali (Oxalis corniculata)
+nurmikäenkaali (Oxalis dillenii)
+pystykäenkaali (Oxalis stricta, syn. Oxalis fontana)
+pihakäenkaali (Oxalis stricta 'Rufa', syn. Oxalis fontana 'Rufa')
+isovesirikko eli komeavesirikko (Elatine alsinastrum)
+kolmihedevesirikko (Elatine triandra)
+katkeravesirikko (Elatine hydropiper)
+oikovesirikko (Elatine orthosperma)
+kenttätyräkki (Euphorbia esula)
+kolmisädetyräkki (Euphorbia peplus)
+pikkutyräkki (Euphorbia exigua)
+rantatyräkki (Euphorbia palustris)
+tarhatyräkki eli kuusityräkki (Euphorbia cyparissias)
+viisisädetyräkki (Euphorbia helioscopia)
+lehtosinijuuri (Mercurialis perennis)
+rikkasinijuuri (Mercurialis annua)
+karvakuisma (Hypericum hirsutum)
+mäkikuisma (Hypericum perforatum)
+särmäkuisma (Hypericum maculatum)
+vuorikuisma (Hypericum montanum)
+ahopellava (Linum catharticum)
+peltopellava eli kuitupellava eli öljypellava (Linum usitatissimum)
+punapellava (Linum grandiflorum)
+sinipellava (Linum perenne)
+metsähaapa eli haapa (Populus tremula)
+hybridihaapa (Populus × wettsteinii)
+valkosalava eli valkopaju (Salix alba)
+hopeasalava eli hopeapaju (Salix alba var. sericea 'Sibirica')
+kujasalava eli kujapaju (Salix × fragilis eli Salix alba × euxina)
+kääpiöpaju (Salix arbuscula)
+virpapaju (Salix aurita)
+raita (Salix caprea)
+metsäraita (Salix caprea ssp. caprea)
+vuonoraita (Salix caprea ssp. sphacelata)
+mesipaju (Salix × smithiana eli Salix caprea × viminalis)
+tuhkapaju (Salix cinerea)
+härmäpaju (Salix daphnoides)
+idänhärmäpaju eli huurrepaju (Salix daphnoides ssp. acutifolia)
+silosalava eli salava eli piilipuu (Salix fragilis, syn. Salix euxina)
+terijoensalava (Salix fragilis 'Bullata', syn. Salix euxina 'Bullata')
+kiiltosalava (Salix × meyeriana eli Salix euxina × pentandra)
+kyynelsalava eli kyynelpaju (Salix × pendulina eli Salix babylonica × euxina)
+isokyynelsalava eli isoriippasalava (Salix × pendulina 'Lasipalatsi')
+vanajansalava (Salix × alopecuroides)
+kalvaspaju (Salix hastata)
+tunturikalvaspaju (Salix hastata ssp. hastata)
+idänkalvaspaju (Salix hastata ssp. subintegrifolia)
+vaivaispaju (Salix herbacea)
+tunturipaju (Salix glauca)
+norotunturipaju (Salix glauca ssp. glauca)
+korvaketunturipaju eli korvakepaju (Salix glauca ssp. stipulifera)
+villapaju (Salix lanata)
+lumivillapaju (Salix lanata var. lanata, syn. Salix lanata ssp. lanata)
+nystyvillapaju eli nystypaju (Salix lanata var. glandulosa, syn. Salix lanata ssp. glandulifera)
+pohjanpaju (Salix lapponum)
+mustuvapaju (Salix myrsinifolia)
+etelänmustuvapaju (Salix myrsinifolia ssp. myrsinifolia)
+oudanmustuvapaju eli outapaju (Salix myrsinifolia ssp. borealis)
+kuolanmustuvapaju eli kuolanpaju (Salix myrsinifolia ssp. kolaënsis)
+lettopaju (Salix myrsinites)
+juolukkapaju (Salix myrtilloides)
+viitahalava eli halava (Salix pentandra)
+puistohalava (Salix × ehrhartiana eli Salix alba × pentandra)
+kiiltopaju (Salix phylicifolia)
+napapaju (Salix polaris)
+punapaju (Salix purpurea)
+talvikkipaju (Salix pyrolifolia)
+siropaju (Salix repens)
+hanhensiropaju eli hanhenpaju (Salix repens ssp. repens)
+tihkusiropaju (Salix repens ssp. repens var. repens)
+hietikkosiropaju eli hietikkopaju (Salix repens ssp. repens var. argentea, syn. Salix repens ssp. argentea)
+kaitasiropaju eli kapealehtipaju (Salix repens ssp. rosmarinifolia)
+karapaju (Salix starkeana)
+ahokarapaju eli ahopaju (Salix starkeana ssp. starkeana)
+kangaskarapaju (Salix starkeana ssp. cinerascens) eli kangaspaju (Salix bebbiana)
+verkkolehtipaju (Salix reticulata)
+jokipaju (Salix triandra)
+vakkapaju (Salix × mollissima eli Salix triandra × viminalis)
+koripaju (Salix viminalis)
+sopulinpaju (Salix × arctogena)
+tuoksuorvokki (Viola odorata)
+karvaorvokki (Viola hirta)
+mäkiorvokki (Viola collina)
+lehto-orvokki (Viola mirabilis)
+hietaorvokki (Viola rupestris)
+harjuhietaorvokki (Viola rupestris ssp. rupestris)
+pahtahietaorvokki (Viola rupestris ssp. relicta)
+pyökkiorvokki (Viola reichenbachiana)
+metsäorvokki (Viola riviniana)
+aho-orvokki (Viola canina)
+pikkuaho-orvokki (Viola canina ssp. canina)
+isoaho-orvokki (Viola canina ssp. montana)
+rantaorvokki (Viola persicifolia)
+luhtaorvokki (Viola uliginosa)
+suo-orvokki (Viola palustris)
+viitaorvokki (Viola × ruprechtiana eli Viola palustris × epipsila)
+korpiorvokki (Viola epipsila)
+kaiheorvokki (Viola selkirkii)
+lapinorvokki (Viola biflora)
+keto-orvokki (Viola tricolor)
+kallioketo-orvokki (Viola tricolor ssp. tricolor)
+dyyniketo-orvokki (Viola tricolor ssp. curtisii)
+tarhaorvokki (Viola × wittrockiana)
+pelto-orvokki (Viola arvensis)
+sarviorvokki (Viola cornuta)
+amerikanorvokki (Viola lanceolata)
+keltaorvokki (Viola lutea)
+mustakoiranköynnös (Bryonia alba)
+vesimeloni (Citrullus lanatus)
+meloni eli herkkumeloni eli sokerimeloni (Cucumis melo)
+vihanneskurkku (Cucumis sativus)
+satokurpitsa eli kurpitsa (Cucurbita pepo)
+isolinnunruoho (Polygala vulgaris)
+katkeralinnunruoho (Polygala amarella)
+tupsulinnunruoho (Polygala comosa)
+nummilinnunruoho (Polygala serpyllifolia)
+masmalo (Anthyllis vulneraria)
+ketomasmalo (Anthyllis vulneraria ssp. vulneraria)
+idänmasmalo (Anthyllis vulneraria ssp. polyphylla)
+pohjanmasmalo eli harjumasmalo (Anthyllis vulneraria ssp. lapponica)
+isomasmalo eli vuorimasmalo eli parimasmalo (Anthyllis vulneraria ssp. carpatica)
+tunturikurjenherne (Astragalus alpinus)
+vaaleatunturikurjenherne (Astragalus alpinus ssp. alpinus)
+tummatunturikurjenherne (Astragalus alpinus ssp. arcticus)
+peuranvirna (Astragalus frigidus)
+imeläkurjenherne (Astragalus glycyphyllos)
+merinätkelmä (Lathyrus japonicus)
+lännenmerinätkelmä (Lathyrus japonicus ssp. maritimus)
+ruusunätkelmä (Lathyrus latifolius)
+syylälinnunherne (Lathyrus linifolius)
+mustalinnunherne (Lathyrus niger)
+rantanätkelmä (Lathyrus palustris)
+niittynätkelmä (Lathyrus pratensis)
+metsänätkelmä (Lathyrus sylvestris)
+mukulanätkelmä (Lathyrus tuberosus)
+kevätlinnunherne (Lathyrus vernus)
+keltamaite (Lotus corniculatus)
+niittykeltamaite (Lotus corniculatus var. corniculatus)
+saaristokeltamaite (Lotus corniculatus var. alandicus)
+harjukeltamaite (Lotus corniculatus var. arenosus)
+kyyrykeltamaite (Lotus corniculatus var. carnosus)
+suippukeltamaite (Lotus corniculatus var. fallax)
+merikeltamaite (Lotus corniculatus var. maritimus)
+peltokeltamaite (Lotus corniculatus var. sativus)
+hentomaite (Lotus tenuis)
+sinilupiini (Lupinus angustifolius)
+keltalupiini (Lupinus luteus)
+alaskanlupiini (Lupinus nootkatensis)
+komealupiini (Lupinus polyphyllus)
+sirppimailanen (Medicago falcata)
+nurmimailanen (Medicago lupulina)
+piikkimailanen (Medicago polymorpha)
+sinimailanen (Medicago sativa)
+rehumailanen (Medicago × varia)
+valkomesikkä (Melilotus albus)
+isomesikkä (Melilotus altissimus)
+rantamesikkä (Melilotus dentatus)
+intianmesikkä (Melilotus indicus)
+rohtomesikkä (Melilotus officinalis)
+volganmesikkä (Melilotus wolgicus)
+ruusuorakko (Ononis spinosa)
+kenttäorakko (Ononis spinosa ssp. arvensis, syn. Ononis arvensis)
+rento-orakko (Ononis spinosa ssp. maritima)
+kenttäkeulankärki (Oxytropis campestris)
+idänkeulankärki (Oxytropis campestris ssp. sordida)
+tunturikeulankärki (Oxytropis lapponica)
+jänönapila (Trifolium arvense)
+kelta-apila (Trifolium aureum)
+rentoapila (Trifolium campestre)
+pikkuapila (Trifolium dubium)
+rakkoapila (Trifolium fragiferum)
+alsikeapila (Trifolium hybridum)
+rehualsikeapila (Trifolium hybridum ssp. hybridum)
+rentoalsikeapila (Trifolium hybridum ssp. elegans)
+veriapila (Trifolium incarnatum)
+metsäapila (Trifolium medium)
+mäkiapila (Trifolium montanum)
+kalvasapila (Trifolium ochroleucon)
+puna-apila (Trifolium pratense)
+valkoapila (Trifolium repens)
+tuoksuapila (Trifolium resupinatum)
+pikkutuoksuapila (Trifolium resupinatum var. resupinatum)
+persiantuoksuapila (Trifolium resupinatum var. majus)
+musta-apila (Trifolium spadiceum)
+härkäpapu (Vicia faba)
+pommerinvirna (Vicia cassubica)
+hiirenvirna (Vicia cracca)
+tuoksuvirna eli kaitahiirenvirna (Vicia tenuifolia)
+ruisvirna (Vicia villosa)
+peltoruisvirna eli ruisvirna eli karvainen virna (Vicia villosa ssp. villosa)
+myllyruisvirna eli myllyvirna (Vicia villosa ssp. varia)
+nätkelmävirna (Vicia lathyroides)
+unkarinvirna (Vicia pannonica)
+keltaunkarinvirna (Vicia pannonica ssp. pannonica)
+kirjounkarinvirna (Vicia pannonica ssp. striata)
+aitovirna (Vicia sepium)
+etelänaitovirna (Vicia sepium ssp. sepium)
+niittyaitovirna (Vicia sepium ssp. montana)
+rehuvirna (Vicia sativa)
+peltorehuvirna (Vicia sativa ssp. sativa)
+kaitarehuvirna (Vicia sativa ssp. nigra)
+metsävirvilä eli metsävirna (Vicia sylvatica, syn. Ervilia sylvatica)
+peltovirvilä (Vicia hirsuta, syn. Ervilia hirsuta)
+mäkivirvilä (Vicia tetrasperma, syn. Ervum tetraspermum)
+euroopanpyökki (Fagus sylvatica)
+metsätammi eli tammi (Quercus robur)
+punatammi (Quercus rubra)
+suomyrtti (Myrica gale)
+rauduskoivu (Betula pendula)
+etelänrauduskoivu (Betula pendula var. pendula)
+visakoivu (Betula pendula var. carelica)
+hieskoivu (Betula pubescens)
+metsähieskoivu (Betula pubescens ssp. pubescens)
+tunturikoivu (Betula pubescens ssp. czerepanovii)
+vaivaiskoivu (Betula nana)
+harmaaleppä (Alnus incana)
+etelänharmaaleppä (Alnus incana ssp. incana)
+viherharmaaleppä (Alnus incana ssp. incana var. incana)
+karjalanharmaaleppä (Alnus incana ssp. incana var. argentata)
+kuolanharmaaleppä (Alnus incana ssp. kolaënsis)
+tervaleppä (Alnus glutinosa)
+euroopanvalkopyökki (Carpinus betulus)
+euroopanpähkinäpensas eli pähkinäpensas (Corylus avellana)
+punaluppio (Sanguisorba officinalis)
+silopikkuluppio (Sanguisorba minor ssp. minor) eli pikkuluppu (Poterium sanguisorba)
+silopikkuluppu (Poterium sanguisorba ssp. sanguisorba)
+pallepikkuluppu (Poterium sanguisorba ssp. balearicum)
+kotipihlaja eli pihlaja (Sorbus aucuparia)
+etelänkotipihlaja (Sorbus aucuparia ssp. aucuparia)
+pohjankotipihlaja (Sorbus aucuparia ssp. glabrata)
+saksanpihlaja (Sorbus aria, syn. Aria edulis)
+ruotsinpihlaja (Sorbus intermedia, syn. Borkhausenia intermedia, Scandosorbus intermedia)
+suomenpihlaja (Sorbus hybrida, syn. Hedlundia hybrida)
+kaunopihlaja (Sorbus meinichii, syn. Hedlundia meinichii) — lajin taksonominen asema ja esiintyminen Suomessa epävarmaa
+teodorinpihlaja (Sorbus teodori, syn. Hedlundia teodori) — lajin taksonominen asema ja esiintyminen Suomessa epävarmaa
+isotuomipihlaja (Amelanchier spicata)
+marjatuomipihlaja (Amelanchier alnifolia)
+rusotuomipihlaja (Amelanchier lamarckii)
+sirotuomipihlaja (Amelanchier laevis)
+musta-aronia (Aronia melanocarpa)
+koristearonia (Aronia × prunifolia)
+marja-aronia (Aronia Prunifolia-Ryhmä)
+mustamarjaorapihlaja (Crataegus douglasii)
+kanadanorapihlaja (Crataegus flabellata)
+aitaorapihlaja (Crataegus grayana)
+pyöröorapihlaja eli pyöröliuskaorapihlaja (Crataegus laevigata)
+tylppöorapihlaja eli tylppäliuskaorapihlaja (Crataegus monogyna)
+suippuorapihlaja eli suippoliuskaorapihlaja (Crataegus rhipidophylla)
+siirosuippuorapihlaja (Crataegus rihipidophylla var. rhipidophylla)
+tanasuippuorapihlaja (Crataegus rhipidophylla var. lindmanii, syn. Crataegus rhipidophylla var. ronnigeri)
+siperianorapihlaja (Crataegus sanguinea)
+iso-orapihlaja (Crataegus submollis)
+kuuruorapihlaja (Crataegus × subsphaerica)
+kalliotuhkapensas eli pohjolantuhkapensas (Cotoneaster integerrimus)
+kiiltotuhkapensas (Cotoneaster lucidus)
+mustamarjatuhkapensas (Cotoneaster niger)
+tunturipoimulehti (Alchemilla alpina)
+harmaapoimulehti (Alchemilla glaucescens)
+sykeröpoimulehti (Alchemilla hirsuticaulis)
+laskospoimulehti (Alchemilla plicata)
+pyöröpoimulehti (Alchemilla propinqua)
+laidunpoimulehti (Alchemilla monticola)
+vastakarvapoimulehti (Alchemilla sarmatica)
+hakamaapoimulehti (Alchemilla subcrenata)
+suppilopoimulehti (Alchemilla cymatophylla)
+seitsenkulmapoimulehti (Alchemilla heptagona)
+puolikuupoimulehti (Alchemilla semilunaris)
+piennarpoimulehti (Alchemilla acutiloba)
+silkkipoimulehti (Alchemilla micans)
+pyökkipoimulehti (Alchemilla xanthochlora)
+vjatkanpoimulehti (Alchemilla leiophylla)
+hentopoimulehti (Alchemilla filicaulis)
+silohentopoimulehti eli punatyvipoimulehti (Alchemilla filicaulis var. filicaulis)
+partahentopoimulehti eli partapoimulehti (Alchemilla filicaulis var. vestita)
+keräpääpoimulehti (Alchemilla glomerulans)
+lähteikköpoimulehti (Alchemilla glabra)
+kaljuvarsipoimulehti (Alchemilla glabricaulis)
+harvakarvapoimulehti (Alchemilla parcipila)
+harvahammaspoimulehti (Alchemilla borealis)
+tummasuonipoimulehti (Alchemilla baltica)
+terävälovipoimulehti (Alchemilla wichurae)
+munuaispoimulehti (Alchemilla murbeckiana)
+tylppähammaspoimulehti (Alchemilla samuelssonii)
+sotapoimulehti (Alchemilla sergii, syn. Alchemilla polemochora)
+tähtipoimulehti (Alchemilla stellaris)
+jättipoimulehti (Alchemilla mollis)
+peltopoimukki eli peltopoimulehti (Aphanes arvensis, syn. Alchemilla arvensis)
+sikoangervo (Filipendula vulgaris)
+niittymesiangervo eli mesiangervo (Filipendula ulmaria)
+preeriamesiangervo eli preeria-angervo (Filipendula rubra)
+isotöyhtöangervo (Aruncus dioicus)
+lännenheisiangervo (Physocarpus opulifolius)
+viitapihlaja-angervo (Sorbaria sorbifolia)
+valkopajuangervo (Spiraea alba)
+vitipajuangervo (Spiraea alba var. alba)
+kaljupajuangervo (Spiraea alba var. latifolia)
+koivuangervo (Spiraea betulifolia)
+idänvirpiangervo (Spiraea chamaedryfolia)
+japaninangervo (Spiraea japonica)
+taiganvirpiangervo (Spiraea media)
+rusopajuangervo (Spiraea × billardii)
+neitoangervo (Spiraea × cinerea)
+mökinpajuangervo eli mökinangervo eli kaihopajuangervo (Spiraea × rosalba)
+oratuomi (Prunus spinosa)
+luumu eli luumupuu eli väskynä (Prunus domestica)
+jaloluumu eli luumu (Prunus domestica ssp. domestica)
+kriikuna (Prunus domestica ssp. insititia)
+hapankirsikka eli amarelli eli morelli eli pensaskirsikka (Prunus cerasus)
+tuomi (Prunus padus)
+metsätuomi (Prunus padus ssp. padus)
+pohjantuomi (Prunus padus ssp. borealis)
+tarhamanteli eli manteli (Prunus dulcis)
+imeläkirsikka eli makeakirsikka (Prunus avium)
+pilvikirsikka eli pennsylvaniankirsikka (Prunus pensylvanica)
+persikka (Prunus persica)
+rusokirsikka (Prunus sargentii)
+virginiantuomi (Prunus virginiana)
+kirsikkaluumu eli myrobalaani (Prunus cerasifera)
+tarhapäärynä eli päärynä (Pyrus communis)
+villipäärynä (Pyrus pyraster)
+metsäomenapuu (Malus sylvestris)
+tarhaomenapuu (Malus domestica)
+japaninmarjaomenapuu (Malus toringo)
+marjaomenapensas (Malus toringo var. sargentii)
+idänverijuuri (Agrimonia pilosa)
+maarianverijuuri (Agrimonia eupatoria)
+tuoksuverijuuri (Agrimonia procera)
+tunturilapinvuokko eli lapinvuokko (Dryas octopetala)
+siperianlillukka (Rubus humulifolius) – alkuperäisenä hävinnyt Suomesta
+mesilillukka eli lapinlillukka (Rubus × castoreus)
+lillukka (Rubus saxatilis)
+muurain eli lakka eli hilla (Rubus chamaemorus)
+mesimarja (Rubus arcticus)
+mesivadelma (Rubus arcticus × idaeus)
+vadelma eli punavadelma eli vattu (Rubus idaeus)
+sinivatukka (Rubus caesius)
+valkovatukka (Rubus parviflorus)
+mustavatukka eli mustavadelma (Rubus allegheniensis)
+kuultovatukka (Rubus aureolus)
+lehtovatukka (Rubus pruinosus)
+peittovatukat (Rubus sect. Corylifolii)
+aitokarhunvatukat (Rubus sect. Rubus)
+tuoksuvatukka (Rubus odoratus)
+ojakellukka (Geum rivale)
+kyläkellukka (Geum urbanum)
+idänkellukka (Geum aleppicum)
+japaninkellukka (Geum macrophyllum)
+tulikellukka (Geum coccineum)
+rönsyansikka (Waldsteinia ternata, syn. Waldsteinia sibirica, Waldsteinia trifolia, Geum ternatum)
+ahomansikka (Fragaria vesca)
+karvamansikka (Fragaria viridis)
+ukkomansikka (Fragaria moschata)
+puutarhamansikka (Fragaria × ananassa)
+kurjenjalka (Comarum palustre, syn. Potentilla palustris)
+lännenhanhikki (Potentilla anglica)
+hopeahanhikki (Potentilla argentea) – sisältää hoikkahopeahanhikin (Potentilla argentea) ja tanakkahopeahanhikin (Potentilla neglecta)
+ketohopeahanhikki (Potentilla argentea var. argentea)
+rentohopeahanhikki (Potentilla argentea var. demissa)
+liuskahopeahanhikki (Potentilla argentea var. acutifida, syn. Potentilla neglecta var. acutifolia)
+sirohopeahanhikki (Potentilla argentea var. decora, syn. Potentilla neglecta var. decora)
+pulskahopeahanhikki (Potentilla argentea var. dissecta, syn. Potentilla neglecta var. dissecta)
+isohopeahanhikki (Potentilla argentea var. incanescens, syn. Potentilla neglecta var. neglecta)
+keväthanhikki (Potentilla crantzii)
+rätvänä (Potentilla erecta)
+huhtahanhikki (Potentilla intermedia)
+japaninhanhikki (Potentilla megalantha)
+pahtahanhikki (Potentilla nivea)
+vuoripahtahanhikki (Potentilla nivea ssp. nivea) eli paasihanhikki (Potentilla arenosa)
+ruijanpahtahanhikki (Potentilla nivea ssp. chamissonis) eli ruijanpaasihanhikki (Potentilla arenosa ssp. chamissonis)
+peltohanhikki (Potentilla norvegica)
+pystyhanhikki (Potentilla recta)
+rikkipystyhanhikki (Potentilla recta ssp. recta)
+kaakonpystyhanhikki (Potentilla recta ssp. pilosa)
+suikerohanhikki (Potentilla reptans)
+sakarahanhikki (Potentilla subarenaria)
+rentohanhikki (Potentilla supina)
+euroopanrentohanhikki (Potentilla supina ssp. supina)
+idänrentohanhikki (Potentilla supina ssp. costata)
+lännenrentohanhikki (Potentilla supina ssp. paradoxa)
+pikkuhanhikki (Potentilla tabernaemontani, syn. Potentilla neumanniana, Potentilla verna)
+saksanhanhikki (Potentilla thuringiaca)
+ketohanhikki (Potentilla anserina, syn. Argentina anserina)
+pihaketohanhikki (Potentilla anserina ssp. anserina, syn. Argentina anserina ssp. anserina)
+meriketohanhikki (Potentilla anserina ssp. groenlandica, syn. Argentina anserina ssp. groenlandica)
+kalliovalkohanhikki eli valkohanhikki (Drymocallis rupestris, syn. Potentilla rupestris)
+tunturinärvänä eli närvänä (Sibbaldia procumbens, syn. Potentilla sibbaldii)
+pihtihanhio eli kaksiliuskahanhikki (Sibbaldianthe bifurca)
+keltapensashanhikki eli pensashanhikki (Dasiphora fruticosa)
+karjalanruusu (Rosa acicularis)
+koiranruusu (Rosa canina)
+kaljukoiranruusu (Rosa canina ssp. canina, syn. Rosa canina)
+karvakoiranruusu (Rosa canina ssp. dumetorum, syn. Rosa corymbifera)
+orjanruusu (Rosa dumalis)
+heleäorjanruusu eli kaljuorjanruusu (Rosa dumalis ssp. dumalis, syn. Rosa vosagiaca)
+himmeäorjanruusu eli karvaorjanruusu (Rosa dumalis ssp. coriifolia, syn. Rosa caesia)
+gallianruusu (Rosa gallica)
+venäjänruusu (Rosa glabrifolia)
+punalehtiruusu (Rosa glauca)
+metsäruusu (Rosa majalis, syn. Rosa cinnamomea)
+mökinruusu (Rosa majalis 'Foecundissima', syn. Rosa cinnamomea 'Foecundissima')
+iharuusu (Rosa mollis, syn. Rosa villosa ssp. mollis)
+nukkeruusu (Rosa nitida)
+(Rosa obtusifolia)
+vuoriruusu (Rosa pendulina)
+omenaruusu (Rosa rubiginosa)
+kurtturuusu eli kurttulehtiruusu (Rosa rugosa)
+okaruusu (Rosa sherardii)
+pimpinellaruusu (Rosa spinosissima)
+juhannusruusu (Rosa spinosissima 'Piena')
+valamonruusu (Rosa 'Splendens')
+luumuruusu eli villaruusu (Rosa villosa)
+kiiltoruusu (Rosa virginiana)
+pietarinruusu (Rosa × majorugosa)
+piharuusu (Rosa × malyi)
+marianruusu (Rosa × obovata, syn. Rosa × novae-angliae)
+nukkekurtturuusu (Rosa × rugotida)
+neuvoksenruusu (Rosa × spaethiana)
+korpipaatsama (Rhamnus frangula, syn. Frangula alnus)
+orapaatsama (Rhamnus cathartica)
+lännenhopeapensas eli hopeapensas (Elaeagnus commutata)
+tyrni eli hopeatyrni (Hippophaë rhamnoides)
+kynäjalava (Ulmus laevis)
+vuorijalava (Ulmus glabra)
+lehtovuorijalava (Ulmus glabra ssp. glabra)
+salkohumala eli humala (Humulus lupulus)
+isonokkonen eli nokkonen (Urtica dioica)
+etelännokkonen (Urtica dioica ssp. dioica)
+kylänokkonen (Urtica dioica ssp. dioica var. dioica)
+lehtonokkonen (Urtica dioica ssp. dioica var. holosericea)
+pohjannokkonen eli lapinnokkonen (Urtica dioica ssp. sondenii)
+rautanokkonen (Urtica urens)
+peltokurjennokka (Erodium cicutarium)
+myskikurjennokka (Erodium moschatum)
+verikurjenpolvi (Geranium sanguineum)
+kyläkurjenpolvi (Geranium pratense)
+metsäkurjenpolvi (Geranium sylvaticum)
+ojakurjenpolvi (Geranium palustre)
+huhtakurjenpolvi (Geranium bohemicum)
+siperiankurjenpolvi (Geranium sibiricum)
+pyreneittenkurjenpolvi (Geranium pyrenaicum)
+pihakurjenpolvi eli matalakurjenpolvi (Geranium pusillum)
+pehmytkurjenpolvi (Geranium molle)
+kivikkokurjenpolvi (Geranium columbinum)
+liuskakurjenpolvi (Geranium dissectum)
+amerikankurjenpolvi (Geranium carolinianum)
+kiiltokurjenpolvi (Geranium lucidum)
+haisukurjenpolvi (Geranium robertianum)
+palomaitohorsma eli maitohorsma (Chamaenerion angustifolium, syn. Epilobium angustifolium)
+nukkahorsma (Epilobium parviflorum)
+karvahorsma (Epilobium hirsutum)
+lehtohorsma (Epilobium montanum)
+mäkihorsma (Epilobium collinum)
+rusohorsma (Epilobium roseum)
+harmaahorsma (Epilobium lamyi)
+särmähorsma (Epilobium tetragonum)
+tummahorsma (Epilobium obscurum)
+rusoamerikanhorsma eli amerikanhorsma (Epilobium adenocaulon)
+vaalea-amerikanhorsma (Epilobium ciliatum)
+lännenhorsma (Epilobium glandulosum)
+vuorolehtihorsma (Epilobium davuricum)
+suohorsma (Epilobium palustre)
+isosuohorsma (Epilobium palustre var. palustre)
+lapinsuohorsma (Epilobium palustre var. lapponicum)
+turjanhorsma (Epilobium laestadii)
+hetehorsma (Epilobium alsinifolium)
+pohjanhorsma (Epilobium hornemannii)
+valkohorsma (Epilobium lactiflorum)
+tunturihorsma (Epilobium anagallidifolium)
+isosilkkikukka (Clarkia amoena)
+iltahelokki (Oenothera biennis)
+hallavahelokki eli rennerinhelokki (Oenothera canovirens)
+karheahelokki (Oenothera depressa)
+täplähelokki (Oenothera muricata, syn. Oenothera rubricaulis)
+hämyhelokki (Oenothera rubricauloides)
+ratahelokki (Oenothera scandinavica)
+pikkuvelholehti (Circaea alpina)
+ojakaali (Lythrum portula, syn. Peplis portula)
+pohjanrantakukka eli rantakukka (Lythrum salicaria)
+keltareseda (Reseda lutea)
+värireseda (Reseda luteola)
+tuoksureseda (Reseda odorata)
+jäykkäpernaruoho (Sisymbrium strictissimum)
+karvapernaruoho (Sisymbrium loeselii)
+volganpernaruoho (Sisymbrium volgense)
+unkarinpernaruoho (Sisymbrium altissimum)
+idänpernaruoho (Sisymbrium orientale)
+rohtopernaruoho (Sisymbrium officinale)
+karvarohtopernaruoho (Sisymbrium officinale var. officinale)
+silorohtopernaruoho (Sisymbrium officinale var. leiocarpum)
+rohtolitutilli eli litutilli (Descurainia sophia)
+rohtolitulaukka eli litulaukka (Alliaria petiolata)
+hentolituruoho eli lituruoho (Arabidopsis thaliana)
+ruotsinlituruoho (Arabidopsis suecica)
+hietalituruoho (Arabidopsis arenosa)
+ontervio (Myagrum perfoliatum)
+värimorsinko (Isatis tinctoria)
+idänukonpalko eli ukonpalko (Bunias orientalis)
+rantaukonnauris (Erysimum strictum, syn. Erysimum hieraciifolium, Erysimum virgatum)
+idänukonnauris (Erysimum repandum)
+peltoukonnauris (Erysimum cheiranthoides)
+rikkaukonnauris (Erysimum cheiranthoides ssp. cheiranthoides)
+nurmiukonnauris (Erysimum cheiranthoides ssp. altum)
+tarhaillakko (Hesperis matronalis)
+hentoirsokki eli irsokki (Chorispora tenella)
+linnunnokka (Euclidium syriacum)
+peltokanankaali (Barbarea vulgaris)
+oikopeltokanankaali (Barbarea vulgaris var. vulgaris)
+kaaripeltokanankaali (Barbarea vulgaris var. arcuata)
+rantakanankaali (Barbarea stricta)
+etelännenätti (Rorippa austriaca)
+vesinenätti (Rorippa amphibia)
+rikkanenätti (Rorippa sylvestris)
+rantanenätti (Rorippa palustris)
+puistonenätti (Rorippa × armoracioides)
+isovesikrassi (Nasturtium officinale, syn. Rorippa nasturtium)
+maustepiparjuuri eli piparjuuri (Armoracia rusticana)
+hammasjuuri (Cardamine bulbifera, syn. Dentaria bulbifera)
+purolitukka (Cardamine amara)
+luhtalitukka (Cardamine pratensis)
+niittyluhtalitukka eli niittylitukka (Cardamine pratensis ssp. pratensis)
+pohjanluhtalitukka eli pohjanlitukka (Cardamine pratensis ssp. polemonioides, syn. Cardamine pratensis ssp. angustifolia)
+rantaluhtalitukka (Cardamine pratensis ssp. paludosa)
+tunturilitukka (Cardamine bellidifolia)
+rantalitukka (Cardamine parviflora)
+metsälitukka (Cardamine flexuosa)
+mäkilitukka (Cardamine hirsuta)
+jäykkäpitkäpalko (Arabis hirsuta)
+tunturipitkäpalko (Arabis alpina)
+kaukasianpitkäpalko (Arabis caucasica)
+pölkkyruoho (Arabis glabra, syn. Turritis glabra)
+hietakilpiruoho (Alyssum alyssoides)
+harmio (Berteroa incana)
+tuoksupielus eli valkopielus (Lobularia maritima)
+kultakynsimö (Draba alpina)
+lumikynsimö (Draba nivalis)
+kalliokynsimö (Draba norvegica)
+tunturikynsimö (Draba fladnizensis)
+lapinkynsimö (Draba lactea)
+isokynsimö (Draba glabella, syn. Draba daurica)
+karvaisokynsimö (Draba glabella var. hebecarpa)
+idänkynsimö (Draba cinerea)
+harmaakynsimö (Draba incana)
+vallikynsimö (Draba muralis)
+keltakynsimö (Draba nemorosa)
+karvakeltakynsimö (Draba nemorosa var. nemorosa)
+silokeltakynsimö (Draba nemorosa var. leiocarpa)
+siperiankynsimö (Draba sibirica)
+kevätkynsimö (Draba verna, syn. Erophila verna)
+tanskankuirimo (Cochlearia danica)
+ruistankio (Camelina sativa)
+vehnätankio (Camelina microcarpa)
+pellavatankio (Camelina alyssum)
+pikkupellavatankio (Camelina alyssum ssp. alyssum)
+isopellavatankio eli liinatankio (Camelina alyssum ssp. integerrima)
+ohraruoho (Neslia paniculata)
+rikkalutukka eli lutukka (Capsella bursa-pastoris)
+peltotaskuruoho (Thlaspi arvense)
+kevättaskuruoho (Thlaspi caerulescens, syn. Noccaea caerulescens)
+ketokevättaskuruoho (Thlaspi caerulescens ssp. caerulescens)
+toukotaskuruoho (Thlaspi caerulescens ssp. brachypetalum, syn. Noccaea brachypetala)
+katkerasaippo (Iberis amara)
+sarjasaippo (Iberis umbellata)
+talvisaippo (Iberis sempervirens)
+kenttäkrassi (Lepidium campestre)
+nurmikrassi (Lepidium heterophyllum)
+vihanneskrassi (Lepidium sativum)
+virginiankrassi (Lepidium virginicum)
+ratakrassi (Lepidium densiflorum)
+rikkakrassi (Lepidium neglectum)
+haarakrassi (Lepidium ramosissimum)
+pihakrassi (Lepidium ruderale)
+sepiväkrassi eli sepokrassi (Lepidium perfoliatum)
+isokrassi (Lepidium latifolium)
+kynsimökrassi (Lepidium draba, syn. Cardaria draba)
+karvavariksenkrassi (Lepidium didymum, syn. Coronopus didymus)
+äimäruoho (Subularia aquatica)
+idänsavuruoho eli savuruoho (Conringia orientalis)
+pikkuhietasinappi (Diplotaxis muralis)
+isohietasinappi eli sylvetta (Diplotaxis tenuifolia)
+pillikaali eli hoikkalitukaali (Brassica elongata)
+aropillikaali (Brassica elongata ssp. integrifolia)
+vihanneskaali eli kaali (Brassica oleracea)
+juureskaali (Brassica napus)
+lanttu (Brassica napus ssp. napus, syn. Brassica napus ssp. napobrassica)
+rapsi (Brassica napus ssp. oleifera)
+satokaali (Brassica rapa)
+nauris eli turnipsi (Brassica rapa ssp. rapa)
+rypsi (Brassica rapa ssp. oleifera)
+sareptansinappi (Brassica juncea)
+mustasinappi (Brassica nigra)
+rikkasinappi (Sinapis arvensis)
+silorikkasinappi (Sinapis arvensis var. arvensis)
+karvarikkasinappi (Sinapis arvensis var. orientalis)
+keltasinappi (Sinapis alba)
+peltokeltasinappi (Sinapis alba ssp. alba)
+pellavakeltasinappi eli pellavasinappi (Sinapis alba ssp. dissecta)
+rikkasinappikaali (Eruca vesicaria)
+vihannessinappikaali eli rukolasalaatti eli rukola (Eruca vesicaria ssp. sativa, syn. Eruca sativa)
+ranskankaalisinappi (Erucastrum gallicum)
+hilmiö (Hirschfeldia incana, syn. Erucastrum incanum)
+merisinappi (Cakile maritima)
+lännenmerisinappi (Cakile maritima ssp. maritima)
+liuskamerisinappi (Cakile maritima ssp. baltica)
+kurttusaksanretikka (Rapistrum rugosum)
+nuijasaksanretikka (Rapistrum rugosum ssp. rugosum)
+soikkosaksanretikka (Rapistrum rugosum ssp. linnaeanum)
+euroopanmerikaali eli merikaali (Crambe maritima)
+peltoretikka (Raphanus raphanistrum)
+ruokaretikka (Raphanus sativus)
+retiisi (Raphanus sativus var. sativus)
+retikka (Raphanus sativus var. niger)
+kesäkuuruoho (Lunaria annua)
+sarvileukoija (Matthiola longipetala)
+kaarisarvileukoija (Matthiola longipetala ssp. bicornis)
+lehtonäsiä eli näsiä (Daphne mezereum)
+kultapäivännouto (Helianthemum nummularium)
+ketopäivännouto (Helianthemum nummularium ssp. nummularium)
+tanskanpäivännouto (Helianthemum nummularium ssp. obscurum)
+metsälehmus eli niinipuu (Tilia cordata)
+isolehtilehmus (Tilia platyphyllos)
+puistolehmus (Tilia × vulgaris, syn. Tilia × europaea)
+kelta-aulio (Abutilon theophrasti)
+ajannäyttäjä (Hibiscus trionum)
+harmaamalvikki (Lavatera thuringiaca)
+ruusumalva (Malva alcea)
+myskimalva (Malva moschata)
+katinjuustomalva (Malva neglecta)
+kylämalva (Malva pusilla)
+kiiltomalva (Malva sylvestris)
+pikkukiiltomalva (Malva sylvestris ssp. sylvestris)
+maurinkiiltomalva (Malva sylvestris ssp. mauritiana)
+kiehkuramalva (Malva verticillata)
+otasiida (Sida spinosa)
+mooseksenpalavapensas (Dictamnus albus)
+balkaninhevoskastanja (Aesculus hippocastanum)
+mongolianvaahtera (Acer ginnala)
+saarnivaahtera (Acer negundo)
+metsävaahtera (Acer platanoides)
+vuorivaahtera (Acer pseudoplatanus)
+tataarivaahtera (Acer tataricum)
+pensaskanukka eli idänkanukka eli valkomarjakanukka (Cornus alba)
+idänpensaskanukka (Cornus alba ssp. alba)
+lännenpensaskanukka (Cornus alba ssp. stolonifera)
+mustamarjakanukka (Cornus sanguinea)
+kanadanruohokanukka (Cornus canadensis)
+ruohokanukka (Cornus suecica)
+pihajasmike (Philadelphus coronarius)
+lännenjasmike (Philadelphus lewisii)
+puistojasmike (Philadelphus lewisii var. gordonianus)
+lehtopalsami (Impatiens noli-tangere)
+jättipalsami (Impatiens glandulifera)
+rikkapalsami (Impatiens parviflora)
+lännenpalsami (Impatiens capensis)
+lapinuuvana eli uuvana (Diapensia lapponica)
+lapinalppiruusu (Rhododendron lapponicum)
+suopursu (Ledum palustre, syn. Rhododendron tomentosum)
+kanerva (Calluna vulgaris)
+nummikellokanerva (Erica tetralix)
+tunturikurjenkanerva eli kurjenkanerva (Phyllodoce caerulea)
+mustikka (Vaccinium myrtillus)
+isokarpalo (Vaccinium oxycoccos)
+pikkukarpalo (Vaccinium microcarpum)
+juolukka (Vaccinium uliginosum)
+suojuolukka (Vaccinium uliginosum ssp. uliginosum)
+tunturijuolukka eli pikkujuolukka (Vaccinium uliginosum ssp. microphyllum)
+puolukka (Vaccinium vitis-idaea)
+sianpuolukka (Arctostaphylos uva-ursi)
+riekonmarja (Arctostaphylos alpinus, syn. Arctous alpina)
+sielikkö (Loiseleuria procumbens, syn. Kalmia procumbens)
+suokukka (Andromeda polifolia)
+vaivero (Chamaedaphne calyculata)
+variksenmarja (Empetrum nigrum)
+etelänvariksenmarja (Empetrum nigrum ssp. nigrum)
+pohjanvariksenmarja (Empetrum nigrum ssp. hermaphroditum)
+liekovarpio (Cassiope tetragona)
+sammalvarpio (Cassiope hypnoides, syn. Harrimanella hypnoides)
+mäntykukka (Monotropa hypopitys)
+kangasmäntykukka (Monotropa hypopitys ssp. hypopitys)
+kaljumäntykukka (Monotropa hypopitys ssp. hypophegea, syn. Monotropa hypophegea)
+kangassarjatalvikki eli sarjatalvikki (Chimaphila umbellata)
+(Chimaphila umbellata ssp. umbellata)
+tähtitalvikki (Moneses uniflora)
+nuokkutalvikki (Orthilia secunda)
+keltatalvikki (Pyrola chlorantha)
+kellotalvikki (Pyrola media)
+pikkutalvikki (Pyrola minor)
+isotalvikki (Pyrola rotundifolia)
+etelänisotalvikki eli pyöreälehtinen talvikki (Pyrola rotundifolia ssp. rotundifolia)
+pohjanisotalvikki eli pohjantalvikki (Pyrola rotundifolia ssp. norvegica)
+kellosinilatva (Polemonium acutiflorum)
+lehtosinilatva (Polemonium caeruleum)
+syysleimu (Phlox paniculata)
+rönsyleimu (Phlox stolonifera)
+sammalleimu (Phlox subulata)
+pallerokiurunkukka (Gilia capitata)
+kaitatahmikki eli tahmikki (Collomia linearis)
+valkosuolapunka eli suolapunka (Samolus valerandi)
+peltonukki (Androsace elongata)
+idännukki (Androsace filiformis)
+isonukki (Androsace maxima)
+ketonukki (Androsace septentrionalis)
+lehtoesikko eli etelänkevätesikko (Primula elatior)
+kevätesikko (Primula veris)
+jauhoesikko (Primula farinosa)
+lapinesikko (Primula stricta)
+nuokkuesikko (Primula nutans)
+ruijannuokkuesikko (Primula nutans ssp. finmarchica)
+perämerennuokkuesikko (Primula nutans ssp. finmarchica var. jokelae)
+kultaesikko (Primula auricula)
+kääpiöesikko (Primula vulgaris)
+metsäalppikello (Soldanella montana)
+peltopunka (Anagallis arvensis, syn. Lysimachia arvensis)
+sinipunka (Anagallis foemina, syn. Lysimachia foemina)
+pikkupunka (Anagallis minima, syn. Lysimachia minima)
+merirannikki eli rannikki (Glaux maritima, syn. Lysimachia maritima)
+ranta-alpi (Lysimachia vulgaris)
+tarha-alpi (Lysimachia punctata)
+ripsialpi (Lysimachia ciliata)
+suikeroalpi (Lysimachia nummularia)
+terttualpi (Lysimachia thyrsiflora)
+amerikanalpi (Lysimachia terrestris)
+metsätähti (Trientalis europaea, syn. Lysimachia europaea)
+peltorusojuuri (Lithospermum arvense, syn. Buglossoides arvensis)
+kyläneidonkieli eli piennarneidonkieli eli neidonkieli (Echium vulgare)
+ratamoneidonkieli eli piiankieli (Echium plantagineum)
+lehtoimikkä (Pulmonaria obscura)
+valkotäpläimikkä (Pulmonaria saccharata)
+rusonunna (Nonea pulla)
+keltaraunioyrtti (Symphytum tuberosum)
+tarharaunioyrtti (Symphytum asperum)
+rohtoraunioyrtti (Symphytum officinale)
+tummarohtoraunioyrtti (Symphytum officinale var. officinale)
+valkorohtoraunioyrtti eli valkoraunioyrtti (Symphytum officinale var. bohemicum)
+ruotsinraunioyrtti (Symphytum × uplandicum)
+peltorasti (Anchusa arvensis)
+italianrasti eli sinirasti (Anchusa italica)
+rohtorasti eli häränkieli (Anchusa officinalis)
+rohtopurasruoho eli kurkkuyrtti (Borago officinalis)
+lännenkeltalemmikki (Amsinckia micrantha)
+viuhkamierokki (Plagiobothrys scouleri)
+terhi (Asperugo procumbens)
+harsulemmikki (Myosotis sparsiflora)
+hietalemmikki (Myosotis stricta)
+lapinlemmikki (Myosotis decumbens)
+luhtalemmikki (Myosotis scorpioides)
+mäkilemmikki (Myosotis ramosissima)
+peltolemmikki (Myosotis arvensis)
+pohjanluhtalemmikki (Myosotis nemorosa)
+puistolemmikki (Myosotis sylvatica)
+rantalemmikki (Myosotis laxa)
+järvirantalemmikki eli rantalemmikki (Myosotis laxa ssp. caespitosa)
+merirantalemmikki eli itämerenlemmikki (Myosotis laxa ssp. baltica)
+kyläsirkunjyvä (Lappula squarrosa)
+rikkasirkunjyvä (Lappula marginata, syn. Lappula patula, Lappula redowskii)
+kalliosirkunjyvä (Lappula deflexa, syn. Hackelia deflexa)
+rohtokoirankieli eli koirankieli (Cynoglossum officinale)
+kevätkaihonkukka (Omphalodes verna)
+sinimatara (Sherardia arvensis)
+värimaratti (Asperula tinctoria)
+peltomaratti (Asperula arvensis)
+sinimaratti (Asperula orientalis)
+ahomatara (Galium boreale)
+tuoksumatara (Galium odoratum)
+lehtomatara (Galium triflorum)
+luhtamatara (Galium uliginosum)
+rantamatara (Galium palustre)
+pikkurantamatara (Galium palustre ssp. palustre)
+isorantamatara (Galium palustre ssp. elongatum)
+rikkumatara (Galium trifidum)
+keltamatara (Galium verum)
+paimenmatara (Galium album)
+piennarmatara (Galium × pomeranicum)
+harsomatara (Galium schultesii, syn. Galium intermedium)
+puistomatara (Galium pumilum)
+nummimatara (Galium saxatile)
+peltomatara (Galium spurium)
+pellavapeltomatara (Galium spurium ssp. spurium)
+rikkapeltomatara (Galium spurium ssp. vaillantii)
+kierumatara (Galium aparine)
+sarvimatara (Galium tricornutum)
+saksanmatara eli etelänpaimenmatara (Galium mollugo)
+karvaristimatara (Cruciata laevipes)
+kaljuristimatara (Cruciata glabra)
+tunturikatkero (Gentiana nivalis)
+kehtokatkero (Gentianella aurea)
+ketokatkero (Gentianella campestris)
+syysketokatkero (Gentianella campestris var. campestris)
+kesäketokatkero (Gentianella campestris var. suecica)
+rantakatkero (Gentianella uliginosa)
+horkkakatkero (Gentianella amarella)
+syyshorkkakatkero (Gentianella amarella var. amarella)
+kesähorkkakatkero (Gentianella amarella var. lingulata)
+hentokatkero (Gentianella tenella, syn. Comastoma tenellum)
+isosappi eli isorantasappi (Centaurium littorale)
+pikkusappi eli pikkurantasappi (Centaurium pulchellum)
+pikkutalvio (Vinca minor)
+kalliokäärmeenpistonyrtti eli käärmeenpistonyrtti (Vincetoxicum hirundinaria, syn. Cynanchum vincetoxicum)
+lehtosaarni eli saarni (Fraxinus excelsior)
+punasaarni (Fraxinus pennsylvanica)
+unkarinsyreeni (Syringa josikaea)
+pihasyreeni (Syringa vulgaris)
+puistosyreeni (Syringa × henryi)
+aitalikusteri (Ligustrum vulgare)
+uposvesitähti (Callitriche hermaphroditica)
+isovesitähti (Callitriche cophocarpa)
+pikkuvesitähti (Callitriche palustris)
+lapinvesitähti (Callitriche hamulata)
+rauniokilkka (Cymbalaria muralis)
+pikkumirrinkita eli pikkuleijonankita (Misopates orontium)
+isoleijonankita (Antirrhinum majus)
+pikkukissankita eli pikkukidakki (Chaenorhinum minus)
+härmäkannusruoho (Linaria genistifolia)
+juovakannusruoho (Linaria repens)
+keltakannusruoho (Linaria vulgaris)
+silokannusruoho (Linaria incarnata)
+rohtosormustinkukka eli sormustinkukka (Digitalis purpurea)
+keltasormustinkukka (Digitalis grandiflora)
+orvontädyke (Veronica serpyllifolia)
+etelänorvontädyke (Veronica serpyllifolia ssp. serpyllifolia)
+pohjanorvontädyke (Veronica serpyllifolia ssp. humifusa)
+tunturitädyke (Veronica alpina)
+pulmuntunturitädyke (Veronica alpina ssp. alpina)
+sopulintunturitädyke (Veronica alpina ssp. pumila)
+varputädyke (Veronica fruticans)
+itävallantädyke (Veronica austriaca)
+loistotädyke (Veronica austriaca ssp. teucrium, syn. Veronica teucrium)
+rohtotädyke (Veronica officinalis)
+nurmitädyke (Veronica chamaedrys)
+luhtatädyke (Veronica scutellata)
+ojatädyke (Veronica beccabunga)
+konnantädyke (Veronica anagallis-aquatica)
+ketotädyke (Veronica arvensis)
+kevättädyke (Veronica verna)
+peltotädyke (Veronica agrestis)
+kiiltotädyke (Veronica polita)
+himmeätädyke (Veronica opaca)
+persiantädyke (Veronica persica)
+kaukasiantädyke (Veronica filiformis)
+murattitädyke (Veronica hederifolia)
+peltomurattitädyke (Veronica hederifolia ssp. hederifolia)
+tarhamurattitädyke (Veronica hederifolia ssp. lucorum)
+rantatädyke (Veronica longifolia)
+jokirantatädyke (Veronica longifolia var. longifolia)
+merirantatädyke (Veronica longifolia var. maritima)
+tähkätädyke (Veronica spicata)
+muukalaistädyke (Veronica peregrina)
+mätästädyke (Veronica prostrata)
+piharatamo (Plantago major)
+kyläpiharatamo (Plantago major ssp. major)
+rantapiharatamo (Plantago major ssp. intermedia)
+meriratamo (Plantago maritima)
+isomeriratamo (Plantago maritima ssp. maritima)
+pikkumeriratamo (Plantago maritima ssp. juncoides)
+soikkoratamo (Plantago media)
+heinäratamo (Plantago lanceolata)
+ahoheinäratamo (Plantago lanceolata var. lanceolata)
+haararatamo (Plantago arenaria)
+raani (Plantago uniflora, syn. Littorella uniflora)
+lamparevesikuusi eli vesikuusi (Hippuris vulgaris)
+rannikkovesikuusi (Hippuris × lanceolata)
+nelilehtivesikuusi (Hippuris tetraphylla)
+mutayrtti (Limosella aquatica)
+käentulikukka (Verbascum lychnitis)
+tummatulikukka (Verbascum nigrum)
+rohtotulikukka (Verbascum phlomoides)
+purppuratulikukka (Verbascum phoeniceum)
+pustantulikukka (Verbascum speciosum)
+ukontulikukka (Verbascum thapsus)
+tummasyyläjuuri eli syyläjuuri (Scrophularia nodosa)
+kevätsyyläjuuri (Scrophularia vernalis)
+valkoyökönlehti (Pinguicula alpina)
+karvayökönlehti (Pinguicula villosa)
+siniyökönlehti (Pinguicula vulgaris)
+lännenvesiherne (Utricularia australis)
+rimpivesiherne (Utricularia intermedia)
+pikkuvesiherne (Utricularia minor)
+kalvasvesiherne (Utricularia ochroleuca)
+piilovesiherne (Utricularia stygia)
+isovesiherne (Utricularia vulgaris)
+hammasakankaali (Ajuga genevensis)
+kartioakankaali (Ajuga pyramidalis)
+rönsyakankaali (Ajuga reptans)
+luhtavuohennokka (Scutellaria galericulata)
+keihäsvuohennokka (Scutellaria hastifolia)
+mukulapaloyrtti (Phlomis tuberosa, syn. Phlomoides tuberosa)
+pehmytpillike (Galeopsis ladanum)
+kirjopillike (Galeopsis speciosa)
+karheapillike (Galeopsis tetrahit)
+peltopillike (Galeopsis bifida)
+karvapillike (Galeopsis pubescens)
+valkopeippi (Lamium album)
+punapeippi (Lamium purpureum)
+liuskapeippi (Lamium hybridum)
+välipeippi (Lamium confertum)
+sepopeippi eli sepiväpeippi (Lamium amplexicaule)
+hopeatäpläpeippi eli täplälehtipeippi eli täpläpeippi (Lamium maculatum)
+keltapeippi (Lamiastrum galeobdolon)
+täpläkeltapeippi (Lamiastrum galeobdolon ssp. galeobdolon)
+kirjokeltapeippi (Lamiastrum galeobdolon ssp. argenteum)
+rohtonukula (Leonurus cardiaca)
+lännenrohtonukula eli lännennukula (Leonurus cardiaca ssp. cardiaca)
+villarohtonukula eli villanukula (Leonurus cardiaca ssp. villosus)
+tummaporro eli valkoporro (Ballota nigra)
+putkitummaporro eli putkivalkoporro (Ballota nigra ssp. nigra)
+suppilotummaporro eli suppilovalkoporro (Ballota nigra ssp. foetida, syn. Ballota nigra ssp. meridionalis)
+lehtopähkämö (Stachys sylvatica)
+peltopähkämö (Stachys palustris)
+keltapähkämö (Stachys annua)
+nukkapähkämö (Stachys byzantina)
+rohtopähkämö (Stachys officinalis, syn. Betonica officinalis)
+jalopähkämö (Stachys macrantha, syn. Betonica macrantha)
+aitokissanminttu (Nepeta cataria)
+isokissanmninttu eli kollinminttu (Nepeta grandiflora)
+mirrinminttu (Nepeta × faassenii)
+katinminttu (Nepeta racemosa)
+siperiankissanminttu (Nepeta sibirica)
+ketoampiaisyrtti (Dracocephalum thymiflorum)
+amerikanampiaisyrtti (Dracocephalum parviflorum)
+tuoksuampiaisyrtti (Dracocephalum moldavica)
+maahumala (Glechoma hederacea)
+ahoniittyhumala eli niittyhumala eli yleinen arohumala (Prunella vulgaris)
+ketokäenminttu (Acinos arvensis, syn. Satureja acinos)
+lehtomäkiminttu eli mäkiminttu (Clinopodium vulgare, syn. Satureja vulgaris)
+rohtoiisoppi eli iisoppi (Hyssopus officinalis)
+mäkimeirami (Origanum vulgare)
+maustemeirami (Origanum majorana)
+nurmiajuruoho (Thymus pulegioides)
+kangasajuruoho (Thymus serpyllum)
+harjuajuruoho (Thymus serpyllum ssp. serpyllum)
+(Thymus serpyllum ssp. serpyllum var. serpyllum)
+(Thymus serpyllum ssp. serpyllum var. ericoides)
+tenonajuruoho (Thymus serpyllum ssp. tanaensis)
+tarha-ajuruoho eli timjami (Thymus vulgaris)
+luhtarantayrtti eli rantayrtti (Lycopus europaeus)
+rantaminttu (Mentha arvensis)
+karjalanminttu (Mentha × dalmatica)
+vesiminttu (Mentha aquatica)
+purovesiminttu (Mentha aquatica ssp. aquatica)
+merivesiminttu (Mentha aquatica ssp. litoralis)
+kiehkuraminrru (Mentha × verticillata)
+piparminttu (Mentha × piperita)
+jalominttu (Mentha × gracilis)
+suomenjalominttu eli suomenminttu (Mentha × gracilis 'Arrhenii')
+uudenmaanjalominttu eli uudenmaanminttu (Mentha × gracilis 'Hirtella')
+rohtojalominttu eli jalominttu (Mentha × gracilis 'Parviflora')
+viherminttu (Mentha spicata)
+pyöröminttu (Mentha suaveolens)
+omenaminttu (Mentha × rotundifolia)
+niittysalvia (Salvia pratensis)
+lehtosalvia (Salvia nemorosa)
+yrtti-iiso (Agastache foeniculum)
+hammasiiso (Agastache urticifolia)
+helttaminttu (Elsholtzia ciliata)
+sitruunamelissa (Melissa officinalis)
+tähkämaitikka (Melampyrum cristatum)
+peltomaitikka (Melampyrum arvense)
+lehtomaitikka (Melampyrum nemorosum)
+metsämaitikka (Melampyrum sylvaticum)
+kangasmaitikka (Melampyrum pratense)
+peltosänkiö (Odontites vernus)
+punasänkiö (Odontites vulgaris)
+suolasänkiö (Odontites litoralis)
+lännensuolasänkiö eli suolasänkiö (Odontites litoralis ssp. litoralis)
+suomensuolasänkiö eli suomensänkiö (Odontites litoralis ssp. fennicus)
+pohjanpunakko eli punakko (Bartsia alpina)
+karvakuusio (Pedicularis hirsuta)
+lapinkuusio (Pedicularis lapponica)
+luhtakuusio (Pedicularis palustris)
+kesäluhtakuusio (Pedicularis palustris ssp. palustris)
+syysluhtakuusio (Pedicularis palustris ssp. opsiantha)
+pohjanluhtakuusio (Pedicularis palustris ssp. borealis)
+kaarlenvaltikka (Pedicularis sceptrum-carolinum)
+pikkulaukku (Rhinanthus minor)
+kesäpikkulaukku (Rhinanthus minor ssp. minor)
+syyspikkulaukku (Rhinanthus minor ssp. stenophyllus)
+lapinpikkulaukku (Rhinanthus minor ssp. groenlandicus)
+isolaukku (Rhinanthus serotinus, syn. Rhinanthus angustifolius)
+niittyisolaukku (Rhinanthus serotinus ssp. vernalis, syn. Rhinanthus angustifolius ssp. grandiflorus)
+rikkaisolaukku eli rikkalaukku (Rhinanthus serotinus ssp. apterus, syn. Rhinanthus angustifolius ssp. apterus)
+pähkinäsuomukka eli suomukka (Lathraea squamaria)
+nystysilmäruoho (Euphrasia rostkoviana, syn. Euphrasia officinalis)
+isosilmäruoho (Euphrasia rostkoviana ssp. rostkoviana, syn. Euphrasia officinalis ssp. pratensis)
+ahosilmäruoho (Euphrasia rostkoviana ssp. fennica, syn. Euphrasia officinalis ssp. officinalis)
+ketosilmäruoho (Euphrasia stricta)
+tanakkasilmäruoho (Euphrasia nemorosa)
+pohjansilmäruoho (Euphrasia frigida, syn. Euphrasia wettsteinii)
+turjansilmäruoho (Euphrasia rigida var. rigida, syn. Euphrasia wettsteinii var. wettsteinii)
+lapinsilmäruoho (Euphrasia frigida var. palustris, syn. Euphrasia wettsteinii var. palustris)
+nummisilmäruoho (Euphrasia micrantha)
+perämerensilmäruoho (Euphrasia bottnica)
+otasilmäruoho (Euphrasia salisburgensis)
+peltokierto (Convolvulus arvensis)
+karhunköynnös eli isokierto (Calystegia sepium)
+punakarhunköynnös (Calystegia sepium ssp. spectabilis)
+valkokarhunköynnös (Calystegia sepium ssp. sepium)
+aitoelämänlanka (Ipomoea purpurea)
+kaljuelämänlanka (Ipomoea lacunosa)
+liuskaelämänlanka (Ipomoea hederacea)
+amerikanvieras (Cuscuta campestris)
+nurmivieras (Cuscuta epithymum)
+euroopanvieras (Cuscuta europaea)
+humalanvieras (Cuscuta europaea ssp. europaea)
+merenrantavieras (Cuscuta europaea ssp. halophyta)
+pellavanvieras (Cuscuta epilinum)
+nukkahulluruoho (Datura inoxia)
+okahulluruoho eli hulluruoho (Datura stramonium)
+valko-okahulluruoho (Datura stramonium var. stramonium)
+ruso-okahulluruoho (Datura stramonium var. tatula)
+kylähullukaali eli hullukaali (Hyoscyamus niger)
+punakoiso (Solanum dulcamara)
+mustakoiso (Solanum nigrum)
+silomustakoiso (Solanum nigrum ssp. nigrum)
+karvamustakoiso (Solanum nigrum ssp. schultesii)
+kehtokoiso (Solanum physalifolium)
+kärsäkoiso (Solanum rostratum)
+tomaatti (Solanum lycopersicum)
+peruna (Solanum tuberosum)
+harakankello (Campanula patula)
+hirvenkello (Campanula cervicaria)
+kiirunankello (Campanula uniflora)
+kissankello (Campanula rotundifolia)
+niittykissankello (Campanula rotundifolia ssp. rotundifolia)
+lapinkissankello (Campanula rotundifolia ssp. gieseckiana)
+tunturikissankello (Campanula rotundifolia ssp. groenlandica)
+kurjenkello (Campanula persicifolia)
+peurankello (Campanula glomerata)
+loistopeurankello (Campanula glomerata 'Superba')
+sammakonkello (Campanula aparinoides)
+ukonkello (Campanula latifolia)
+varsankello (Campanula trachelium)
+vuohenkello (Campanula rapunculoides)
+vaaleatähkämunkki (Phyteuma spicatum)
+tummatähkämunkki (Phyteuma nigrum)
+vuorimunkki (Jasione montana)
+nuottaruoho (Lobelia dortmanna)
+sinilobelia (Lobelia erinus)
+raate (Menyanthes trifoliata)
+keltalammikki eli lammikki (Nymphoides peltata)
+siankärsämö (Achillea millefolium)
+etelänsiankärsämö (Achillea millefolium ssp. millefolium)
+pohjansiankärsämö (Achillea millefolium ssp. sudetica)
+jalokärsämö (Achillea nobilis)
+ojakärsämö (Achillea ptarmica)
+isokärsämö (Achillea salicifolia)
+marunatuoksukki (Ambrosia artemisiifolia)
+sormituoksukki (Ambrosia trifida)
+helminukkajäkkärä (Anaphalis margaritacea)
+tunturikissankäpälä (Antennaria alpina)
+ahokissankäpälä (Antennaria dioica)
+ruijankissankäpälä (Antennaria nordhageniana)
+kaljukissankäpälä (Antennaria porsildii)
+isokissankäpälä (Antennaria villifera)
+peltosauramo (Anthemis arvensis)
+haisusauramo (Anthemis cotula)
+kaakonsauramo (Anthemis ruthenica)
+keltasauramo (Anthemis tinctoria, syn. Cota tinctoria)
+siroarnikki (Arnica angustifolia)
+tunturisiroarnikki eli tunturiarnikki (Arnica angustifolia ssp. alpina)
+aaprottimaruna (Artemisia abrotanum)
+koiruoho eli mali (Artemisia absinthium)
+kesämaruna eli rikkamaruna (Artemisia annua)
+tonavanmaruna (Artemisia austriaca)
+sahamaruna (Artemisia biennis)
+ketomaruna (Artemisia campestris)
+kiiltoketomaruna (Artemisia campestris ssp. campestris)
+perämerenketomaruna eli perämerenmaruna (Artemisia campestris ssp. bottnica)
+rakuuna (Artemisia dracunculus)
+siromaruna (Artemisia scoparia)
+idänmaruna (Artemisia siversiana)
+pujo (Artemisia vulgaris)
+rikkapujo (Artemisia vulgaris var. vulgaris)
+meripujo (Artemisia vulgaris var. coarctata)
+syysasteri (Aster novi-belgii, syn. Symphyotrichum novi-belgii)
+pajuasteri (Aster × salignus, syn. Symphyotrichum × salignum)
+siperianasteri (Aster sibiricus) eli siperiankelloasteri (Eurybia sibirica)
+meriasteri (Aster tripolium, syn. Tripolium pannonicum)
+nurmikaunokainen eli kaunokainen (Bellis perennis)
+nuokkurusokki (Bidens cernua)
+säderusokki (Bidens radiata)
+tummarusokki (Bidens tripartita)
+peltokehäkukka (Calendula arvensis)
+tarhakehäkukka (Calendula officinalis)
+kiinanasteri (Callistephus chinensis)
+isotakiainen (Arctium lappa)
+pikkutakiainen (Arctium minus)
+lehtotakiainen (Arctium nemorosum)
+seittitakiainen (Arctium tomentosum)
+sinipallo-ohdake (Echinops bannaticus)
+harmaapallo-ohdake eli balkaninpallo-ohdake (Echinops exaltatus)
+valkopallo-ohdake (Echinops sphaerocephalus)
+pelto-ohdake (Cirsium arvense)
+rikkapelto-ohdake (Cirsium arvense var. arvense)
+poimupelto-ohdake (Cirsium arvense var. maritimum)
+seittipelto-ohdake (Cirsium arvense var. incanum)
+huopaohdake (Cirsium helenioides)
+keltaohdake (Cirsium oleraceum)
+suo-ohdake (Cirsium palustre)
+piikkiohdake (Cirsium vulgare)
+piikkikarhiainen (Carduus acanthoides)
+kyläkarhiainen (Carduus crispus)
+nuokkukarhiainen (Carduus nutans)
+ketokurho (Carlina vulgaris)
+lännenketokurho eli lännenkurho (Carlina vulgaris ssp. vulgaris)
+idänketokurho (Carlina vulgaris ssp. longifolia) eli idänkurho (Carlina biebersteinii)
+värisaflori (Carthamus tinctorius)
+ruiskaunokki (Centaurea cyanus)
+huopakaunokki eli huoparuusukaunokki (Centaurea dealbata, syn. Psephellus dealbatus)
+harakankaunokki (Centaurea diffusa)
+ahdekaunokki (Centaurea jacea)
+keltakaunokki (Centaurea macrocephala)
+vuorikaunokki (Centaurea montana)
+mustakaunokki (Centaurea nigra)
+nurmikaunokki (Centaurea phrygia)
+idännurmikaunokki (Centaurea phrygia ssp. phrygia)
+lännennurmikaunokki (Centaurea phrygia ssp. pseudophrygia)
+ketokaunokki (Centaurea scabiosa)
+keltaorakaunokki (Centaurea solstitialis)
+sikuri (Cichorium intybus)
+tiikerikaunosilmä (Coreopsis tinctoria)
+punakosmoskukka eli punakosmos (Cosmos bipinnatus)
+piennarkeltto (Crepis biennis)
+hoikkakeltto (Crepis capillaris)
+suokeltto (Crepis paludosa)
+vanakeltto (Crepis praemorsa)
+ketokeltto (Crepis tectorum)
+kallioketokeltto (Crepis tectorum ssp. tectorum)
+pahtaketokeltto eli pahtakeltto (Crepis tectorum ssp. nigrescens)
+pikkuvuohenjuuri (Doronicum columnae)
+kevätvuohenjuuri eli kaukasianvuohenjuuri (Doronicum orientale)
+karvaskallioinen (Erigeron acris)
+ketokarvaskallioinen (Erigeron acris ssp. acris)
+idänkallioinen (Erigeron acris ssp. brachycephalus)
+kalvaskallioinen (Erigeron acris ssp. decoloratus)
+kaljukallioinen (Erigeron acris ssp. droebachiensis)
+pohjankallioinen (Erigeron acris ssp. politus)
+sädekallioinen (Erigeron annuus)
+sopulinkallioinen (Erigeron borealis)
+kanadankoiransilmä (Erigeron canadensis, syn. Conyza canadensis)
+tummakallioinen (Erigeron humilis)
+tunturikallioinen (Erigeron uniflorus)
+rusotunturikallioinen (Erigeron uniflorus ssp. uniflorus)
+villatunturikallioinen (Erigeron uniflorus ssp. eriocephalus)
+rantapunalatva (Eupatorium cannabinum)
+ketotuulenlento (Filago arvensis)
+pikkukutriasteri (Galatella sedifolia)
+tarhasaurikki eli vaalea saurikki (Galinsoga parviflora)
+ripsisaurikki eli tumma saurikki (Galinsoga quadriradiata)
+kruunusuvikakkara eli kruunukakkara eli kruunupäivänkakkara eli vihanneskrysanteemi (Glebionis coronaria)
+keltasuvikakkara eli keltakakkara eli keltapäivänkakkara (Glebionis segetum)
+norjanjäkkärä (Gnaphalium norvegicum, syn. Omalotheca norvegica)
+lumijäkkärä (Gnaphalium supinum, syn. Omalotheca supina)
+ahojäkkärä (Gnaphalium sylvaticum, syn. Omalotheca sylvatica)
+savijäkkärä (Gnaphalium uliginosum)
+peltosavijäkkärä (Gnaphalium uliginosum ssp. uliginosum)
+pohjansavijäkkärä (Gnaphalium uliginosum ssp. pilulare)
+keltiö eli nigerinsiemen (Guizotia abyssinica)
+isoauringonkukka (Helianthus annuus)
+syysauringonkukka (Helianthus pauciflorus)
+soikkoauringonkukka (Helianthus pauciflorus ssp. subrhomboideus)
+pikkuauringonkukka (Helianthus petiolaris)
+maa-artisokka (Helianthus tuberosus)
+karheamuikio eli muikio eli karheakitkerö eli etelänkitkerö (Helminthotheca echioides)
+tunturikeltano (Hieracium alpinum)
+kalevanmustakeltano eli kalevansalokeltano (Hieracium morulum)
+mustakeltano (Hieracium nigrescens)
+tummakalliokeltano (Hieracium argenteum)
+pitkäkalliokeltano (Hieracium norvegicum)
+louhikalliokeltano eli kalliokeltano (Hieracium saxifragum)
+vaaleakalliokeltano (Hieracium schmidtii)
+pörhökalliokeltano eli pörhökeltano (Hieracium schmidtii ssp. residuum)
+sompionsyyskeltano eli sompionkeltano (Hieracium condylodes)
+saurasyyskeltano eli saurakeltano (Hieracium crocatum)
+dovrensyyskeltano (Hieracium dovrense)
+karjalansyyskeltano (Hieracium karelorum)
+härmäsyyskeltano eli härmäkeltano (Hieracium pruiniferum, syn. Hieracium reticulatum)
+sarvitankikeltano eli sarviahokeltano (Hieracium cornigerum)
+ripsitankikeltano (Hieracium crepidioides)
+jokitankikeltano (Hieracium dolabratum)
+harmaatankikeltano (Hieracium godbyense)
+silotankikeltano (Hieracium laevigatum)
+lapintankikeltano (Hieracium lapponicum)
+pohjantankikeltano (Hieracium laterale)
+lounaantankikeltano (Hieracium lineatum, syn. Hieracium lissolepium)
+pellavatankikeltano eli pellavakeltano (Hieracium linifolium)
+ketunsalokeltano eli ketunahokeltano eli ketunkeltano (Hieracium caesiomurorum)
+hurtansalokeltano (Hieracium canipes)
+kaunosalokeltano (Hieracium chlorellum)
+peuransalokeltano (Hieracium chloromaurum)
+kaakonsalokeltano (Hieracium crispulum)
+sääskensalokeltano eli sääskenkeltano (Hieracium diminuens)
+jääränsalokeltano (Hieracium dispansiforme)
+otsonsalokeltano (Hieracium distendens)
+korpinsalokeltano (Hieracium distractum)
+hjeltinsalokeltano (Hieracium hjeltii)
+mustasalokeltano (Hieracium lateriflorum)
+mielikinsalokeltano eli mielikinkeltano (Hieracium lepistoides)
+ilveksensalokeltano (Hieracium multifrons)
+jänönsalokeltano eli jänönkeltano (Hieracium niviferum)
+lehtosalokeltano eli lehtokeltano (Hieracium oistophyllum)
+palettisalokeltano (Hieracium palaeolum)
+varjosalokeltano (Hieracium patale)
+metsonsalokeltano (Hieracium pellucidum)
+tuhkasalokeltano (Hieracium penduliforme)
+tapionsalokeltano eli tapionkeltano (Hieracium pendulum)
+käensalokeltano (Hieracium philanthrax)
+hirvensalokeltano eli hirvenkeltano (Hieracium praetenerum)
+ruotosalokeltano (Hieracium prolixum)
+hipansalokeltano (Hieracium psepharum)
+peikonsalokeltano (Hieracium pseudopellucidum)
+neulasalokeltano (Hieracium stenolepis)
+mäyränsalokeltano eli mäyränkeltano (Hieracium subcaesium)
+lapiosalokeltano (Hieracium subholophyllum)
+kartanosalokeltano (Hieracium sylvularum)
+kolmiosalokeltano eli kolmiokeltano (Hieracium triangulare)
+sarjakeltano (Hieracium umbellatum)
+siniahokeltano eli sinikeltano (Hieracium caesium)
+kaskiahokeltano eli kaskikeltano (Hieracium caespiticola)
+törmäahokeltano eli törmäkeltano (Hieracium coniops)
+ahvenanahokeltano eli ahvenanmaanahokeltano (Hieracium costringens)
+sudenahokeltano eli sudenkeltano (Hieracium coronarium)
+koivuahokeltano (Hieracium diaphanoides)
+vaalea-ahokeltano (Hieracium fulvescens)
+etelänahokeltano (Hieracium hyalinellum)
+kärpänahokeltano eli kärpänkeltano (Hieracium improvisum)
+uudenmaanahokeltano (Hieracium inpunctatum)
+haka-ahokeltano eli hakamaakeltano (Hieracium incurrens)
+rinneahokeltano (Hieracium internatum)
+kuusamonahokeltano eli kuusamonkeltano (Hieracium kuusamoense)
+maksa-ahokeltano eli maksakeltano eli heloahokeltano (Hieracium laeticolor)
+lyijyahokeltano (Hieracium plumbeum)
+kivikkoahokeltano eli kivikkokeltano (Hieracium ravidum)
+siléninahokeltano eli siléninkeltano (Hieracium silenii)
+kaira-ahokeltano eli kairankeltano (Hieracium subarctoum)
+myyränahokeltano eli myyränsalokeltano eli myyränkeltano (Hieracium subpellucidum)
+peiponahokeltano (Hieracium subrigidum)
+kyynahokeltano (Hieracium subsimile)
+katveahokeltano eli katvekeltano (Hieracium umbricola)
+piennarahokeltano (Hieracium vulgatum)
+vainionahokeltano eli vainionkeltano (Hieracium wainioi)
+harjuhäränsilmä eli häränsilmä (Hypochaeris maculata)
+liuskahäränsilmä eli liuskalehtihäränsilmä (Hypochaeris radicata)
+isohirvenjuuri (Inula helenium)
+vanukehirvenjuuri (Inula britannica, syn. Pentanema britannicum)
+rantahirvenjuuri (Inula salicina, syn. Pentanema salinicum)
+karheaiiva eli sahaiiva (Iva xanthiifolia, syn. Euphrosyne xanthiifolia)
+pohjansinivalvatti (Lactuca alpina, syn. Cicerbita alpina)
+isosinivalvatti eli tarhasinivalvatti (Lactuca macrophylla)
+uralinisosinivalvatti (Lactuca macrophylla ssp. uralensis)
+jänönsalaatti (Lactuca muralis, syn. Mycelis muralis)
+ruokasalaatti eli salaatti (Lactuca sativa)
+piikkisalaatti (Lactuca serriola)
+siperiansinivalvatti (Lactuca sibirica)
+tataarisinivalvatti (Lactuca tatarica)
+linnunkaali (Lapsana communis)
+syysmaitiainen (Leontodon autumnalis, syn. Scorzoneroides autumnalis)
+silosyysmaitiainen (Leontodon autumnalis var. autumnalis, syn. Scorzoneroides autumnalis var. autumnalis)
+pörrösyysmaitiainen (Leontodon autumnalis var. asperior, syn. Scorzoneroides autumnalis var. keretinus)
+karvasyysmaitiainen (Leontodon autumnalis var. pratensis, syn. Scorzoneroides autumnalis var. pratensis)
+merisyysmaitiainen (Leontodon autumnalis var. salinus, syn. Scorzoneroides autumnalis var. salina)
+kesämaitiainen (Leontodon hispidus)
+juovamaitiainen (Leontodon saxatilis)
+ahopäivänkakkara eli päivänkakkara (Leucanthemum vulgare)
+isopäivänkakkara (Leucanthemum × superbum)
+kallionauhus (Ligularia dentata)
+valtikkanauhus (Ligularia przewalskii)
+aurinkonauhus (Ligularia stenocephala)
+kamomillasaunio (Matricaria chamomilla)
+pihasaunio (Matricaria discoidea)
+peikonkakkara (Mauranthemum paludosum)
+okakruunuohdake (Onopordum acanthium)
+kolmiokakalia eli kakalia eli keihäsnauhus (Parasenecio hastatus)
+pohjanruttojuuri (Petasites frigidus)
+etelänruttojuuri (Petasites hybridus)
+(Petasites japonicus)
+japaninruttojuuri (Petasites japonicus ssp. giganteus)
+rantaruttojuuri (Petasites spurius)
+keltanokitkerö (Picris hieracioides)
+oranssivoikeltano eli oranssikeltano (Pilosella aurantiaca)
+niittyvoikeltano eli niittykeltano (Pilosella caespitosa)
+korvavoikeltano eli korvakeltano (Pilosella lactucella)
+huopavoikeltano eli huopakeltano (Pilosella officinarum)
+mäkivoikeltano eli mäkikeltano (Pilosella peleteriana)
+ahdevoikeltano eli ahdekeltano (Pilosella praealta)
+rusovoikeltano eli rusokeltano (Pilosella × blyttiana)
+kerävoikeltano (Pilosella × densiflora)
+norrlininvoikeltano eli norrlininkeltano (Pilosella × dimorphoides)
+ruotsinvoikeltano eli ruotsinkeltano (Pilosella × floribunda, syn. Pilosella suecica)
+tiuhavoikeltano eli tiheäpääkeltano (Pilosella × glomerata)
+hiirenvoikeltano (Pilosella × piloselliflora)
+ketovoikeltano (Pilosella × septentrionalis)
+kesäpäivänhattu eli karheapäivänhattu (Rudbeckia hirta)
+syyspäivänhattu eli kultapäivänhattu (Rudbeckia laciniata)
+tunturilääte eli lääte (Saussurea alpina)
+mustajuuri (Sxorzonera hispanica)
+harjusikojuuri (Scorzonera humilis)
+ojavillakko (Senecio aquaticus, syn. Jacobaea aquatica)
+hamppuvillakko (Senecio cannabifolius, syn. Jacobaea cannabifolia)
+idänvillakko (Senecio dubitabilis)
+buurivillakko (Senecio inaequidens)
+jaakonvillakko (Senecio jacobaea, syn. Jacobaea vulgaris)
+kakkaravillakko (Senecio leucanthemifolius)
+kevätkakkaravillakko (Senecio leucanthemifolius ssp. vernalis) eli kevätvillakko (Senecio vernalis)
+puistovillakko eli jokivillakko (Senecio sarracenicus)
+rikkavillakko (Senecio squalidus)
+kalliovillakko (Senecio sylvaticus)
+tahmavillakko (Senecio viscosus)
+peltovillakko (Senecio vulgaris)
+huiskunauhus (Sinacalia tangutica)
+korkeapiisku (Solidago altissima)
+kanadanpiisku (Solidago canadensis)
+isopiisku (Solidago gigantea)
+kultapiisku (Solidago virgaurea)
+metsäkultapiisku (Solidago virgaurea ssp. virgaurea)
+pohjankultapiisku (Solidago virgaurea ssp. minuta, syn. Solidago virgaurea ssp. lapponica)
+peltovalvatti (Sonchus arvensis)
+rikkapeltovalvatti (Sonchus arvensis var. arvensis)
+meripeltovalvatti (Sonchus arvensis var. maritimus)
+otavalvatti (Sonchus asper)
+viherotavalvatti (Sonchus asper ssp. asper)
+nirhaotavalvatti (Sonchus asper ssp. asper var. asper)
+pisto-otavalvatti (Sonchus asper ssp. asper var. pungens)
+kaalivalvatti (Sonchus oleraceus)
+reunuspietaryrtti eli reunuspäivänkakkara (Tanacetum parthenium)
+pietaryrtti (Tanacetum vulgare)
+itämerenvoikukka (Taraxacum balticum)
+jemtlanninvoikukka (Taraxacum crocodes)
+merivoikukka (Taraxacum egregium)
+suomenlahdenvoikukka (Taraxacum fennobalticum)
+ruotsinvoikukka (Taraxacum suecicum)
+aurinkovoikukka (Taraxacum dissimile)
+sirppivoikukka (Taraxacum falcatum)
+tiilivoikukka (Taraxacum fulvum)
+harjuvoikukka (Taraxacum heterophyllum)
+kannaksenvoikukka (Taraxacum isthmicola)
+päärmevoikukka (Taraxacum limbatum)
+(Taraxacum marginatum)
+pilttivoikukka (Taraxacum microlobum)
+ruskovoikukka (Taraxacum proximum)
+rubiinivoikukka (Taraxacum rubicundum)
+skoonenvoikukka (Taraxacum scanicum)
+tupsuvoikukka (Taraxacum taeniatum)
+hentosuomuvoikukka (Taraxacum tenellisquameum)
+kynsivoikukka (Taraxacum ungulatum)
+smoolanninvoikukka (Taraxacum nordstedtii)
+pallevoikukka (Taraxacum euryphyllum)
+gelertinvoikukka (Taraxacum gelertii)
+laikkuvoikukka (Taraxacum maculigerum)
+täplävoikukka (Taraxacum naevosum)
+ripsuvoikukka (Taraxacum opeatolobum)
+iltavoikukka (Taraxacum praestans)
+ahmanvoikukka (Taraxacum purpundens)
+meänvoikukka (Taraxacum aclidiforme)
+linnunjalkavoikukka (Taraxacum acroglossum)
+rihlavoikukka (Taraxacum aequilobum)
+siipivoikukka (Taraxacum alatum)
+uljasvoikukka (Taraxacum altissimum)
+hapsuvoikukka (Taraxacum amplum)
+pyörövoikukka (Taraxacum ancistrolobum)
+kaitasuomuvoikukka (Taraxacum angustisquameum)
+punasuonivoikukka (Taraxacum arrhenii)
+sirovoikukka (Taraxacum borgvallii)
+kielivoikukka (Taraxacum contractum)
+herttavoikukka (Taraxacum cordatum)
+(Taraxacum croceiflorum)
+(Taraxacum cyanolepis)
+harvaliuskavoikukka (Taraxacum diastematicum)
+raitavoikukka (Taraxacum dilatatum)
+vihannesvoikukka (Taraxacum ekmanii)
+(Taraxacum expallidiforme)
+tervavoikukka (Taraxacum fasciatum)
+brunonvoikukka (Taraxacum florstroemii)
+(Taraxacum gibbiferum)
+halkiovoikukka (Taraxacum glossocentrum)
+riepuvoikukka (Taraxacum glossodon)
+kustaanvoikukka (Taraxacum gustavianum)
+myötäsuomuvoikukka (Taraxacum haptolepium)
+hilkkavoikukka (Taraxacum hemicyclum)
+tiheäliuskavoikukka (Taraxacum huelphersianum)
+kaakonvoikukka (Taraxacum idiomorphum)
+(Taraxacum imitans)
+jättivoikukka (Taraxacum ingens)
+katkovoikukka (Taraxacum interruptum)
+lainevoikukka (Taraxacum interveniens)
+(Taraxacum involucratum)
+(Taraxacum kjellmanii)
+kaitalevoikukka (Taraxacum laciniosifrons)
+(Taraxacum laciniosum)
+leveävoikukka (Taraxacum latissimum)
+lokinvoikukka (Taraxacum lingulatum)
+kurevoikukka (Taraxacum longisquameum)
+hohdevoikukka (Taraxacum lucescens)
+sulkacoikukka (Taraxacum multilobum)
+peikonvoikukka (Taraxacum obiliquilobum)
+tylppövoikukka (Taraxacum obtusulum)
+(Taraxacum pallescens)
+vaaleajalkavoikukka eli utuvoikukka (Taraxacum pallidipes)
+tipsuvoikukka (Taraxacum palmgrenii)
+(Taraxacum patens)
+kampavoikukka (Taraxacum pectinatiforme)
+tummakehtovoikukka (Taraxacum pettersonii)
+narrivoikukka (Taraxacum piceatum)
+poimuvoikukka (Taraxacum planum)
+hammasvoikukka (Taraxacum polyodon)
+(Taraxacum porrigens)
+(Taraxacum pulcherrimum)
+mielonvoikukka (Taraxacum puolannei)
+purppuravoikukka (Taraxacum purpureum)
+artturinvoikukka (Taraxacum railonsalae)
+kaartovoikukka (Taraxacum recurvum)
+kallenvoikukka (Taraxacum sahlinii)
+(Taraxacum sellandii)
+kupuvoikukka (Taraxacum semiglobosum)
+(Taraxacum speciosum)
+hugonvoikukka (Taraxacum stenoglossum)
+tornivoikukka (Taraxacum stenoschistum)
+(Taraxacum subcanescens)
+opaalivoikukka (Taraxacum subhuelphersianum)
+haileavoikukka (Taraxacum sublaeticolor)
+hoikkavoikukka (Taraxacum tanyphyllum)
+kolmiliuskavoikukka (Taraxacum trilobatum)
+pisaravoikukka (Taraxacum tumentilobum)
+kultavoikukka (Taraxacum xanthostigma)
+kalvovoikukka (Taraxacum boreicedens)
+kirsivoikukka (Taraxacum ceratolobum)
+(Taraxacum croceum)
+puikovoikukka (Taraxacum oreinopis)
+poronvoikukka (Taraxacum rangiferinum)
+nuolivoikukka (Taraxacum sagittifolium)
+kuultovoikukka (Taraxacum subpellucidum)
+venevoikukka (Taraxacum cymbifolium)
+tähtivoikukka (Taraxacum tenebricans)
+kultaemivoikukka (Taraxacum chrysostylum)
+kierrevoikukka (Taraxacum cochleatum)
+lehtovoikukka (Taraxacum crassipes)
+kypärävoikukka (Taraxacum galeatum)
+nukkavoikukka (Taraxacum hirsuticaule)
+kuusamonvoikukka (Taraxacum kuusamoense)
+peitsivoikukka (Taraxacum macrocentrum)
+sahavoikukka (Taraxacum perattenuatum)
+juovavoikukka (Taraxacum rubrolineatum)
+länsipohjanvoikukka (Taraxacum vestrobottnicum)
+salmiakkivoikukka (Taraxacum acutidens)
+nokkavoikukka (Taraxacum apiculatum)
+hiilivoikukka (Taraxacum atricapillum)
+pystyvoikukka (Taraxacum biformatum)
+inarinvoikukka (Taraxacum boreiforme)
+taigavoikukka (Taraxacum boreum)
+mätäsvoikukka (Taraxacum caespitans)
+kouruvoikukka (Taraxacum canaliculatum)
+harppuunavoikukka (Taraxacum canorubens)
+tahravoikukka (Taraxacum guttulatum)
+karjalanvoikukka (Taraxacum karelicum)
+naperovoikukka (Taraxacum laceratum)
+rantaniittyvoikukka (Taraxacum litorale)
+lohjanvoikukka (Taraxacum lojoënse)
+askelvoikukka (Taraxacum melanostigma)
+untuvavoikukka (Taraxacum mucronatum)
+ostenfeldinvoikukka (Taraxacum ostenfeldii)
+koukkuvoikukka (Taraxacum oxylobium)
+(Taraxacum pallidulum)
+sutivoikukka (Taraxacum penicilliforme)
+kevätvoikukka (Taraxacum praecox)
+sysivoikukka (Taraxacum pullum)
+(Taraxacum recalense)
+porrasvoikukka (Taraxacum scalare)
+pohjanvoikukka (Taraxacum septentrionale)
+räiskevoikukka (Taraxacum spilophylloides)
+pilkkuvoikukka (Taraxacum submaculosum)
+pensselivoikukka (Taraxacum subpenicilliforme)
+kolmiovoikukka (Taraxacum triangulare)
+suruvoikukka (Taraxacum fusciflorum)
+lehvävoikukka (Taraxacum hamatiforme)
+niittyvoikukka (Taraxacum hamatum)
+gunnarinvoikukka (Taraxacum marklundii)
+leukuvoikukka (Taraxacum pseudohamatum)
+hjeltinvoikukka (Taraxacum hjeltii)
+viehkovoikukka (Taraxacum humile)
+ruijanvoikukka (Taraxacum norvegicum)
+ruusukevoikukka (Taraxacum simulum)
+tornionlapinvoikukka (Taraxacum tornense)
+auringontähti (Telekia speciosa)
+piennarpukinparta eli pukinparta (Tragopogon pratensis)
+isopukinparta (Tragopogon pratensis ssp. pratensis)
+idänpukinparta (Tragopogon pratensis ssp. orientalis)
+peltosaunio (Tripleurospermum inodorum)
+merisaunio (Tripleurospermum maritimum)
+etelänmerisaunio (Tripleurospermum maritimum ssp. maritimum)
+ruijanmerisaunio eli ruijansaunio (Tripleurospermum maritimum ssp. phaeocephalum)
+pohjanmerisaunio eli pohjansaunio (Tripleurospermum maritimum ssp. subpolare)
+piennarsaunio (Tripleurospermum inodorum × maritimum)
+leskenlehti (Tussilago farfara)
+piikkisappiruoho (Xanthium spinosum)
+karheasappiruoho (Xanthium strumarium)
+tummasappiruoho (Xanthium strumarium ssp. italicum)
+tesmayrtti (Adoxa moschatellina)
+ruohoselja (Sambucus ebulus)
+mustaselja (Sambucus nigra)
+terttuselja (Sambucus racemosa)
+koiranheisi (Viburnum opulus)
+hammasheisi (Viburnum dentatum)
+villaheisi (Viburnum lantana)
+kiiltoheisi (Viburnum lentago)
+keltavuohenkuusama (Diervilla lonicera)
+sinikuusama (Lonicera caerulea)
+rusokuusama (Lonicera tatarica)
+lehtokuusama (Lonicera xylosteum)
+tuoksuköynnöskuusama (Lonicera caprifolium)
+mustakuusama (Lonicera nigra)
+ruotsinköynnöskuusama (Lonicera periclymenum)
+sirokuusama (Lonicera × bella)
+perhokuusama (Lonicera × notha)
+valkolumimarja (Symphoricarpos albus var. laevigatus)
+vanamo (Linnaea borealis)
+rohtovirmajuuri (Valeriana officinalis)
+lehtovirmajuuri (Valeriana sambucifolia)
+luhtavirmajuuri (Valeriana sambucifolia ssp. sambucifolia)
+merivirmajuuri (Valeriana sambucifolia ssp. salina)
+rantavuonankaali (Valerianella locusta)
+rikkavuonankaali (Valerianella dentata)
+uurrevuonankaali (Valerianella rimosa)
+talkavuonankaali (Valerianella carinata)
+ketoruusuruoho eli ruusuruoho (Knautia arvensis)
+kivikkotörmäkukka (Scabiosa columbaria)
+keltatörmäkukka (Scabiosa ochroleuca)
+purtojuuri (Succisa pratensis)
+sinipiikkiputki (Eryngium planum)
+haavayrtti (Sanicula europaea)
+isopukinjuuri (Pimpinella major)
+ahopukinjuuri eli pukinjuuri (Pimpinella saxifraga)
+väinönputki (Angelica archangelica)
+pohjanväinönputki (Angelica archangelica ssp. archangelica)
+meriväinönputki eli meriputki (Angelica archangelica ssp. litoralis)
+karhunputki (Angelica sylvestris)
+niittyhirvenputki eli hirvenputki (Seseli libanotis)
+luhtasuoputki eli suoputki (Peucedanum palustre)
+kaukasianjättiputki (Heracleum mantegazzianum)
+persianjättiputki (Heracleum persicum)
+armenianjättiputki (Heracleum sosnowskyi)
+etelänukonputki eli ukonputki (Heracleum sphondylium)
+idänukonputki (Heracleum sibiricum, syn. Heracleum sphondylium ssp. sibiricum)
+kultakirveli (Chaerophyllum aureum)
+karvakirveli (Chaerophyllum hirsutum)
+idänkirveli (Chaerophyllum prescottii)
+myrkkykirveli (Chaerophyllum temulum)
+merirantaputki eli rantaputki (Ligusticum scothicum)
+vuohenputki (Aegopodium podagraria)
+hukanputki (Aethusa cynapium)
+rikkahukanputki (Aethusa cynapium var. cynapium)
+pikkuhukanputki (Aethusa cynapium var. agrestis)
+tarhahukanputki (Aethusa cynapium var. domestica)
+isosudenporkkana (Ammi majus)
+maustetilli eli tilli (Anethum graveolens)
+koiranputki (Anthriscus sylvestris)
+selleri (Apium graveolens)
+isotähtiputki (Astrantia major)
+silopoilikki (Bifora radians)
+maustekumina eli kumina (Carum carvi)
+myrkkykeiso (Cicuta virosa)
+rantamyrkkykeiso (Cicuta virosa var. virosa)
+kaitamyrkkykeiso (Cicuta virosa var. angustifolia)
+myrkkykatko (Conium maculatum)
+maustekorianteri (Coriandrum sativum)
+porkkana (Daucus carota)
+rikkaporkkana (Daucus carota ssp. carota)
+ruokaporkkana (Daucus carota ssp. sativus)
+liperi (Levisticum officinale)
+saksankirveli (Myrrhis odorata)
+liejupahaputki (Oenanthe aquatica)
+palsternakka (Pastinaca sativa)
+persilja (Petroselinum crispum)
+harjasärmäputki (Selinum carvifolia)
+sorsanputki (Sium latifolium)
+punakatko (Torilis japonica)
+lapapurho (Turgenia latifolia)

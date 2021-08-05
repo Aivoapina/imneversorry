@@ -1,5 +1,8 @@
 .vscode
 
+.env
+.venv
+
 env.cfg
 
 bot.db

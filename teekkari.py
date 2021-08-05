@@ -15,6 +15,7 @@ import json
 import hashlib
 import emoji
 from emoji import unicode_codes
+from kasvinimi import findKasvinimi
 
 class Teekkari:
     def __init__(self):
@@ -30,6 +31,7 @@ class Teekkari:
             'kalanimi': self.getKalanimi,
             'addsikulla': self.banHammer,
             'sotanimi': self.getSotanimi,
+            'kasvinimi': self.getKasvinimi,
             'sukunimi': self.getSukunimi,
             'pottiin': self.getPottiin,
         }
@@ -51,6 +53,7 @@ class Teekkari:
         self.linnut = db.readLinnut()
         self.sotilasarvot = db.readSotilasarvot()
         self.sotilasnimet = db.readSotilasnimet()
+        self.kasvinimet = db.readKasvinimet()
         self.ennustukset = db.readEnnustukset()
         self.nakutukset = db.readNakutukset()
         self.lastVitun = {}
@@ -148,6 +151,30 @@ class Teekkari:
                     nimi = update.message.from_user.first_name
         sotaNimi = arvo + ' ' + nimi
         context.bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
+
+    def getKasvinimi(self, update: Update, context: CallbackContext):
+        if len(context.args) > 0:
+            name = " ".join(context.args)
+            if len(name) > 32:
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=":D")
+                return
+            kasviNimi = findKasvinimi(self.kasvinimet,
+                                      first_name=name, last_name=None)
+        elif update.message.from_user:
+            if update.message.from_user.first_name:
+                first_name = update.message.from_user.first_name
+            else:
+                first_name = update.message.from_user.username
+            if update.message.from_user.last_name:
+                last_name = update.message.from_user.last_name
+            else:
+                last_name = None
+            kasviNimi = findKasvinimi(self.kasvinimet,
+                                      first_name=first_name,
+                                      last_name=last_name)
+        else:
+            return
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
 
     def getNakuttaa(self, update: Update, context: CallbackContext):
         if random.randint(0, 100) == 0:
@@ -326,6 +353,8 @@ class Teekkari:
                 self.getMoponimi(update, context)
             elif re.match(r'^/sotanimi', msg.text.lower()):
                 self.getSotanimi(update, context)
+            elif re.match(r'^/kasvinimi', msg.text.lower()):
+                self.getKasvinimi(update, context)
             elif re.match(r'^/sukunimi', msg.text.lower()):
                 self.getSukunimi(update, context)
             elif re.match(r'.*[tT]ek.*', msg.text):
