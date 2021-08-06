@@ -62,6 +62,7 @@ class Teekkari:
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
         self.lastPottiin = {}
+        self.hakemusNerfs = {}
 
     def getCommands(self):
         return self.commands
@@ -93,7 +94,15 @@ class Teekkari:
             txtTapanSut = 'tapan sut'
             txtTapanKaikki = 'TAPAN KAIKKI'
 
-        if random.randint(0, 9) == 0:
+        nerfPass = True
+        buffPass = False
+        if update.message.from_user.id in self.hakemusNerfs:
+            nerfValue = self.hakemusNerfs[update.message.from_user.id]
+            if random.randint(0, 99 < abs(nerfValue):
+                nerfPass = nerfValue < 0
+                buffPass = nerfPass
+
+        if random.randint(0, 9) == 0 and nerfPass or buffPass:
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
             else:
