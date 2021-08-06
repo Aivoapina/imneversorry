@@ -62,7 +62,7 @@ class Teekkari:
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
         self.lastPottiin = {}
-        self.hakemusNerfs = {}
+        self.hakemusNerfs = {153013548:-5}
 
     def getCommands(self):
         return self.commands
