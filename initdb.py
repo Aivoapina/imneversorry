@@ -89,6 +89,11 @@ def initdb(db='bot.db'):
         'created date,'
         'primary key(tag, channel, target))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Korttiselitykset('
+        'kortti text unique,'
+        'selitys text,'
+        'rev text)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Urheilulajit('
                   'id INTEGER PRIMARY KEY AUTOINCREMENT,'
                   'nimi TEXT UNIQUE,'
@@ -105,6 +110,8 @@ def initdb(db='bot.db'):
                   'uid, chatid, km, date, pisteet, lajinnimi) '
                   'AS SELECT u.uid, u.chatid, u.km, u.date, u.km * l.kerroin, l.nimi '
                       'FROM Urheilut as u JOIN Urheilulajit AS l ON u.type = l.id')
+
+
 
     conn.commit()
     conn.close()
