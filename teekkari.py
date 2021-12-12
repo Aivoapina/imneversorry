@@ -2,7 +2,6 @@
 # Disable pylint for this file (please use pylint, it spots errors/unsafe code pretty well)
 # pylint: disable=unsubscriptable-object
 
-from queue import Empty
 from telegram import Update
 from telegram.ext import CallbackContext
 import requests
