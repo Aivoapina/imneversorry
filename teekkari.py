@@ -58,7 +58,6 @@ class Teekkari:
         self.kasvinimet = db.readKasvinimet()
         self.ennustukset = db.readEnnustukset()
         self.nakutukset = db.readNakutukset()
-        self.selitykset = db.readSelitykset()
         self.lastVitun = {}
         self.nextUutine = 0
         self.lastUutineUpdate = 0
@@ -318,20 +317,25 @@ class Teekkari:
             context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
     def getTarot(self, update: Update, context: CallbackContext):
-        size = int(update.message.text.lower().split(' ')[1])
+        try:
+            size = int(update.message.text.lower().split(' ')[1])
+        except ValueError :
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=":--D")
+            return
+
         if size < 1 or size > 78:
             context.bot.sendMessage(chat_id=update.message.chat_id, text=":--D")
             return
         image_file = get_reading(size)
+        image_file.seek(0)
         if size > 10:
             context.bot.sendDocument(chat_id=update.message.chat_id, document=open(image_file.name, 'rb'))
         else:
             context.bot.send_photo(chat_id=update.message.chat_id, photo=open(image_file.name, 'rb'))
         image_file.close()
-        os.unlink(image_file.name)
 
     def getReading(self, update: Update, context: CallbackContext):
-        message = explain_card(update.message.text.lower(), self.selitykset)
+        message = explain_card(update.message.text.lower())
         if message != "":
             context.bot.sendMessage(chat_id=update.message.chat_id, text=message)
                 
