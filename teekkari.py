@@ -314,9 +314,6 @@ class Teekkari:
             self.lastPottiin[userId] = now
             context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
-
-                
-
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
