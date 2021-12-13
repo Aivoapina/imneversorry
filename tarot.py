@@ -85,7 +85,6 @@ class Tarot:
         image_file.close()
 
     def getReading(self, update: Update, context: CallbackContext):
-        print(update.message.text.lower())
         message = self.explain_card(update.message.text.lower())
         if message != "":
             context.bot.sendMessage(chat_id=update.message.chat_id, text=message)
