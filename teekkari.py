@@ -14,10 +14,8 @@ import datetime
 import json
 import hashlib
 import emoji
-import os
 from emoji import unicode_codes
 from kasvinimi import findKasvinimi
-from tarot import explain_card, get_reading
 
 class Teekkari:
     def __init__(self):
@@ -316,28 +314,7 @@ class Teekkari:
             self.lastPottiin[userId] = now
             context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
-    def getTarot(self, update: Update, context: CallbackContext):
-        try:
-            size = int(update.message.text.lower().split(' ')[1])
-        except ValueError :
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=":--D")
-            return
 
-        if size < 1 or size > 78:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=":--D")
-            return
-        image_file = get_reading(size)
-        image_file.seek(0)
-        if size > 10:
-            context.bot.sendDocument(chat_id=update.message.chat_id, document=open(image_file.name, 'rb'))
-        else:
-            context.bot.send_photo(chat_id=update.message.chat_id, photo=open(image_file.name, 'rb'))
-        image_file.close()
-
-    def getReading(self, update: Update, context: CallbackContext):
-        message = explain_card(update.message.text.lower())
-        if message != "":
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=message)
                 
 
     def banHammer(self, update: Update, context: CallbackContext):
@@ -395,7 +372,3 @@ class Teekkari:
                 self.getNakuttaa(update, context)
             elif re.match(r'^/pottiin', msg.text.lower()):
                 self.getPottiin(update, context)
-            elif re.match(r'^/tarot [0-9]+(?!\S)', msg.text.lower()):
-                self.getTarot(update, context)
-            elif "selitä" in msg.text.lower() or "selitys" in msg.text.lower():
-                self.getReading(update, context)
