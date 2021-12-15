@@ -266,3 +266,9 @@ def lisaaUrheilulaji(nimi, kerroin):
     with cursor() as cur:
         cur.execute("INSERT INTO Urheilulajit (nimi, kerroin) VALUES (?, ?) ON CONFLICT (nimi) DO UPDATE SET kerroin = ?",
             (nimi, kerroin, kerroin))
+
+def readSelitykset():
+    with cursor() as cur:
+        cur.execute('SELECT kortti, selitys, rev from Korttiselitykset')
+        rows = cur.fetchall()
+        return (rows)
