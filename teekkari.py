@@ -34,6 +34,7 @@ class Teekkari:
             'kasvinimi': self.getKasvinimi,
             'sukunimi': self.getSukunimi,
             'pottiin': self.getPottiin,
+            'kanye': self.getKanye
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -62,6 +63,7 @@ class Teekkari:
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
         self.lastPottiin = {}
+        self.kanyeRest = 'https://api.kanye.rest/'
 
     def getCommands(self):
         return self.commands
@@ -314,6 +316,11 @@ class Teekkari:
             self.lastPottiin[userId] = now
             context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
+    def getKanye(self, update: Update, context: CallbackContext):
+        r = requests.get(self.kanyeRest)
+        kanye = r.json()["quote"]
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
+
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -369,3 +376,5 @@ class Teekkari:
                 self.getNakuttaa(update, context)
             elif re.match(r'^/pottiin', msg.text.lower()):
                 self.getPottiin(update, context)
+            elif re.match(r'^/kanye', msg.text.lower()):
+                self.getKanye(update, context)
