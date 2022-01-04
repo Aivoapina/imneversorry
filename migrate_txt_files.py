@@ -13,6 +13,13 @@ for line in fs.read().splitlines():
 
 fs.close()
 
+fs = open('resources/icd_fxx.txt', 'r', encoding='utf-8')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO DiagnoosiFxx(diagnoosi_fxx) values(?)", (line,))
+
+fs.close()
+
 fs = open('resources/viisaudet.txt', 'r', encoding='utf-8')
 
 for line in fs.read().splitlines():

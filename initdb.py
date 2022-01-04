@@ -45,6 +45,9 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Diagnoosi('
         'diagnoosi text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS DiagnoosiFxx('
+        'diagnoosi_fxx text)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Maito('
         'maito text)')
 

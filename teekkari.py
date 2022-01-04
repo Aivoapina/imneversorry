@@ -25,6 +25,7 @@ class Teekkari:
             'hakemus': self.handleHakemus,
             'pekkauotila': self.getVittuilu,
             'diagnoosi': self.getDiagnoosi,
+            'diafnoosi': self.getDiagnoosiFxx,
             'maitonimi': self.getMaitonimi,
             'helveten' : self.getHelveten,
             'pizza': self.getPizza,
@@ -45,6 +46,7 @@ class Teekkari:
         self.viisaudet = db.readViisaudet()
         self.sanat = db.readSanat()
         self.diagnoosit = db.readDiagnoosit()
+        self.diagnoositFxx = db.readDiagnoositFxx()
         self.maidot = db.readMaidot()
         self.nimet = db.readNimet()
         self.kalat = db.readKalat()
@@ -125,6 +127,9 @@ class Teekkari:
 
     def getDiagnoosi(self, update: Update, context: CallbackContext):
         context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+
+    def getDiagnoosiFxx(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoositFxx, 1)[0][0])
 
     def getMaitonimi(self, update: Update, context: CallbackContext):
         maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
@@ -340,6 +345,8 @@ class Teekkari:
                 self.handleHakemus(update, context)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(update, context)
+            elif 'diafno' in msg.text.lower():
+                self.getDiagnoosiFxx(update, context)
             elif 'horoskoop' in msg.text.lower():
                 self.getEnnustus(update, context)
             elif 'uutine' in msg.text.lower():

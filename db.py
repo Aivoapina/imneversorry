@@ -123,6 +123,12 @@ def readDiagnoosit():
         rows = cur.fetchall()
         return set(rows)
 
+def readDiagnoositFxx():
+    with cursor() as cur:
+        cur.execute('SELECT diagnoosi_fxx from DiagnoosiFxx')
+        rows = cur.fetchall()
+        return set(rows)
+
 def readMaidot():
     with cursor() as cur:
         cur.execute('SELECT maito from Maito')

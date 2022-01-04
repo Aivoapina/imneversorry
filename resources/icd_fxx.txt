@@ -1,0 +1,964 @@
+Alzheimerin tautiin liittyvä dementia
+Dementia
+Elimelliset aivo-oireyhtymät
+Mielenterveyden ja käyttäytymisen häiriöt
+Alzheimerin tautiin liittyvä varhain alkava dementia
+Alzheimerin tautiin liittyvä varhain alkava dementia   ilman lisäoireita
+Alzheimerin tautiin liittyvä varhain alkava dementia   ilman lisäoireita
+Alzheimerin tautiin liittyvä varhain alkava dementia   muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Alzheimerin tautiin liittyvä varhain alkava dementia   muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Alzheimerin tautiin liittyvä varhain alkava dementia   muita liitännäisoireita, pääasiassa masennusoireita
+Alzheimerin tautiin liittyvä varhain alkava dementia   muita sekamuotoisia liitännäisoireita
+Alzheimerin tautiin liittyvä varhain alkava dementia   ei tietoa liitännäisoireita
+Alzheimerin tautiin liittyvä myöhään alkava dementia
+Alzheimerin tautiin liittyvä myöhään alkava dementia  ilman lisäoireita
+Alzheimerin tautiin liittyvä myöhään alkava dementia  ilman lisäoireita
+Alzheimerin tautiin liittyvä myöhään alkava dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Alzheimerin tautiin liittyvä myöhään alkava dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Alzheimerin tautiin liittyvä myöhään alkava dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Alzheimerin tautiin liittyvä myöhään alkava dementia  muita sekamuotoisia liitännäisoireita
+Alzheimerin tautiin liittyvä myöhään alkava dementia   ei tietoa liitännäisoireista
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia  ilman lisäoireita
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia  ilman lisäoireita
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia   muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia   muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia   muita liitännäisoireita, pääasiassa masennusoireita
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia   muita sekamuotoisia liitännäisoireita
+Alzheimerin tautiin liittyvä epätyypillinen tai sekatyyppinen dementia  ei tietoa liitännäisoireista
+Määrittämätön Alzheimerin tautiin liittyvä dementia
+Verisuoniperäinen dementia
+Akuutisti alkava verisuoniperäinen dementia
+Moni-infarktidementia
+Moni-infarktidementia  ilman lisäoireita
+Moni-infarktidementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Moni-infarktidementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Moni-infarktidementia  muita liitännäisoireita, pääasiassa masennusoireita
+Moni-infarktidementia  muita sekamuotoisia liitännäisoireita
+Moni-infarktidementia  ei tietoa liitännäisoireista
+Subkortikaalinen verisuoniperäinen dementia
+Subkortikaalinen verisuoniperäinen dementia  ilman lisäoireita
+Subkortikaalinen verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Subkortikaalinen verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Subkortikaalinen verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Subkortikaalinen verisuoniperäinen dementia  muita sekamuotoisia liitännäisoireita
+Subkortikaalinen verisuoniperäinen dementia  ei tietoa liitännäisoireista
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  ilman lisäoireita
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  muita sekamuotoisia liitännäisoireita
+Sekamuotoinen (kortikaalinen ja subkortikaalinen) verisuoniperäinen dementia  ei tietoa liitännäisoireista
+Muu verisuoniperäinen dementia
+Muu verisuoniperäinen dementia  ilman lisäoireita
+Muu verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Muu verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Muu verisuoniperäinen dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Muu verisuoniperäinen dementia  sekamuotoisia liitännäisoireita
+Muu verisuoniperäinen dementia  ei tietoa liitännäisoireista
+Määrittämätön verisuoniperäinen dementia
+Muualla luokitettuihin muihin sairauksiin liittyvä dementia
+Pickin tautiin liittyvä dementia
+Pickin tautiin liittyvä dementia  ilman lisäoireita
+Pickin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Pickin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Pickin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Pickin tautiin liittyvä dementia  sekatyypin liitännäisoireita
+Pickin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Pickin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Creutzfeldt-Jakobin tautiin liittyvä dementia
+Creutzfeldt-Jakobin tautiin liittyvä dementia  ilman lisäoireita
+Creutzfeldt-Jakobin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Creutzfeldt-Jakobin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Creutzfeldt-Jakobin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Creutzfeldt-Jakobin tautiin liittyvä dementia  muita sekamuotoisia liitännäisoireita
+Creutzfeldt-Jakobin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Creutzfeldt-Jakobin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Huntingtonin tautiin liittyvä dementia
+Huntingtonin tautiin liittyvä dementia  ilman lisäoireita
+Huntingtonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Huntingtonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Huntingtonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Huntingtonin tautiin liittyvä dementia  muita sekamuotoisia liitännäisoireita
+Huntingtonin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Huntingtonin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Parkinsonin tautiin liittyvä dementia
+Parkinsonin tautiin liittyvä dementia  ilman lisäoireita
+Parkinsonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+Parkinsonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Parkinsonin tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa masennusoireita
+Parkinsonin tautiin liittyvä dementia  muita sekamuotoisia liitännäisoireita
+Parkinsonin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Parkinsonin tautiin liittyvä dementia  ei tietoa liitännäisoireista
+HIV-tautiin liittyvä dementia
+HIV-tautiin liittyvä dementia  ilman lisäoireita
+HIV-tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa harhaluuloisuutta
+HIV-tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+HIV-tautiin liittyvä dementia  muita liitännäisoireita, pääasiassa masennusoireita
+HIV-tautiin liittyvä dementia  muita sekamuotoisia liitännäisoireita
+HIV-tautiin liittyvä dementia  ei tietoa liitännäisoireista
+HIV-tautiin liittyvä dementia  ei tietoa liitännäisoireista
+Dementia muualla luokitetun taudin yhteydessä
+Dementia muualla luokitetun taudin yhteydessä  ilman lisäoireita
+Dementia muualla luokitetun taudin yhteydessä  pääasiassa harhaluuloisuutta
+Dementia muualla luokitetun taudin yhteydessä  muita liitännäisoireita, pääasiassa aistiharhaisuutta
+Dementia muualla luokitetun taudin yhteydessä  muita liitännäisoireita, pääasiassa masennusoireita
+Dementia muualla luokitetun taudin yhteydessä  muita sekamuotoisia liitännäisoireita
+Dementia muualla luokitetun taudin yhteydessä  ei tietoa liitännäisoireista
+Hermostokuppaan liittyvä dementia
+Lymen tautiin (borrelioosiin) liittyvä dementia
+Trypanosomiaasiin liittyvä dementia
+Amerikkalaiseen trypanosomiaasiin liittyvä dementia
+Jodinpuutteen aiheuttamaan kilpirauhasen vajaatoimintaan liittyvä dementia
+Hankinnaiseen kilpirauhasen vajaatoimintaan liittyvä dementia
+Niasiininpuutteeseen (pellagraan) liittyvä dementia
+B12-vitamiininpuutteeseen liittyvä dementia
+Aivolipidoosiin liittyvä dementia
+Hepatolentikulaariseen degeneraatioon liittyvä dementia
+Hyperkalsemiaan liittyvä dementia
+Pesäkekovettumatautiin liittyvä dementia
+Epilepsiaan liittyvä dementia
+Valtimoiden kyhmytulehdukseen liittyvä dementia
+SLE-tautiin liittyvä dementia
+Häkämyrkytykseen liittyvä dementia
+Määrittämättömään myrkytystilaan liittyvä dementia
+Määrittämätön dementia
+Elimellinen amnestinen oireyhtymä, joka ei ole alkoholin eikä muiden psyykeen vaikuttavien aineiden aiheuttama
+Muut elimelliset aivo-oireyhtymät
+Sekavuustila (delirium) ilman alkoholia tai muita psyykeen vaikuttavia aineita
+Dementiaan liittymätön sekavuustila (delirium)
+Dementiaan liittyvä sekavuustila (delirium)
+Muu sekavuustila (delirium)
+Määrittämätön sekavuustila (delirium)
+Muut aivovaurion, aivojen toimintahäiriön ja ruumiillisen sairauden aiheuttamat elimelliset aivo-oireyhtymät
+Elimellinen aistiharhaisuus
+Elimellinen katatoninen häiriö
+Elimellinen [skitsofreenistyyppinen] harhaluuloisuushäiriö
+Elimelliset mielialahäiriöt
+Elimellinen maaninen häiriö
+Elimellinen kaksisuuntainen mielialahäiriö
+Elimellinen masennus
+Elimellinen sekamuotoinen mielialahäiriö
+Määrittelemätön elimellinen mielialahäiriö
+Elimellinen ahdistuneisuushäiriö
+Elimellinen dissosiaatiohäiriö
+Elimellinen tunne-elämän epävakaisuushäiriö (asteeninen häiriö)
+Lievä älyllisten toimintojen häiriö
+Muu aivovaurion, aivojen toimintahäiriön ja ruumiillisen sairauden aiheuttamat aivo-oireyhtymä
+Määrittämätön aivovaurion, aivojen toimintahäiriön tai ruumiillisen sairauden aiheuttama aivo-oireyhtymä
+Aivosairauden, aivovaurion ja aivojen toimintahäiriön aiheuttamat persoonallisuus- ja käytöshäiriöt
+Elimellinen persoonallisuushäiriö
+Aivotulehduksen jälkeinen oireyhtymä
+Aivoruhjeen jälkeinen oireyhtymä
+Muu aivosairauden, aivovaurion ja aivojen toimintahäiriön aiheuttamat elimelliset persoonallisuus- ja käytöshäiriö
+Määrittämätön aivosairauden, aivovaurion tai aivojen toimintahäiriön aiheuttama elimellinen persoonallisuus- tai käytöshäiriö
+Määrittämätön elimellinen tai oireenmukainen (muun elimistön sairauden seurauksena esiintyvä) mielenterveyden häiriö
+Alkoholin käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Lääkkeiden ja päihteiden aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Alkoholin käytön aiheuttama akuutti päihtymystila
+Alkoholin käytön aiheuttama akuutti päihtymystila   komplisoitumaton
+Alkoholin käytön aiheuttama akuutti päihtymystila   vammautuminen tai muu ruumiillinen vaurio
+Alkoholin käytön aiheuttama akuutti päihtymystila   muita akuutteja kliinisiä komplikaatioita
+Alkoholin käytön aiheuttama akuutti päihtymystila   sekavuustila (delirium)
+Alkoholin käytön aiheuttama akuutti päihtymystila   aistihavaintojen vääristymiä
+Alkoholin käytön aiheuttama akuutti päihtymystila   kooma
+Alkoholin käytön aiheuttama akuutti päihtymystila   kouristuksia
+Patologinen alkoholipäihtymys
+Tarkemmin määrittämätön alkoholipäihtymys
+Alkoholin haitallinen käyttö
+Alkoholin käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  riippuvuusoireyhtymä
+Alkoholiriippuvuus  tällä hetkellä vieroittunut
+Alkoholiriippuvuus  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Alkoholiriippuvuus   tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Alkoholiriippuvuus  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Alkoholiriippuvuus   tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Alkoholiriippuvuus  jatkuva käyttö
+Alkoholiriippuvuus   jaksottainen käyttö (tuurijuoppous)
+Tarkemmin määrittämätön alkoholin aiheuttama riippuvuusoireyhtymä
+Alkoholin käytön aiheuttamat vieroitusoireet
+Alkoholin käytön aiheuttamat vieroitusoireet  komplisoitumattomat
+Alkoholin käytön aiheuttamat vieroitusoireet  kouristuksia
+Alkoholin käytön aiheuttamat vieroitusoireet   määrittämättömät
+Alkoholin käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Alkoholin käytön aiheuttamat vieroitusoireet ja sekavuustila  ilman kouristuksia
+Alkoholin käytön aiheuttamat vieroitusoireet ja sekavuustila   kouristuksia
+Alkoholin käytön aiheuttamat vieroitusoireet ja sekavuustila  ei tietoa kouristuksista
+Alkoholin käytön aiheuttama psykoottinen häiriö
+Alkoholin käytön aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Alkoholin käytön aiheuttama psykoottinen häiriö   pääasiassa harhaluuloisuutena ilmenevä
+Alkoholin käytön aiheuttama psykoottinen häiriö   pääasiassa aistiharhaisuutena ilmenevä
+Alkoholin käytön aiheuttama psykoottinen häiriö  monimuotoinen
+Alkoholin käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Alkoholin käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Alkoholin käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Alkoholin käytön aiheuttama psykoottinen häiriö  määrittämätön reaktiotyyppi
+Alkoholin käytön aiheuttama amnestinen oireyhtymä
+Alkoholin käytön aiheuttama  jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Alkoholin käytön aiheuttamana jäännöstila   takaumia (flashbacks)
+Alkoholin käytön aiheuttamana jäännöstila   persoonallisuuden tai käytöksen häiriö
+Alkoholin käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Alkoholin käytön aiheuttamana jäännöstila  dementia
+Alkoholin käytön aiheuttamat jäännöstila   muu pysyvä älyllisten toimintojen heikkeneminen
+Alkoholin käytön aiheuttama jäännöstila   myöhään alkava psykoottinen häiriö
+Alkoholin käytön aiheuttamana jäännöstila   määrittämätön psykoottinen häiriö
+Alkoholin käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Alkoholin käytön aiheuttama  määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Opioidien käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Opioidien käytön aiheuttama akuutti päihtymystila
+Opioidien käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Opioidien käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Opioidien käytön aiheuttama akuutti päihtymystila  muita akuutteja kliinisiä komplikaatioita
+Opioidien käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Opioidien käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Opioidien käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  akuutti kooma
+Opioidien käytön aiheuttama akuutti päihtymystila  kouristuksia
+Opioidien käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Opioidien haitallinen käyttö
+Opioidien käytön aiheuttama riippuvuusoireyhtymä
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Opioidien käytön aiheuttama riippuvuusoireyhtymä   jaksottainen käyttö
+Opioidien käytön aiheuttama riippuvuusoireyhtymä  ei tietoa riippuvuusoireyhtymän laadusta
+Opioidien käytön aiheuttamat vieroitusoireet
+Opioidien käytön aiheuttamat vieroitusoireet  komplisoitumattomat
+Opioidien käytön aiheuttamat vieroitusoireet  kouristuksia
+Opioidien käytön aiheuttamat vieroitusoireet  ei tietoa kouristuksista
+Opioidien käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Opioidien käytön aiheuttamat vieroitusoireet ja  sekavuustila  ilman kouristuksia
+Opioidien käytön aiheuttamat vieroitusoireet ja  sekavuustila  kouristuksia
+Opioidien käytön aiheuttamat vieroitusoireet ja  sekavuustila  ei tietoa liitännäisoireista
+Opioidien käytön aiheuttama psykoottinen häiriö
+Opioidien käytön aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Opioidien käytön aiheuttama psykoottinen häiriö  pääasiassa harhaluuloisuutena ilmenevä
+Opioidien käytön aiheuttama psykoottinen häiriö  pääasiassa aistiharhaisuutena ilmenevä
+Opioidien käytön aiheuttama psykoottinen häiriö  monimuotoinen
+Opioidien käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Opioidien käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Opioidien käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Opioidien käytön aiheuttama psykoottinen häiriö  määrittämätön reaktiotyyppi
+Opioidien käytön aiheuttama amnestinen oireyhtymä
+Opioidien käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Opioidien käytön aiheuttama jäännöstila  takaumia (flashbacks)
+Opioidien käytön aiheuttama jäännöstila   persoonallisuuden tai käytöksen häiriö
+Opioidien käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Opioidien käytön aiheuttama jäännöstila  dementia
+Opioidien käytön aiheuttama jäännöstila  muu pysyvä älyllisten toimintojen heikkeneminen
+Opioidien käytön aiheuttama jäännöstila  myöhään alkava psykoottinen häiriö
+Opioidien käytön aiheuttama jäännöstila  myöhään alkava määrittämätön häiriö
+Opioidien käytön  muu aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Opioidien käytön  aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Kannabinoidien käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Kannabinoidien käytön aiheuttama akuutti päihtymystila
+Kannabinoidien käytön aiheuttama akuutti päihtymystila   komplisoitumaton
+Kannabinoidien käytön aiheuttama akuutti päihtymystila   vammautuminen tai muu ruumiillinen vaurio
+Kannabinoidien käytön aiheuttama akuutti päihtymystila   muita kliinisiä komplikaatioita
+Kannabinoidien käytön aiheuttama akuutti päihtymystila   sekavuustila (delirium)
+Kannabinoidien käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Kannabinoidien käytön aiheuttama akuutti päihtymystila  kooma
+Kannabinoidien käytön aiheuttama akuutti päihtymystila  kouristuksia
+Kannabinoidien käytön aiheuttama akuutti päihtymystila   ei  tietoa liitännäisoireista
+Kannabinoidien haitallinen käyttö
+Kannabinoidien käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  riippuvuusoireyhtymä
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  jaksottainen käyttö
+Kannabinoidien käytön aiheuttama riippuvuusoireyhtymä  tarkemmin määrittelemätön
+Kannabinoidien käytön aiheuttamat vieroitusoireet
+Kannabinoidien käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Kannabinoidien käytön aiheuttama psykoottinen häiriö
+Kannabinoidien käytön aiheuttama amnestinen oireyhtymä
+Kannabinoidien käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Kannabinoidien käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Kannabinoidien käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  muita kliinisiä komplikaatioita
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  kooma
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  kouristuksia
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Rauhoittavien lääkkeiden ja unilääkkeiden haitallinen käyttö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  jaksottainen käyttö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama riippuvuusoireyhtymä  ei  tietoa käytön luonteesta
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttamat vieroitusoireet
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama psykoottinen häiriö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama amnestinen oireyhtymä
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Rauhoittavien lääkkeiden ja unilääkkeiden käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Kokaiinin käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Kokaiinin käytön aiheuttama akuutti päihtymystila
+Kokaiinin käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Kokaiinin käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Kokaiinin käytön aiheuttama akuutti päihtymystila  muita kliinisiä komplikaatioita
+Kokaiinin käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Kokaiinin käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Kokaiinin käytön aiheuttama akuutti päihtymystila  kooma
+Kokaiinin käytön aiheuttama akuutti päihtymystila  kouristuksia
+Kokaiinin käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Kokaiinin haitallinen käyttö
+Kokaiinin käytön aiheuttama riippuvuusoireyhtymä
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  jatkuva käyttö
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  jaksottainen käyttö
+Kokaiinin käytön aiheuttamat riippuvuusoireyhtymä  ei  tietoa käytön luonteesta
+Kokaiinin käytön aiheuttamat vieroitusoireet
+Kokaiinin käytön aiheuttamat vieroitusoireet  komplisoitumaton
+Kokaiinin käytön aiheuttamat vieroitusoireet  kouristuksia
+Kokaiinin käytön aiheuttamat vieroitusoireet  ei tarkempaa tietoa kouristuksista
+Kokaiinin käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Kokaiinin käytön aiheuttamat vieroitusoireet ja sekavuustila  ei kouristuksia
+Kokaiinin käytön aiheuttamat vieroitusoireet ja sekavuustila  kouristuksia
+Kokaiinin käytön aiheuttamat vieroitusoireet ja sekavuustila  ei tietoa kouristuksista
+Kokaiinin käytön aiheuttama psykoottinen häiriö
+Kokaiinin käytön aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Kokaiinin käytön aiheuttama psykoottinen häiriö  pääasiassa harhaluuloisuutena ilmenevä
+Kokaiinin käytön aiheuttama psykoottinen häiriö  pääasiassa aistiharhaisuutena ilmenevä
+Kokaiinin käytön aiheuttama psykoottinen häiriö  monimuotoinen
+Kokaiinin käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Kokaiinin käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Kokaiinin käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Kokaiinin käytön aiheuttama psykoottinen häiriö  määrittämätön reaktiotyyppi
+Kokaiinin käytön aiheuttama amnestinen oireyhtymä
+Kokaiinin käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Kokaiinin käytön aiheuttama jäännöstila  takaumia  (flashbacks)
+Kokaiinin käytön aiheuttama jäännöstila  persoonallisuuden tai käytöksen häiriö
+Kokaiinin käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Kokaiinin käytön aiheuttama jäännöstila  dementia
+Kokaiinin käytön aiheuttama jäännöstila  muu pysyvä älyllisten toimintojen heikkeneminen
+Kokaiinin käytön aiheuttama jäännöstila  myöhään alkava psykoottinen häiriö
+Kokaiinin käytön aiheuttama jäännöstila  määrittämättömän psykoottinen häiriö
+Kokaiinin käytön aiheuttama  muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Kokaiinin käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Muiden piristeiden käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Muun piristeen käytön aiheuttama akuutti päihtymystila
+Muun piristeen haitallinen käyttö
+Muun piristeen käytön aiheuttama riippuvuusoireyhtymä
+Muun piristeen käytön aiheuttamat vieroitusoireet
+Muun piristeen käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Muun piristeen käytön aiheuttama psykoottinen häiriö
+Muun piristeen käytön aiheuttama amnestinen oireyhtymä
+Muun piristeen käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Muun piristeen käytön aiheuttama  muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Muun piristeen käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Hallusinogeenien käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  muita kliinisiä komplikaatioita
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  kooma
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  kouristuksia
+Hallusinogeenien käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Hallusinogeenien haitallinen käyttö
+Hallusinogeenien käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  riippuvuusoireyhtymä
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  jaksottainen käyttö
+Hallusinogeenien käytön aiheuttama riippuvuusoireyhtymä  ei  tietoa käytön luonteesta
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  pääasiassa harhaluuloisuutena ilmenevä
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  pääasiassa aistiharhaisuutena ilmenevä
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  monimuotoinen
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Hallusinogeenien käytön aiheuttama psykoottinen häiriö  määrittämätön reaktiotyyppi
+Hallusinogeenien käytön aiheuttama amnestinen oireyhtymä
+Hallusinogeenien käytön aiheuttama  jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Hallusinogeenien käytön aiheuttama jäännöstila  takaumia (flashbacks)
+Hallusinogeenien käytön aiheuttama jäännöstila  persoonallisuuden tai käytöksen häiriö
+Hallusinogeenien käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Hallusinogeenien käytön aiheuttama jäännöstila  dementia
+Hallusinogeenien käytön aiheuttama jäännöstila  muu pysyvä älyllisten toimintojen heikkeneminen
+Hallusinogeenien käytön aiheuttama jäännöstila  myöhään alkava psykoottinen häiriö
+Hallusinogeenien käytön aiheuttama jäännöstila  määrittämätön psykoottinen häiriö
+Hallusinogeenien käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Hallusinogeenien käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Tupakan käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Tupakan käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  haitallinen käyttö
+Tupakan käytön aiheuttama riippuvuusoireyhtymä
+Tupakan käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Tupakan käytön aiheuttama tarkemmin määrittämätön riippuvuusoireyhtymä
+Tupakan käytön aiheuttamat vieroitusoireet
+Tupakan käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Tupakan käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Liuotinaineiden käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  muita kliinisiä komplikaatioita
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  kooma
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  kouristuksia
+Liuotinaineiden käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Liuotinaineiden haitallinen käyttö
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  jaksottainen käyttö
+Liuotinaineiden käytön aiheuttama riippuvuusoireyhtymä  ei  tietoa käytön luonteesta
+Liuotinaineiden käytön aiheuttamat vieroitusoireet
+Liuotinaineiden käytön aiheuttamat vieroitusoireet  komplisoitumaton
+Liuotinaineiden käytön aiheuttamat vieroitusoireet  kouristuksia
+Liuotinaineiden käytön aiheuttamat vieroitusoireet  ei tarkempaa tietoa vierotusoireiden luonteesta
+Liuotinaineiden käytön aiheuttamat vieroitusoireet ja sekavuustila (delirium)
+Liuotinaineiden käytön aiheuttamat vieroitusoireet ja sekavuustila  ei kouristuksia
+Liuotinaineiden käytön aiheuttamat vieroitusoireet ja sekavuustila  kouristuksia
+Liuotinaineiden käytön aiheuttamat vieroitusoireet ja sekavuustila  ei tietoa kouristuksista
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  pääasiassa harhaluuloisuutena ilmenevä
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  pääasiassa aistiharhaisuutena ilmenevä
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  monimuotoinen
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Liuotinaineiden käytön aiheuttama psykoottinen häiriö   määrittämätön reaktiotyyppi
+Liuotinaineiden käytön aiheuttama amnestinen oireyhtymä
+Liuotinaineiden käytön aiheuttama jäännöstilana esiintyvä tai viivästynyt psykoottinen häiriö
+Liuotinaineiden käytön aiheuttama jäännöstila  takaumia (flashbacks)
+Liuotinaineiden käytön aiheuttama jäännöstila  persoonallisuuden tai käytöksen häiriö
+Liuotinaineiden käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Liuotinaineiden käytön aiheuttama jäännöstila  dementia
+Liuotinaineiden käytön aiheuttama jäännöstila  muu pysyvä älyllisten toimintojen heikkeneminen
+Liuotinaineiden käytön aiheuttama jäännöstila  myöhään alkava psykoottinen häiriö
+Liuotinaineiden käytön aiheuttama jäännöstila  myöhään alkava määrittämätön häiriö
+Liuotinaineiden käytön aiheuttama muu elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Liuotinaineiden käytön aiheuttama määrittämätön elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö
+Useiden lääkeaineiden ja muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttamat elimelliset aivo-oireyhtymät ja käyttäytymisen häiriöt
+Useiden lääkeaineiden tai muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama akuutti päihtymystila
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  komplisoitumaton
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  vammautuminen tai muu ruumiillinen vaurio
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  muita kliinisiä komplikaatioita
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  sekavuustila (delirium)
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  aistihavaintojen vääristymiä
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  kooma
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  kouristuksia
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama akuutti päihtymystila  ei  tietoa liitännäisoireista
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen haitallinen käyttö
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama riippuvuusoireyhtymä
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen käytön aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  tällä hetkellä ei käytä, mutta oleskelee rajoittavassa ympäristössä
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  tällä hetkellä kliinisesti valvotulla ylläpito- tai korvauslääkityksellä (kontrolloitu riippuvuus)
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  tällä hetkellä vieroittunut, mutta saa aversio- tai estolääkityshoitoa
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  tällä hetkellä käyttää ainetta (aktiivinen riippuvuus)
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  jatkuva käyttö
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  jaksottainen käyttö
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama riippuvuusoireyhtymä  ei tietoa käytön luonteesta
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet  komplisoitumaton
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet  kouristuksia
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet  ei tarkempaa tietoa vierotusoireiden luonteesta
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet ja sekavuustila
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet ja sekavuustila  ei kouristuksia
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet ja sekavuustila  kouristuksia
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttamat vieroitusoireet ja sekavuustila  ei tietoa kouristuksista
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama psykoottinen häiriö
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama psykoottinen häiriö  skitsofrenia-tyyppinen
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama psykoottinen häiriö  pääasiassa harhaluuloisuutena ilmenevä
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama psykoottinen häiriö  pääasiassa aistiharhaisuutena ilmenevä
+Useiden lääkeaineiden tai muun psyykkisiin toimintoihin vaikuttavan aineen aiheuttama psykoottinen häiriö  monimuotoinen
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama psykoottinen häiriö  pääasiassa masennuksen oirein ilmenevä
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama psykoottinen häiriö  pääasiassa maanisin oirein ilmenevä
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama psykoottinen häiriö  sekamuotoinen
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama psykoottinen häiriö  määrittämätön reaktiotyyppi
+Useiden lääkeaineiden tai muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  amnestinen oireyhtymä
+Useiden lääkeaineiden tai muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  jäännöstilana esiintyvä tai viivästynyt psykoosi
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  takaumia (flashbacks)
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  persoonallisuuden tai käytöksen häiriö
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  jälkioireinen mielialahäiriö
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  dementia
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  muu pysyvä älyllisten toimintojen heikkeneminen
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila  myöhään alkava psykoottinen häiriö
+Useiden lääkeaineiden ja psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama jäännöstila   määrittämätön psykoottinen häiriö
+Useiden lääkeaineiden tai muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  muu häiriö
+Useiden lääkeaineiden tai muiden psyykkisiin toimintoihin vaikuttavien aineiden käytön aiheuttama elimellinen aivo-oireyhtymä tai käyttäytymisen häiriö  määrittämätön elimellinen aivo-oireyhtymä ja käyttäytymisen häiriö
+Skitsofrenia
+Skitsofrenia, skitsotyyppinen häiriö ja harhaluuloisuushäiriöt
+Paranoidinen skitsofrenia
+Paranoidinen skitsofrenia  jatkuva
+Paranoidinen skitsofrenia  jaksottainen ja vähitellen vaikeutuva
+Paranoidinen skitsofrenia  jaksottainen mutta vakaa
+Paranoidinen skitsofrenia  jaksottainen ja vähitellen lievittyvä
+Paranoidinen skitsofrenia  osittainen toipuminen
+Paranoidinen skitsofrenia  täydellinen toipuminen
+Paranoidinen skitsofrenia  muu
+Paranoidinen skitsofrenia  taudinkulku epäselvä, seuranta-aika liian lyhyt
+Hebefreeninen skitsofrenia
+Hebefreeninen skitsofrenia  jatkuva
+Hebefreeninen skitsofrenia  jaksottainen, mihin liittyy etenevä toimintavajaus
+Hebefreeninen skitsofrenia  jaksottainen, mihin liittyy vakaa toimintavajaus
+Hebefreeninen skitsofrenia  jaksottainen, välillä toipuminen
+Hebefreeninen skitsofrenia  epätäydellinen toipuminen
+Hebefreeninen skitsofrenia  täydellinen toipuminen
+Hebefreeninen skitsofrenia  muu
+Hebefreeninen skitsofrenia  taudinkulku epävarma, seuranta-aika liian lyhyt
+Katatoninen skitsofrenia
+Katatoninen skitsofrenia  jatkuva
+Katatoninen skitsofrenia  jaksottainen, mihin liittyy etenevä toimintavajaus
+Katatoninen skitsofrenia  jaksottainen, mihin liittyy vakaa toimintavajaus
+Katatoninen skitsofrenia  jaksottainen, välillä toipuminen
+Katatoninen skitsofrenia  epätäydellinen toipuminen
+Katatoninen skitsofrenia  täydellinen toipuminen
+Katatoninen skitsofrenia  muu
+Katatoninen skitsofrenia  taudinkulku epävarma, seuranta-aika liian lyhyt
+Erilaistumaton skitsofrenia
+Erilaistumaton skitsofrenia  jatkuva
+Erilaistumaton skitsofrenia  jaksottainen, mihin liittyy etenevä toimintavajaus
+Erilaistumaton skitsofrenia  jaksottainen, mihin liittyy vakaa toimintavajaus
+Erilaistumaton skitsofrenia   jaksottainen, välillä toipuminen
+Erilaistumaton skitsofrenia  epätäydellinen toipuminen
+Erilaistumaton skitsofrenia  täydellinen toipuminen
+Erilaistumaton skitsofrenia  muu
+Erilaistumaton skitsofrenia  taudinkulku epävarma, seuranta-aika liian lyhyt
+Skitsofrenian jälkeinen masennus
+Jäännösskitsofrenia (residuaalinen skitsofrenia)
+Erityisosatekijätön skitsofrenia
+Muu skitsofrenia
+Määrittämätön skitsofrenia
+Skitsotyyppinen häiriö (psykoosipiirteinen persoonallisuus)
+Pitkäaikaiset harhaluuloisuushäiriöt
+Harhaluuloisuushäiriö
+Muu pitkäaikainen harhaluuloisuushäiriö
+Määrittämätön pitkäaikainen harhaluuloisuushäiriö
+Akuutit ja ohimenevät psykoottiset häiriöt
+Akuutti monimuotoinen psykoottinen häiriö ilman skitsofreniaoireita
+Akuutti monimuotoinen psykoottinen häiriö ilman skitsofreniaoireita  tilaan ei liity akuuttia rasitetekijää
+Akuutti monimuotoinen psykoottinen häiriö ilman skitsofreniaoireita  tilaan liittyy akuutti rasitetekijä
+Akuutti monimuotoinen psykoottinen häiriö ilman skitsofreniaoireita  ei tietoa rasitetekijöistä
+Akuutti monimuotoinen skitsofreniaoireinen psykoottinen häiriö
+Akuutti monimuotoinen skitsofreniaoireinen psykoottinen häiriö  tilaan ei liity akuutti rasitetekijää
+Akuutti monimuotoinen skitsofreniaoireinen psykoottinen häiriö  tilaan liittyy akuutti rasitetekijä
+Akuutti monimuotoinen skitsofreniaoireinen psykoottinen häiriö  ei tietoa rasitetekijöistä
+Akuutti skitsofreenistyyppinen psykoottinen häiriö
+Akuutti skitsofreenistyyppinen psykoottinen häiriö  tilaan ei liity akuuttia rasitetekijää
+Akuutti skitsofreenistyyppinen psykoottinen häiriö  tilaan liittyy akuutti rasitetekijä
+Akuutti skitsofreenistyyppinen psykoottinen häiriö  ei tietoa rasitetekijöistä
+Muut akuutit pääasiallisesti harhaluulo-oireiset psykoottiset häiriöt
+Muu akuutti tai ohimenevä psykoottinen häiriö
+Määrittämätön akuutti tai ohimenevä psykoottinen häiriö
+Määrittämätön akuutti ja ohimenevä psykoottinen häiriö  tilaan ei liity akuuttia rasitetekijää
+Määrittämätön akuutti ja ohimenevä psykoottinen häiriö  tilaan liittyy akuutti rasitetekijä
+Määrittämätön akuutti ja ohimenevä psykoottinen häiriö  ei tietoa rasitetekijöistä
+Indusoitunut harhaluuloisuus (jaettu harhaluuloisuus)
+Skitsoaffektiiviset häiriöt
+Skitsoaffektiivinen häiriö, maaninen muoto
+Skitsoaffektiivinen häiriö, maaninen muoto  vain samanaikaisia mieliala- ja skitsofreniaoireita
+Skitsoaffektiivinen häiriö, maaninen muoto  yhtäaikaisia mieliala- ja skitsofreniaoireita, skitsofreniaoireet jatkuvat pidempään kuin mielialaoireet
+Skitsoaffektiivinen häiriö, masennusoireinen muoto
+Skitsoaffektiivinen häiriö, masennusoireinen muoto  vain samanaikaisia mieliala- ja skitsofreniaoireita
+Skitsoaffektiivinen häiriö, masennusoireinen muoto  yhtäaikaisia mieliala- ja skitsofreniaoireita, skitsofreniaoireet jatkuvat pidempään kuin mielialaoireet
+Sekamuotoinen skitsoaffektiivinen häiriö
+Sekamuotoinen skitsoaffektiivinen häiriö  vain samanaikaisia mieliala- ja skitsofreniaoireita
+Sekamuotoinen skitsoaffektiivinen häiriö  yhtäaikaisia mieliala- ja skitsofreniaoireita, skitsofreniaoireet jatkuvat pidempään kuin mielialaoireet
+Muut määritetyt skitsoaffektiiviset häiriöt
+Muu skitsoaffektiivinen häiriö  vain samanaikaisia mieliala- ja skitsofreniaoireita
+Muu skitsoaffektiivinen häiriö  yhtäaikaisia mieliala- ja skitsofreniaoireita, skitsofreniaoireet jatkuvat pidempään kuin mielialaoireet
+Määrittämätön skitsoaffektiivinen häiriö
+Muu ei-elimellinen psykoottinen häiriö
+Määrittämätön ei-elimellinen psykoottinen häiriö
+Mania
+Mielialahäiriöt [affektiiviset häiriöt]
+Hypomania
+Mania ilman psykoottisia oireita
+Mania ja psykoottisia oireita
+Mania ja mielialan mukaisia psykoottisia oireita
+Mania ja mielialan vastaisia psykoottisia oireita
+Muu mania
+Määrittämätön mania
+Kaksisuuntainen mielialahäiriö
+Kaksisuuntaisen mielialahäiriön lievä maaninen (hypomaaninen) jakso
+Kaksisuuntaisen mielialahäiriön maaninen jakso ilman psykoottisia oireita
+Kaksisuuntaisen mielialahäiriön psykoottinen maaninen jakso
+Kaksisuuntaisen mielialahäiriön psykoottinen maaninen jakso  mielialan mukaisia psykoottisia oireita
+Kaksisuuntaisen mielialahäiriön psykoottinen maaninen jakso  mielialan vastaisia psykoottisia oireita
+Kaksisuuntaisen mielialahäiriön lievä tai kohtalainen masennusjakso
+Kaksisuuntainen mielialahäiriö; masennusjakso ilman somaattista oireyhtymää
+Kaksisuuntainen mielialahäiriö; masennusjakso ja somaattinen oireyhtymä
+Kaksisuuntaisen mielialahäiriön vaikea masennusjakso ilman psykoottisia oireita
+Kaksisuuntaisen mielialahäiriön vaikea psykoottinen masennusjakso
+Kaksisuuntaisen mielialahäiriön sekamuotoinen jakso
+Kaksisuuntaisen mielialahäiriön elpymävaihe (remissio)
+Muu kaksisuuntainen mielialahäiriö
+Määrittämätön kaksisuuntainen mielialahäiriö
+Masennustila
+Lievä masennustila
+Lievä masennustila  ilman somaattista oireyhtymää
+Lievä masennustila  ja somaattinen oireyhtymä
+Keskivaikea masennustila
+Keskivaikea masennustila  ilman somaattista oireyhtymää
+Keskivaikea masennustila  ja somaattinen oireyhtymä
+Vaikea-asteinen masennustila ilman psykoottisia oireita
+Vaikea-asteinen, psykoottinen masennustila
+Muu masennustila
+Määrittämätön masennustila
+Toistuva masennus
+Toistuvan masennuksen lievä masennusjakso
+Toistuvan masennuksen lievä masennusjakso  ei somaattista oireyhtymää
+Toistuvan masennuksen lievä masennusjakso  somaattinen oireyhtymä
+Toistuvan masennuksen keskivaikea masennusjakso
+Toistuvan masennuksen keskivaikea masennusjakso  ei somaattista oireyhtymää
+Toistuvan masennuksen keskivaikea masennusjakso  somaattinen oireyhtymä
+Toistuvan masennuksen vaikea masennusjakso ilman psykoottisia oireita
+Toistuvan masennuksen vaikea, psykoottinen masennusjakso
+Toistuvan masennuksen vaikea, psykoottinen masennusjakso  mielialan mukaisia psykoottisia oireita
+Toistuvan masennuksen vaikea, psykoottinen masennusjakso  mielialan vastaisia psykoottisia oireita
+Toistuvan masennuksen elpymävaihe (remissio)
+Muu toistuva masennus
+Määrittämätön toistuva masennus
+Pitkäaikaiset mielialahäiriöt
+Mielialan aaltoiluhäiriö (syklotymia)
+Pitkäaikainen masennus
+Muu pitkäaikainen mielialahäiriö
+Määrittämätön pitkäaikainen mielialahäiriö
+Muut mielialahäiriöt
+Muut yksittäiset mielialahäiriöt
+Sekamuotoinen mielialahäiriöjakso
+Muu yksittäinen mielialahäiriö
+Toistuva lyhyt masennusjakso
+Muu toistuva mielialahäiriö
+Muu mielialahäiriö
+Määrittämätön mielialahäiriö
+Pelko-oireiset (foobiset) ahdistuneisuushäiriöt
+Neuroottiset, stressiin liittyvät ja somatoformiset häiriöt
+Julkisten paikkojen pelko
+Julkisten paikkojen pelko  ilman samanaikaista paniikkihäiriötä
+Julkisten paikkojen pelko  samanaikainen paniikkihäiriö
+Sosiaalisten tilanteiden pelko
+Määritetyt (yksittäiset) pelot
+Muu pelko-oireinen (foobinen) ahdistuneisuushäiriö
+Määrittämätön pelko-oireinen (foobinen) ahdistuneisuushäiriö
+Muut ahdistuneisuushäiriöt
+Paniikkihäiriö (kohtauksittainen ahdistus)
+Keskivaikea paniikkihäiriö, vähintään neljä kohtausta kuukauden aikana
+Vaikea-asteinen paniikkihäiriö, vähintään neljä kohtausta viikossa kuukauden aikana
+Lieväasteinen tai muu määritelty paniikkihäiriö (vähemmän kuin neljä kohtausta kuukauden aikana)
+Määrittämätön paniikkihäiriö
+Yleistynyt ahdistuneisuushäiriö (yleistynyt tuskaisuus)
+Sekamuotoinen ahdistus- ja masennustila
+Muu sekamuotoinen ahdistuneisuushäiriö
+Muu ahdistuneisuushäiriö
+Määrittämätön ahdistuneisuushäiriö
+Pakko-oireinen häiriö
+Pakkoajatuspainotteinen pakko-oireinen häiriö
+Pakkotoimintopainotteinen pakko-oireinen häiriö
+Pakkoajatuksina ja pakkotoimintoina ilmenevä pakko-oireinen häiriö
+Muu pakko-oireinen häiriö
+Määrittämätön pakko-oireinen häiriö
+Reaktiot vaikeaan stressiin ja sopeutumishäiriöt
+Akuutti stressireaktio
+Akuutti stressireaktio  lieväasteinen häiriö
+Akuutti stressireaktio  keskivaikea häiriö
+Akuutti stressireaktio  vaikea-asteinen häiriö
+Traumaperäinen stressihäiriö
+Sopeutumishäiriöt
+Sopeutumishäiriö  lyhyt masennusreaktio
+Sopeutumishäiriö  pitkittynyt masennusjakso
+Sopeutumishäiriö  sekamuotoinen ahdistus- ja masennusreaktio
+Sopeutumishäiriö  muu tunne-elämän häiriö
+Sopeutumishäiriö  käytöshäiriö
+Sopeutumishäiriö  sekamuotoinen tunne-elämän ja käyttäytymisen häiriö
+Sopeutumishäiriö  muu hallitseva oire
+Määrittämätön sopeutumishäiriö
+Muu reaktio vaikeaan stressiin
+Määrittämätön reaktio vaikeaan stressiin
+Dissosiaatiohäiriöt (konversiohäiriöt)
+Dissosiatiivinen muistinmenetys
+Dissosiatiivinen pakkovaellus
+Dissosiatiivinen sulkutila (horros)
+Hurmos ja haltiotilat
+Dissosiatiivinen motorinen häiriö
+Dissosiatiiviset kouristukset
+Dissosiatiivinen tunnottomuus tai aistihäiriö
+Sekamuotoiset dissosiaatiohäiriöt (konversiohäiriöt)
+Ganserin oireyhtymä
+Sivupersoonahäiriö
+Tilapäinen lapsuus- ja nuoruusiän dissosiaatio-[konversio] oireisto
+Muu dissosiaatiohäiriö (konversiohäiriö)
+Määrittämätön dissosiaatiohäiriö (konversiohäiriö)
+Elimellisoireiset (somatoformiset) häiriöt
+Somatisaatiohäiriö
+Erilaistumaton elimellisoireinen (somatoforminen) häiriö
+Hypokondrinen häiriö
+Elimellisoireinen (somatoforminen) autonominen toimintahäiriö
+Elimellisoireinen toimintahäiriö  sydän- ja verenkiertoelimistö
+Elimellisoireinen toimintahäiriö  ylempi ruuansulatuskanava
+Elimellisoireinen toimintahäiriö  alempi ruuansulatuskanava
+Elimellisoireinen toimintahäiriö  hengityselimistö
+Elimellisoireinen toimintahäiriö  virtsa- ja sukuelimet
+Elimellisoireinen toimintahäiriö  muu elin tai elinjärjestelmä
+Elimellisoireinen toimintahäiriö  usean tai määrittämättömän elimen oire
+Pitkäaikainen kipuoireyhtymä
+Muu elimellisoireinen (somatoforminen) häiriö
+Määrittämätön elimellisoireinen (somatoforminen) häiriö
+Muut neuroottiset häiriöt
+Neurastenia
+Depersonalisaatio- ja derealisaatio-oireyhtymä
+Muu neuroottinen häiriö
+Määrittämätön neuroottinen häiriö
+Syömishäiriöt
+Fysiologisiin häiriöihin ja ruumiillisiin tekijöihin liittyvät käyttäytymisoireyhtymät
+Laihuushäiriö
+Epätyypillinen laihuushäiriö
+Ahmimishäiriö
+Epätyypillinen ahmimishäiriö
+Muuhun psykkiseen häiriöön liittyvä ylensyöminen
+Muuhun psykkiseen häiriöön liittyvä oksentelu
+Muu syömishäiriö
+Määrittämätön syömishäiriö
+Ei-elimelliset unihäiriöt
+Ei-elimellinen unettomuus
+Ei-elimellinen liikaunisuus
+Ei-elimellinen uni-valverytmin häiriö
+Unissakävely
+Yöllinen kauhukohtaus
+Painajaisunet
+Muu ei-elimellinen unihäiriö
+Määrittämätön ei-elimellinen unihäiriö
+Ei-elimelliset seksuaaliset toimintahäiriöt
+Seksuaalinen haluttomuus
+Seksuaalinen vastenmielisyys
+Seksuaalisen nautinnon puute
+Seksuaalinen kiihottumisvaikeus
+Orgasmivaikeus
+Ennenaikainen siemensyöksy
+Toiminnallinen emätinkouristus
+Toiminnalliset yhdyntäkivut
+Seksuaalivietin ylenmääräinen voimakkuus
+Muu ei-elimellinen seksuaalinen toimintahäiriö
+Määrittämätön ei-elimellinen seksuaalinen toimintahäiriö
+Muualla luokittamattomat lapsivuodeajan mielenterveys- ja käytöshäiriöt
+Muualla luokittamattomat lapsivuodeajan lievät mielenterveys- ja käytöshäiriöt
+Muualla luokittamattomat lapsivuodeajan vaikeat mielenterveys- ja käytöshäiriöt
+Muu muualla luokittamaton lapsivuodeajan mielenterveys- ja käytöshäiriö
+Määrittämätön lapsivuodeajan mielenterveyshäiriö
+Muualla luokitettuun häiriöön tai sairauteen liittyvä psyykkinen tekijä tai käytöstekijä
+Riippuvuutta aiheuttamattomien aineiden väärinkäyttö
+Riippuvuutta aiheuttamattomien aineiden väärinkäyttö
+Fysiologisiin häiriöihin ja ruumiillisiin tekijöihin liittyvät määrittämättömät käytösoireyhtymät
+Persoonallisuushäiriöt
+Persoonallisuushäiriöt ja persoonallisuuden muutokset
+Aikuisiän persoonallisuus- ja käytöshäiriöt
+Epäluuloinen persoonallisuus
+Eristäytyvä (skitsoidi) persoonallisuus
+Epäsosiaalinen persoonallisuus
+Tunne-elämältään epävakaa persoonallisuus
+Impulsiivinen häiriötyyppi
+Rajatilatyyppi
+Huomionhakuinen persoonallisuus
+Vaativa persoonallisuus
+Estynyt persoonallisuus
+Riippuvainen persoonallisuus
+Muu persoonallisuushäiriö
+Määrittämätön persoonallisuushäiriö
+Sekamuotoiset ja muut persoonallisuushäiriöt
+Sekamuotoiset persoonallisuushäiriöt
+Häiritsevä persoonallisuusmuutos
+Pitkäaikaiset persoonallisuuden muutokset, jotka eivät aiheudu aivovauriosta tai aivosairaudesta
+Tuhoisaa kokemusta seuraava persoonallisuuden muutos
+Vakavaa mielenterveyden häiriötä seuraava pitkäaikainen persoonallisuuden muutos
+Muu pitkäaikainen persoonallisuuden muutos
+Määrittämätön pitkäaikainen persoonallisuuden muutos
+Käytös- ja hillitsemishäiriöt
+Muut aikuisiän persoonallisuus- ja käytöshäiriöt
+Pelihimo
+Tuhopolttohimo
+Näpistelyhimo (kleptomania)
+Karvojennyppimishäiriö
+Muu käytös- ja hillitsemishäiriö
+Määrittämätön käytös- ja hillitsemishäiriö
+Sukupuoli-identiteetin häiriöt
+Transsukupuolisuus
+Kaksoisroolinen vastakkaiseksi sukupuoleksi pukeutumisen halu
+Lapsuuden sukupuoli-identiteetin häiriö
+Muu sukupuoli-identiteetin häiriö
+Määrittämätön sukupuoli-identiteetin häiriö
+Sukupuoliset kohdehäiriöt
+Esinekohteinen seksuaalihäiriö
+Vastakkaiseksi sukupuoleksi pukeutumisen halu
+Paljasteluhäiriö
+Tirkistelyhäiriö
+Lapsikohteinen seksuaalihäiriö (pedofilia)
+Sadomasokismi
+Monimuotoiset sukupuoliset kohdehäiriöt
+Muu sukupuolinen kohdehäiriö
+Määrittämätön sukupuolinen kohdehäiriö
+Sukupuoliseen kehitykseen ja suuntautumiseen liittyvät psyykkiset häiriöt ja käytöshäiriöt
+Sukupuolisen kypsymisen häiriö
+Sukupuolisen kypsymisen häiriö  heteroseksuaalinen
+Sukupuolisen kypsymisen häiriö  homoseksuaalinen
+Sukupuolisen kypsymisen häiriö  biseksuaalinen
+Sukupuolisen kypsymisen häiriö  muu tai määrittämätön
+Itseä häiritsevä sukupuolinen suuntautuminen
+Itseä häiritsevä sukupuolinen suuntautuminen  heteroseksuaalinen
+Itseä häiritsevä sukupuolinen suuntautuminen  homoseksuaalinen
+Itseä häiritsevä sukupuolinen suuntautuminen  biseksuaalinen
+Itseä häiritsevä sukupuolinen suuntautuminen  muu tai määrittämätön
+Sukupuolisuhteiden häiriö
+Sukupuolisuhteiden häiriö  heteroseksuaalinen
+Sukupuolisuhteiden häiriö  homoseksuaalinen
+Sukupuolisuhteiden häiriö  biseksuaalinen
+Sukupuolisuhteiden häiriö  muu tai määrittämätön
+Muut määritetyt psykoseksuaalisen kehityksen häiriöt
+Muu psykoseksuaalisen kehityksen häiriö  heteroseksuaalinen
+Muu psykoseksuaalisen kehityksen häiriö  homoseksuaalinen
+Muu psykoseksuaalisen kehityksen häiriö  biseksuaalinen
+Muu psykoseksuaalisen kehityksen häiriö  muu tai määrittämätön
+Määrittämätön psykoseksuaalisen kehityksen häiriö
+Muut aikuisiän persoonallisuus- ja käytöshäiriöt
+Psyykkisistä syistä johtuva ruumiillisten oireitten vaikeutuminen
+Ruumiillisten tai henkisten oireiden tai vammojen tarkoituksellinen tuottaminen tai teeskentely (itseaiheutettu häiriö)
+Muu aikuisiän persoonallisuus- ja käytöshäiriö
+Määrittämätön aikuisiän persoonallisuus- ja käytöshäiriö
+Lievä älyllinen kehitysvammaisuus
+Älyllinen kehitysvammaisuus
+Lievä älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä  tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Lievä älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Lievä älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Keskivaikea älyllinen kehitysvammaisuus
+Keskivaikea älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Keskivaikea älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Keskivaikea älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Vaikea älyllinen kehitysvammaisuus
+Vaikea älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä  tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Vaikea älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Vaikea älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Syvä älyllinen kehitysvammaisuus
+Syvä älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä  tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Syvä älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Syvä älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Muu älyllinen kehitysvammaisuus
+Muu älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä  tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Muu älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Muu älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Määrittämätön älyllinen kehitysvammaisuus
+Määrittämätön älyllinen kehitysvammaisuus  ei sopeutumiskäyttäytymisen häiriöitä  tai vähäisiä sopeutumiskäyttäytymisen häiriöitä
+Määrittämätön älyllinen kehitysvammaisuus  merkittävä, huomiota tai hoitoa vaativa sopeutumiskäyttäytymisen häiriö
+Määrittämätön älyllinen kehitysvammaisuus  ei tietoa sopeutumiskäyttäytymisen häiriöstä
+Puheen ja kielen kehityshäiriöt
+Psyykkisen kehityksen häiriöt
+Ääntämishäiriö
+Puheen tuottamisen häiriö
+Puheen ymmärtämisen häiriö
+Epilepsiaan liittyvä hankinnainen puheen tuottamisen ja ymmärtämisen häiriö (Landau-Kleffner)
+Muu puheen ja kielen kehityksen häiriö
+Määrittämätön puheen ja kielen kehityshäiriö
+Oppimiskyvyn häiriöt
+Lukemiskyvyn häiriö
+Kirjoittamiskyvyn häiriö
+Laskemiskyvyn häiriö
+Monimuotoinen oppimiskyvyn häiriö
+Muu oppimiskyvyn häiriö
+Määrittämätön oppimiskyvyn häiriö
+Motoriikan kehityshäiriö
+Monimuotoiset kehityshäiriöt
+Laaja-alaiset kehityshäiriöt
+Lapsuusiän autismi
+Epätyypillinen autismi
+Alkamisiältään epätyypillinen autismi
+Oireiltaan epätyypillinen autismi
+Sekä alkamisiältään että oireiltaan epätyypillinen autismi
+Rettin oireyhtymä
+Muu lapsuusiän persoonallisuutta hajottava (disintegratiivinen) kehityshäiriö
+Älylliseen kehitysvammaisuuteen ja kaavamaisiin liikkeisiin liittyvä hyperaktiivisuushäiriö
+Aspergerin oireyhtymä
+Muu lapsuusiän laaja-alainen kehityshäiriö
+Määrittämätön lapsuusiän laaja-alainen kehityshäiriö
+Muu psyykkinen kehityshäiriö
+Määrittämätön psyykkinen kehityshäiriö
+Hyperkineettiset häiriöt
+Tavallisesti lapsuus- tai nuoruusiässä alkavat käytös- ja tunnehäiriöt
+Aktiivisuuden ja tarkkaavuuden häiriö
+Hyperkineettinen käytöshäiriö
+Muu hyperkineettinen häiriö
+Määrittämätön hyperkineettinen häiriö
+Käytöshäiriöt
+Perheensisäinen käytöshäiriö
+Epäsosiaalinen käytöshäiriö (sosiaalisiin suhteisiin jäsentymätön käytöshäiriö)
+Sosiaalinen käytöshäiriö (sosiaalisiin suhteisiin jäsentynyt käytöshäiriö)
+Uhmakkuushäiriö
+Muu käytöshäiriö
+Määrittämätön käytöshäiriö
+Samanaikaiset käytös- ja tunnehäiriöt
+Masennusoireinen käytöshäiriö
+Muu samanaikainen käytös- ja tunnehäiriö
+Määrittämätön samanaikainen käytös- ja tunnehäiriö
+Lapsuudessa alkavat tunne-elämän häiriöt
+Lapsuuden eroahdistushäiriö
+Lapsuuden pelko- ja ahdistushäiriö
+Lapsuuden sosiaalinen ahdistushäiriö
+Sisaruskateushäiriö
+Lapsuuden yleistynyt ahdistushäiriö
+Muu lapsuuden tunnehäiriö
+Määrittämätön lapsuuden tunnehäiriö
+Lapsuudessa tai nuoruusiässä alkavat sosiaalisen vuorovaikutuksen häiriöt
+Valikoiva puhumattomuus
+Lapsuuden kiintymyssuhteiden reaktiivinen häiriö
+Lapsuuden kiintymyssuhteiden estottomuus
+Muu lapsuuden sosiaalisen vuorovaikutuksen häiriö
+Määrittämätön lapsuuden sosiaalisen vuorovaikutuksen häiriö
+Nykimishäiriöt
+Väliaikainen nykimishäiriö
+Pitkäaikainen motorinen tai äänellinen nykimishäiriö
+Samanaikainen äänellinen ja motorinen monimuotoinen nykimishäiriö
+Muu määritetyt nykimishäiriö
+Määrittämätön nykimishäiriö
+Muut tavallisesti lapsuudessa tai nuoruusiässä alkavat toiminto- ja tunnehäiriöt
+Ei-elimellinen kastelu
+Ei-elimellinen yökastelu
+Ei-elimellinen päiväkastelu
+Ei-elimellinen yö- ja päiväkastelu
+Ei-elimellinen tuhriminen
+Ei-elimellinen tuhriminen  fysiologisen suolen hallinnan saavuttamisen epäonnistuminen
+Ei-elimellinen tuhriminen  ulostaminen sopimattomiin paikkoihin huolimatta riittävästä suolen hallinnasta ja kiinteydeltään normaaleista ulosteista
+Ei-elimellinen tuhriminen  ja erittäin löysät ulosteet
+Ei-elimellinen tuhriminen  muu tai määrittämätön
+Lapsen tai imeväisen syömishäiriö
+Lapsen tai imeväisen pica-oireyhtymä
+Kaavamaiset liikehäiriöt
+Kaavamaiset liikehäiriöt  ei itseä vahingoittavat
+Kaavamaiset liikehäiriöt  itseä vahingoittavat
+Kaavamaiset liikehäiriöt  sekamuotoinen tai määrittämätön
+Änkytys
+Sokellus
+Muu tavallisesti lapsuus- tai nuoruusiässä alkava toiminto- ja tunnehäiriö
+Tarkemmin määrittämättömät tavallisesti lapsuudessa ja nuoruudessa alkavat toiminto- ja tunnehäiriöt
+Tarkemmin määrittämätön mielenterveyden häiriö
+Määrittämätön mielenterveyden häiriö
