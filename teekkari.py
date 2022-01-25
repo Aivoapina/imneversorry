@@ -60,7 +60,7 @@ class Teekkari:
         self.ennustukset = db.readEnnustukset()
         self.nakutukset = db.readNakutukset()
         self.lastVitun = {}
-        self.nextUutine = 0
+        self.nextUutine = {}
         self.lastUutineUpdate = 0
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
@@ -293,6 +293,7 @@ class Teekkari:
 
     def getUutine(self, update: Update, context: CallbackContext):
         now = time.time()
+        chat_id = update.message.chat.id
         if self.lastUutineUpdate + 3600 < now:
             self.lastUutineUpdate = now
             req = requests.get(self.uutineUrl)
@@ -305,8 +306,12 @@ class Teekkari:
                         otsikko = otsikko.split(' – ')
                         self.uutineet[0].append(otsikko[0])
                         self.uutineet[1].append(otsikko[1])
-        if self.nextUutine < now:
-            self.nextUutine = now + random.randint(10, 120)
+
+        if chat_id not in self.nextUutine:
+          self.nextUutine[chat_id] = 0
+        
+        if self.nextUutine[chat_id] < now:
+            self.nextUutine[chat_id] = now + random.randint(10, 120)
             uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
             context.bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
 
