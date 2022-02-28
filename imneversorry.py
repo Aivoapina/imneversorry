@@ -36,7 +36,7 @@ BANNED_CHANNELS = ast.literal_eval(cfg['TELEGRAM']['banned_channels'])
 initdb.initdb()
 
 rir = rips.Rips()
-vit = teekkari.Teekkari()
+vit = teekkari.Teekkari(cfg['MISC'].getboolean('use_local_vitun'))
 vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 tag = tagaaja.Tagaaja()

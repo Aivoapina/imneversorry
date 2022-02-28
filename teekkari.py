@@ -18,7 +18,7 @@ from emoji import unicode_codes
 from kasvinimi import findKasvinimi
 
 class Teekkari:
-    def __init__(self):
+    def __init__(self, useLocalVitun=False):
         self.commands = {
             'vituttaa': self.getVitutus,
             'viisaus': self.getViisaus,
@@ -65,6 +65,7 @@ class Teekkari:
         self.uutineet = [ [], [] ]
         self.nextVaihdan = 0
         self.lastPottiin = {}
+        self.useLocalVitun = useLocalVitun
         self.kanyeRest = 'https://api.kanye.rest/'
 
     def getCommands(self):
@@ -210,10 +211,13 @@ class Teekkari:
             context.bot.sendDice(chat_id=update.message.chat_id)
 
     def getUrbaani(self):
-        webpage = urllib.request.urlopen(self.urbaaniUrl).read().decode("utf-8")
-        title = str(webpage).split('<title>')[1].split('</title>')[0]
-        sana = title.split(" |")[0]
-        return sana
+        if self.useLocalVitun:
+            return db.randomVitun()[0]
+        else:
+            webpage = urllib.request.urlopen(self.urbaaniUrl).read().decode("utf-8")
+            title = str(webpage).split('<title>')[1].split('</title>')[0]
+            sana = title.split(" |")[0]
+            return sana
 
     def getUrbaaniSelitys(self, word):
         webpage = urllib.request.urlopen(self.urbaaniWordUrl + word + '/').read().decode("utf-8")

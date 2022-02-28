@@ -84,6 +84,9 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Nakutukset('
         'nakutus text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Vitut('
+        'vitun text)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Tagit('
         'tag text not null,'
         'target text not null,'

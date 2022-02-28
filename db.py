@@ -278,3 +278,8 @@ def readSelitykset():
         cur.execute('SELECT kortti, selitys, rev from Korttiselitykset')
         rows = cur.fetchall()
         return (rows)
+
+def randomVitun():
+    with cursor() as cur:
+        cur.execute('SELECT vitun FROM Vitut ORDER BY RANDOM() LIMIT 1')
+        return cur.fetchone()
