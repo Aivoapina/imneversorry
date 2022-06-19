@@ -12,6 +12,7 @@ import valitsin
 import oppija
 import tagaaja
 import quote
+import quotedle
 import tirsk
 import mainari
 import kilometri
@@ -41,13 +42,14 @@ vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 tag = tagaaja.Tagaaja()
 quo = quote.Quote()
+que = quotedle.Quotedle()
 tir = tirsk.Tirsk()
 mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']
                      ['server_admins'], cfg['MINECRAFT'].getboolean('use_ip'), cfg['MINECRAFT'].getboolean('use_hostname'))
 km = kilometri.Kilometri()
 tar = tarot.Tarot()
 
-objects = [rir, vit, vai, tir, opi, km, quo, mc, tag, tar]
+objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar]
 
 
 def allMessages(update: Update, context: CallbackContext):
