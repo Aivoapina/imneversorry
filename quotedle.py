@@ -103,3 +103,7 @@ class Quotedle:
         guessStack = '\n'.join(self.guesses[chat_id])
         message = '/quotedle - {:s}, {:d}/{:d}\n{:s}'.format(self.correctQuote[chat_id][1], len(self.guesses[chat_id]), self.maxGuess, guessStack)
         context.bot.sendMessage(chat_id=chat_id, text=message)
+        
+    def messageHandler(self, update: Update, context: CallbackContext):
+        return
+        
