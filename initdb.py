@@ -117,7 +117,13 @@ def initdb(db='bot.db'):
                   'AS SELECT u.uid, u.chatid, u.km, u.date, u.km * l.kerroin, l.nimi '
                       'FROM Urheilut as u JOIN Urheilulajit AS l ON u.type = l.id')
 
-
+    c.execute('CREATE TABLE IF NOT EXISTS Olemiset('
+        'user_id text not null,'
+        'message_id text not null,'
+        'channel integer not null,'
+        'creator text,'
+        'created date,'
+        'primary key(user_id, channel))')
 
     conn.commit()
     conn.close()
