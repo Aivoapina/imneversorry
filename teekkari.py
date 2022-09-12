@@ -106,6 +106,7 @@ class Teekkari:
             txtTapanSut = 'tapan sut'
             txtTapanKaikki = 'TAPAN KAIKKI'
 
+
         if random.randint(1, neverlucky) == 1:
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
