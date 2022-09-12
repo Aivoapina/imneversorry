@@ -78,7 +78,15 @@ class Teekkari:
             context.bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
     def handleHakemus(self, update: Update, context: CallbackContext):
+        # https://dota2.fandom.com/wiki/Random_distribution
+        rngbullshit = 0.014745844781072675877050816
+
         bot = context.bot
+        user = update.message.from_user.id
+        channel = update.message.chat_id
+
+        userPrd = db.fetchPseudoRandom(user, channel)
+        neverlucky = round(int(1/float(userPrd[0])))
 
         # https://t.me/c/1363070040/153134
         if 'hacemus' in update.message.text.lower():
@@ -98,18 +106,23 @@ class Teekkari:
             txtTapanSut = 'tapan sut'
             txtTapanKaikki = 'TAPAN KAIKKI'
 
-        if random.randint(0, 9) == 0:
+        if random.randint(0, neverlucky) == 0:
             if random.randint(0, 200) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+                db.updatePseudoRandom(user, channel, rngbullshit)
             else:
                 bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva)
+                db.updatePseudoRandom(user, channel, rngbullshit)
         else:
             if random.randint(0, 1000) == 0:
                 bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+                db.updatePseudoRandom(user, channel, float(userPrd)+rngbullshit)
             elif random.randint(0, 600) == 0:
                 bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki)
+                db.updatePseudoRandom(user, channel, float(userPrd)+rngbullshit)
             else:
                 bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut)
+                db.updatePseudoRandom(user, channel, float(userPrd)+rngbullshit)
 
     def getViisaus(self, update: Update, context: CallbackContext):
         context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
