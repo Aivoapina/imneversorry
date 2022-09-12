@@ -125,5 +125,11 @@ def initdb(db='bot.db'):
         'created date,'
         'primary key(user_id, channel))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Randomit('
+        'user_id text not null,'
+        'channel integer not null,'
+        'prd_chance float,'
+        'primary key(user_id, channel))')
+
     conn.commit()
     conn.close()
