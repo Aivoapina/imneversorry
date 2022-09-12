@@ -301,3 +301,14 @@ def findWhoIsThis(message_id, channel):
         cur.execute('SELECT message_id, user_id, creator FROM Olemiset WHERE message_id=? and channel=?', (message_id, channel))
         rows = cur.fetchall()
         return rows
+
+def updatePseudoRandom(user_id, channel, prd_chance):
+    with cursor() as cur:
+        cur.execute('INSERT OR REPLACE INTO Randomit values(?, ?, ?)',
+        (user_id, channel, prd_chance))
+
+def fetchPseudoRandom(user_id, channel):
+    with cursor() as cur:
+        cur.execute('SELECT prd_chance FROM Randomit WHERE user_id=? and channel=?', (user_id, channel))
+        rows = cur.fetchall()
+        return rows
