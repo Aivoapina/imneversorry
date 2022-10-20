@@ -35,7 +35,8 @@ class Teekkari:
             'kasvinimi': self.getKasvinimi,
             'sukunimi': self.getSukunimi,
             'pottiin': self.getPottiin,
-            'kanye': self.getKanye
+            'kanye': self.getKanye,
+            'kalja': self.getKippis,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -335,6 +336,13 @@ class Teekkari:
         kanye = r.json()["quote"]
         context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
 
+    def getKippis(self, update: Update, context: CallbackContext):
+        kippikses = {"kalja": "Kippis!", "laöja": "klppsh ?!", "gambina": "goo-va :D"}
+        for beverage, kippis in kippikses.items():
+            if beverage in update.message.text.lower():
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=kippis)
+                break
+
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -394,3 +402,5 @@ class Teekkari:
                 self.getPottiin(update, context)
             elif re.match(r'^/kanye', msg.text.lower()):
                 self.getKanye(update, context)
+            elif any(re.match(r'^/%s' % beverage, msg.text.lower()) for beverage in ('kalja', 'laöja', 'gambina')):
+                self.getKippis(update, context)
