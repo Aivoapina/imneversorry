@@ -35,7 +35,8 @@ class Teekkari:
             'kasvinimi': self.getKasvinimi,
             'sukunimi': self.getSukunimi,
             'pottiin': self.getPottiin,
-            'kanye': self.getKanye
+            'kanye': self.getKanye,
+            'kalja': self.getKippis,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -68,6 +69,19 @@ class Teekkari:
         self.useLocalVitun = useLocalVitun
         self.kanyeRest = 'https://api.kanye.rest/'
 
+        # https://t.me/c/1363070040/153134
+        self.hakemukses = {
+            'hacemus': ('hy-wae', 'i cill u', 'HEADSHOT'),
+            'hakemsu': ('hvy-ää', 'tapna stu', 'TAPNA KIKKI'),
+            'h4k3mu5': ('hy-\/44', '74p4n 5u7', '74P4|\| K41KK1'),
+            'hakemus': ('hyy-vä', 'tapan sut', 'TAPAN KAIKKI'),
+        }
+        self.kippikses = {
+            "kalja": "Kippis!",
+            "laöja": "klppsh ?!",
+            "gambina": "goo-va :D"
+        }
+
     def getCommands(self):
         return self.commands
 
@@ -79,24 +93,11 @@ class Teekkari:
 
     def handleHakemus(self, update: Update, context: CallbackContext):
         bot = context.bot
+        msg = update.message.text.lower()
 
-        # https://t.me/c/1363070040/153134
-        if 'hacemus' in update.message.text.lower():
-            txtHyyva = 'hy-wae'
-            txtTapanSut = 'i cill u'
-            txtTapanKaikki = 'HEADSHOT'
-        elif 'hakemsu' in update.message.text.lower():
-            txtHyyva = 'hvy-ää'
-            txtTapanSut = 'tapna stu'
-            txtTapanKaikki = 'TAPNA KIKKI'
-        elif 'h4k3mu5' in update.message.text.lower():
-            txtHyyva = 'hy-\/44'
-            txtTapanSut = '74p4n 5u7'
-            txtTapanKaikki = '74P4|\| K41KK1'
-        else:
-            txtHyyva = 'hyy-vä'
-            txtTapanSut = 'tapan sut'
-            txtTapanKaikki = 'TAPAN KAIKKI'
+        for cmd, responses in self.hakemukses.items():
+            if (cmd in msg):
+                txtHyyva, txtTapanSut, txtTapanKaikki = responses
 
         if random.randint(0, 9) == 0:
             if random.randint(0, 200) == 0:
@@ -335,6 +336,12 @@ class Teekkari:
         kanye = r.json()["quote"]
         context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
 
+    def getKippis(self, update: Update, context: CallbackContext):
+        for beverage, kippis in self.kippikses.items():
+            if beverage in update.message.text.lower():
+                context.bot.sendMessage(chat_id=update.message.chat_id, text=kippis)
+                break
+
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -350,7 +357,7 @@ class Teekkari:
                 self.getViisaus(update, context)
             elif 'pekkauotila' in msg.text.lower():
                 self.getVittuilu(update, context)
-            elif 'hakemus' in msg.text.lower() or 'hacemus' in msg.text.lower() or 'hakemsu' in msg.text.lower() or 'h4k3mu5' in msg.text.lower():
+            elif any(hakemusCmd in msg.text.lower() for hakemusCmd in self.hakemukses):
                 self.handleHakemus(update, context)
             elif 'diagno' in msg.text.lower():
                 self.getDiagnoosi(update, context)
@@ -394,3 +401,5 @@ class Teekkari:
                 self.getPottiin(update, context)
             elif re.match(r'^/kanye', msg.text.lower()):
                 self.getKanye(update, context)
+            elif any(re.match(r'^/%s' % beverage, msg.text.lower()) for beverage in self.kippikses.keys()):
+                self.getKippis(update, context)
