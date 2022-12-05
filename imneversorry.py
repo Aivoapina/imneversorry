@@ -16,6 +16,7 @@ import tirsk
 import mainari
 import kilometri
 import tarot
+import kattely
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -46,8 +47,9 @@ mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], c
                      ['server_admins'], cfg['MINECRAFT'].getboolean('use_ip'), cfg['MINECRAFT'].getboolean('use_hostname'))
 km = kilometri.Kilometri()
 tar = tarot.Tarot()
+kat = kattely.Kattelija()
 
-objects = [rir, vit, vai, tir, opi, km, quo, mc, tag, tar]
+objects = [rir, vit, vai, tir, opi, km, quo, mc, tag, tar, kat]
 
 
 def allMessages(update: Update, context: CallbackContext):
