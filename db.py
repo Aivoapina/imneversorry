@@ -283,3 +283,21 @@ def randomVitun():
     with cursor() as cur:
         cur.execute('SELECT vitun FROM Vitut ORDER BY RANDOM() LIMIT 1')
         return cur.fetchone()
+
+def declareBeingThis(message_id, user_id, channel, creator):
+    with cursor() as cur:
+        date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        cur.execute('INSERT OR REPLACE INTO Olemiset values(?, ?, ?, ?, ?)',
+        (user_id, message_id, channel, creator, date))
+
+def findWhatUserIs(user_id, channel):
+    with cursor() as cur:
+        cur.execute('SELECT message_id, creator FROM Olemiset WHERE user_id=? and channel=?', (user_id, channel))
+        rows = cur.fetchall()
+        return rows
+
+def findWhoIsThis(message_id, channel):
+    with cursor() as cur:
+        cur.execute('SELECT message_id, user_id, creator FROM Olemiset WHERE message_id=? and channel=?', (message_id, channel))
+        rows = cur.fetchall()
+        return rows

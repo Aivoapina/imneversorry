@@ -12,11 +12,13 @@ import valitsin
 import oppija
 import tagaaja
 import quote
+import quotedle
 import tirsk
 import mainari
 import kilometri
 import tarot
 import kattely
+import kissa
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -42,14 +44,16 @@ vai = valitsin.Valitsin()
 opi = oppija.Oppija()
 tag = tagaaja.Tagaaja()
 quo = quote.Quote()
+que = quotedle.Quotedle()
 tir = tirsk.Tirsk()
+kis = kissa.Kissa()
 mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], cfg['MINECRAFT']
                      ['server_admins'], cfg['MINECRAFT'].getboolean('use_ip'), cfg['MINECRAFT'].getboolean('use_hostname'))
 km = kilometri.Kilometri()
 tar = tarot.Tarot()
 kat = kattely.Kattelija()
 
-objects = [rir, vit, vai, tir, opi, km, quo, mc, tag, tar, kat]
+objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat]
 
 
 def allMessages(update: Update, context: CallbackContext):
