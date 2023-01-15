@@ -21,6 +21,7 @@ class Teekkari:
     def __init__(self, useLocalVitun=False):
         self.commands = {
             'vituttaa': self.getVitutus,
+            'gqqish': self.getGqqish,
             'viisaus': self.getViisaus,
             'hakemus': self.handleHakemus,
             'pekkauotila': self.getVittuilu,
@@ -81,6 +82,25 @@ class Teekkari:
             "laöja": "klppsh ?!",
             "gambina": "goo-va :D"
         }
+        self.getRandomArticleQuery = lambda lang: {
+            "url": "https://{lang}.wikipedia.org/w/api.php".format(lang=lang),
+            "params": {
+                "action":       "query",
+                "format":       "json",
+                "list":         "random",
+                "rnnamespace":  0
+            }
+        }
+        self.getArticleTextByIdQuery = lambda lang, articleId: {
+            "url": "https://{lang}.wikipedia.org/w/api.php".format(lang=lang),
+            "params": {
+                "action":       "query",
+                "format":       "json",
+                "pageids":      articleId,
+                "prop":         "extracts",
+                "explaintext":  "true"           # No value needs to be given but this has to be defined
+            }
+        }
 
     def getCommands(self):
         return self.commands
@@ -120,6 +140,18 @@ class Teekkari:
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
         context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+
+    def getGqqish(self, update: Update, context: CallbackContext):
+        lang = random.choice(("en", "fi"))
+
+        r = requests.get(**(self.getRandomArticleQuery(lang)))
+        articleId = r.json()["query"]["random"][0]["id"]
+
+        r = requests.get(**(self.getArticleTextByIdQuery(lang, articleId)))
+        text = r.json()["query"]["pages"][str(articleId)]["extract"]
+        paragraphs = tuple(l for l in text.splitlines() if len(l.strip()) > 0 and not l.startswith("="))
+        rndParagraph = random.choice(paragraphs)
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=rndParagraph)
 
     def getSukunimi(self, update: Update, context: CallbackContext):
         r = requests.get(self.sukunimiUrl)
@@ -353,6 +385,8 @@ class Teekkari:
         if msg.text is not None:
             if 'vituttaa' in msg.text.lower():
                 self.getVitutus(update, context)
+            elif re.match(r'^/gqqish', msg.text.lower()):
+                self.getGqqish(update, context)
             elif 'viisaus' in msg.text.lower():
                 self.getViisaus(update, context)
             elif 'pekkauotila' in msg.text.lower():
