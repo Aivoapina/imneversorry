@@ -82,22 +82,23 @@ class Teekkari:
             "laöja": "klppsh ?!",
             "gambina": "goo-va :D"
         }
-        self.getRandomArticleQuery = {
-            "url": "https://{lang}.wikipedia.org/w/api.php",
+        self.getRandomArticleQuery = lambda lang: {
+            "url": "https://{lang}.wikipedia.org/w/api.php".format(lang=lang),
             "params": {
-                "action":     "query",
-                "format":     "json",
-                "list":       "random",
-                "rnnamespace": 0
+                "action":       "query",
+                "format":       "json",
+                "list":         "random",
+                "rnnamespace":  0
             }
         }
-        self.getArticleTextByIdQuery = {
-            "url": "https://{lang}.wikipedia.org/w/api.php",
+        self.getArticleTextByIdQuery = lambda lang, articleId: {
+            "url": "https://{lang}.wikipedia.org/w/api.php".format(lang=lang),
             "params": {
-                "action":      "query",
-                "format":      "json",
-                "prop":        "extracts",
-                "explaintext": "true"           # No value needs to be given but this has to be defined
+                "action":       "query",
+                "format":       "json",
+                "pageids":      articleId,
+                "prop":         "extracts",
+                "explaintext":  "true"           # No value needs to be given but this has to be defined
             }
         }
 
@@ -142,17 +143,11 @@ class Teekkari:
 
     def getGqqish(self, update: Update, context: CallbackContext):
         lang = random.choice(("en", "fi"))
-        getRandomArticleQuery = dict(self.getRandomArticleQuery)
-        getRandomArticleQuery["url"] = getRandomArticleQuery["url"].format(lang=lang)
-        r = requests.get(**getRandomArticleQuery)
+
+        r = requests.get(**(self.getRandomArticleQuery(lang)))
         articleId = r.json()["query"]["random"][0]["id"]
 
-        # Make a local copy to not spoil the template dict
-        getArticleTextByIdQuery = dict(self.getArticleTextByIdQuery)
-        getArticleTextByIdQuery["url"] = getArticleTextByIdQuery["url"].format(lang=lang)
-        getArticleTextByIdQuery["params"]["pageids"] = articleId
-        r = requests.get(**getArticleTextByIdQuery)
-
+        r = requests.get(**(self.getArticleTextByIdQuery(lang, articleId)))
         text = r.json()["query"]["pages"][str(articleId)]["extract"]
         paragraphs = tuple(l for l in text.splitlines() if len(l.strip()) > 0 and not l.startswith("="))
         rndParagraph = random.choice(paragraphs)
