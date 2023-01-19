@@ -384,7 +384,18 @@ class Teekkari:
             elif update.message.from_user.last_name:
                 nimi = update.message.from_user.last_name
 
-        nimuli = nimi + 'uli'
+        suffix = 'uli'
+        lastLetter = nimi[-1]
+        if lastLetter == 'u':
+            suffix = 'li'
+        elif lastLetter== 'c' or lastLetter == 'k':
+            suffix = lastLetter + 'uli'
+
+        # Special case for Emmi :)
+        if nimi == 'mmiiih':
+            nimuli = 'empsuli'
+        else:
+            nimuli = nimi + suffix
         context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
     def banHammer(self, update: Update, context: CallbackContext):
