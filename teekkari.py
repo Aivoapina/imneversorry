@@ -38,6 +38,7 @@ class Teekkari:
             'pottiin': self.getPottiin,
             'kanye': self.getKanye,
             'kalja': self.getKippis,
+            'nimuli': self.getNimuli,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -346,7 +347,7 @@ class Teekkari:
 
         if chat_id not in self.nextUutine:
           self.nextUutine[chat_id] = 0
-        
+
         if self.nextUutine[chat_id] < now:
             self.nextUutine[chat_id] = now + random.randint(10, 120)
             uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
@@ -373,6 +374,29 @@ class Teekkari:
             if beverage in update.message.text.lower():
                 context.bot.sendMessage(chat_id=update.message.chat_id, text=kippis)
                 break
+
+    def getNimuli(self, update: Update, context: CallbackContext):
+        if update.message.from_user:
+            if update.message.from_user.username:
+                nimi = update.message.from_user.username
+            elif update.message.from_user.first_name:
+                nimi = update.message.from_user.first_name
+            elif update.message.from_user.last_name:
+                nimi = update.message.from_user.last_name
+
+        suffix = 'uli'
+        lastLetter = nimi[-1]
+        if lastLetter == 'u':
+            suffix = 'li'
+        elif lastLetter== 'c' or lastLetter == 'k':
+            suffix = lastLetter + 'uli'
+
+        # Special case for Emmi :)
+        if nimi == 'mmiiih':
+            nimuli = 'empsuli'
+        else:
+            nimuli = nimi + suffix
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
@@ -435,5 +459,7 @@ class Teekkari:
                 self.getPottiin(update, context)
             elif re.match(r'^/kanye', msg.text.lower()):
                 self.getKanye(update, context)
+            elif re.match(r'^/nimuli', msg.text.lower()):
+                self.getNimuli(update, context)
             elif any(re.match(r'^/%s' % beverage, msg.text.lower()) for beverage in self.kippikses.keys()):
                 self.getKippis(update, context)
