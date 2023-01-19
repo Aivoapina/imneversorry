@@ -376,26 +376,38 @@ class Teekkari:
                 break
 
     def getNimuli(self, update: Update, context: CallbackContext):
-        if update.message.from_user:
-            if update.message.from_user.username:
-                nimi = update.message.from_user.username
-            elif update.message.from_user.first_name:
-                nimi = update.message.from_user.first_name
-            elif update.message.from_user.last_name:
-                nimi = update.message.from_user.last_name
+        if len(context.args) == 0:
+            if update.message.from_user:
+                if update.message.from_user.username:
+                    nimi = update.message.from_user.username
+                elif update.message.from_user.first_name:
+                    nimi = update.message.from_user.first_name
+                elif update.message.from_user.last_name:
+                    nimi = update.message.from_user.last_name
+        else:
+            nimi = context.args[0].strip('@')
 
         suffix = 'uli'
-        lastLetter = nimi[-1]
-        if lastLetter == 'u':
-            suffix = 'li'
-        elif lastLetter== 'c' or lastLetter == 'k':
-            suffix = lastLetter + 'uli'
+        nimuli = ''
 
         # Special case for Emmi :)
         if nimi == 'mmiiih':
             nimuli = 'empsuli'
+        elif re.search(r'uli$', nimi):
+            nimuli = nimi
+        elif re.search(r'[aeiouyäöå][qwrtpsdfghjklzxcvnm]i$', nimi):
+            nimuli = re.sub(r'[aeiouyäöå][qwrtpsdfghjklzxcvnm]i$', 'uli', nimi)
         else:
-            nimuli = nimi + suffix
+            nimuli = re.sub(r'[^aeiouyäöå]*$', '', nimi)
+            nimuli = re.sub(r'([^l])l+i$', r'\1', nimuli)
+            nimuli = re.sub(r'[aeiouyäöå]*$', '', nimuli)
+            nimuli += suffix
+            if nimuli == suffix or nimuli == '':
+                nimuli = re.sub(r'[aeiouyäöå]*$', '', nimi)
+                nimuli += suffix
+        if nimuli == suffix:
+            nimuli += suffix
+
         context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
     def banHammer(self, update: Update, context: CallbackContext):
