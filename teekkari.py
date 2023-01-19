@@ -376,26 +376,30 @@ class Teekkari:
                 break
 
     def getNimuli(self, update: Update, context: CallbackContext):
-        if update.message.from_user:
-            if update.message.from_user.username:
-                nimi = update.message.from_user.username
-            elif update.message.from_user.first_name:
-                nimi = update.message.from_user.first_name
-            elif update.message.from_user.last_name:
-                nimi = update.message.from_user.last_name
+        if len(context.args) == 0:
+            if update.message.from_user:
+                if update.message.from_user.username:
+                    nimi = update.message.from_user.username
+                elif update.message.from_user.first_name:
+                    nimi = update.message.from_user.first_name
+                elif update.message.from_user.last_name:
+                    nimi = update.message.from_user.last_name
+        else:
+            nimi = context.args[0].strip('@')
 
         suffix = 'uli'
-        lastLetter = nimi[-1]
-        if lastLetter == 'u':
-            suffix = 'li'
-        elif lastLetter== 'c' or lastLetter == 'k':
-            suffix = lastLetter + 'uli'
 
         # Special case for Emmi :)
         if nimi == 'mmiiih':
             nimuli = 'empsuli'
         else:
+            nimuli = re.sub(r'[^aeiouyäöå]*$', '', nimi)
+            nimuli = re.sub(r'li$', '', nimuli)
+            nimuli = re.sub(r'[aeiouyäöå]$', suffix, nimuli)
+
+        if nimuli == suffix or nimuli == '':
             nimuli = nimi + suffix
+
         context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
     def banHammer(self, update: Update, context: CallbackContext):
