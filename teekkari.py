@@ -388,17 +388,25 @@ class Teekkari:
             nimi = context.args[0].strip('@')
 
         suffix = 'uli'
+        nimuli = ''
 
         # Special case for Emmi :)
         if nimi == 'mmiiih':
             nimuli = 'empsuli'
+        elif re.search(r'uli$', nimi):
+            nimuli = nimi
+        elif re.search(r'[aeiouyäöå][qwrtpsdfghjklzxcvnm]i$', nimi):
+            nimuli = re.sub(r'[aeiouyäöå][qwrtpsdfghjklzxcvnm]i$', 'uli', nimi)
         else:
             nimuli = re.sub(r'[^aeiouyäöå]*$', '', nimi)
-            nimuli = re.sub(r'li$', '', nimuli)
-            nimuli = re.sub(r'[aeiouyäöå]$', suffix, nimuli)
-
-        if nimuli == suffix or nimuli == '':
-            nimuli = nimi + suffix
+            nimuli = re.sub(r'([^l])l+i$', r'\1', nimuli)
+            nimuli = re.sub(r'[aeiouyäöå]*$', '', nimuli)
+            nimuli += suffix
+            if nimuli == suffix or nimuli == '':
+                nimuli = re.sub(r'[aeiouyäöå]*$', '', nimi)
+                nimuli += suffix
+        if nimuli == suffix:
+            nimuli += suffix
 
         context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
