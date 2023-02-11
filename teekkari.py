@@ -264,16 +264,6 @@ class Teekkari:
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
         return str(url[-1].split('=')[-1].lower())
 
-    def getVitun(self, update: Update, context: CallbackContext):
-        now = datetime.datetime.now().date()
-        userId = update.message.from_user.id
-        if userId not in self.lastVitun:
-            self.lastVitun[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-        elif self.lastVitun[userId] != now:
-            self.lastVitun[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
-
     def getVitunSelitys(self, update: Update, context: CallbackContext):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
         word = re.sub(r"[^a-z0-9\-]", '', word)
@@ -443,8 +433,6 @@ class Teekkari:
                 self.getNoppa(update, context)
             elif re.match(r'^vaihdan', msg.text.lower()):
                 self.getVaihdan(update, context)
-            elif re.match(r'^vitun', msg.text.lower()):
-                self.getVitun(update, context)
             elif re.match(r'^mikä vitun ', msg.text.lower()):
                 self.getVitunSelitys(update, context)
             elif re.match(r'^helveten', msg.text.lower()):
