@@ -19,6 +19,7 @@ import kilometri
 import tarot
 import kattely
 import kissa
+import noppa
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -52,8 +53,9 @@ mc = mainari.Mainari(cfg['MINECRAFT']['server'], cfg['MINECRAFT']['game_ops'], c
 km = kilometri.Kilometri()
 tar = tarot.Tarot()
 kat = kattely.Kattelija()
+nop = noppa.Noppa()
 
-objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat]
+objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, nop]
 
 
 def allMessages(update: Update, context: CallbackContext):
