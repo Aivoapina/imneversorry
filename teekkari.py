@@ -44,6 +44,7 @@ class Teekkari:
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
         self.slangopediaUrl = 'http://www.slangopedia.se/slumpa/'
+        self.slangopediaWordUrl = 'http://www.slangopedia.se/ordlista/?ord='
         self.uutineUrl = 'https://www.is.fi/api/laneitems/392841/multilist'
         self.sukunimiUrl = 'https://fi.wiktionary.org/wiki/Toiminnot:Satunnainen_kohde_luokasta/Luokka:Suomen_kielen_sukunimet'
         self.viisaudet = db.readViisaudet()
@@ -264,6 +265,17 @@ class Teekkari:
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
         return str(url[-1].split('=')[-1].lower())
 
+    def getHelvetenSelitys(self, update: Update, context: CallbackContext):
+        word = update.message.text[13:].lower().replace(' ', '+').replace('ä', '%E4').replace('ö', '%F6').replace('å', '%E5')
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getSlangoSelitys(word))
+
+    def getSlangoSelitys(self, word):
+        webpage = urllib.request.urlopen(self.slangopediaWordUrl + word).read()
+        meaning = str(webpage).split('<span class="definition">')[1].split('</span>')[0]
+        meaning = meaning.replace('<br />', '\n').replace('&#229;', 'å').replace('&#228;', 'ä').replace('&#246;', 'ö')
+        meaning = meaning.replace('&quot;', '"')
+        return meaning
+
     def getVitunSelitys(self, update: Update, context: CallbackContext):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
         word = re.sub(r"[^a-z0-9\-]", '', word)
@@ -461,5 +473,7 @@ class Teekkari:
                 self.getKanye(update, context)
             elif re.match(r'^/nimuli', msg.text.lower()):
                 self.getNimuli(update, context)
+            elif re.match(r'^vad helveten ', msg.text.lower()):
+                self.getHelvetenSelitys(update, context)
             elif any(re.match(r'^/%s' % beverage, msg.text.lower()) for beverage in self.kippikses.keys()):
                 self.getKippis(update, context)
