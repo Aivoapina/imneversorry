@@ -260,6 +260,23 @@ class Teekkari:
         meaning = meaning[meaning.find('.')+2:]
         return meaning
 
+    def getVitun(self, update: Update, context: CallbackContext):
+        # Only allow vitun during wappu and Christmas eve
+        today = datetime.date.today()
+        if not ((today.month == 12 and today.day == 24) or
+            (today.month == 4 and (today.day >= 13 and today.day <= 30)) or
+            (today.month == 5 and today.day == 1)):
+            return
+
+        now = datetime.datetime.now().date()
+        userId = update.message.from_user.id
+        if userId not in self.lastVitun:
+            self.lastVitun[userId] = now
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+        elif self.lastVitun[userId] != now:
+            self.lastVitun[userId] = now
+            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+
     def getSlango(self):
         r = requests.get(self.slangopediaUrl)
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
@@ -445,6 +462,8 @@ class Teekkari:
                 self.getNoppa(update, context)
             elif re.match(r'^vaihdan', msg.text.lower()):
                 self.getVaihdan(update, context)
+            elif re.match(r'^vitun', msg.text.lower()):
+                self.getVitun(update, context)
             elif re.match(r'^mikä vitun ', msg.text.lower()):
                 self.getVitunSelitys(update, context)
             elif re.match(r'^helveten', msg.text.lower()):
