@@ -52,9 +52,9 @@ class Valitsin:
     def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if msg.text is not None:
-            vai = msg.text.lower().split(' vai ', 1)
+            vai = set(msg.text.lower().split()[1::2]) == {'vai'}
             pakko = re.match(r"^onko pakko ([^?]+)(\??)$", msg.text.lower(), re.IGNORECASE)
-            if vai > 1:
-                self.makeDecision(update, context, vai)
+            if vai:
+                self.makeDecision(update, context, msg.text.lower().split()[::2])
             elif pakko:
                 self.onkoPakko(update, context, pakko)
