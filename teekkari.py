@@ -123,16 +123,16 @@ class Teekkari:
 
         if random.randint(0, 9) == 0:
             if random.randint(0, 200) == 0:
-                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ')
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ', reply_to_message_id=update.message.message_id)
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva)
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva, reply_to_message_id=update.message.message_id)
         else:
             if random.randint(0, 1000) == 0:
-                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ')
+                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ', reply_to_message_id=update.message.message_id)
             elif random.randint(0, 600) == 0:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki)
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki, reply_to_message_id=update.message.message_id)
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut)
+                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut, reply_to_message_id=update.message.message_id)
 
     def getViisaus(self, update: Update, context: CallbackContext):
         context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
