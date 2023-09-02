@@ -138,7 +138,7 @@ class Teekkari:
         context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
 
     def getVitutus(self, update: Update, context: CallbackContext):
-        r = requests.get(self.vituttaaUrl)
+        r = requests.get(self.vituttaaUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
         context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
@@ -149,14 +149,14 @@ class Teekkari:
         r = requests.get(**(self.getRandomArticleQuery(lang)))
         articleId = r.json()["query"]["random"][0]["id"]
 
-        r = requests.get(**(self.getArticleTextByIdQuery(lang, articleId)))
+        r = requests.get(**(self.getArticleTextByIdQuery(lang, articleId)), timeout=5)
         text = r.json()["query"]["pages"][str(articleId)]["extract"]
         paragraphs = tuple(l for l in text.splitlines() if len(l.strip()) > 0 and not l.startswith("="))
         rndParagraph = random.choice(paragraphs)
         context.bot.sendMessage(chat_id=update.message.chat_id, text=rndParagraph)
 
     def getSukunimi(self, update: Update, context: CallbackContext):
-        r = requests.get(self.sukunimiUrl)
+        r = requests.get(self.sukunimiUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ')
         context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
@@ -278,7 +278,7 @@ class Teekkari:
             context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
     def getSlango(self):
-        r = requests.get(self.slangopediaUrl)
+        r = requests.get(self.slangopediaUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
         return str(url[-1].split('=')[-1].lower())
 
@@ -353,7 +353,7 @@ class Teekkari:
         chat_id = update.message.chat.id
         if self.lastUutineUpdate + 3600 < now:
             self.lastUutineUpdate = now
-            req = requests.get(self.uutineUrl)
+            req = requests.get(self.uutineUrl, timeout=5)
             uutineet = req.json()[0]
             self.uutineet = [ [], [] ]
             for uutine in uutineet:
@@ -384,7 +384,7 @@ class Teekkari:
             context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
     def getKanye(self, update: Update, context: CallbackContext):
-        r = requests.get(self.kanyeRest)
+        r = requests.get(self.kanyeRest, timeout=5)
         kanye = r.json()["quote"]
         context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
 

@@ -32,7 +32,7 @@ class Mainari:
         threading.Timer(60.0, self.resetInfoCooldown).start()
         self.is_in_cooldown = True
 
-        r = requests.get(self.api_url + self.server)
+        r = requests.get(self.api_url + self.server, timeout=10)
         data = r.json()
 
         message_text = self.parseServerData(data)
