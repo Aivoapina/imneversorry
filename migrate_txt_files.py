@@ -116,4 +116,9 @@ for line in fs.read().splitlines():
     c.execute("INSERT OR IGNORE INTO Korttiselitykset(kortti, selitys, rev) values(?,?,?)", (line.split("@@@")[0], line.split("@@@")[1], line.split("@@@")[2]))
 fs.close()
 
+fs = open('resources/joulukalenteri.txt', 'r', encoding='utf-8')
+
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Joulukalenteri(linkki) values(?)", (line,))
+
 conn.commit()

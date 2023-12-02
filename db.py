@@ -301,3 +301,9 @@ def findWhoIsThis(message_id, channel):
         cur.execute('SELECT message_id, user_id, creator FROM Olemiset WHERE message_id=? and channel=?', (message_id, channel))
         rows = cur.fetchall()
         return rows
+
+def readJoulukalenteri():
+    with cursor() as cur:
+        cur.execute('SELECT linkki from Joulukalenteri')
+        rows = cur.fetchall()
+        return list(rows)
