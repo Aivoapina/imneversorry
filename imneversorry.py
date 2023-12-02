@@ -20,6 +20,7 @@ import tarot
 import kattely
 import kissa
 import noppa
+import joulukalenteri
 
 # Add valid command line arguments
 arg_parser = ArgumentParser()
@@ -54,8 +55,9 @@ km = kilometri.Kilometri()
 tar = tarot.Tarot()
 kat = kattely.Kattelija()
 nop = noppa.Noppa()
+jou = joulukalenteri.Joulukalenteri()
 
-objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, nop]
+objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, nop, jou]
 
 
 def allMessages(update: Update, context: CallbackContext):

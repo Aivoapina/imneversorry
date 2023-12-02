@@ -125,5 +125,8 @@ def initdb(db='bot.db'):
         'created date,'
         'primary key(user_id, channel))')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Joulukalenteri('
+        'linkki text)')
+
     conn.commit()
     conn.close()
