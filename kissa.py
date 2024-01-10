@@ -53,7 +53,7 @@ class Kissa:
     def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if msg.text is not None:
-            if re.match(r"oon\s(\S+\s){0,4}tää", msg.text.lower()):
+            if re.match(r"oon\s(\S+\s){0,4}(tää|toi)", msg.text.lower()):
                 self.declareBeingThis(update, context)
             elif 'mikä mä oon' in msg.text.lower():
                 self.findWhatUserIs(update, context)
@@ -61,5 +61,5 @@ class Kissa:
                 context.bot.sendMessage(
                     chat_id=update.message.chat.id, text="".join([chr([ord(x) >> 7 for x in ['㞀', '爀', '㜀', '㲀', 'က', '㒀', '㔀', '㖀', 'む', '㪀', '㦀', 'ᴀ', '⚀', 'ᦀ']][c]) for c in rigged.choice([[12,8,9,4,11,13],[12,6,1,3,3,3,3,4,11,13],[12,6,1,3,4,11,13],[12,5,9,4,11,13],[12,6,1,3,3,3,3,4,0,0,2,4,7,5,10,10,8,4,11,13]])]))
         elif msg.caption is not None:
-            if re.match(r"oon\s(\S+\s){0,4}tää", msg.caption.lower()):
+            if re.match(r"oon\s(\S+\s){0,4}(tää|toi)", msg.caption.lower()):
                 self.declareBeingThis(update, context)
