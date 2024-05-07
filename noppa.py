@@ -13,9 +13,9 @@ class Noppa:
         return self.commands
 
     def throwDice(self, n: int, sides: int):
-        if n < 1:
+        if n < 1 or n > 1000:
             raise Exception ("Invalid number of dice.")
-        if sides < 1:
+        if sides < 1 or sides > 100:
             raise Exception("Invalid number of sides.")
 
         throws = []
