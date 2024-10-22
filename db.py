@@ -207,6 +207,12 @@ def readDefinitions(channel):
         rows = cur.fetchall()
         return rows
 
+def readTorit():
+    with cursor() as cur:
+        cur.execute('SELECT tori from Torit')
+        rows = cur.fetchall()
+        return set(rows)
+
 def upsertTag(tag, target, channel, creator):
     with cursor() as cur:
         date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

@@ -120,5 +120,10 @@ fs = open('resources/joulukalenteri.txt', 'r', encoding='utf-8')
 
 for line in fs.read().splitlines():
     c.execute("INSERT OR IGNORE INTO Joulukalenteri(linkki) values(?)", (line,))
+fs.close()
+
+fs = open('resources/torit.txt', 'r', encoding='utf-8')
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Torit(tori) values(?)", (line,))
 
 conn.commit()
