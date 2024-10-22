@@ -128,5 +128,8 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Joulukalenteri('
         'linkki text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Torit('
+        'tori text)')
+
     conn.commit()
     conn.close()
