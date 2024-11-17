@@ -213,6 +213,12 @@ def readTorit():
         rows = cur.fetchall()
         return set(rows)
 
+def readRikokset():
+    with cursor() as cur:
+        cur.execute('SELECT rikos from Rikokset')
+        rows = cur.fetchall()
+        return set(rows)
+
 def upsertTag(tag, target, channel, creator):
     with cursor() as cur:
         date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")

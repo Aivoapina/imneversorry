@@ -1,0 +1,469 @@
+Joukkotuhonta
+Joukkotuhonnan valmistelu
+Rikos ihmisyyttä vastaan
+Törkeä rikos ihmisyyttä vastaan
+Hyökkäysrikos
+Hyökkäysrikoksen valmistelu 
+Tahdonvastaisen katoamisen toteuttaminen
+Sotarikos
+Törkeä sotarikos
+Lievä sotarikos
+Jalkaväkimiinakiellon rikkominen
+Kemiallisen aseen kiellon rikkominen
+Biologisen aseen kiellon rikkominen
+Kidutus
+Kiihottaminen kansanryhmää vastaan
+Törkeä kiihottaminen kansanryhmää vastaan
+Syrjintä
+Esimiehen vastuu
+Alaisen rikoksen ilmoittamatta jättäminen
+Sotaan yllyttäminen
+Maanpetos
+Törkeä maanpetos
+Vakoilu
+Törkeä vakoilu
+Turvallisuussalaisuuden paljastaminen
+Tuottamuksellinen turvallisuussalaisuuden paljastaminen
+Luvaton tiedustelutoiminta
+Puolueettomuusmääräysten rikkominen
+Maanpetoksellinen yhteydenpito
+Valtiopetoksen valmistelu
+Laiton sotilaallinen toiminta
+Vaalirikos
+Vaalilahjonta
+Vilpillinen äänestäminen
+Vaalituloksen vääristäminen
+Poliittisten toimintavapauksien loukkaaminen
+Kokouksen estäminen
+Perätön lausuma tuomioistuimessa
+Perätön lausuma viranomaismenettelyssä
+Törkeä perätön lausuma tuomioistuimessa
+Tuottamuksellinen perätön lausuma
+Yritetty yllytys perättömään lausumaan
+Väärä ilmianto
+Todistusaineiston vääristeleminen
+Törkeä todistusaineiston vääristeleminen
+Oikeudenkäytössä kuultavan uhkaaminen
+Törkeän rikoksen ilmoittamatta jättäminen
+Rikoksentekijän suojeleminen
+Ulkomailla tai kansainvälisessä tuomioistuimessa tehty perätön lausuma
+Rikokset Kansainvälisen rikostuomioistuimen oikeudenkäyttöä vastaan
+Haitanteko virkamiehelle
+Niskoittelu poliisia vastaan
+Niskoittelu rajavartiomiestä vastaan
+Niskoittelu tullimiestä vastaan
+Väärän henkilötiedon antaminen
+Sakkovilppi
+Rekisterimerkintärikos
+Väärän todistuksen antaminen viranomaiselle
+Virkavallan anastus
+Lähestymiskiellon rikkominen
+Omaisuutta koskevan viranomaiskiellon rikkominen
+Liiketoimintakiellon rikkominen
+Viranomaisen hallussa olevan todistuskappaleen hävittäminen
+Lahjuksen antaminen
+Törkeä lahjuksen antaminen
+Lahjuksen antaminen kansanedustajalle
+Törkeä lahjuksen antaminen kansanedustajalle
+Vangin laiton vapauttaminen
+Vangin karkaaminen
+Vangin varustautuminen aseella
+Järjestäytyneen rikollisryhmän toimintaan osallistuminen
+Mellakka
+Väkivaltainen mellakka
+Väkivaltaisen mellakan johtaminen
+Yleisen järjestyksen aseellisen rikkomisen valmistelu
+Järjestystä ylläpitävän henkilön vastustaminen
+Luvaton turvallisuusalan elinkeinotoiminnan harjoittaminen
+Valtionrajarikos
+Lievä valtionrajarikos
+Maahantulokiellon rikkominen
+Alueloukkaus
+Laittoman maahantulon järjestäminen
+Törkeä laittoman maahantulon järjestäminen
+Omankädenoikeus
+Uskonrauhan rikkominen
+Uskonnonharjoituksen estäminen
+Hautarauhan rikkominen
+Ilkivalta
+Laiton naamioituminen
+Eläinsuojelurikos
+Törkeä eläinsuojelurikos
+Lievä eläinsuojelurikos
+Kissan tai koiran turkiksen markkinoillesaattamisrikkomus
+Uhkapelin järjestäminen
+Rahapelirikos
+Arpajaisrikos
+Rahankeräysrikos
+Lievä rahankeräysrikos
+Väkivaltakuvauksen levittäminen
+Sukupuolisiveellisyyttä loukkaavan kuvan levittäminen
+Kuvaohjelman laiton esittäminen tai levittäminen alaikäiselle
+Sukupuolisiveellisyyttä loukkaava markkinointi
+Sukupuolisiveellisyyden julkinen loukkaaminen
+Sukupuoliyhteys lähisukulaisten kesken
+Eläintenpitokielto
+Raiskaus
+Törkeä raiskaus
+Seksuaalinen kajoaminen
+Törkeä seksuaalinen kajoaminen
+Seksuaalinen hyväksikäyttö
+Seksuaalinen ahdistelu
+Seksuaalisen kuvan luvaton levittäminen
+Seksikaupan kohteena olevan henkilön hyväksikäyttö
+Korvauksen tarjoaminen nuoreen kohdistuvasta seksuaalisesta teosta
+Paritus
+Törkeä paritus
+Lapsenraiskaus
+Törkeä lapsenraiskaus
+Seksuaalinen kajoaminen lapseen
+Törkeä seksuaalinen kajoaminen lapseen
+Lapsen seksuaalinen hyväksikäyttö
+Törkeä lasta seksuaalisesti esittävän kuvan levittäminen
+Lasta seksuaalisesti esittävän kuvan hallussapito
+Lasta seksuaalisesti esittävän esityksen seuraaminen
+Tappo
+Murha
+Surma
+Lapsensurma
+Pahoinpitely
+Törkeä pahoinpitely
+Törkeän henkeen tai terveyteen kohdistuvan rikoksen valmistelu
+Lievä pahoinpitely
+Kuolemantuottamus
+Törkeä kuolemantuottamus
+Vammantuottamus
+Törkeä vammantuottamus
+Tappeluun osallistuminen
+Vaaran aiheuttaminen
+Heitteillepano
+Pelastustoimen laiminlyönti
+Laiton raskauden keskeyttäminen
+Törkeä laiton raskauden keskeyttäminen
+Laiton alkioon puuttuminen
+Laiton perimään puuttuminen
+Laiton sukusolujen käyttö
+Lapsen identiteetin loukkaaminen
+Liikenneturvallisuuden vaarantaminen
+Törkeä liikenneturvallisuuden vaarantaminen
+Rattijuopumus
+Törkeä rattijuopumus
+Vesiliikennejuopumus
+Ilmaliikennejuopumus
+Junaliikennejuopumus
+Kulkuneuvon luovuttaminen juopuneelle
+Liikennejuopumus moottorittomalla ajoneuvolla
+Kulkuneuvon kuljettaminen oikeudetta
+Liikennepako tieliikenteessä
+Liikenteen häirintä
+Kotirauhan rikkominen
+Viestintärauhan rikkominen
+Törkeä kotirauhan rikkominen
+Julkisrauhan rikkominen
+Törkeä julkisrauhan rikkominen
+Salakuuntelu
+Salakatselu
+Salakuuntelun ja salakatselun valmistelu
+Yksityiselämää loukkaava tiedon levittäminen
+Törkeä yksityiselämää loukkaava tiedon levittäminen
+Kunnianloukkaus
+Törkeä kunnianloukkaus
+Vapaudenriisto
+Törkeä vapaudenriisto
+Ihmiskauppa
+Törkeä ihmiskauppa
+Laiton adoptiosuostumuksen hankkiminen
+Laiton adoptionvälitys
+Panttivangin ottaminen
+Panttivangin ottamisen valmistelu
+Lapsen omavaltainen huostaanotto
+Lapsikaappaus
+Tuottamuksellinen vapaudenriisto
+Laiton uhkaus
+Vainoaminen
+Pakottaminen
+Toimenpiteistä luopuminen
+Varkaus
+Törkeä varkaus
+Näpistys
+Kavallus
+Törkeä kavallus
+Lievä kavallus
+Luvaton käyttö
+Törkeä luvaton käyttö
+Lievä luvaton käyttö
+Moottorikulkuneuvon käyttövarkaus
+Törkeä moottorikulkuneuvon käyttövarkaus
+Lievä moottorikulkuneuvon käyttövarkaus
+Luvaton pyynti
+Hallinnan loukkaus
+Vakuusoikeuden loukkaus
+Murtovälineen hallussapito
+Veropetos
+Törkeä veropetos
+Lievä veropetos
+Verorikkomus
+Työeläkevakuutusmaksupetos
+Törkeä työeläkevakuutusmaksupetos
+Tapaturmavakuutusmaksupetos
+Avustuspetos
+Törkeä avustuspetos
+Avustuksen väärinkäyttö
+Törkeä avustuksen väärinkäyttö
+Avustusrikkomus
+Veron- ja tullinkorotuksen suhde veropetokseen ja verorikkomukseen
+Laiminlyöntimaksun suhde työeläke- ja tapaturmavakuutusmaksupetokseen
+Markkinointirikos
+Alkoholijuoman markkinointirikos
+Kilpailumenettelyrikos
+Kuluttajaluottorikos
+Matkapalvelurikos
+Matkapalvelurikkomus
+Yritysvakoilu
+Yrityssalaisuuden rikkominen
+Yrityssalaisuuden väärinkäyttö
+Lahjominen elinkeinotoiminnassa
+Törkeä lahjominen elinkeinotoiminnassa
+Lahjuksen ottaminen elinkeinotoiminnassa
+Törkeä lahjuksen ottaminen elinkeinotoiminnassa
+Kirjanpitorikos
+Törkeä kirjanpitorikos
+Tuottamuksellinen kirjanpitorikos
+Tilintarkastusrikos
+Ryöstö
+Törkeä ryöstö
+Törkeän ryöstön valmistelu
+Kiristys
+Törkeä kiristys
+Kätkemisrikos
+Törkeä kätkemisrikos
+Ammattimainen kätkemisrikos
+Tuottamuksellinen kätkemisrikos
+Kätkemisrikkomus
+Rahanpesu
+Törkeä rahanpesu
+Salahanke törkeän rahanpesun tekemiseksi
+Tuottamuksellinen rahanpesu
+Rahanpesurikkomus
+Rajoitussäännökset
+Väärennys
+Törkeä väärennys
+Lievä väärennys
+Väärennysaineiston hallussapito
+Maastomerkin väärennys
+Tuhotyö
+Liikennetuhotyö
+Törkeä tuhotyö
+Terveyden vaarantaminen
+Törkeä terveyden vaarantaminen
+Ydinräjähderikos
+Yleisvaaran tuottamus
+Törkeä yleisvaaran tuottamus
+Yleisvaarallisen rikoksen valmistelu
+Vaaran aiheuttaminen tietojenkäsittelylle
+Tietoverkkorikosvälineen hallussapito
+Perätön vaarailmoitus
+Kaappaus
+Terroristisessa tarkoituksessa tehdyt rikokset
+Terroristisessa tarkoituksessa tehty radiologista asetta koskeva rikos
+Terroristisessa tarkoituksessa tehtävän rikoksen valmistelu
+Terroristiryhmän johtaminen
+Terroristiryhmän toimintaan osallistuminen
+Koulutuksen antaminen terrorismirikoksen tekemistä varten
+Kouluttautuminen terrorismirikoksen tekemistä varten 
+Värväys terrorismirikoksen tekemiseen
+Terrorismirikoksen rahoittaminen
+Terroristin rahoittaminen
+Terroristiryhmän rahoittaminen
+Matkustaminen terrorismirikoksen tekemistä varten
+Terrorismirikoksen tekemistä varten tapahtuvan matkustamisen edistäminen
+Terrorismirikoksiin liittyvä julkinen kehottaminen
+Vahingonteko
+Törkeä vahingonteko
+Lievä vahingonteko
+Datavahingonteko
+Törkeä datavahingonteko
+Lievä datavahingonteko
+Petos
+Törkeä petos
+Lievä petos
+Vakuutuspetos
+Luottamusaseman väärinkäyttö
+Kiskonta
+Törkeä kiskonta
+Rahanväärennys
+Törkeä rahanväärennys
+Lievä rahanväärennys
+Rahanväärennyksen valmistelu
+Väärän rahan käyttö
+Väärän rahan hallussapito
+Rahajäljitelmän levitys
+Maksuvälinepetos
+Törkeä maksuvälinepetos
+Lievä maksuvälinepetos
+Maksuvälinepetoksen valmistelu
+Maksuvälinerikos
+Törkeä maksuvälinerikos
+Lievä maksuvälinerikos
+Salassapitorikos
+Salassapitorikkomus
+Viestintäsalaisuuden loukkaus
+Törkeä viestintäsalaisuuden loukkaus
+Tietoliikenteen häirintä
+Törkeä tietoliikenteen häirintä
+Lievä tietoliikenteen häirintä
+Tietojärjestelmän häirintä
+Törkeä tietojärjestelmän häirintä
+Tietomurto
+Törkeä tietomurto
+Suojauksen purkujärjestelmärikos
+Tietosuojarikos
+Identiteettivarkaus
+Velallisen epärehellisyys
+Törkeä velallisen epärehellisyys
+Velallisen petos
+Törkeä velallisen petos
+Velallisen vilpillisyys
+Velallisrikkomus
+Velkojansuosinta
+Lahjuksen ottaminen
+Törkeä lahjuksen ottaminen
+Lahjusrikkomus
+Lahjuksen ottaminen kansanedustajana
+Törkeä lahjuksen ottaminen kansanedustajana
+Virkasalaisuuden rikkominen ja tuottamuksellinen virkasalaisuuden rikkominen
+Virka-aseman väärinkäyttäminen
+Törkeä virka-aseman väärinkäyttäminen
+Euroopan unionin varojen väärinkäyttö 
+Törkeä Euroopan unionin varojen väärinkäyttö 
+Virkavelvollisuuden rikkominen
+Tuottamuksellinen virkavelvollisuuden rikkominen
+Sotilasvirkarikokset
+Viittaussäännökset
+Ampuma-aserikos
+Törkeä ampuma-aserikos
+Lievä ampuma-aserikos
+Vaarallisia esineitä koskevien säännösten rikkominen
+Vaarallisen esineen hallussapito
+Toisen vahingoittamiseen soveltuvan esineen tai aineen hallussapito
+Toisen vahingoittamiseen soveltuvan esineen luovuttaminen alaikäiselle
+Ampumaratarikos
+Terveysrikos
+Terveydensuojelurikkomus
+Luvaton terveydenhuollon ammattitoimen harjoittaminen
+Luvaton eläinlääkärinammatin harjoittaminen
+Eläintaudin leviämisvaaran aiheuttaminen
+Lääkerikos
+Kuluttajamarkkinoilta kielletyn psykoaktiivisen aineen kiellon rikkominen
+Dopingrikos
+Törkeä dopingrikos
+Lievä dopingrikos
+Geenitekniikkarikos
+Kliinistä lääketutkimusta koskeva rikos
+Lääketieteellistä tutkimusta koskeva rikos
+Ydinenergian käyttörikos
+Räjähderikos
+Varomaton käsittely
+Radioaktiivisen aineen hallussapitorikos
+Vaarallisten aineiden kuljetusrikos
+Vaaranmerkintärikkomus
+Eläimen vartioimatta jättäminen
+Palvelusrikokset
+Palvelusrikos
+Törkeä palvelusrikos
+Lievä palvelusrikos
+Tuottamuksellinen palvelusrikos
+Vartiorikokset
+Vartiorikos
+Törkeä vartiorikos
+Lievä vartiorikos
+Tuottamuksellinen vartiorikos
+Poissaolorikokset
+Luvaton poissaolo
+Karkaaminen
+Kuuliaisuusrikokset
+Esimiehen väkivaltainen vastustaminen
+Törkeä esimiehen väkivaltainen vastustaminen
+Haitanteko esimiehelle
+Niskoittelu
+Yhteinen niskoittelu
+Esimiesrikokset
+Esimiesaseman väärinkäyttäminen
+Törkeä esimiesaseman väärinkäyttäminen
+Sotilaan sopimaton käyttäytyminen
+Luvaton poliittinen toiminta
+Sota-ajan rikokset
+Sotilasrikos sota-aikana
+Taisteluvelvollisuuden rikkominen
+Sotakarkuruus
+Vaarallinen sotilasrikos
+Salahanke vaarallisen sotilasrikoksen tekemiseksi
+Sotavankeudesta pakeneminen
+Sotavangin pakenemisen edistäminen
+Esimiehen käsky
+Sotilaat
+Sota-aika
+Säännöstelyrikos
+Törkeä säännöstelyrikos
+Lievä säännöstelyrikos
+Salakuljetus
+Lievä salakuljetus
+Laiton tuontitavaraan ryhtyminen
+Lievä laiton tuontitavaraan ryhtyminen
+Tulliselvitysrikos
+Törkeä tulliselvitysrikos
+Lievä tulliselvitysrikos
+Vientitavaran alkuperää koskevan väärän tiedon antaminen
+Puolustustarvikkeiden maastavientirikos
+Kaksikäyttötuotteiden vientivalvontailmoituksen laiminlyönti
+Työaikasuojelurikos
+Työsyrjintä
+Kiskonnantapainen työsyrjintä
+Työntekijöiden edustajien oikeuksien loukkaaminen
+Työntekijöiden järjestäytymisvapauden loukkaaminen
+Työnvälityksen maksukiellon rikkominen
+Työnvälityksen maksukiellon rikkominen
+Luvattoman ulkomaisen työvoiman käyttö
+Vastuun kohdentuminen
+Ympäristön turmeleminen
+Törkeä ympäristön turmeleminen
+Ympäristörikkomus
+Tuottamuksellinen ympäristön turmeleminen
+Luonnonsuojelurikos
+Törkeä luonnonsuojelurikos
+Rakennussuojelurikos
+Vastuun kohdentuminen
+Ulkomaiselta alukselta talousvyöhykkeellä tehty ympäristörikos
+Metsästysrikos
+Törkeä metsästysrikos
+Kalastusrikos
+Metsärikos
+Laiton Etelämanneralueen mineraaliesiintymään kajoaminen
+Puutavararikos
+Laittoman saaliin kätkeminen
+Törkeä laittoman saaliin kätkeminen
+Metsästyskielto
+Ulkomaiselta alukselta talousvyöhykkeellä tehty kalastusrikos ja kalastusrikoksella saadun laittoman saaliin kätkeminen
+Tekijänoikeusrikos
+Teollisoikeusrikos
+Teknisen suojauksen kiertäminen
+Teknisen suojauksen kiertämiskeinorikos
+Oikeuksien sähköisten hallinnointitietojen loukkausrikos
+Huumausainerikos
+Törkeä huumausainerikos
+Huumausaineen käyttörikos
+Huumausainerikoksen valmistelu
+Huumausainerikoksen edistäminen
+Törkeä huumausainerikoksen edistäminen
+Toimenpiteistä luopuminen
+Alkoholirikos
+Törkeä alkoholirikos
+Lievä alkoholirikos
+Veron- ja tullinkorotuksen suhde alkoholirikokseen
+Sisäpiirintiedon väärinkäyttö
+Törkeä sisäpiirintiedon väärinkäyttö
+Sisäpiirintiedon ilmaiseminen
+Markkinoiden manipulointi 
+Törkeä markkinoiden manipulointi 
+Arvopaperimarkkinoita koskeva tiedottamisrikos
+Kryptovaramarkkinoita koskeva tiedottamisrikos

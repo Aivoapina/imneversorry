@@ -64,6 +64,7 @@ class Teekkari:
         self.ennustukset = db.readEnnustukset()
         self.nakutukset = db.readNakutukset()
         self.torit = db.readTorit()
+        self.rikokset = db.readRikokset()
         self.lastVitun = {}
         self.nextUutine = {}
         self.lastUutineUpdate = 0
@@ -436,6 +437,9 @@ class Teekkari:
         elif (tori := re.search(r'(\w*tori)(?!lle)\b', update.message.text.lower())):
             context.bot.sendMessage(chat_id=update.message.chat_id, text=tori.group(0) + 'lle')
 
+    def getRikos(self, update: Update, context: CallbackContext):
+        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.rikokset, 1)[0][0])
+
     def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -465,6 +469,8 @@ class Teekkari:
                 self.getUutine(update, context)
             elif 'tori' in msg.text.lower():
                 self.getTori(update, context)
+            elif 'rikos' in msg.text.lower():
+                self.getRikos(update, context)
             elif re.match(r'^halo', msg.text.lower()):
                 self.getHalo(update, context)
             elif re.match(r'^noppa', msg.text.lower()):
