@@ -47,7 +47,6 @@ Oikeudenkäytössä kuultavan uhkaaminen
 Törkeän rikoksen ilmoittamatta jättäminen
 Rikoksentekijän suojeleminen
 Ulkomailla tai kansainvälisessä tuomioistuimessa tehty perätön lausuma
-Rikokset Kansainvälisen rikostuomioistuimen oikeudenkäyttöä vastaan
 Haitanteko virkamiehelle
 Niskoittelu poliisia vastaan
 Niskoittelu rajavartiomiestä vastaan
@@ -245,7 +244,6 @@ Törkeä rahanpesu
 Salahanke törkeän rahanpesun tekemiseksi
 Tuottamuksellinen rahanpesu
 Rahanpesurikkomus
-Rajoitussäännökset
 Väärennys
 Törkeä väärennys
 Lievä väärennys
@@ -264,7 +262,6 @@ Vaaran aiheuttaminen tietojenkäsittelylle
 Tietoverkkorikosvälineen hallussapito
 Perätön vaarailmoitus
 Kaappaus
-Terroristisessa tarkoituksessa tehdyt rikokset
 Terroristisessa tarkoituksessa tehty radiologista asetta koskeva rikos
 Terroristisessa tarkoituksessa tehtävän rikoksen valmistelu
 Terroristiryhmän johtaminen
@@ -338,8 +335,6 @@ Euroopan unionin varojen väärinkäyttö
 Törkeä Euroopan unionin varojen väärinkäyttö 
 Virkavelvollisuuden rikkominen
 Tuottamuksellinen virkavelvollisuuden rikkominen
-Sotilasvirkarikokset
-Viittaussäännökset
 Ampuma-aserikos
 Törkeä ampuma-aserikos
 Lievä ampuma-aserikos
@@ -368,31 +363,25 @@ Radioaktiivisen aineen hallussapitorikos
 Vaarallisten aineiden kuljetusrikos
 Vaaranmerkintärikkomus
 Eläimen vartioimatta jättäminen
-Palvelusrikokset
 Palvelusrikos
 Törkeä palvelusrikos
 Lievä palvelusrikos
 Tuottamuksellinen palvelusrikos
-Vartiorikokset
 Vartiorikos
 Törkeä vartiorikos
 Lievä vartiorikos
 Tuottamuksellinen vartiorikos
-Poissaolorikokset
 Luvaton poissaolo
 Karkaaminen
-Kuuliaisuusrikokset
 Esimiehen väkivaltainen vastustaminen
 Törkeä esimiehen väkivaltainen vastustaminen
 Haitanteko esimiehelle
 Niskoittelu
 Yhteinen niskoittelu
-Esimiesrikokset
 Esimiesaseman väärinkäyttäminen
 Törkeä esimiesaseman väärinkäyttäminen
 Sotilaan sopimaton käyttäytyminen
 Luvaton poliittinen toiminta
-Sota-ajan rikokset
 Sotilasrikos sota-aikana
 Taisteluvelvollisuuden rikkominen
 Sotakarkuruus
@@ -400,9 +389,6 @@ Vaarallinen sotilasrikos
 Salahanke vaarallisen sotilasrikoksen tekemiseksi
 Sotavankeudesta pakeneminen
 Sotavangin pakenemisen edistäminen
-Esimiehen käsky
-Sotilaat
-Sota-aika
 Säännöstelyrikos
 Törkeä säännöstelyrikos
 Lievä säännöstelyrikos
