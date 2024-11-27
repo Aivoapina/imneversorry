@@ -126,4 +126,8 @@ fs = open('resources/torit.txt', 'r', encoding='utf-8')
 for line in fs.read().splitlines():
     c.execute("INSERT OR IGNORE INTO Torit(tori) values(?)", (line,))
 
+fs = open('resources/rikokset.txt', 'r', encoding='utf-8')
+for line in fs.read().splitlines():
+    c.execute("INSERT OR IGNORE INTO Rikokset(rikos) values(?)", (line,))
+
 conn.commit()

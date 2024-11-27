@@ -130,6 +130,9 @@ def initdb(db='bot.db'):
 
     c.execute('CREATE TABLE IF NOT EXISTS Torit('
         'tori text)')
+    
+    c.execute('CREATE TABLE IF NOT EXISTS Rikokset('
+        'rikos text)')
 
     conn.commit()
     conn.close()
