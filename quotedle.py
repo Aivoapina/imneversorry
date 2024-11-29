@@ -62,48 +62,44 @@ class Quotedle:
         self.correctQuote[chat_id] = quote
         self.guesses[chat_id] = []
 
-    def quotedleHandler(self, update: Update, context: CallbackContext):
+    async def quotedleHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if chat_id not in self.correctQuote or chat_id not in self.guesses:
             self.resetGame(chat_id)
 
         message = 'Arvaa kenen quote: \"{}\"?'.format(self.correctQuote[chat_id][0])
-        context.bot.sendMessage(chat_id=chat_id, text=message)
+        await context.bot.sendMessage(chat_id=chat_id, text=message)
 
-    def guessHandler(self, update: Update, context: CallbackContext):
+    async def guessHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
         if len(context.args) < 1:
             return
         if len(context.args[0]) > self.maxQuoteeChars:
-            context.bot.send_message(chat_id=chat_id, text=':D')
+            await context.bot.send_message(chat_id=chat_id, text=':D')
             return
 
         if chat_id not in self.correctQuote or chat_id not in self.guesses:
-            context.bot.sendMessage(chat_id=chat_id, text='Peli ei käynnissä, aloitetaan uusi peli!')
-            self.quotedleHandler(update, context)
+            await context.bot.sendMessage(chat_id=chat_id, text='Peli ei käynnissä, aloitetaan uusi peli!')
+            await self.quotedleHandler(update, context)
             return
 
         guess_string = makeGuessString(context.args[0].lower(), self.correctQuote[chat_id][1])
         self.guesses[chat_id].append(guess_string)
 
         if context.args[0].lower() == self.correctQuote[chat_id][1]:
-            self.endGame(context, chat_id, True)
+            await self.endGame(context, chat_id, True)
             self.resetGame(chat_id)
         elif len(self.guesses[chat_id]) >= self.maxGuess:
-            self.endGame(context, chat_id, False)
+            await self.endGame(context, chat_id, False)
             self.resetGame(chat_id)
         else:
-            context.bot.send_message(chat_id=chat_id, text=guess_string)
+            await context.bot.send_message(chat_id=chat_id, text=guess_string)
         
-    def endGame(self, context, chat_id, victory):
+    async def endGame(self, context, chat_id, victory):
         if victory:
-            context.bot.sendMessage(chat_id=chat_id, text='Onnea, löysit quoten lausujan :3')
+            await context.bot.sendMessage(chat_id=chat_id, text='Onnea, löysit quoten lausujan :3')
         else:
-            context.bot.sendMessage(chat_id=chat_id, text='Pahus, et löytänyt quoten lausujaa :(')
+            await context.bot.sendMessage(chat_id=chat_id, text='Pahus, et löytänyt quoten lausujaa :(')
         guessStack = '\n'.join(self.guesses[chat_id])
         message = '/quotedle - {:s}, {:d}/{:d}\n{:s}'.format(self.correctQuote[chat_id][1], len(self.guesses[chat_id]), self.maxGuess, guessStack)
-        context.bot.sendMessage(chat_id=chat_id, text=message)
-        
-    def messageHandler(self, update: Update, context: CallbackContext):
-        return
-        
+        await context.bot.sendMessage(chat_id=chat_id, text=message)

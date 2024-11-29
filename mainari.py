@@ -22,9 +22,9 @@ class Mainari:
     def getCommands(self):
         return self.commands
 
-    def getServerInfo(self, update: Update, context: CallbackContext):
+    async def getServerInfo(self, update: Update, context: CallbackContext):
         if self.is_in_cooldown:
-            context.bot.sendMessage(chat_id=update.message.chat_id,
+            await context.bot.sendMessage(chat_id=update.message.chat_id,
                             text="Cool. Cool cool cool.")
             return
 
@@ -36,7 +36,7 @@ class Mainari:
         data = r.json()
 
         message_text = self.parseServerData(data)
-        context.bot.sendMessage(chat_id=update.message.chat_id,
+        await context.bot.sendMessage(chat_id=update.message.chat_id,
                         parse_mode='Markdown', text=message_text)
 
     def parseNicks(self, nicks):
@@ -139,6 +139,3 @@ class Mainari:
 
     def resetInfoCooldown(self):
         self.is_in_cooldown = False
-
-    def messageHandler(self, update: Update, context: CallbackContext):
-        return

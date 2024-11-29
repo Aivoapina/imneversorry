@@ -5,7 +5,6 @@
 from telegram import Update
 from telegram.ext import CallbackContext
 import random
-import sqlite3 as sq
 import db
 
 class Rips:
@@ -20,61 +19,62 @@ class Rips:
     def getCommands(self):
         return self.commands
 
-    def ripHandler(self, update: Update, context: CallbackContext):
+    async def ripHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
+            return # Cannot select 1 random sample from 0 samples
         # pylint: disable=unpacking-non-sequence
-        riptype, rip = random.sample(self.rips[update.message.chat.id], 1)[0]
-        self.sendMsg(update, context, rip, riptype)
+        riptype, rip = random.sample(self.rips[chat_id], 1)[0]
+        await self.sendMsg(update, context, rip, riptype)
 
-    def newripHandler(self, update: Update, context: CallbackContext):
+    async def newripHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
             self.waiting_rip[key] = 'newrip'
-            self.sendMsg(update, context, 'Usage: /newrip <ripmessage> or send mediafile for newrip')
+            await self.sendMsg(update, context, 'Usage: /newrip <ripmessage> or send mediafile for newrip')
             return
         newrip = 'text', ' '.join(context.args)
-        self.addRip(update, context, newrip)
+        await self.addRip(update, context, newrip)
 
-    def delripHandler(self, update: Update, context: CallbackContext):
+    async def delripHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             key = str(update.message.from_user.id) + str(update.message.chat.id)
             self.waiting_rip[key] = 'delrip'
-            self.sendMsg(update, context, 'Usage: /delrip <ripname> or forward mediafile for delete')
+            await self.sendMsg(update, context, 'Usage: /delrip <ripname> or forward mediafile for delete')
             return
         delrip = 'text', ' '.join(context.args)
         self.delRip(update, context, delrip)
 
-    def addRip(self, update: Update, context: CallbackContext, newrip):
+    async def addRip(self, update: Update, context: CallbackContext, newrip):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
         elif newrip in self.rips[chat_id]:
-            self.sendMsg(update, context, 'Already in rips')
+            await self.sendMsg(update, context, 'Already in rips')
         else:
             self.rips[chat_id].add(newrip)
             type, rip = newrip
             db.addRip(type, rip, chat_id, update.message.from_user.username)
 
-    def delRip(self, update: Update, context: CallbackContext, delrip):
+    async def delRip(self, update: Update, context: CallbackContext, delrip):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
-            self.sendMsg(update, context, "Couldn't find rip")
+            await self.sendMsg(update, context, "Couldn't find rip")
         elif delrip not in self.rips[chat_id]:
-            self.sendMsg(update, context, "Couldn't find rip")
+            await self.sendMsg(update, context, "Couldn't find rip")
         else:
             self.rips[chat_id].remove(delrip)
             db.delRip(delrip)
 
-    def ripsCountHandler(self, update: Update, context: CallbackContext):
+    async def ripsCountHandler(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
         if chat_id not in self.rips:
             self.rips[chat_id] = set()
-        self.sendMsg(update, context, str(len(self.rips[chat_id])) + ' rips')
+        await self.sendMsg(update, context, str(len(self.rips[chat_id])) + ' rips')
 
-    def messageHandler(self, update: Update, context: CallbackContext):
+    async def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if self.isNewRip(msg):
             if len(msg.photo) > 0:
@@ -96,20 +96,20 @@ class Rips:
             if key in self.waiting_rip:
                 if rip is not None:
                     if self.waiting_rip[key] == 'newrip':
-                        self.addRip(update, context, rip)
+                        await self.addRip(update, context, rip)
                     elif self.waiting_rip[key] == 'delrip':
-                        self.delRip(update, context, rip)
+                        await self.delRip(update, context, rip)
                 self.waiting_rip.pop(key)
 
             if msg.caption is not None:
                 if 'newrip' in msg.caption:
-                    self.addRip(update, context, rip)
+                    await self.addRip(update, context, rip)
                 elif 'delrip' in msg.caption:
-                    self.delRip(update, context, rip)
+                    await self.delRip(update, context, rip)
 
         if msg.text is not None:
             if 'rip' in msg.text.lower():
-                self.ripHandler(update, context)
+                await self.ripHandler(update, context)
 
     def isNewRip(self, msg):
         key = str(msg.from_user.id) + str(msg.chat.id)
@@ -121,22 +121,21 @@ class Rips:
                     return True
             return False
 
-    def sendMsg(self, update: Update, context: CallbackContext, msg, msg_type=''):
-        bot = context.bot
+    async def sendMsg(self, update: Update, context: CallbackContext, msg, msg_type=''):
         if msg_type == 'photo':
-            bot.sendPhoto(chat_id=update.message.chat_id, photo=msg, caption='rip in')
+            await context.bot.sendPhoto(chat_id=update.message.chat_id, photo=msg, caption='rip in')
         elif msg_type == 'document':
-            bot.sendDocument(chat_id=update.message.chat_id, document=msg, caption='rip in')
+            await context.bot.sendDocument(chat_id=update.message.chat_id, document=msg, caption='rip in')
         elif msg_type == 'location':
             loc = msg.split(',')
-            bot.sendLocation(chat_id=update.message.chat_id, longitude=float(loc[0]), latitude=float(loc[1]), caption='rip in')
+            await context.bot.sendLocation(chat_id=update.message.chat_id, longitude=float(loc[0]), latitude=float(loc[1]), caption='rip in')
         elif msg_type == 'voice':
-            bot.sendVoice(chat_id=update.message.chat_id, voice=msg, caption='rip in')
+            await context.bot.sendVoice(chat_id=update.message.chat_id, voice=msg, caption='rip in')
         elif msg_type == 'video':
-            bot.sendVideo(chat_id=update.message.chat_id, video=msg, caption='rip in')
+            await context.bot.sendVideo(chat_id=update.message.chat_id, video=msg, caption='rip in')
         elif msg_type == 'text':
-            bot.sendMessage(chat_id=update.message.chat_id, text=('rip in ' + msg))
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=('rip in ' + msg))
         elif msg_type == 'audio':
-            bot.sendAudio(chat_id=update.message.chat_id, audio=msg, caption='rip in')
+            await context.bot.sendAudio(chat_id=update.message.chat_id, audio=msg, caption='rip in')
         else:
-            bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)

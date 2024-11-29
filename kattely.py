@@ -37,15 +37,15 @@ class Kattelija:
     def random_emoji(self):
         return self.rigged.choice(self.emojis)
     
-    def get_profile_pic(self, update: Update, context: CallbackContext):
+    async def get_profile_pic(self, update: Update, context: CallbackContext):
         user = update.message.from_user
-        profile_photos = user.get_profile_photos(limit=1)
+        profile_photos = await user.get_profile_photos(limit=1)
 
         if len(profile_photos.photos) > 0:
-            profile_pic_file = profile_photos.photos[0][0].get_file()
+            profile_pic_file = await profile_photos.photos[0][0].get_file()
             fp = TemporaryFile()
             fp.seek(0)
-            profile_pic_file.download(out=fp)
+            await profile_pic_file.download_to_memory(out=fp)
             profile_pic = Image.open(fp)
         else:
             profile_pic = Image.open('resources/kattely/anonymous.jpg')
@@ -55,16 +55,16 @@ class Kattelija:
     def random_kaarija(self):
         return self.rigged.choice(self.l_hands) + '🟢🟢' + self.rigged.choice(self.heads) + '🟢🟢' + self.rigged.choice(self.r_hands)
 
-    def kaarijaHandler(self, update: Update, context: CallbackContext):
+    async def kaarijaHandler(self, update: Update, context: CallbackContext):
         if update.message.from_user:
-            profile_pic = self.get_profile_pic(update, context)
+            profile_pic = await self.get_profile_pic(update, context)
             base_image = Image.open('resources/kattely/kaarija.jpg')
             overlay_image = Image.open('resources/kattely/kaarija.png')
             image_file = self.make_image(profile_pic, (128, 128), (250, 52), base_image)
             image_file.seek(0)
             image_file = self.make_image(overlay_image, (512, 289), (0, 0), Image.open(image_file), transparent=True)
             image_file.seek(0)
-            context.bot.send_photo(
+            await context.bot.send_photo(
                 chat_id=update.message.chat_id,
                 photo=open(image_file.name, 'rb'),
                 caption='cha :D cha :D cha :D ' + self.random_kaarija()
@@ -73,13 +73,13 @@ class Kattelija:
         else:
             return
 
-    def kattelyHandler(self, update: Update, context: CallbackContext):
+    async def kattelyHandler(self, update: Update, context: CallbackContext):
         if update.message.from_user:
-            profile_pic = self.get_profile_pic(update, context)
+            profile_pic = await self.get_profile_pic(update, context)
             base_image = Image.open('resources/kattely/kattely.jpg')
             image_file = self.make_image(profile_pic, (83, 83), (69, 13), base_image)
             image_file.seek(0)
-            context.bot.send_photo(
+            await context.bot.send_photo(
                 chat_id=update.message.chat_id,
                 photo=open(image_file.name, 'rb'),
                 caption='Tervetuloa! ' + self.random_emoji()
@@ -87,7 +87,3 @@ class Kattelija:
             image_file.close()
         else:
             return
-
-
-    def messageHandler(self, update: Update, context: CallbackContext):
-        pass
