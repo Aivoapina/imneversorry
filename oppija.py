@@ -30,6 +30,9 @@ class Oppija:
             else:
                 await context.bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
 
+        elif definition == "minnet":
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="En muista")
+
         else:
             no_idea = 'En tiedä'
             if (inverted):
