@@ -22,16 +22,16 @@ class Oppija:
     async def defineTerm(self, update: Update, context: CallbackContext, question, inverted=False):
         definition = db.findOppi(question.group(2), update.message.chat.id)
 
-        if definition is not None:
+        if question.group(2) == "minnet:
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="En muista")
+
+        elif definition is not None:
             if (inverted):
                 inverted_definition = self.invertStringList(definition)[0]
                 inverted_question = self.invertStringList([question.group(2)])[0]
                 await context.bot.sendMessage(chat_id=update.message.chat_id, text=(inverted_definition + ' :' + inverted_question))
             else:
                 await context.bot.sendMessage(chat_id=update.message.chat_id, text=(question.group(2) + ': ' + definition[0]))
-
-        elif definition == "minnet":
-            await context.bot.sendMessage(chat_id=update.message.chat_id, text="En muista")
 
         else:
             no_idea = 'En tiedä'
