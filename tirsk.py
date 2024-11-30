@@ -12,10 +12,10 @@ class Tirsk:
     def getCommands(self):
         return dict()
 
-    def sendTirsk(self, update: Update, context: CallbackContext):
+    async def sendTirsk(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat.id
-        context.bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
+        await context.bot.sendMessage(chat_id=chat_id, text=self.rndTirsk())
 
-    def messageHandler(self, update: Update, context: CallbackContext):
+    async def messageHandler(self, update: Update, context: CallbackContext):
         if self.isTirsk():
-            self.sendTirsk(update, context)
+            await self.sendTirsk(update, context)

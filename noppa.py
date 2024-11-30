@@ -25,15 +25,12 @@ class Noppa:
 
         return throws
 
-    def throw(self, update: Update, context: CallbackContext):
+    async def throw(self, update: Update, context: CallbackContext):
         try:
             n, sides = map(int, context.args[0].split('d'))
             throws = self.throwDice(n, sides)
             results_msg = "{}, yhteensä: {}\nSilmäluvut: {}".format(context.args[0], sum(throws), throws)
-            context.bot.sendMessage(chat_id=update.message.chat.id, text=results_msg)
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=results_msg)
         except Exception as e:
             print(e)
-            context.bot.sendMessage(chat_id=update.message.chat.id, text="%s%s" % (self.flipper, self.table))
-
-    def messageHandler(self, update: Update, context: CallbackContext):
-        return
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="%s%s" % (self.flipper, self.table))

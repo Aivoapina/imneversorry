@@ -13,9 +13,9 @@ class Quote:
     def getCommands(self):
         return self.commands
 
-    def addQuote(self, update: Update, context: CallbackContext):
+    async def addQuote(self, update: Update, context: CallbackContext):
         if len(context.args) < 2:
-            context.bot.sendMessage(chat_id=update.message.chat.id, text='Usage: /addq <quotee> <quote>')
+            await context.bot.sendMessage(chat_id=update.message.chat.id, text='Usage: /addq <quotee> <quote>')
         else:
             quotee = context.args[0].strip('@')
             quote = ' '.join(context.args[1:])
@@ -23,7 +23,7 @@ class Quote:
                 quote = quote[1:len(quote) - 1]
             db.insertQuote(quote, quotee, update.message.chat.id, update.message.from_user.username)
 
-    def quotesCountHandler(self, update: Update, context: CallbackContext):
+    async def quotesCountHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             count = db.countQuotes(update.message.chat.id)
         else:
@@ -31,9 +31,9 @@ class Quote:
             quotes = db.findQuotes(update.message.chat.id, quotee)
             count = len(quotes)
 
-        context.bot.sendMessage(chat_id=update.message.chat.id, text=str(count) + ' quotes')
+        await context.bot.sendMessage(chat_id=update.message.chat.id, text=str(count) + ' quotes')
 
-    def getQuote(self, update: Update, context: CallbackContext):
+    async def getQuote(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             quotes = db.findQuotes(update.message.chat.id)
         else:
@@ -42,7 +42,4 @@ class Quote:
         quote = random.sample(quotes, 1)[0] or ("Imneversorry", "tapan kaikki")
 
         formated_quote = '"{}" - {}'.format(*quote)
-        context.bot.sendMessage(chat_id=update.message.chat.id, text=formated_quote)
-
-    def messageHandler(self, update: Update, context: CallbackContext):
-        return
+        await context.bot.sendMessage(chat_id=update.message.chat.id, text=formated_quote)

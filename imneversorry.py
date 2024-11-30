@@ -1,8 +1,7 @@
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext, InlineQueryHandler
+from telegram.ext import Application, Updater, CommandHandler, MessageHandler, CallbackContext, InlineQueryHandler, filters
 from configparser import ConfigParser
 from argparse import ArgumentParser
-import importlib
 import logging
 import ast
 import initdb
@@ -58,27 +57,30 @@ nop = noppa.Noppa()
 jou = joulukalenteri.Joulukalenteri()
 
 objects = [rir, vit, vai, tir, opi, km, quo, que, mc, tag, tar, kis, kat, nop, jou]
+allMessageHandlers = []
 
-
-def allMessages(update: Update, context: CallbackContext):
-    for obj in objects:
-        obj.messageHandler(update, context)
+async def allMessages(update: Update, context: CallbackContext):
+    for handler in allMessageHandlers:
+        await handler(update, context)
 
 
 def main():
-    updater = Updater(cfg['TELEGRAM']['token'], use_context=True)
+    application = Application.builder().token(cfg['TELEGRAM']['token']).build()
+
     for obj in objects:
-        for key in list(obj.getCommands().keys()):
-            updater.dispatcher.add_handler(
-                CommandHandler(key, obj.getCommands()[key], ~Filters.chat(BANNED_CHANNELS)))
+        if callable(getattr(obj, "getCommands", None)):
+            for key in list(obj.getCommands().keys()):
+                application.add_handler(
+                    CommandHandler(key, obj.getCommands()[key], ~filters.Chat(BANNED_CHANNELS)))
+        if callable(getattr(obj, "messageHandler", None)):
+            allMessageHandlers.append(obj.messageHandler)
 
-    updater.dispatcher.add_handler(MessageHandler(
-        ~Filters.chat(BANNED_CHANNELS), allMessages))
+    application.add_handler(MessageHandler(
+        ~filters.Chat(BANNED_CHANNELS), allMessages))
 
-    updater.dispatcher.add_handler(InlineQueryHandler(opi.inlineQueryHandler))
+    application.add_handler(InlineQueryHandler(opi.inlineQueryHandler))
 
-    updater.start_polling()
-    updater.idle()
+    application.run_polling()
 
 
 main()

@@ -13,7 +13,7 @@ class Valitsin:
     def getCommands(self):
         return self.commands
 
-    def makeDecision(self, update: Update, context: CallbackContext, alternatives):
+    async def makeDecision(self, update: Update, context: CallbackContext, alternatives):
         now = datetime.datetime.now()
         data = [
             update.message.from_user.id,
@@ -29,11 +29,11 @@ class Valitsin:
                 answers = ['Kaikki :D', 'Ei mitään >:(']
             else:
                 answers = ['Molemmat :D', 'Ei kumpaakaan >:(']
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(answers))
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(answers))
         else:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(alternatives))
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=rigged.choice(alternatives))
 
-    def onkoPakko(self, update: Update, context: CallbackContext, groups):
+    async def onkoPakko(self, update: Update, context: CallbackContext, groups):
         now = datetime.datetime.now()
         data = [
             update.message.from_user.id,
@@ -45,16 +45,16 @@ class Valitsin:
         seed = hashlib.md5(json.dumps(data, sort_keys=True).encode('utf-8')).hexdigest()
         rigged = random.Random(seed)
         if rigged.randint(0, 1) == 0:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text='ei ole pakko {}'.format(groups.group(1)))
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text='ei ole pakko {}'.format(groups.group(1)))
         else:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text='on pakko {}'.format(groups.group(1)))
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text='on pakko {}'.format(groups.group(1)))
 
-    def messageHandler(self, update: Update, context: CallbackContext):
+    async def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
         if msg.text is not None:
             vai = set(msg.text.lower().split()[1::2]) == {'vai'}
             pakko = re.match(r"^onko pakko ([^?]+)(\??)$", msg.text.lower(), re.IGNORECASE)
             if vai:
-                self.makeDecision(update, context, msg.text.lower().split()[::2])
+                await self.makeDecision(update, context, msg.text.lower().split()[::2])
             elif pakko:
-                self.onkoPakko(update, context, pakko)
+                await self.onkoPakko(update, context, pakko)

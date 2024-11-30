@@ -1,16 +1,20 @@
 from telegram import Update
 from telegram.ext import CallbackContext
+from telegram.error import TelegramError
 import collections
 import math
 import time
-
-import telegram
 
 import db
 
 extract_uid = lambda update: update.message.from_user["id"]
 extract_chatid = lambda update: update.message.chat_id
 poista_skandit = lambda s: s.replace("ä", "a").replace("Ä", "A").replace("ö", "o").replace("Ö", "O")
+
+async def printUsage(context, update, lajinnimi):
+    usage = "Usage: /%s <km>" % lajinnimi
+    await context.bot.sendMessage(chat_id=update.message.chat_id, text=usage)
+
 
 class Laji:
     def __init__(self, monikko, kerroin):
@@ -53,26 +57,28 @@ class Kilometri:
         return self.commands
 
     def genLajiHandlerit(self, lajinnimi):
-        def urh(*args, **kwargs):
-            self.urheilinHandler(lajinnimi, *args, **kwargs)
+        async def urh(*args, **kwargs):
+            await self.urheilinHandler(lajinnimi, *args, **kwargs)
 
-        def get(*args, **kwargs):
-            self.getStatHandler(lajinnimi, *args, **kwargs)
+        async def get(*args, **kwargs):
+            await self.getStatHandler(lajinnimi, *args, **kwargs)
 
         return (urh, get)
 
-    def userFromUid(self, update: Update, context: CallbackContext, uid):
+    async def userFromUid(self, update: Update, context: CallbackContext, uid):
         chat_id = extract_chatid(update)
-        return context.bot.get_chat_member(chat_id, uid).user
+        return await context.bot.get_chat_member(chat_id, uid)
 
-    def nameFromUid(self, update: Update, context: CallbackContext, uid):
+    async def nameFromUid(self, update: Update, context: CallbackContext, uid):
         try:
-            user = self.userFromUid(update, context, uid)
+            userObject = await self.userFromUid(update, context, uid)
+            user = userObject.user
             if (user.username is None):
                 return "%s %s" % (str(user.first_name), str(user.last_name))
             return user.username
 
-        except telegram.TelegramError:
+        except TelegramError as e:
+            print(e)
             return "(None)"
 
     def parsiAikaLkm(self, args):
@@ -114,15 +120,12 @@ class Kilometri:
 
         return (aika, aikanimi, lkm)
 
-    def urheilinHandler(self, lajinnimi, update: Update, context: CallbackContext):
-        def printUsage():
-            usage = "Usage: /%s <km>" % lajinnimi
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=usage)
+    async def urheilinHandler(self, lajinnimi, update: Update, context: CallbackContext):
 
         invalidDistance = lambda km: math.isnan(km) or math.isinf(km)
 
         if (len(context.args) != 1):
-            printUsage()
+            await printUsage(context, update, lajinnimi)
             return
 
         uid = extract_uid(update)
@@ -132,16 +135,13 @@ class Kilometri:
             if (invalidDistance(km)):
                 raise ValueError("invalid distance %f" % km)
         except ValueError:
-            printUsage()
+            await printUsage(context, update, lajinnimi)
             return
 
         now = int(time.time())
         db.addUrheilu(uid, chatid, km, lajinnimi, now)
 
-    def getStatHandler(self, lajinnimi, update: Update, context: CallbackContext):
-        def printUsage(komento):
-            usage = "Usage: /%s [lkm] [ajalta]" % komento
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=usage)
+    async def getStatHandler(self, lajinnimi, update: Update, context: CallbackContext):
 
         laji = self.lajit[lajinnimi]
         try:
@@ -154,49 +154,41 @@ class Kilometri:
         chatid = extract_chatid(update)
 
         top_suoritukset = db.getTopUrheilut(chatid, lajinnimi, alkaen, lkm)
-        lista = "\n".join("%s: %.1f km" %
-                (self.nameFromUid(update, context, uid), km)
-            for uid, km in top_suoritukset)
+        lista = "\n".join([f"{await self.nameFromUid(update, context, uid)}: {km:.1f} km" for uid, km in top_suoritukset])
 
-        context.bot.sendMessage(chat_id=update.message.chat_id,
+        await context.bot.sendMessage(chat_id=update.message.chat_id,
             text="Top %i %s viimeisen %s aikana:\n\n%s" %
                 (lkm, laji.monikko, aikanimi, lista))
 
-    def pisteetHandler(self, update: Update, context: CallbackContext):
-        def usage():
-            context.bot.sendMessage(chat_id=update.message.chat_id,
-                text="Usage: /pisteet [ajalta]")
+    async def pisteetHandler(self, update: Update, context: CallbackContext):
         try:
             aika, aikanimi, lkm = self.parsiAikaLkm(context.args)
         except ValueError:
-            usage()
+            await context.bot.sendMessage(chat_id=update.message.chat_id,
+                text="Usage: /pisteet [ajalta]")
             return
 
         alkaen = time.time() - aika
         chatid = extract_chatid(update)
         pisteet = db.getPisteet(chatid, alkaen, lkm)
-        piste_str = "\n".join("%s: %.1f pistettä" %
-            (self.nameFromUid(update, context, uid), p) for uid, p in pisteet)
+        piste_str = "\n".join([f"{await self.nameFromUid(update, context, uid)}: {p:.1f} pistettä" for uid, p in pisteet])
 
         msg = "Top %i pisteet viimeisen %s aikana:\n\n%s" % (
             lkm, aikanimi, piste_str)
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
-    def statsHandler(self, update: Update, context: CallbackContext):
-        def usage():
-            context.bot.sendMessage(chat_id=update.message.chat_id,
-                text="Usage: /kmstats [ajalta]")
-
+    async def statsHandler(self, update: Update, context: CallbackContext):
         try:
             aika, aikanimi, _ = self.parsiAikaLkm(context.args)
         except ValueError:
-            usage()
+            await context.bot.sendMessage(chat_id=update.message.chat_id,
+                text="Usage: /kmstats [ajalta]")
             return
 
         alkaen = time.time() - aika
         uid = extract_uid(update)
         chatid = extract_chatid(update)
-        name = self.nameFromUid(update, context, uid)
+        name = await self.nameFromUid(update, context, uid)
 
         stats = db.getKayttajanUrheilut(uid, chatid, alkaen)
         lajikohtaiset = ((lajinnimi, km) for lajinnimi, km, _ in stats)
@@ -206,11 +198,8 @@ class Kilometri:
         stat_str = ("%s: Viimeisen %s aikana %.1f pistettä\n\n%s" %
             (name, aikanimi, pisteet, lajit_str))
 
-        context.bot.sendMessage(chat_id=update.message.chat_id,
+        await context.bot.sendMessage(chat_id=update.message.chat_id,
                         text=stat_str)
 
-    def helpHandler(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)
-
-    def messageHandler(self, update: Update, context: CallbackContext):
-        return
+    async def helpHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=self.helptext)

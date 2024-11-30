@@ -20,25 +20,25 @@ from kasvinimi import findKasvinimi
 class Teekkari:
     def __init__(self, useLocalVitun=False):
         self.commands = {
-            'vituttaa': self.getVitutus,
-            'gqqish': self.getGqqish,
-            'viisaus': self.getViisaus,
-            'hakemus': self.handleHakemus,
-            'pekkauotila': self.getVittuilu,
-            'diagnoosi': self.getDiagnoosi,
-            'diafnoosi': self.getDiagnoosiFxx,
-            'maitonimi': self.getMaitonimi,
-            'helveten' : self.getHelveten,
+            'vituttaa': self.vitutusHandler,
+            'gqqish': self.gqqishHandler,
+            'viisaus': self.viisausHandler,
+            'hakemus': self.hakemusHandler,
+            'pekkauotila': self.pekkauotilaHandler,
+            'diagnoosi': self.diagnoosiHandler,
+            'diafnoosi': self.diagnoosiFxxHandler,
+            'maitonimi': self.maitonimiHandler,
+            'helveten' : self.helvetenHandler,
             'pizza': self.getPizza,
             'kalanimi': self.getKalanimi,
             'addsikulla': self.banHammer,
-            'sotanimi': self.getSotanimi,
-            'kasvinimi': self.getKasvinimi,
-            'sukunimi': self.getSukunimi,
-            'pottiin': self.getPottiin,
-            'kanye': self.getKanye,
-            'kalja': self.getKippis,
-            'nimuli': self.getNimuli,
+            'sotanimi': self.sotanimiHandler,
+            'kasvinimi': self.kasvinimiHandler,
+            'sukunimi': self.sukunimiHandler,
+            'pottiin': self.pottiinHandler,
+            'kanye': self.kanyeHandler,
+            'kalja': self.kippisHandler,
+            'nimuli': self.nimuliHandler,
         }
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
@@ -110,14 +110,13 @@ class Teekkari:
     def getCommands(self):
         return self.commands
 
-    def getVittuilu(self, update: Update, context: CallbackContext):
+    async def pekkauotilaHandler(self, update: Update, context: CallbackContext):
         if random.randint(0, 4) == 0:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text='TÖRKEÄÄ SOLVAAMISTA')
         else:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text='vittuilu'+random.sample(self.sanat, 1)[0][0])
 
-    def handleHakemus(self, update: Update, context: CallbackContext):
-        bot = context.bot
+    async def hakemusHandler(self, update: Update, context: CallbackContext):
         msg = update.message.text.lower()
 
         for cmd, responses in self.hakemukses.items():
@@ -126,27 +125,27 @@ class Teekkari:
 
         if random.randint(0, 9) == 0:
             if random.randint(0, 200) == 0:
-                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ', reply_to_message_id=update.message.message_id)
+                await context.bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADJgADiR7LDbglwFauETpzFgQ', reply_to_message_id=update.message.message_id)
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva, reply_to_message_id=update.message.message_id)
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text=txtHyyva, reply_to_message_id=update.message.message_id)
         else:
             if random.randint(0, 1000) == 0:
-                bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ', reply_to_message_id=update.message.message_id)
+                await context.bot.sendSticker(chat_id=update.message.chat_id, sticker='CAADBAADPwADiR7LDV1aPNns0V1YFgQ', reply_to_message_id=update.message.message_id)
             elif random.randint(0, 600) == 0:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki, reply_to_message_id=update.message.message_id)
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanKaikki, reply_to_message_id=update.message.message_id)
             else:
-                bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut, reply_to_message_id=update.message.message_id)
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text=txtTapanSut, reply_to_message_id=update.message.message_id)
 
-    def getViisaus(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
+    async def viisausHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
 
-    def getVitutus(self, update: Update, context: CallbackContext):
+    async def vitutusHandler(self, update: Update, context: CallbackContext):
         r = requests.get(self.vituttaaUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
-    def getGqqish(self, update: Update, context: CallbackContext):
+    async def gqqishHandler(self, update: Update, context: CallbackContext):
         lang = random.choice(("en", "fi"))
 
         r = requests.get(**(self.getRandomArticleQuery(lang)))
@@ -156,41 +155,41 @@ class Teekkari:
         text = r.json()["query"]["pages"][str(articleId)]["extract"]
         paragraphs = tuple(l for l in text.splitlines() if len(l.strip()) > 0 and not l.startswith("="))
         rndParagraph = random.choice(paragraphs)
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=rndParagraph)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=rndParagraph)
 
-    def getSukunimi(self, update: Update, context: CallbackContext):
+    async def sukunimiHandler(self, update: Update, context: CallbackContext):
         r = requests.get(self.sukunimiUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ')
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
 
-    def getDiagnoosi(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
+    async def diagnoosiHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoosit, 1)[0][0])
 
-    def getDiagnoosiFxx(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoositFxx, 1)[0][0])
+    async def diagnoosiFxxHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.diagnoositFxx, 1)[0][0])
 
-    def getMaitonimi(self, update: Update, context: CallbackContext):
+    async def maitonimiHandler(self, update: Update, context: CallbackContext):
         maitoNimi = random.sample(self.maidot, 1)[0][0] + "-" + random.sample(self.nimet, 1)[0][0]
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=maitoNimi)
 
-    def getLintunimi(self, update: Update, context: CallbackContext):
+    async def lintunimiHandler(self, update: Update, context: CallbackContext):
         lintu = random.sample(self.linnut, 1)[0][0]
         lintu = re.sub(r'nen$', 's', lintu)
         lintuNimi = lintu + "-" + random.sample(self.nimet, 1)[0][0]
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=lintuNimi)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=lintuNimi)
 
-    def getKalanimi(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
+    async def getKalanimi(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.kalat, 1)[0][0])
 
-    def getMoponimi(self, update: Update, context: CallbackContext):
+    async def moponimiHandler(self, update: Update, context: CallbackContext):
         kurkku = random.sample(self.vihanneet, 1)[0][0]
         mopo = random.sample(self.kulkuneuvot, 1)[0][0]
         kuu = random.sample(self.planetoidit, 1)[0][0]
         mopoNimi = kurkku + ("", "-")[kurkku[-1:] == mopo[0] and mopo[0] in ('a', 'e', 'i', 'o', 'u', 'y', 'ä', 'ö')] + mopo + " eli " + kuu + ("", "-")[kuu[-1:] == 'e'] + 'eläin ' + kurkku + 'maasta'
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=mopoNimi)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=mopoNimi)
 
-    def getSotanimi(self, update: Update, context: CallbackContext):
+    async def sotanimiHandler(self, update: Update, context: CallbackContext):
         arvo = random.sample(self.sotilasarvot, 1)[0][0]
         nimi = random.sample(self.sotilasnimet, 1)[0][0]
         if random.randint(0, 7) == 0:
@@ -200,13 +199,13 @@ class Teekkari:
                 elif update.message.from_user.first_name:
                     nimi = update.message.from_user.first_name
         sotaNimi = arvo + ' ' + nimi
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=sotaNimi)
 
-    def getKasvinimi(self, update: Update, context: CallbackContext):
+    async def kasvinimiHandler(self, update: Update, context: CallbackContext):
         if len(context.args) > 0:
             name = " ".join(context.args)
             if len(name) > 32:
-                context.bot.sendMessage(chat_id=update.message.chat_id, text=":D")
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text=":D")
                 return
             kasviNimi = findKasvinimi(self.kasvinimet,
                                       first_name=name, last_name=None)
@@ -224,29 +223,29 @@ class Teekkari:
                                       last_name=last_name)
         else:
             return
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=kasviNimi)
 
-    def getNakuttaa(self, update: Update, context: CallbackContext):
+    async def nakuttaaHandler(self, update: Update, context: CallbackContext):
         if random.randint(0, 100) == 0:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="Mikä vitun Nakuttaja?")
         else:
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.nakutukset, 1)[0][0] + " vaa")
 
-    def getHalo(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
+    async def haloHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.choice(['Halo', 'Halo?', 'Halo?!']))
 
-    def getPizza(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
+    async def getPizza(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text='Ananas kuuluu pizzaan!')
 
-    def getNoppa(self, update: Update, context: CallbackContext):
-        context.bot.sendDice(chat_id=update.message.chat_id)
-        context.bot.sendDice(chat_id=update.message.chat_id)
+    async def noppaHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendDice(chat_id=update.message.chat_id)
+        await context.bot.sendDice(chat_id=update.message.chat_id)
 
-    def getVaihdan(self, update: Update, context: CallbackContext):
+    async def vaihdanHandler(self, update: Update, context: CallbackContext):
         now = time.time()
         if self.nextVaihdan < now:
             self.nextVaihdan = now + random.randint(60, 180)
-            context.bot.sendDice(chat_id=update.message.chat_id)
+            await context.bot.sendDice(chat_id=update.message.chat_id)
 
     def getUrbaani(self):
         if self.useLocalVitun:
@@ -263,7 +262,7 @@ class Teekkari:
         meaning = meaning[meaning.find('.')+2:]
         return meaning
 
-    def getVitun(self, update: Update, context: CallbackContext):
+    async def vitunHandler(self, update: Update, context: CallbackContext):
         # Only allow vitun during wappu and Christmas eve
         today = datetime.date.today()
         if not ((today.month == 12 and today.day == 24) or
@@ -275,19 +274,19 @@ class Teekkari:
         userId = update.message.from_user.id
         if userId not in self.lastVitun:
             self.lastVitun[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
         elif self.lastVitun[userId] != now:
             self.lastVitun[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaani().capitalize() + " vitun " + self.getUrbaani())
 
     def getSlango(self):
         r = requests.get(self.slangopediaUrl, timeout=5)
         url = urllib.parse.unquote_plus(r.url, encoding='ISO-8859-1').split('/')
         return str(url[-1].split('=')[-1].lower())
 
-    def getHelvetenSelitys(self, update: Update, context: CallbackContext):
+    async def helvetenSelitysHandler(self, update: Update, context: CallbackContext):
         word = update.message.text[13:].lower().replace(' ', '+').replace('ä', '%E4').replace('ö', '%F6').replace('å', '%E5')
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getSlangoSelitys(word))
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getSlangoSelitys(word))
 
     def getSlangoSelitys(self, word):
         webpage = urllib.request.urlopen(self.slangopediaWordUrl + word).read()
@@ -296,33 +295,33 @@ class Teekkari:
         meaning = meaning.replace('&quot;', '"')
         return meaning
 
-    def getVitunSelitys(self, update: Update, context: CallbackContext):
+    async def vitunSelitysHandler(self, update: Update, context: CallbackContext):
         word = update.message.text[11:].lower().replace(' ', '-').replace('ä', 'a').replace('ö', 'o').replace('å', 'a')
         word = re.sub(r"[^a-z0-9\-]", '', word)
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=self.getUrbaaniSelitys(word))
 
-    def getVaalikone(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
+    async def getVaalikone(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text='Äänestä: ' + str(random.randint(1,424) + 1))
 
-    def getHelveten(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id,
+    async def helvetenHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id,
             text=self.getSlango().capitalize() + ' jävla ' + self.getSlango().lower() )
 
-    def getTEK(self, update: Update, context: CallbackContext):
+    async def TEKHandler(self, update: Update, context: CallbackContext):
         if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tek.*', word) and word != 'tek':
-                    context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
+                    await context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tek', 'TEK') + ' xD')
                     return
 
-    def getTUNI(self, update: Update, context: CallbackContext):
+    async def TUNIHandler(self, update: Update, context: CallbackContext):
         if random.randint(0, 50) == 0:
             for word in update.message.text.lower().split(' '):
                 if re.match(r'.*tuni.*', word) and word != 'tuni':
-                    context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
+                    await context.bot.sendMessage(chat_id=update.message.chat_id, text='ai ' + word.replace('tuni', 'TUNI') + ' xD')
                     return
 
-    def getEnnustus(self, update: Update, context: CallbackContext):
+    async def ennustusHandler(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now()
         data = [
             update.message.from_user.id,
@@ -349,9 +348,9 @@ class Teekkari:
         for x in range(n):
             r = rigged.choice(tuple(unicode_codes.EMOJI_UNICODE))
             ennustus += emoji.emojize(r)
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=ennustus)
 
-    def getUutine(self, update: Update, context: CallbackContext):
+    async def uutineHandler(self, update: Update, context: CallbackContext):
         now = time.time()
         chat_id = update.message.chat.id
         if self.lastUutineUpdate + 3600 < now:
@@ -373,31 +372,31 @@ class Teekkari:
         if self.nextUutine[chat_id] < now:
             self.nextUutine[chat_id] = now + random.randint(10, 120)
             uutine = random.choice(self.uutineet[0]) + ' – ' + random.choice(self.uutineet[1])
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=uutine)
 
-    def getPottiin(self, update: Update, context: CallbackContext):
+    async def pottiinHandler(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now().date()
         userId = update.message.from_user.id
         msg = "Pottiin!" if (random.randint(0, 1) == 0) else "kottiin..."
         if userId not in self.lastPottiin:
             self.lastPottiin[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
         elif self.lastPottiin[userId] != now:
             self.lastPottiin[userId] = now
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=msg)
 
-    def getKanye(self, update: Update, context: CallbackContext):
+    async def kanyeHandler(self, update: Update, context: CallbackContext):
         r = requests.get(self.kanyeRest, timeout=5)
         kanye = r.json()["quote"]
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=kanye)
 
-    def getKippis(self, update: Update, context: CallbackContext):
+    async def kippisHandler(self, update: Update, context: CallbackContext):
         for beverage, kippis in self.kippikses.items():
             if beverage in update.message.text.lower():
-                context.bot.sendMessage(chat_id=update.message.chat_id, text=kippis)
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text=kippis)
                 break
 
-    def getNimuli(self, update: Update, context: CallbackContext):
+    async def nimuliHandler(self, update: Update, context: CallbackContext):
         if len(context.args) == 0:
             if update.message.from_user:
                 if update.message.from_user.username:
@@ -430,85 +429,85 @@ class Teekkari:
         if nimuli == suffix:
             nimuli += suffix
 
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=nimuli)
 
-    def getTori(self, update: Update, context: CallbackContext):
+    async def toriHandler(self, update: Update, context: CallbackContext):
         if update.message.text.lower() == 'torille':
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.torit, 1)[0][0] + 'lle')
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.torit, 1)[0][0] + 'lle')
         elif (tori := re.search(r'(\w*tori)(?!lle)\b', update.message.text.lower())):
-            context.bot.sendMessage(chat_id=update.message.chat_id, text=tori.group(0) + 'lle')
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text=tori.group(0) + 'lle')
 
-    def getRikos(self, update: Update, context: CallbackContext):
-        context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.rikokset, 1)[0][0])
+    async def rikosHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.rikokset, 1)[0][0])
 
-    def banHammer(self, update: Update, context: CallbackContext):
+    async def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
-        context.bot.kickChatMember(update.message.chat.id, update.message.from_user.id, until_date=duration)
+        await context.bot.kickChatMember(update.message.chat.id, update.message.from_user.id, until_date=duration)
 
-    def messageHandler(self, update: Update, context: CallbackContext):
+    async def messageHandler(self, update: Update, context: CallbackContext):
         msg = update.message
 
         if msg.text is not None:
             if 'vituttaa' in msg.text.lower():
-                self.getVitutus(update, context)
+                await self.vitutusHandler(update, context)
             elif re.match(r'^/gqqish', msg.text.lower()):
-                self.getGqqish(update, context)
+                await self.gqqishHandler(update, context)
             elif 'viisaus' in msg.text.lower():
-                self.getViisaus(update, context)
+                await self.viisausHandler(update, context)
             elif 'pekkauotila' in msg.text.lower():
-                self.getVittuilu(update, context)
+                await self.pekkauotilaHandler(update, context)
             elif any(hakemusCmd in msg.text.lower() for hakemusCmd in self.hakemukses):
-                self.handleHakemus(update, context)
+                await self.hakemusHandler(update, context)
             elif 'diagno' in msg.text.lower():
-                self.getDiagnoosi(update, context)
+                await self.diagnoosiHandler(update, context)
             elif 'diafno' in msg.text.lower():
-                self.getDiagnoosiFxx(update, context)
+                await self.diagnoosiFxxHandler(update, context)
             elif 'horoskoop' in msg.text.lower():
-                self.getEnnustus(update, context)
+                await self.ennustusHandler(update, context)
             elif 'uutine' in msg.text.lower():
-                self.getUutine(update, context)
+                await self.uutineHandler(update, context)
             elif 'tori' in msg.text.lower():
-                self.getTori(update, context)
+                await self.toriHandler(update, context)
             elif 'rikos' in msg.text.lower():
-                self.getRikos(update, context)
+                await self.rikosHandler(update, context)
             elif re.match(r'^halo', msg.text.lower()):
-                self.getHalo(update, context)
+                await self.haloHandler(update, context)
             elif re.match(r'^noppa', msg.text.lower()):
-                self.getNoppa(update, context)
+                await self.noppaHandler(update, context)
             elif re.match(r'^vaihdan', msg.text.lower()):
-                self.getVaihdan(update, context)
+                await self.vaihdanHandler(update, context)
             elif re.match(r'^vitun', msg.text.lower()):
-                self.getVitun(update, context)
+                await self.vitunHandler(update, context)
             elif re.match(r'^mikä vitun ', msg.text.lower()):
-                self.getVitunSelitys(update, context)
+                await self.vitunSelitysHandler(update, context)
             elif re.match(r'^helveten', msg.text.lower()):
-                self.getHelveten(update, context)
-            elif re.match(r'^/maitonimi', msg.text.lower()):
-                self.getMaitonimi(update, context)
-            elif re.match(r'^/lintuslanginimi', msg.text.lower()):
-                self.getLintunimi(update, context)
-            elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
-                self.getMoponimi(update, context)
-            elif re.match(r'^/sotanimi', msg.text.lower()):
-                self.getSotanimi(update, context)
-            elif re.match(r'^/kasvinimi', msg.text.lower()):
-                self.getKasvinimi(update, context)
-            elif re.match(r'^/sukunimi', msg.text.lower()):
-                self.getSukunimi(update, context)
-            elif re.match(r'.*[tT]ek.*', msg.text):
-                self.getTEK(update, context)
-            elif re.match(r'.*[tT]uni.*', msg.text):
-                self.getTUNI(update, context)
-            elif 'nakuttaa' in msg.text.lower():
-                self.getNakuttaa(update, context)
-            elif re.match(r'^/pottiin', msg.text.lower()):
-                self.getPottiin(update, context)
-            elif re.match(r'^/kanye', msg.text.lower()):
-                self.getKanye(update, context)
-            elif re.match(r'^/nimuli', msg.text.lower()):
-                self.getNimuli(update, context)
+                await self.helvetenHandler(update, context)
             elif re.match(r'^vad helveten ', msg.text.lower()):
-                self.getHelvetenSelitys(update, context)
+                await self.helvetenSelitysHandler(update, context)
+            elif re.match(r'^/maitonimi', msg.text.lower()):
+                await self.maitonimiHandler(update, context)
+            elif re.match(r'^/lintuslanginimi', msg.text.lower()):
+                await self.lintunimiHandler(update, context)
+            elif re.match(r'^/kurkkumoponimi', msg.text.lower()):
+                await self.moponimiHandler(update, context)
+            elif re.match(r'^/sotanimi', msg.text.lower()):
+                await self.sotanimiHandler(update, context)
+            elif re.match(r'^/kasvinimi', msg.text.lower()):
+                await self.kasvinimiHandler(update, context)
+            elif re.match(r'^/sukunimi', msg.text.lower()):
+                await self.sukunimiHandler(update, context)
+            elif re.match(r'.*[tT]ek.*', msg.text):
+                await self.TEKHandler(update, context)
+            elif re.match(r'.*[tT]uni.*', msg.text):
+                await self.TUNIHandler(update, context)
+            elif 'nakuttaa' in msg.text.lower():
+                await self.nakuttaaHandler(update, context)
+            elif re.match(r'^/pottiin', msg.text.lower()):
+                await self.pottiinHandler(update, context)
+            elif re.match(r'^/kanye', msg.text.lower()):
+                await self.kanyeHandler(update, context)
+            elif re.match(r'^/nimuli', msg.text.lower()):
+                await self.nimuliHandler(update, context)
             elif any(re.match(r'^/%s' % beverage, msg.text.lower()) for beverage in self.kippikses.keys()):
-                self.getKippis(update, context)
+                await self.kippisHandler(update, context)
