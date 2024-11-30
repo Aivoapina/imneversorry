@@ -22,7 +22,7 @@ class Oppija:
     async def defineTerm(self, update: Update, context: CallbackContext, question, inverted=False):
         definition = db.findOppi(question.group(2), update.message.chat.id)
 
-        if question.group(2) == "minnet:
+        if question.group(2) == "minnet":
             await context.bot.sendMessage(chat_id=update.message.chat_id, text="En muista")
 
         elif definition is not None:
