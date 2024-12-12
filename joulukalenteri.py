@@ -34,10 +34,12 @@ class Joulukalenteri:
                 day = current_day
         
         # Send the 25th luukku (just a normal luukku) if kurkkija is unlucky
-        jestered = random.randint(0, 9) == 0
+        # Or just because.
+        luukku_is_legal = day >= 1 and day <= min(24, current_day) and current_month == 12
+        jestered = random.randint(0, 23 if luukku_is_legal else 4) == 0
         
         chat_id = update.message.chat_id
-        if jestered or (day >= 1 and day <= min(24, current_day) and current_month == 12):
+        if jestered or luukku_is_legal:
             index = 24 if jestered else day - 1
             img_link = self.luukut[index][0]
             emoji = self.rigged.choice(self.jesterit if jestered else self.emojit)
