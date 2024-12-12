@@ -14,6 +14,7 @@ class Joulukalenteri:
         }
         self.luukut = db.readJoulukalenteri()
         self.emojit = ('❄️', '☃️', '☕', '🍫', '️🛷', '🎇', '🎄', '✨', '🎅')
+        self.jesterit = ('🎪', '🤪', '🤡', '👁👄👁', '🃏')
         self.rigged = random.Random()
 
 
@@ -32,10 +33,14 @@ class Joulukalenteri:
             except:
                 day = current_day
         
+        # Send the 25th luukku (just a normal luukku) if kurkkija is unlucky
+        jestered = random.randint(0, 9) == 0
+        
         chat_id = update.message.chat_id
-        if day >= 1 and day <= min(24, current_day) and current_month == 12:
-            img_link = self.luukut[day - 1][0]
-            emoji = self.rigged.choice(self.emojit)
+        if jestered or (day >= 1 and day <= min(24, current_day) and current_month == 12):
+            index = 24 if jestered else day - 1
+            img_link = self.luukut[index][0]
+            emoji = self.rigged.choice(self.jesterit if jestered else self.emojit)
             message = f'<b>Päivän {day} luukku {emoji}\n</b>'
             await context.bot.sendPhoto(chat_id=chat_id, photo = img_link, caption=message, parse_mode=ParseMode.HTML, has_spoiler=True)
         else:
