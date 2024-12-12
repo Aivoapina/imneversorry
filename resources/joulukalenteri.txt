@@ -22,3 +22,4 @@ https://papumaja.fi/joulu/21.png
 https://papumaja.fi/joulu/22.png
 https://papumaja.fi/joulu/23.png
 https://papumaja.fi/joulu/24.png
+https://papumaja.fi/joulu/jst.png
