@@ -440,6 +440,17 @@ class Teekkari:
     async def rikosHandler(self, update: Update, context: CallbackContext):
         await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.rikokset, 1)[0][0])
 
+    async def kiitosHandler(self, update: Update, context: CallbackContext):
+        if random.randint(0, 3) == 2:
+            if random.randint(0, 20) == 4:
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text="leipä kestää")
+            else:
+                await context.bot.sendMessage(chat_id=update.message.chat_id, text="eipä kestä")
+        elif random.randint(0, 23) == 7:
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="juoppa crispi äläkä höpötä...")
+        else:
+            await context.bot.sendMessage(chat_id=update.message.chat_id, text="ole hyvä")
+    
     async def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -503,6 +514,8 @@ class Teekkari:
                 await self.TUNIHandler(update, context)
             elif 'nakuttaa' in msg.text.lower():
                 await self.nakuttaaHandler(update, context)
+            elif msg.text.lower() == 'kiitos botti':
+                await self.kiitosHandler(update, context)
             elif re.match(r'^/pottiin', msg.text.lower()):
                 await self.pottiinHandler(update, context)
             elif re.match(r'^/kanye', msg.text.lower()):
