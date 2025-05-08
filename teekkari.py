@@ -81,6 +81,7 @@ class Teekkari:
             'h4k3mu5': ('hy-\/44', '74p4n 5u7', '74P4|\| K41KK1'),
             'hakemus': ('hyy-vä', 'tapan sut', 'TAPAN KAIKKI'),
             'ansöka': ('bra-a', 'jag dödar dig', 'JAG DÖDAR ALLA'),
+            'habemus': ('bo-num 🙏', 'papam sut', '💨💨💨')
         }
         self.kippikses = {
             "kalja": "Kippis!",
