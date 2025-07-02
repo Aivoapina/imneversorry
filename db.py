@@ -219,6 +219,12 @@ def readRikokset():
         rows = cur.fetchall()
         return set(rows)
 
+def readAmmatit():
+    with cursor() as cur:
+        cur.execute('SELECT ammatti from Ammatit')
+        rows = cur.fetchall()
+        return set(rows)
+
 def upsertTag(tag, target, channel, creator):
     with cursor() as cur:
         date = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
