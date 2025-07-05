@@ -134,5 +134,9 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Rikokset('
         'rikos text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Ammatit('
+        'ammatti text)')
+
+
     conn.commit()
     conn.close()

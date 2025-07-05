@@ -65,6 +65,7 @@ class Teekkari:
         self.nakutukset = db.readNakutukset()
         self.torit = db.readTorit()
         self.rikokset = db.readRikokset()
+        self.ammatit = db.readAmmatit()
         self.lastVitun = {}
         self.nextUutine = {}
         self.lastUutineUpdate = 0
@@ -441,6 +442,9 @@ class Teekkari:
     async def rikosHandler(self, update: Update, context: CallbackContext):
         await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.rikokset, 1)[0][0])
 
+    async def ammattiHandler(self, update: Update, context: CallbackContext):
+        await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.ammatit, 1)[0][0])
+
     async def banHammer(self, update: Update, context: CallbackContext):
         duration = datetime.datetime.now() + datetime.timedelta(minutes=1)
         print(duration)
@@ -472,6 +476,8 @@ class Teekkari:
                 await self.toriHandler(update, context)
             elif 'rikos' in msg.text.lower():
                 await self.rikosHandler(update, context)
+            elif 'ammatti' in msg.text.lower():
+                await self.ammattiHandler(update, context)
             elif re.match(r'^halo', msg.text.lower()):
                 await self.haloHandler(update, context)
             elif re.match(r'^noppa', msg.text.lower()):
