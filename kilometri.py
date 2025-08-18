@@ -27,10 +27,10 @@ class Laji:
 class Kilometri:
     lajit = {
         "kavely": Laji("kävelyt", 1),
-        "juoksu": Laji("juoksut", 2),
-        "pyoraily": Laji("pyöräilyt", 0.8),
-        "hiihto": Laji("hiihdot", 1.8),
-        "uinti": Laji("uinnit", 3),
+        "juoksu": Laji("juoksut", 2.5),
+        "pyoraily": Laji("pyöräilyt", 0.5),
+        "hiihto": Laji("hiihdot", 1.5),
+        "uinti": Laji("uinnit", 5),
     }
 
     def __init__(self):
