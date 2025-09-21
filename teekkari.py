@@ -40,6 +40,7 @@ class Teekkari:
             'kalja': self.kippisHandler,
             'nimuli': self.nimuliHandler,
         }
+        self.userAgent = 'Imneversorry/1.0 (http://github.com/Aivoapina/imneversorry)'
         self.vituttaaUrl = 'https://fi.wikipedia.org/wiki/Toiminnot:Satunnainen_sivu'
         self.urbaaniUrl = 'https://urbaanisanakirja.com/random/'
         self.urbaaniWordUrl = 'https://urbaanisanakirja.com/word/'
@@ -142,7 +143,8 @@ class Teekkari:
         await context.bot.sendMessage(chat_id=update.message.chat_id, text=random.sample(self.viisaudet, 1)[0][0])
 
     async def vitutusHandler(self, update: Update, context: CallbackContext):
-        r = requests.get(self.vituttaaUrl, timeout=5)
+        headers = { 'User-Agent': self.userAgent }
+        r = requests.head(self.vituttaaUrl, allow_redirects=True, timeout=5, headers=headers)
         url = urllib.parse.unquote_plus(r.url).split('/')
         vitutus = url[len(url)-1].replace('_', ' ') + " vituttaa"
         await context.bot.sendMessage(chat_id=update.message.chat_id, text=vitutus)
