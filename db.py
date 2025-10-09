@@ -43,13 +43,13 @@ def readViisaudet():
     with cursor() as cur:
         cur.execute('SELECT viisaus from Viisaus')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readSanat():
     with cursor() as cur:
         cur.execute('SELECT sana from Sana')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def upsertOppi(keyword, definition, channel, creator):
     with cursor() as cur:
@@ -121,85 +121,85 @@ def readDiagnoosit():
     with cursor() as cur:
         cur.execute('SELECT diagnoosi from Diagnoosi')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readDiagnoositFxx():
     with cursor() as cur:
         cur.execute('SELECT diagnoosi_fxx from DiagnoosiFxx')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readMaidot():
     with cursor() as cur:
         cur.execute('SELECT maito from Maito')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readNimet():
     with cursor() as cur:
         cur.execute('SELECT nimi from Nimi')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readKalat():
     with cursor() as cur:
         cur.execute('SELECT kala from Kalat')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readVihanneet():
     with cursor() as cur:
         cur.execute('SELECT nimi from Vihannes')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readPlanetoidit():
     with cursor() as cur:
         cur.execute('SELECT nimi from Planetoidi')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readKulkuneuvot():
     with cursor() as cur:
         cur.execute('SELECT nimi from Kulkuneuvo')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readLinnut():
     with cursor() as cur:
         cur.execute('SELECT nimi from Linnut')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readSotilasarvot():
     with cursor() as cur:
         cur.execute('SELECT nimi from Arvonimet')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readSotilasnimet():
     with cursor() as cur:
         cur.execute('SELECT nimi from Sotilasnimet')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readKasvinimet():
     with cursor() as cur:
         cur.execute('SELECT nimi from Kasvinimet')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readEnnustukset():
     with cursor() as cur:
         cur.execute('SELECT rivi from Ennustus')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readNakutukset():
     with cursor() as cur:
         cur.execute('SELECT nakutus from Nakutukset')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readDefinitions(channel):
     with cursor() as cur:
@@ -211,19 +211,19 @@ def readTorit():
     with cursor() as cur:
         cur.execute('SELECT tori from Torit')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readRikokset():
     with cursor() as cur:
         cur.execute('SELECT rikos from Rikokset')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def readAmmatit():
     with cursor() as cur:
         cur.execute('SELECT ammatti from Ammatit')
         rows = cur.fetchall()
-        return set(rows)
+        return sorted(set(rows))
 
 def upsertTag(tag, target, channel, creator):
     with cursor() as cur:
