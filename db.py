@@ -37,7 +37,7 @@ def readRips():
             if channel not in data:
                 data[channel] = set()
             data[channel].add((type, rip))
-        return sorted(data)
+        return data
 
 def readViisaudet():
     with cursor() as cur:
