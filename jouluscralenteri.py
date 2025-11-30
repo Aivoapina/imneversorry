@@ -7,7 +7,8 @@ import db
 import random
 import re
 
-SANTA_SEED = 0xDEADBEED
+SANTA_SEED = 0xDEADBEEF
+COOLDOWN = 60
 
 RE_SCRANLINE = r'.*[Ss]cran [👍👎].*'
 
@@ -60,6 +61,7 @@ class Jouluscralenteri:
         self.polls = [None] * 24
         self.joulu_emojit = ('❄️', '☃️', '🤶', '🎁', '️🛷', '🎇', '🎄', '✨', '🎅')
         self.herkku_emojit = ('😋', '🤤', '🍴', '😍', '💦', '🫦')
+        self.lastUpdates = [datetime.datetime.fromtimestamp(0)] * 24
 
 
     def getCommands(self):
@@ -73,6 +75,7 @@ class Jouluscralenteri:
         await context.bot.sendPhoto(chat_id=chat_id, photo = img_link, caption=message, parse_mode=ParseMode.HTML, has_spoiler=False)
 
     async def sendPoll(self, context, chat_id, scran_left, scran_right, day):
+        index = day - 1
         score_left = scoreScran(scran_left)
         score_right = scoreScran(scran_right)
         winner_id = 0 if score_left > score_right else 1
@@ -85,7 +88,7 @@ class Jouluscralenteri:
         name_right = get_scran_name(scran_right)
 
         options = [f'{SYMBOL_LEFT} {name_left}', f'{SYMBOL_RIGHT} {name_right}']
-        messageObj = self.polls[day]
+        messageObj = self.polls[index]
         if messageObj is None:
             messageObj = await context.bot.send_poll(
                 chat_id,
@@ -95,7 +98,7 @@ class Jouluscralenteri:
                 type=Poll.QUIZ,
                 correct_option_id=winner_id,
             )
-            self.polls[day] = messageObj
+            self.polls[index] = messageObj
         else:
             await messageObj.forward(chat_id)
 
@@ -108,6 +111,7 @@ class Jouluscralenteri:
         now = datetime.datetime.now()
         current_day = now.day
         current_month = now.month
+
         if len(context.args) < 1:
             day = current_day
         else:
@@ -115,18 +119,30 @@ class Jouluscralenteri:
                 day = int(context.args[0])
             except:
                 day = current_day
-        
-        #luukku_is_legal = day >= 1 and day <= min(24, current_day) and current_month == 12
-        luukku_is_legal = day >= 1 and day <= 24
+
+        luukku_is_legal = day >= 1 and day <= min(24, current_day) and current_month == 12
 
         chat_id = update.message.chat_id
         if luukku_is_legal:
             index = day - 1
+
+            if self.lastUpdates[index] + datetime.timedelta(minutes=COOLDOWN) > now:
+                await context.bot.sendMessage(chat_id, f'?? viestit', reply_to_message_id=update.message.message_id)
+                return
+
+            self.lastUpdates[index] = now
+        
             scran_left, scran_right = self.luukut[index]
 
-            await self.sendScran(context, chat_id, scran_left, extra_text=f'\n{SYMBOL_LEFT}')
-            await self.sendScran(context, chat_id, scran_right, extra_text=f'\n{SYMBOL_RIGHT}')
-            await self.sendPoll(context, chat_id, scran_left, scran_right, day)
+            try:
+                await self.sendScran(context, chat_id, scran_left, extra_text=f'\n{SYMBOL_LEFT}')
+                await self.sendScran(context, chat_id, scran_right, extra_text=f'\n{SYMBOL_RIGHT}')
+                await self.sendPoll(context, chat_id, scran_left, scran_right, day)
+            except Exception as e:
+                # Probably temporary HTTP error, allow trying again soon ish
+                print(f'Jouluscralenteri encountered an error:\n{str(e)}')
+                print(f"Details of scrans:\n{str(scran_left)}\n{str(scran_right)}")
+                self.lastUpdates[index] = now - datetime.timedelta(minutes=COOLDOWN) + datetime.timedelta(seconds=30)
 
             # Trigger vote
         else:
