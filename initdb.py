@@ -128,6 +128,13 @@ def initdb(db='bot.db'):
     c.execute('CREATE TABLE IF NOT EXISTS Joulukalenteri('
         'linkki text)')
 
+    c.execute('CREATE TABLE IF NOT EXISTS Scran('
+        'id integer primary key autoincrement,'
+        'text text not null,'
+        'upvotes integer not null,'
+        'downvotes integer not null,'
+        'img_path text unique not null)')
+
     c.execute('CREATE TABLE IF NOT EXISTS Torit('
         'tori text)')
     
