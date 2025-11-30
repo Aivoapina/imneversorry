@@ -1,5 +1,6 @@
 import sqlite3 as sq
 import initdb
+import json
 
 initdb.initdb()
 
@@ -137,5 +138,9 @@ fs = open('resources/ammatit.txt', 'r', encoding='utf-8')
 for line in fs.read().splitlines():
     c.execute("INSERT OR IGNORE INTO Ammatit(ammatti) values(?)", (line,))
 
+fs = open('resources/scran.json', 'r', encoding='utf-8')
+for item in json.load(fs):
+    c.execute("INSERT OR IGNORE INTO Scran(text, upvotes, downvotes, img_path) values(?,?,?,?)",
+        (item['text'], item['upvotes'], item['downvotes'], item['img_path']))
 
 conn.commit()

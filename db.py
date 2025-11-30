@@ -88,7 +88,7 @@ def getChannels():
 
 def countOpis(channel):
     with cursor() as cur:
-        cur.execute('SELECT COUNT(*) AS count FROM Oppi WHERE channel=?', (channel,))
+        cur.execute('select count(*) as count from oppi where channel=?', (channel,))
         count = cur.fetchone()
         return count
 
@@ -325,3 +325,13 @@ def readJoulukalenteri():
         cur.execute('SELECT linkki from Joulukalenteri')
         rows = cur.fetchall()
         return list(rows)
+
+def countScrans():
+    with cursor() as cur:
+        cur.execute('SELECT count(id) FROM Scran')
+        return cur.fetchone()[0]
+
+def getScran(scran_id):
+    with cursor() as cur:
+        cur.execute('SELECT text, upvotes, downvotes, img_path FROM Scran WHERE id=?', (scran_id,))
+        return cur.fetchone()
