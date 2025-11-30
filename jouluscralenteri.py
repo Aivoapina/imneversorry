@@ -7,7 +7,7 @@ import db
 import random
 import re
 
-SANTA_SEED = 0xDEADBEEF
+SANTA_SEED = 0xDEADBEED
 
 RE_SCRANLINE = r'.*[Ss]cran [👍👎].*'
 
@@ -58,7 +58,8 @@ class Jouluscralenteri:
             for (left, right) in zip(luukku_ids_left, luukku_ids_right)
         ]
         self.polls = [None] * 24
-        self.emojit = ('❄️', '☃️', '☕', '🍫', '️🛷', '🎇', '🎄', '✨', '🎅')
+        self.joulu_emojit = ('❄️', '☃️', '🤶', '🎁', '️🛷', '🎇', '🎄', '✨', '🎅')
+        self.herkku_emojit = ('😋', '🤤', '🍴', '😍', '💦', '🫦')
 
 
     def getCommands(self):
@@ -76,8 +77,8 @@ class Jouluscralenteri:
         score_right = scoreScran(scran_right)
         winner_id = 0 if score_left > score_right else 1
 
-        emoji = self.rigged.choice(self.emojit)
-        message = (f'Päivän {day} suukkuluukku {emoji}\n'
+        message = (f'{self.rigged.choice(self.joulu_emojit)} Päivän {day} suukkuluukku {self.rigged.choice(self.herkku_emojit)}\n'
+            f'Herkkua on siinä monenlaista {self.rigged.choice(self.herkku_emojit)}\n'
             'Vaan kumpi onkaan herkumpi?')
 
         name_left = get_scran_name(scran_left)
@@ -101,7 +102,7 @@ class Jouluscralenteri:
         winner_score = max(score_left, score_right)
         loser_score = min(score_left, score_right)
         scores_text = f'{winner_score} {scoreEmoji(winner_score)} VS {loser_score} {scoreEmoji(loser_score)}'
-        await context.bot.sendMessage(chat_id, f'<b>PISTEET:</b> <span class="tg-spoiler">{scores_text}</span>', parse_mode=ParseMode.HTML)
+        await context.bot.sendMessage(chat_id, f'<b>PISTEET:</b>\n<span class="tg-spoiler">{scores_text}</span>', parse_mode=ParseMode.HTML)
 
     async def luukkuHandler(self, update: Update, context: CallbackContext):
         now = datetime.datetime.now()
