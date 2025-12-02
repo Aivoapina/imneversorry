@@ -58,10 +58,10 @@ class Jouluscralenteri:
             [getScran(left), getScran(right)]
             for (left, right) in zip(luukku_ids_left, luukku_ids_right)
         ]
-        self.polls = [None] * 24
+        self.polls = {}
         self.joulu_emojit = ('❄️', '☃️', '🤶', '🎁', '️🛷', '🎇', '🎄', '✨', '🎅')
         self.herkku_emojit = ('😋', '🤤', '🍴', '😍', '💦', '🫦')
-        self.lastUpdates = [datetime.datetime.fromtimestamp(0)] * 24
+        self.lastUpdates = {}
 
 
     def getCommands(self):
@@ -88,7 +88,7 @@ class Jouluscralenteri:
         name_right = get_scran_name(scran_right)
 
         options = [f'{SYMBOL_LEFT} {name_left}', f'{SYMBOL_RIGHT} {name_right}']
-        messageObj = self.polls[index]
+        messageObj = self.polls[chat_id][index]
         if messageObj is None:
             messageObj = await context.bot.send_poll(
                 chat_id,
@@ -98,7 +98,7 @@ class Jouluscralenteri:
                 type=Poll.QUIZ,
                 correct_option_id=winner_id,
             )
-            self.polls[index] = messageObj
+            self.polls[chat_id][index] = messageObj
         else:
             await messageObj.forward(chat_id)
 
@@ -126,11 +126,16 @@ class Jouluscralenteri:
         if luukku_is_legal:
             index = day - 1
 
-            if self.lastUpdates[index] + datetime.timedelta(minutes=COOLDOWN) > now:
+            if chat_id not in self.lastUpdates:
+                self.lastUpdates[chat_id] = [datetime.datetime.fromtimestamp(0)] * 24
+                self.polls[chat_id] = [None] * 24
+
+            lastUpdates = self.lastUpdates[chat_id]
+            if lastUpdates[index] + datetime.timedelta(minutes=COOLDOWN) > now:
                 await context.bot.sendMessage(chat_id, f'?? viestit', reply_to_message_id=update.message.message_id)
                 return
 
-            self.lastUpdates[index] = now
+            lastUpdates[index] = now
         
             scran_left, scran_right = self.luukut[index]
 
@@ -142,7 +147,7 @@ class Jouluscralenteri:
                 # Probably temporary HTTP error, allow trying again soon ish
                 print(f'Jouluscralenteri encountered an error:\n{str(e)}')
                 print(f"Details of scrans:\n{str(scran_left)}\n{str(scran_right)}")
-                self.lastUpdates[index] = now - datetime.timedelta(minutes=COOLDOWN) + datetime.timedelta(seconds=30)
+                lastUpdates[index] = now - datetime.timedelta(minutes=COOLDOWN) + datetime.timedelta(seconds=30)
 
             # Trigger vote
         else:
