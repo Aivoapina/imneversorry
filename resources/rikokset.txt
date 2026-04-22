@@ -3,19 +3,20 @@ Joukkotuhonnan valmistelu
 Rikos ihmisyyttä vastaan
 Törkeä rikos ihmisyyttä vastaan
 Hyökkäysrikos
-Hyökkäysrikoksen valmistelu 
+Hyökkäysrikoksen valmistelu
 Tahdonvastaisen katoamisen toteuttaminen
 Sotarikos
 Törkeä sotarikos
 Lievä sotarikos
-Jalkaväkimiinakiellon rikkominen
 Kemiallisen aseen kiellon rikkominen
 Biologisen aseen kiellon rikkominen
 Kidutus
 Kiihottaminen kansanryhmää vastaan
 Törkeä kiihottaminen kansanryhmää vastaan
+Vakavan kansainvälisen rikoksen kieltäminen
 Syrjintä
 Alaisen rikoksen ilmoittamatta jättäminen
+Suomen itsemääräämisoikeuden vaarantaminen
 Sotaan yllyttäminen
 Maanpetos
 Törkeä maanpetos
@@ -26,6 +27,8 @@ Tuottamuksellinen turvallisuussalaisuuden paljastaminen
 Luvaton tiedustelutoiminta
 Puolueettomuusmääräysten rikkominen
 Maanpetoksellinen yhteydenpito
+Valtiopetos
+Törkeä valtiopetos
 Valtiopetoksen valmistelu
 Laiton sotilaallinen toiminta
 Vaalirikos
@@ -46,7 +49,11 @@ Oikeudenkäytössä kuultavan uhkaaminen
 Törkeän rikoksen ilmoittamatta jättäminen
 Rikoksentekijän suojeleminen
 Ulkomailla tai kansainvälisessä tuomioistuimessa tehty perätön lausuma
+Virkamiehen väkivaltainen vastustaminen
+Virkamiehen vastustaminen
 Haitanteko virkamiehelle
+Poliisi- tai hälytystoiminnan vaikeuttaminen
+Poliisi- tai hälytystoiminnan haittaaminen
 Niskoittelu poliisia vastaan
 Niskoittelu rajavartiomiestä vastaan
 Niskoittelu tullimiestä vastaan
@@ -66,7 +73,9 @@ Törkeä lahjuksen antaminen kansanedustajalle
 Vangin laiton vapauttaminen
 Vangin karkaaminen
 Vangin varustautuminen aseella
+Julkinen kehottaminen rikokseen
 Järjestäytyneen rikollisryhmän toimintaan osallistuminen
+Alle rikosvastuuikäisen käyttäminen rikoksen tekemiseen
 Mellakka
 Väkivaltainen mellakka
 Väkivaltaisen mellakan johtaminen
@@ -95,12 +104,12 @@ Arpajaisrikos
 Rahankeräysrikos
 Lievä rahankeräysrikos
 Väkivaltakuvauksen levittäminen
+Väkivaltakuvauksen hallussapito
 Sukupuolisiveellisyyttä loukkaavan kuvan levittäminen
 Kuvaohjelman laiton esittäminen tai levittäminen alaikäiselle
 Sukupuolisiveellisyyttä loukkaava markkinointi
 Sukupuolisiveellisyyden julkinen loukkaaminen
 Sukupuoliyhteys lähisukulaisten kesken
-Eläintenpitokielto
 Raiskaus
 Törkeä raiskaus
 Seksuaalinen kajoaminen
@@ -117,16 +126,20 @@ Törkeä lapsenraiskaus
 Seksuaalinen kajoaminen lapseen
 Törkeä seksuaalinen kajoaminen lapseen
 Lapsen seksuaalinen hyväksikäyttö
+Lapsen houkutteleminen seksuaalisiin tarkoituksiin
+Lasta seksuaalisesti esittävän kuvan levittäminen
 Törkeä lasta seksuaalisesti esittävän kuvan levittäminen
 Lasta seksuaalisesti esittävän kuvan hallussapito
+Törkeä lasta seksuaalisesti esittävän kuvan hallussapito
 Lasta seksuaalisesti esittävän esityksen seuraaminen
 Tappo
 Murha
 Surma
-Lapsensurma
 Pahoinpitely
 Törkeä pahoinpitely
 Törkeän henkeen tai terveyteen kohdistuvan rikoksen valmistelu
+Naisen sukuelinten silpominen
+Naisen sukuelinten silpomisen valmistelu
 Lievä pahoinpitely
 Kuolemantuottamus
 Törkeä kuolemantuottamus
@@ -180,7 +193,6 @@ Tuottamuksellinen vapaudenriisto
 Laiton uhkaus
 Vainoaminen
 Pakottaminen
-Toimenpiteistä luopuminen
 Varkaus
 Törkeä varkaus
 Näpistys
@@ -209,8 +221,6 @@ Törkeä avustuspetos
 Avustuksen väärinkäyttö
 Törkeä avustuksen väärinkäyttö
 Avustusrikkomus
-Veron- ja tullinkorotuksen suhde veropetokseen ja verorikkomukseen
-Laiminlyöntimaksun suhde työeläke- ja tapaturmavakuutusmaksupetokseen
 Markkinointirikos
 Alkoholijuoman markkinointirikos
 Kilpailumenettelyrikos
@@ -266,7 +276,7 @@ Terroristisessa tarkoituksessa tehtävän rikoksen valmistelu
 Terroristiryhmän johtaminen
 Terroristiryhmän toimintaan osallistuminen
 Koulutuksen antaminen terrorismirikoksen tekemistä varten
-Kouluttautuminen terrorismirikoksen tekemistä varten 
+Kouluttautuminen terrorismirikoksen tekemistä varten
 Värväys terrorismirikoksen tekemiseen
 Terrorismirikoksen rahoittaminen
 Terroristin rahoittaminen
@@ -327,20 +337,22 @@ Törkeä lahjuksen ottaminen
 Lahjusrikkomus
 Lahjuksen ottaminen kansanedustajana
 Törkeä lahjuksen ottaminen kansanedustajana
-Virkasalaisuuden rikkominen ja tuottamuksellinen virkasalaisuuden rikkominen
+Virkasalaisuuden rikkominen
+Tuottamuksellinen virkasalaisuuden rikkominen
 Virka-aseman väärinkäyttäminen
 Törkeä virka-aseman väärinkäyttäminen
-Euroopan unionin varojen väärinkäyttö 
-Törkeä Euroopan unionin varojen väärinkäyttö 
+Euroopan unionin varojen väärinkäyttö
+Törkeä Euroopan unionin varojen väärinkäyttö
 Virkavelvollisuuden rikkominen
 Tuottamuksellinen virkavelvollisuuden rikkominen
 Ampuma-aserikos
+Ampuma-aseen käsittely vakavan rikoksen tekemistä varten
 Törkeä ampuma-aserikos
 Lievä ampuma-aserikos
 Vaarallisia esineitä koskevien säännösten rikkominen
 Vaarallisen esineen hallussapito
-Toisen vahingoittamiseen soveltuvan esineen tai aineen hallussapito
-Toisen vahingoittamiseen soveltuvan esineen luovuttaminen alaikäiselle
+Toisen vakavaan vahingoittamiseen soveltuvan esineen tai aineen hallussapito
+Toisen vakavaan vahingoittamiseen soveltuvan esineen luovuttaminen alaikäiselle
 Ampumaratarikos
 Terveysrikos
 Terveydensuojelurikkomus
@@ -391,6 +403,10 @@ Sotavangin pakenemisen edistäminen
 Säännöstelyrikos
 Törkeä säännöstelyrikos
 Lievä säännöstelyrikos
+Pakoterikos
+Törkeä pakoterikos
+Tuottamuksellinen pakoterikos
+Pakoterikkomus
 Salakuljetus
 Lievä salakuljetus
 Laiton tuontitavaraan ryhtyminen
@@ -401,12 +417,12 @@ Lievä tulliselvitysrikos
 Vientitavaran alkuperää koskevan väärän tiedon antaminen
 Puolustustarvikkeiden maastavientirikos
 Kaksikäyttötuotteiden vientivalvontailmoituksen laiminlyönti
+Työturvallisuusrikos
 Työaikasuojelurikos
 Työsyrjintä
 Kiskonnantapainen työsyrjintä
 Työntekijöiden edustajien oikeuksien loukkaaminen
 Työntekijöiden järjestäytymisvapauden loukkaaminen
-Työnvälityksen maksukiellon rikkominen
 Työnvälityksen maksukiellon rikkominen
 Luvattoman ulkomaisen työvoiman käyttö
 Ympäristön turmeleminen
@@ -425,8 +441,8 @@ Laiton Etelämanneralueen mineraaliesiintymään kajoaminen
 Puutavararikos
 Laittoman saaliin kätkeminen
 Törkeä laittoman saaliin kätkeminen
-Metsästyskielto
-Ulkomaiselta alukselta talousvyöhykkeellä tehty kalastusrikos ja kalastusrikoksella saadun laittoman saaliin kätkeminen
+Ulkomaiselta alukselta talousvyöhykkeellä tehty kalastusrikos
+Kalastusrikoksella saadun laittoman saaliin kätkeminen
 Tekijänoikeusrikos
 Teollisoikeusrikos
 Teknisen suojauksen kiertäminen
@@ -438,15 +454,13 @@ Huumausaineen käyttörikos
 Huumausainerikoksen valmistelu
 Huumausainerikoksen edistäminen
 Törkeä huumausainerikoksen edistäminen
-Toimenpiteistä luopuminen
 Alkoholirikos
 Törkeä alkoholirikos
 Lievä alkoholirikos
-Veron- ja tullinkorotuksen suhde alkoholirikokseen
 Sisäpiirintiedon väärinkäyttö
 Törkeä sisäpiirintiedon väärinkäyttö
 Sisäpiirintiedon ilmaiseminen
-Markkinoiden manipulointi 
-Törkeä markkinoiden manipulointi 
+Markkinoiden manipulointi
+Törkeä markkinoiden manipulointi
 Arvopaperimarkkinoita koskeva tiedottamisrikos
 Kryptovaramarkkinoita koskeva tiedottamisrikos
